@@ -55,6 +55,9 @@ ready
       selectCharacter(id === timeline.state.selected ? null : id);
     });
     createScrubber(document.getElementById('controls'), novel, timeline, engine);
+    // The frame-the-story button lives inside the controls bar, where it
+    // can never overlap the caption stack.
+    document.getElementById('controls').append(document.getElementById('recentre'));
     createCaptions(document.getElementById('captions'), novel, timeline);
     const cards = createCards(map, novel, document.getElementById('sheet'), {
       isPlaying: () => engine.isPlaying(),

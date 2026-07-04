@@ -175,7 +175,9 @@ body {
   font-size: 12px;
   color: var(--ink-soft);
 }
-.key-item { display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+.key-item { display: flex; align-items: center; gap: 6px; white-space: nowrap; overflow: hidden; }
+/* The two line samples carry long labels — give them a full row each */
+.key-item:nth-child(1), .key-item:nth-child(2) { grid-column: 1 / -1; }
 .key-item svg { flex: none; color: var(--ink); }
 
 .legend-text { display: flex; flex-direction: column; min-width: 0; }
@@ -398,25 +400,22 @@ body {
   cursor: pointer;
 }
 
-/* ---- recentre / frame-the-story ---- */
+/* ---- recentre / frame-the-story (lives in the controls bar) ---- */
 
 #recentre {
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 92px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  min-height: 40px;
-  padding: 6px 16px;
-  font: inherit;
-  font-size: 14px;
-  font-style: italic;
+  flex: none;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: transparent;
   color: var(--ink-soft);
   cursor: pointer;
 }
-#recentre:hover { color: var(--accent); background: var(--paper); }
-#recentre[hidden] { display: none; }
+#recentre:hover { color: var(--accent); background: var(--paper-deep); }
 
 /* ---- intro title card ---- */
 
@@ -800,6 +799,9 @@ body {
   #legend::-webkit-scrollbar { display: none; }
   .legend-item { flex: none; min-height: 44px; padding: 4px 10px; }
   .legend-role { display: none; }
+  /* No room in the chip strip; cards and the gazetteer carry the
+     certainty language on mobile. */
+  .map-key { display: none; }
 
   #places {
     top: auto;
