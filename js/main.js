@@ -18,24 +18,31 @@ import { createCaptions } from './ui/captions.js';
 import { createCards } from './ui/cards.js';
 import { createPlaces } from './ui/places.js';
 import { createIntro } from './ui/intro.js';
+import { createLibrary } from './ui/library.js';
 
 const map = createMap('map');
 window.plotlinesMap = map; // exposed immediately so a stuck startup can be inspected
 
-// ?novel=tess picks a book from the shelf; switching novels is a clean
-// page load, so there is no cross-novel teardown to get wrong.
+// ?novel=<id> opens a book; no parameter means the library, where you
+// choose one. Switching novels is a clean page load, so there is no
+// cross-novel teardown to get wrong.
 const requestedNovel = new URLSearchParams(location.search).get('novel');
 
 const ready = Promise.all([
   new Promise((resolve) => map.on('load', resolve)),
   loadNovelIndex(),
 ]).then(([, index]) => {
-  const meta = index.find((n) => n.id === requestedNovel) || index[0];
+  const meta = index.find((n) => n.id === requestedNovel);
+  if (!meta) return [index, null, null]; // no book chosen: the library
   return Promise.all([index, meta, loadNovel(meta.file)]);
 });
 
 ready
   .then(([index, meta, novel]) => {
+    if (!meta) {
+      createLibrary(document.getElementById('library'), index);
+      return;
+    }
     document.title = `${meta.title} · PlotLines`;
     addNlsOverlay(map, novel);
 
@@ -58,9 +65,6 @@ ready
     // ---- UI ----
     const masthead = createMasthead(document.getElementById('masthead'), index, meta.id, {
       onMode: (m) => setMode(m),
-      onPick: (id) => {
-        if (id !== meta.id) location.search = `novel=${id}`;
-      },
     });
     const legend = createLegend(document.getElementById('legend'), novel, (id) => {
       selectCharacter(id === timeline.state.selected ? null : id);

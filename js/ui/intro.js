@@ -17,6 +17,7 @@ export function createIntro(container, novel, onBegin, onExplore) {
       </div>
       <p class="intro-hints">Space plays and pauses &middot; select a character to
         ride along &middot; touch any stop for the novel's own words</p>
+      <a class="intro-back" href="./">&#8617; Choose another book</a>
     </div>`;
 
   container.querySelector('.intro-title').textContent = novel.title;
