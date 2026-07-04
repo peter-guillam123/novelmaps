@@ -1,6 +1,7 @@
 import { createMap } from './map.js';
 import { addNlsOverlay } from './overlay.js';
 import { loadNovelIndex, loadNovel } from './data.js';
+import { buildPaths, addRouteLayers } from './routes.js';
 
 const map = createMap('map');
 
@@ -12,6 +13,8 @@ const ready = Promise.all([
 ready
   .then(([, novel]) => {
     addNlsOverlay(map);
+    const paths = buildPaths(novel);
+    addRouteLayers(map, novel, paths);
     console.log(`Loaded ${novel.title}: ${novel.locations.length} locations, ` +
       `${novel.movements.length} movements, ${novel.chapters.length} chapters`);
   })
