@@ -6,16 +6,21 @@ import { addCharacterMarkers, updateCharacterMarkers } from './markers.js';
 import { createTimeline } from './timeline.js';
 import { createEngine } from './engine.js';
 import { createFollowCamera } from './camera.js';
+import { createMasthead } from './ui/masthead.js';
+import { createLegend } from './ui/legend.js';
+import { createScrubber } from './ui/scrubber.js';
+import { createCaptions } from './ui/captions.js';
+import { createCards } from './ui/cards.js';
 
 const map = createMap('map');
 
 const ready = Promise.all([
   new Promise((resolve) => map.on('load', resolve)),
-  loadNovelIndex().then((index) => loadNovel(index[0].file)),
-]);
+  loadNovelIndex(),
+]).then(([, index]) => Promise.all([index, loadNovel(index[0].file)]));
 
 ready
-  .then(([, novel]) => {
+  .then(([index, novel]) => {
     addNlsOverlay(map);
 
     const paths = buildPaths(novel);
@@ -37,15 +42,24 @@ ready
       }
     });
 
+    // ---- UI ----
+    createMasthead(document.getElementById('masthead'), index, index[0].id);
+    const legend = createLegend(document.getElementById('legend'), novel, (id) => {
+      selectCharacter(id === timeline.state.selected ? null : id);
+    });
+    createScrubber(document.getElementById('controls'), novel, timeline, engine);
+    createCaptions(document.getElementById('captions'), novel, timeline);
+    createCards(map, novel, document.getElementById('sheet'));
+
     function selectCharacter(id) {
       timeline.setSelected(id);
       setRouteEmphasis(map, id);
+      legend.setSelected(id);
       if (id) camera.arm();
       else camera.disarm();
       engine.requestRender();
     }
 
-    // Clicking a character marker selects them; clicking elsewhere clears.
     map.on('click', 'character-markers', (e) => {
       e.preventDefault();
       const id = e.features[0].properties.id;
@@ -61,17 +75,15 @@ ready
       map.getCanvas().style.cursor = '';
     });
 
-    // Space toggles playback (the full control strip arrives with the UI pass).
     document.addEventListener('keydown', (e) => {
-      if (e.code === 'Space' && !e.target.closest('input, button, select, textarea')) {
+      if (e.code === 'Space' && !e.target.closest('input, button, select, textarea, a')) {
         e.preventDefault();
         engine.toggle();
       }
     });
 
-    engine.requestRender(); // initial paint at t = 1
+    engine.requestRender();
 
-    // Debug handle (harmless in production, invaluable in development).
     window.novelmaps = { map, novel, timeline, engine, selectCharacter };
   })
   .catch((err) => {

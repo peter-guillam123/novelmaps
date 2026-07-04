@@ -1,13 +1,44 @@
 /* Novelmaps — Victorian editorial styling.
    Palette echoes styles/victorian.json: parchment, ink, celadon water. */
 
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('../assets/fonts/EBGaramond.woff2') format('woff2');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('../assets/fonts/EBGaramond-italic.woff2') format('woff2');
+  font-weight: 400 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IM Fell English';
+  src: url('../assets/fonts/IMFellEnglish.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IM Fell English';
+  src: url('../assets/fonts/IMFellEnglish-italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   --paper: #f3ead7;
+  --paper-bright: #f9f2e2;
   --paper-deep: #e7dbc0;
   --ink: #2e2417;
   --ink-soft: #6b5a42;
   --rule: #c8b896;
   --accent: #a63d33; /* madder */
+  --shadow: 0 2px 8px rgba(46, 36, 23, 0.25);
   --serif: 'EB Garamond', 'Iowan Old Style', Georgia, 'Times New Roman', serif;
   --display: 'IM Fell English', 'EB Garamond', Georgia, serif;
 }
@@ -38,7 +69,348 @@ body {
   font-size: 1.1rem;
 }
 
-/* ---- About page ---- */
+/* ---- shared panel chrome ---- */
+
+.panel {
+  position: absolute;
+  z-index: 10;
+  background: var(--paper-bright);
+  border: 1px solid var(--rule);
+  box-shadow: var(--shadow);
+  border-radius: 3px;
+}
+
+/* ---- masthead ---- */
+
+#masthead {
+  top: 12px;
+  left: 12px;
+  padding: 10px 16px 12px;
+  max-width: 260px;
+  border-top: 3px double var(--rule);
+  border-bottom: 3px double var(--rule);
+}
+
+.masthead-kicker {
+  margin: 0;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.masthead-title {
+  margin: 2px 0 0;
+  font-family: var(--display);
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.05;
+}
+
+.masthead-byline {
+  margin: 2px 0 0;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+.masthead-about {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--accent);
+  text-decoration: none;
+}
+.masthead-about:hover { text-decoration: underline; }
+
+/* ---- legend ---- */
+
+#legend {
+  top: 150px;
+  left: 12px;
+  width: 230px;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 4px 8px;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.legend-item:hover { background: var(--paper-deep); }
+.legend-item[aria-pressed='true'] { background: var(--paper-deep); box-shadow: inset 2px 0 0 var(--accent); }
+#legend.has-selection .legend-item[aria-pressed='false'] { opacity: 0.5; }
+
+.legend-swatch {
+  flex: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--paper-bright);
+  box-shadow: 0 0 0 1px var(--rule);
+}
+
+.legend-text { display: flex; flex-direction: column; min-width: 0; }
+.legend-name { font-size: 15px; }
+.legend-role {
+  font-size: 12px;
+  font-style: italic;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ---- captions ---- */
+
+#captions {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  bottom: 96px;
+  transform: translateX(-50%);
+  max-width: min(560px, calc(100vw - 24px));
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+#captions.is-visible { opacity: 1; }
+
+.caption-line {
+  display: inline-block;
+  margin: 0;
+  padding: 8px 18px;
+  background: rgba(46, 36, 23, 0.85);
+  color: var(--paper-bright);
+  font-size: 15px;
+  border-radius: 3px;
+}
+.caption-note { font-style: italic; opacity: 0.85; }
+
+/* ---- controls / scrubber ---- */
+
+#controls {
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  width: min(720px, calc(100vw - 24px));
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.play-btn {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+.play-btn:hover { background: var(--paper-deep); }
+.play-btn .icon-pause { display: none; }
+.play-btn[aria-pressed='true'] .icon-play { display: none; }
+.play-btn[aria-pressed='true'] .icon-pause { display: block; }
+
+.scrub-body { flex: 1; min-width: 0; }
+
+.chapter-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.chapter-numeral {
+  font-family: var(--display);
+  font-size: 16px;
+}
+.chapter-title {
+  font-style: italic;
+  font-size: 14px;
+  color: var(--ink-soft);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.chapter-dates {
+  margin-left: auto;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.scrub-range {
+  width: 100%;
+  margin: 0;
+  accent-color: var(--accent);
+  height: 24px;
+  cursor: pointer;
+}
+
+/* ---- location cards (hover popup) ---- */
+
+.loc-card .maplibregl-popup-content {
+  font-family: var(--serif);
+  background: var(--paper-bright);
+  color: var(--ink);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  box-shadow: var(--shadow);
+  padding: 12px 14px;
+}
+.loc-card .maplibregl-popup-tip { border-top-color: var(--rule); }
+
+.card-novel-name {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 18px;
+  line-height: 1.15;
+}
+.card-real-name {
+  margin: 1px 0 0;
+  font-size: 13px;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+.card-real-name:empty { display: none; }
+
+.card-quote {
+  margin: 8px 0 0;
+  padding-left: 10px;
+  border-left: 2px solid var(--rule);
+  font-size: 14px;
+  line-height: 1.4;
+}
+.card-quote cite {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+.badge {
+  display: inline-block;
+  margin: 8px 0 0;
+  padding: 1px 8px 2px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: 1px solid var(--rule);
+  color: var(--ink-soft);
+}
+.badge-conjectured {
+  border-color: var(--accent);
+  color: var(--accent);
+  border-style: dashed;
+}
+
+.card-note {
+  margin: 6px 0 0;
+  font-size: 13px;
+  font-style: italic;
+  color: var(--ink-soft);
+  line-height: 1.35;
+}
+
+/* ---- bottom sheet ---- */
+
+#sheet { display: none; }
+#sheet.is-open { display: block; }
+
+.sheet-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  background: rgba(46, 36, 23, 0.35);
+}
+
+.sheet-panel {
+  position: fixed;
+  z-index: 31;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 60vh;
+  overflow-y: auto;
+  background: var(--paper-bright);
+  border-top: 3px double var(--rule);
+  padding: 16px 20px 24px;
+  box-shadow: 0 -4px 16px rgba(46, 36, 23, 0.3);
+}
+
+.sheet-close {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: transparent;
+  font-size: 26px;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+/* ---- NLS historic overlay control ---- */
+
+.nls-control {
+  background: var(--paper-bright);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 6px 10px;
+  font-family: var(--serif);
+  font-size: 13px;
+  color: var(--ink);
+  box-shadow: var(--shadow);
+}
+
+.nls-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 40px;
+  cursor: pointer;
+}
+
+.nls-toggle input { accent-color: var(--accent); width: 16px; height: 16px; }
+
+.nls-opacity input {
+  width: 110px;
+  accent-color: var(--accent);
+  display: block;
+  min-height: 24px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  margin: -1px; padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---- about page ---- */
 
 .page-about {
   overflow: auto;
@@ -64,6 +436,13 @@ body {
   margin: 0.5rem 0 0;
 }
 
+.about h2 {
+  font-family: var(--display);
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin: 2rem 0 0.5rem;
+}
+
 .about-back {
   color: var(--ink-soft);
   text-decoration: none;
@@ -72,49 +451,61 @@ body {
 .about-back:hover, .about-back:focus { color: var(--accent); }
 
 .about a { color: var(--accent); }
+.about p, .about li { line-height: 1.55; }
 
-/* ---- NLS historic overlay control ---- */
+/* ---- focus + motion ---- */
 
-.nls-control {
-  background: var(--paper);
-  border: 1px solid var(--rule);
-  border-radius: 4px;
-  padding: 6px 10px;
-  font-family: var(--serif);
-  font-size: 13px;
-  color: var(--ink);
-  box-shadow: 0 1px 3px rgba(46, 36, 23, 0.25);
-}
-
-.nls-toggle {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  min-height: 40px; /* tap target */
-  cursor: pointer;
-}
-
-.nls-toggle input { accent-color: var(--accent); width: 16px; height: 16px; }
-
-.nls-opacity input {
-  width: 110px;
-  accent-color: var(--accent);
-  display: block;
-  min-height: 24px;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px; height: 1px;
-  margin: -1px; padding: 0;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
-  border: 0;
-}
-
-/* Visible focus everywhere */
 :focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #captions { transition: none; }
+}
+
+/* ---- mobile ---- */
+
+@media (max-width: 720px) {
+  body { font-size: 15px; }
+
+  #masthead {
+    top: 8px;
+    left: 8px;
+    right: auto;
+    max-width: 200px;
+    padding: 8px 12px 10px;
+  }
+  .masthead-title { font-size: 22px; }
+
+  /* legend becomes a horizontal chip strip below the masthead */
+  #legend {
+    top: auto;
+    bottom: 88px;
+    left: 8px;
+    right: 8px;
+    width: auto;
+    flex-direction: row;
+    overflow-x: auto;
+    touch-action: pan-x;
+    -webkit-overflow-scrolling: touch;
+    gap: 4px;
+    scrollbar-width: none;
+  }
+  #legend::-webkit-scrollbar { display: none; }
+  .legend-item { flex: none; min-height: 44px; padding: 4px 10px; }
+  .legend-role { display: none; }
+
+  #captions { bottom: 152px; }
+  .caption-line { font-size: 13px; }
+
+  #controls {
+    bottom: 8px;
+    width: calc(100vw - 16px);
+    padding: 8px 10px;
+    gap: 10px;
+  }
+  .chapter-title { display: none; }
+  .chapter-numeral { font-size: 14px; }
+  .chapter-dates { font-size: 12px; }
 }
