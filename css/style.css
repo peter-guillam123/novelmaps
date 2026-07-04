@@ -1,0 +1,80 @@
+/* Novelmaps — Victorian editorial styling.
+   Palette echoes styles/victorian.json: parchment, ink, celadon water. */
+
+:root {
+  --paper: #f3ead7;
+  --paper-deep: #e7dbc0;
+  --ink: #2e2417;
+  --ink-soft: #6b5a42;
+  --rule: #c8b896;
+  --accent: #a63d33; /* madder */
+  --serif: 'EB Garamond', 'Iowan Old Style', Georgia, 'Times New Roman', serif;
+  --display: 'IM Fell English', 'EB Garamond', Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: var(--serif);
+  font-size: 16px; /* 12px absolute floor everywhere on mobile */
+  color: var(--ink);
+  background: var(--paper);
+  overflow: hidden; /* the map page never scrolls; panels manage their own */
+}
+
+#map {
+  position: absolute;
+  inset: 0;
+}
+
+.noscript {
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+/* ---- About page ---- */
+
+.page-about {
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.about {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.about-masthead {
+  border-bottom: 3px double var(--rule);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.about h1 {
+  font-family: var(--display);
+  font-weight: normal;
+  font-size: 2.2rem;
+  margin: 0.5rem 0 0;
+}
+
+.about-back {
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-style: italic;
+}
+.about-back:hover, .about-back:focus { color: var(--accent); }
+
+.about a { color: var(--accent); }
+
+/* Visible focus everywhere */
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
