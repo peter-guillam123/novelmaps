@@ -3341,8 +3341,8 @@
       }
     }
   ],
-  "name": "Novelmaps Victorian",
+  "name": "PlotLines Victorian",
   "metadata": {
-    "novelmaps:provenance": "Fork of OpenFreeMap Positron (fetched 2026-07-04 from https://tiles.openfreemap.org/styles/positron), retinted to a sepia/parchment palette by scratchpad script make_victorian.py. Tiles, glyphs and sprites still served by OpenFreeMap."
+    "plotlines:provenance": "Fork of OpenFreeMap Positron (fetched 2026-07-04 from https://tiles.openfreemap.org/styles/positron), retinted to a sepia/parchment palette by scratchpad script make_victorian.py. Tiles, glyphs and sprites still served by OpenFreeMap."
   }
 }

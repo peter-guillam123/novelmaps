@@ -20,7 +20,7 @@ import { createPlaces } from './ui/places.js';
 import { createIntro } from './ui/intro.js';
 
 const map = createMap('map');
-window.novelmapsMap = map; // exposed immediately so a stuck startup can be inspected
+window.plotlinesMap = map; // exposed immediately so a stuck startup can be inspected
 
 const ready = Promise.all([
   new Promise((resolve) => map.on('load', resolve)),
@@ -148,7 +148,7 @@ ready
 
     engine.requestRender();
 
-    window.novelmaps = { map, novel, timeline, engine, director, selectCharacter };
+    window.plotlines = { map, novel, timeline, engine, director, selectCharacter };
   })
   .catch((err) => {
     console.error(err);

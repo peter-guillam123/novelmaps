@@ -6,7 +6,7 @@ export function createIntro(container, novel, onBegin, onExplore) {
   container.innerHTML = `
     <div class="intro-scrim"></div>
     <div class="intro-card" role="dialog" aria-modal="true" aria-labelledby="intro-title">
-      <p class="intro-kicker">Novelmaps presents</p>
+      <p class="intro-kicker">PlotLines presents</p>
       <h2 class="intro-title" id="intro-title"></h2>
       <p class="intro-byline"></p>
       <p class="intro-blurb">Every journey in the novel, drawn on the maps of its

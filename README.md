@@ -1,4 +1,4 @@
-# Novelmaps
+# PlotLines
 
 Character journeys from out-of-copyright Victorian novels, animated on a
 Victorian map. Pick a novel, press play, and watch the characters move —
