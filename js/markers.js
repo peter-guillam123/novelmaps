@@ -3,6 +3,7 @@
 // initial lettered on it.
 
 import { CHARACTER_COLOURS } from './constants.js';
+import { characterInitial } from './ui/format.js';
 
 const SOURCE = 'characters';
 
@@ -56,7 +57,7 @@ export function updateCharacterMarkers(map, novel, positions, selectedId) {
       properties: {
         id: c.id,
         colour: CHARACTER_COLOURS[c.colour],
-        letter: c.name.replace(/^(The|Professor|Count|Dr\.?)\s+/i, '')[0].toUpperCase(),
+        letter: characterInitial(c.name),
         selected: c.id === selectedId,
       },
     });

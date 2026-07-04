@@ -743,6 +743,87 @@ body {
   vertical-align: middle;
 }
 
+/* ---- the overture ---- */
+
+#overture:empty { display: none; }
+#overture.is-leaving .overture-panel { opacity: 0; transition: opacity 0.4s ease; }
+
+/* While the overture holds the stage, the working UI steps aside */
+body.is-overture #legend,
+body.is-overture #controls,
+body.is-overture #captions { display: none !important; }
+
+.overture-panel {
+  position: absolute;
+  z-index: 20;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  width: min(640px, calc(100vw - 24px));
+  padding: 20px 26px 18px;
+  background: var(--paper-bright);
+  border: 1px solid var(--rule);
+  border-top: 3px double var(--rule);
+  box-shadow: var(--shadow);
+  border-radius: 3px;
+  text-align: center;
+}
+
+.overture-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.overture-cast {
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 14px;
+}
+
+.overture-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.overture-disc {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--paper-bright);
+  font-size: 11px;
+  font-weight: 600;
+  box-shadow: 0 0 0 2px var(--paper-bright), 0 1px 3px rgba(46, 36, 23, 0.4);
+}
+
+.overture-start {
+  margin-top: 16px;
+  min-height: 44px;
+  padding: 8px 26px;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  color: var(--paper-bright);
+  font: inherit;
+  font-size: 16px;
+  cursor: pointer;
+}
+.overture-start:hover { background: #8e332b; }
+
+@media (max-width: 720px) {
+  .overture-panel { bottom: 8px; padding: 14px 14px 12px; }
+  .overture-text { font-size: 14px; }
+  .overture-chip { font-size: 12px; }
+}
+
 /* ---- the library ---- */
 
 #library:empty { display: none; }

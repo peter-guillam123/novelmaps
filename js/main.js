@@ -19,6 +19,7 @@ import { createCards } from './ui/cards.js';
 import { createPlaces } from './ui/places.js';
 import { createIntro } from './ui/intro.js';
 import { createLibrary } from './ui/library.js';
+import { createOverture } from './ui/overture.js';
 
 const map = createMap('map');
 window.plotlinesMap = map; // exposed immediately so a stuck startup can be inspected
@@ -78,14 +79,41 @@ ready
       isPlaying: () => engine.isPlaying(),
     });
     createPlaces(document.getElementById('places'), map, novel, cards, engine, director);
+    // The overture: the whole story framed, the sweep in a sentence,
+    // the cast introduced in the map's own colours — then Start.
+    let hasPlayed = false;
+    timeline.on('playState', (p) => {
+      if (p) hasPlayed = true;
+    });
+    const overture = createOverture(
+      document.getElementById('overture'),
+      map,
+      novel,
+      paths,
+      {
+        reducedMotion: () => engine.reducedMotion(),
+        onStart: ({ play = true } = {}) => {
+          director.arm();
+          if (play) engine.play();
+          else engine.requestRender();
+        },
+      }
+    );
+
+    function beginStory() {
+      setMode('story');
+      director.disarm(); // the overture holds the camera until Start
+      if (!overture.show()) {
+        // No overture text: fall straight into playback.
+        director.arm();
+        engine.play();
+      }
+    }
+
     createIntro(
       document.getElementById('intro'),
       novel,
-      () => {
-        setMode('story');
-        director.arm();
-        engine.play();
-      },
+      beginStory,
       () => setMode('explore')
     );
 
@@ -110,6 +138,9 @@ ready
         engine.pause();
         director.disarm();
         updateActiveLegs(map, novel, {}, paths);
+      } else if (!hasPlayed && timeline.state.t <= 1.01 && overture.show()) {
+        // First visit to Story gets the overture; the camera is its own.
+        director.disarm();
       } else {
         setRouteEmphasis(map, timeline.state.selected);
         director.arm();

@@ -61,6 +61,12 @@ export function arrivalSentence(novel, movement, characters) {
   return `${nameList(chars)} ${chars.length > 1 ? 'arrive' : 'arrives'} at ${to.novelName}.`;
 }
 
+// The letter shown on a character's map marker — shared by the markers
+// and anywhere that introduces them (the overture's cast chips).
+export function characterInitial(name) {
+  return name.replace(/^(The|Professor|Count|Dr\.?)\s+/i, '')[0].toUpperCase();
+}
+
 export const CERTAINTY_LABELS = {
   real: 'Real place',
   identified: 'Identified place',

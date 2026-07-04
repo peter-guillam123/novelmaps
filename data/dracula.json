@@ -4,6 +4,7 @@
   "year": 1897,
   "gutenbergId": 345,
   "quotesVerified": true,
+  "overture": "Beginning with a solicitor's clerk riding into the Carpathians, Dracula sweeps from Transylvania to the Yorkshire coast and back — by calèche, schooner, goods train and steam launch — until the hunt turns east and closes at the Borgo Pass. Six journeys run at once; the map plays them together, chapter by chapter.",
   "regions": [
     { "id": "road-east", "name": "The road east" },
     { "id": "whitby", "name": "Whitby" },
