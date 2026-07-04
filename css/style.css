@@ -73,6 +73,46 @@ body {
 
 .about a { color: var(--accent); }
 
+/* ---- NLS historic overlay control ---- */
+
+.nls-control {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-family: var(--serif);
+  font-size: 13px;
+  color: var(--ink);
+  box-shadow: 0 1px 3px rgba(46, 36, 23, 0.25);
+}
+
+.nls-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 40px; /* tap target */
+  cursor: pointer;
+}
+
+.nls-toggle input { accent-color: var(--accent); width: 16px; height: 16px; }
+
+.nls-opacity input {
+  width: 110px;
+  accent-color: var(--accent);
+  display: block;
+  min-height: 24px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  margin: -1px; padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* Visible focus everywhere */
 :focus-visible {
   outline: 3px solid var(--accent);

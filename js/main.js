@@ -1,6 +1,11 @@
 import { createMap } from './map.js';
+import { addNlsOverlay } from './overlay.js';
 
 const map = createMap('map');
+
+map.on('load', () => {
+  addNlsOverlay(map);
+});
 
 map.on('error', (e) => {
   // Tile/style errors are surfaced per-source elsewhere; log once here
