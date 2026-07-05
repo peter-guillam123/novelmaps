@@ -51,8 +51,15 @@ export function createOverture(container, map, novel, paths, { onStart, reducedM
 
     document.body.classList.add('is-overture');
 
+    // Keep the whole journey clear of the panel: the overture card sits
+    // over the lower part of the map, so reserve ~44% of the height for
+    // it (half on narrow screens) and the masthead's width on the left.
+    const h = map.getContainer().clientHeight;
+    const mobile = window.innerWidth <= 720;
     const cam = map.cameraForBounds(bounds, {
-      padding: { top: 80, bottom: 250, left: 60, right: 60 },
+      padding: mobile
+        ? { top: 70, bottom: Math.round(h * 0.5), left: 24, right: 24 }
+        : { top: 90, bottom: Math.round(h * 0.44), left: 300, right: 80 },
     });
     if (cam) {
       if (reducedMotion()) map.jumpTo({ center: cam.center, zoom: cam.zoom });

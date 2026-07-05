@@ -65,7 +65,11 @@ ready
 
     // ---- UI ----
     const masthead = createMasthead(document.getElementById('masthead'), index, meta.id, {
-      onMode: (m) => setMode(m),
+      // Clicking Story always offers a fresh run — even from within Story.
+      onMode: (m) => {
+        if (m === 'story') enterStory({ restart: true });
+        else setMode('explore');
+      },
     });
     const legend = createLegend(document.getElementById('legend'), novel, (id) => {
       selectCharacter(id === timeline.state.selected ? null : id);
@@ -81,10 +85,6 @@ ready
     createPlaces(document.getElementById('places'), map, novel, cards, engine, director);
     // The overture: the whole story framed, the sweep in a sentence,
     // the cast introduced in the map's own colours — then Start.
-    let hasPlayed = false;
-    timeline.on('playState', (p) => {
-      if (p) hasPlayed = true;
-    });
     const overture = createOverture(
       document.getElementById('overture'),
       map,
@@ -101,13 +101,7 @@ ready
     );
 
     function beginStory() {
-      setMode('story');
-      director.disarm(); // the overture holds the camera until Start
-      if (!overture.show()) {
-        // No overture text: fall straight into playback.
-        director.arm();
-        engine.play();
-      }
+      enterStory({ restart: true });
     }
 
     createIntro(
@@ -124,7 +118,6 @@ ready
     const recentre = document.getElementById('recentre');
 
     function setMode(next) {
-      if (next === mode) return;
       mode = next;
       const explore = mode === 'explore';
       document.getElementById('legend').hidden = explore;
@@ -138,13 +131,34 @@ ready
         engine.pause();
         director.disarm();
         updateActiveLegs(map, novel, {}, paths);
-      } else if (!hasPlayed && timeline.state.t <= 1.01 && overture.show()) {
-        // First visit to Story gets the overture; the camera is its own.
-        director.disarm();
-      } else {
+      }
+      updateRecentre();
+    }
+
+    // Entering Story either resumes where you were (coming back from
+    // Explore) or restarts from the overture (clicking Story, or Begin).
+    function enterStory({ restart }) {
+      const wasExplore = mode === 'explore';
+      if (mode !== 'story') setMode('story');
+      if (restart) {
+        restartStory();
+      } else if (wasExplore) {
         setRouteEmphasis(map, timeline.state.selected);
         director.arm();
         engine.requestRender();
+      }
+    }
+
+    function restartStory() {
+      engine.pause();
+      timeline.setSelected(null);
+      legend.setSelected(null);
+      setRouteEmphasis(map, null);
+      timeline.seek(1);
+      director.disarm(); // the overture holds the camera until Start
+      if (!overture.show()) {
+        director.arm();
+        engine.play();
       }
       updateRecentre();
     }
