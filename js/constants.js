@@ -7,6 +7,15 @@ export const CERTAINTY = {
   CONJECTURED: 'conjectured', // fictional; position is an editorial best guess (Castle Dracula)
 };
 
+// How a fleshed-out route's path is sourced — the hierarchy, text first.
+// See docs/ADDING-A-NOVEL.md for the rules.
+export const ROUTE_CERTAINTY = {
+  NOVEL: 'novel',                 // the author names the path themselves (top tier)
+  DOCUMENTED: 'documented',       // a real named source: a coaching road, a rail line
+  RECONSTRUCTED: 'reconstructed', // period-plausible, assembled; no single source names it whole
+  ILLUSTRATIVE: 'illustrative',   // the text is vague; drawn as a gesture, honestly flagged
+};
+
 // Period-feeling character colours: inks and dyes, not neon.
 // Each novel's characters reference these by key.
 export const CHARACTER_COLOURS = {

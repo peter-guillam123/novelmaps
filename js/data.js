@@ -3,7 +3,7 @@
 // hand-edit should fail at startup naming the offending entry, not
 // surface as a marker in the sea three weeks later.
 
-import { CERTAINTY, CHARACTER_COLOURS } from './constants.js';
+import { CERTAINTY, CHARACTER_COLOURS, ROUTE_CERTAINTY } from './constants.js';
 
 const MODES = ['train', 'coach', 'ship', 'foot', 'horse', 'unknown'];
 
@@ -61,6 +61,16 @@ function validate(novel, file) {
   });
   const maxChapter = novel.chapters.length;
 
+  // Framing + clock: degradable, so warn rather than kill — but a novel
+  // without a mapHome makes the overture guess at the whole world, and one
+  // without a timeline block loses its story clock. See docs/ADDING-A-NOVEL.md.
+  if (!novel.mapHome || !Array.isArray(novel.mapHome.bounds)) {
+    console.warn(`${file}: no mapHome.bounds — the overture will frame the whole route extent, which a far outlier (an emigration voyage) can blow out to the globe`);
+  }
+  if (!novel.timeline) {
+    console.warn(`${file}: no timeline block — the story clock falls back to chapter position`);
+  }
+
   const regionIds = new Set((novel.regions || []).map((r) => r.id));
 
   const locIds = new Set();
@@ -81,6 +91,17 @@ function validate(novel, file) {
     }
     if (!loc.story) {
       console.warn(`${file}: "${loc.id}" has no story note — every place should say what happens there`);
+    }
+    // An image is optional, but a malformed one is a hand-edit slip: a
+    // committed file path and an honest caption + credit are required, and
+    // `indicative` (a period painting standing in for an imagined place)
+    // must be a boolean. See docs/ADDING-A-NOVEL.md.
+    if (loc.image) {
+      const img = loc.image;
+      if (typeof img.file !== 'string' || !img.file) fail(file, `"${loc.id}" image needs a "file" path`, img);
+      if (typeof img.caption !== 'string' || !img.caption) fail(file, `"${loc.id}" image needs an honest "caption"`, img);
+      if (typeof img.credit !== 'string' || !img.credit) fail(file, `"${loc.id}" image needs a "credit"`, img);
+      if ('indicative' in img && typeof img.indicative !== 'boolean') fail(file, `"${loc.id}" image "indicative" must be true/false`, img);
     }
   }
 
@@ -111,6 +132,22 @@ function validate(novel, file) {
     // A via entry is either a bare [lng, lat] or a named { at: [lng, lat],
     // name, note } staging post — validate the coordinate either way.
     if (m.via) m.via.forEach((p) => checkCoord(file, Array.isArray(p) ? p : p.at, m));
+
+    // Route provenance (see docs/ADDING-A-NOVEL.md). A bad routeCertainty
+    // value is a typo — fail loudly, like the location certainty enum.
+    if (m.routeCertainty && !Object.values(ROUTE_CERTAINTY).includes(m.routeCertainty)) {
+      fail(file, `routeCertainty must be one of ${Object.values(ROUTE_CERTAINTY).join('/')}`, m);
+    }
+    // A fleshed-out route (named staging posts) should say where it comes
+    // from; a claimed provenance should cite its source. Warnings, not
+    // errors — the route still draws.
+    const hasNamedVia = (m.via || []).some((p) => !Array.isArray(p) && p.name);
+    if (hasNamedVia && !m.routeCertainty) {
+      console.warn(`${file}: ${m.from}->${m.to} has named staging posts but no routeCertainty — declare how the path is sourced`);
+    }
+    if (m.routeCertainty && !m.routeSource) {
+      console.warn(`${file}: ${m.from}->${m.to} has routeCertainty "${m.routeCertainty}" but no routeSource`);
+    }
   }
 
   // Each character's journey must be continuous: every movement starts
