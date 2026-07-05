@@ -83,6 +83,7 @@ ready
     const captions = createCaptions(document.getElementById('captions'), novel, timeline, paths);
     const cards = createCards(map, novel, document.getElementById('sheet'), {
       isPlaying: () => engine.isPlaying(),
+      reducedMotion: () => engine.reducedMotion(),
     });
     createPlaces(document.getElementById('places'), map, novel, cards, engine, director);
     const locationTile = createLocationTile(

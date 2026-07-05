@@ -742,6 +742,44 @@ body.is-overture #locationtile { display: none !important; }
 .stop-card-name { font-size: 14px; }
 .stop-card-note { font-style: italic; }
 
+/* ---- place image (sheet only) ---- */
+.card-figure {
+  position: relative;
+  margin: 0 0 12px;
+}
+.card-img {
+  display: block;
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 3px;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+}
+/* A period painting standing in for an imagined place is flagged, so it
+   reads as evocation of the setting, never a record of the place. */
+.card-img-indicative {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 1px 7px 2px;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--paper-bright);
+  background: rgba(46, 36, 23, 0.82);
+  border-radius: 2px;
+}
+.card-figcaption {
+  margin-top: 5px;
+  font-size: 12px;
+  line-height: 1.35;
+  color: var(--ink-soft);
+}
+.card-img-caption { font-style: italic; }
+.card-img-credit { display: block; font-size: 11px; opacity: 0.8; }
+.card-img-credit:empty { display: none; }
+
 /* ---- bottom sheet ---- */
 
 #sheet { display: none; }

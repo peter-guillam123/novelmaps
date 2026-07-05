@@ -42,10 +42,7 @@ export function createPlaces(container, map, novel, cards, engine, director) {
         loc.certainty === 'real' ? '' : `(${CERTAINTY_LABELS[loc.certainty].toLowerCase()})`;
       btn.addEventListener('click', () => {
         director.disarm(); // looking at a place beats following the story
-        const view = { center: loc.coords, zoom: Math.max(map.getZoom(), 8) };
-        if (engine.reducedMotion()) map.jumpTo(view);
-        else map.flyTo({ ...view, duration: 1200 });
-        cards.openSheet(loc);
+        cards.openSheet(loc); // openSheet frames the place on the historic map
       });
       li.append(btn);
       list.append(li);
