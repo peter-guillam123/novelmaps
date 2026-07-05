@@ -211,8 +211,17 @@
   ],
   "movements": [
     { "character": "jonathan", "from": "munich", "to": "vienna", "chapter": 1, "mode": "train" },
-    { "character": "jonathan", "from": "vienna", "to": "budapest", "chapter": 1, "mode": "train" },
-    { "character": "jonathan", "from": "budapest", "to": "klausenburgh", "chapter": 1, "mode": "train" },
+        { "character": "jonathan", "from": "vienna", "to": "budapest", "chapter": 1, "mode": "train",
+      "via": [
+        {"at": [17.107, 48.146], "name": "Pressburg (Bratislava)", "note": "The line follows the Danube's left bank through Pressburg, the old Hungarian coronation city, before turning down to Buda-Pesth."}
+      ],
+      "routeNote": "The Vienna-Budapest express ran down the Danube via Pressburg and Győr; Pressburg marks the bend from the Vienna basin into the Hungarian plain.", "routeSource": "1890s Hungarian State Railways (MAV) Vienna-Pressburg-Budapest main line; Jonathan reaches Buda-Pesth in Ch. 1.", "routeCertainty": "documented" },
+        { "character": "jonathan", "from": "budapest", "to": "klausenburgh", "chapter": 1, "mode": "train",
+      "via": [
+        {"at": [20.198, 47.174], "name": "Szolnok", "note": "The Tisza crossing east of Budapest, where the Transylvanian trunk line branches off the Arad main line."},
+        {"at": [21.917, 47.056], "name": "Nagyvárad (Grosswardein)", "note": "The last great Hungarian-plain junction before the line climbs east into Transylvania toward Kolozsvár."}
+      ],
+      "routeNote": "The 1890s Budapest-Kolozsvár express ran Szolnok-Nagyvárad-Kolozsvár, bending east across the Alföld then up into the hills; Arad lay on the more southerly Arad-Gyulafehérvár line, a genuine detour the through train did not take.", "routeSource": "1890s Hungarian State Railways (MAV) Budapest-Szolnok-Nagyvárad-Kolozsvár line; Jonathan's stops, Ch. 1.", "routeCertainty": "documented" },
     { "character": "jonathan", "from": "klausenburgh", "to": "bistritz", "chapter": 1, "mode": "train" },
     { "character": "jonathan", "from": "bistritz", "to": "borgo-pass", "chapter": 1, "mode": "coach",
       "note": "The diligence to Bukovina, among crossing-themselves fellow passengers" },
@@ -226,8 +235,21 @@
     { "character": "dracula", "from": "castle-dracula", "to": "varna", "chapter": 5, "days": 16, "mode": "unknown",
       "via": [[25.6, 46.9], [26.8, 45.9]],
       "note": "Fifty boxes of earth, by Szgany cart and Slovak river-craft, down to the Black Sea" },
-    { "character": "dracula", "from": "varna", "to": "tate-hill-pier", "chapter": 7, "startDay": 64, "days": 33, "mode": "ship",
-      "via": [[28.99, 41.12], [26.2, 39.3], [22.4, 36.2], [10.5, 37.5], [-5.35, 35.95], [-9.3, 37.0], [-9.3, 43.4], [-5.0, 48.3], [1.5, 51.05], [-0.1, 54.1]],
+        { "character": "dracula", "from": "varna", "to": "tate-hill-pier", "chapter": 7, "startDay": 64, "days": 33, "mode": "ship",
+      "via": [
+        {"at": [28.99, 41.12], "name": "The Bosphorus, off Constantinople", "note": "11 July, at dawn: 'entered Bosphorus. Boarded by Turkish Customs officers. Backsheesh.'"},
+        {"at": [26.2, 39.7], "name": "The Dardanelles", "note": "12 July: 'through Dardanelles ... At dark passed into Archipelago' — out of the Marmara into the Aegean."},
+        {"at": [23.9, 38.0], "name": "The Archipelago (Aegean)", "note": "Threading the Greek islands after clearing the Dardanelles."},
+        {"at": [22.4, 36.2], "name": "Cape Matapan", "note": "13 July: 'passed Cape Matapan. Crew dissatisfied about something.' The southern tip of the Greek mainland."},
+        {"at": [10.5, 37.5], "name": "The Mediterranean, off Cape Bon", "note": "The long open-water run west across the Mediterranean."},
+        {"at": [-5.35, 35.95], "name": "The Strait of Gibraltar", "note": "22 July: 'Passed Gibralter and out through Straits. All well.'"},
+        {"at": [-9.3, 37.0], "name": "Off Cape St Vincent", "note": "Standing out into the Atlantic, rounding the south-west corner of Portugal."},
+        {"at": [-9.3, 43.4], "name": "Off Cape Finisterre", "note": "The north-west shoulder of Spain, at the mouth of the Bay of Biscay."},
+        {"at": [-5.0, 48.3], "name": "The Bay of Biscay, off Ushant", "note": "24 July: 'entering on the Bay of Biscay with wild weather ahead' — four days in 'a sort of maelstrom.'"},
+        {"at": [1.5, 51.15], "name": "The Straits of Dover, off the North Foreland", "note": "1-2 Aug: hoped to signal 'when in the English Channel'; 2 Aug the mate glimpses North Foreland through lifting fog — 'we are now off in the North Sea.'"},
+        {"at": [-0.1, 54.1], "name": "The North Sea, off the Yorkshire coast", "note": "The last leg northward, driving before the storm toward Whitby."}
+      ],
+      "routeNote": "The Demeter's log-book route out of the Black Sea and round Europe to Whitby, each turn named from Stoker's dated entries.", "routeSource": "Stoker, Ch. 7, 'Log of the Demeter' (Varna to Whitby): Bosphorus 11 July, Dardanelles/Archipelago 12 July, Cape Matapan 13 July, Gibraltar 22 July, Bay of Biscay 24 July, English Channel 1 Aug, North Foreland/North Sea 2 Aug.", "routeCertainty": "documented",
       "note": "The voyage of the Demeter: her whole crew lost, her captain lashed dead to the wheel" },
 
     { "character": "lucy", "from": "whitby-crescent", "to": "east-cliff-churchyard", "chapter": 8, "mode": "foot",
@@ -239,19 +261,42 @@
     { "character": "jonathan", "from": "castle-dracula", "to": "buda-pesth-hospital", "chapter": 8, "startDay": 55, "days": 8, "mode": "unknown",
       "via": [[23.59, 46.77], [19.8, 47.3]],
       "note": "The escape down the castle wall — six weeks of brain fever later, he is in Buda-Pesth" },
-    { "character": "dracula", "from": "tate-hill-pier", "to": "carfax", "chapter": 8, "mode": "train",
-      "via": [[-1.08, 53.96], [-0.24, 52.57], [-0.1238, 51.5308]],
+        { "character": "dracula", "from": "tate-hill-pier", "to": "carfax", "chapter": 8, "mode": "train",
+      "via": [
+        {"at": [-1.08, 53.96], "name": "York", "note": "Whitby's boxes came up the Esk valley line to York, the North Eastern Railway's great hub."},
+        {"at": [-1.133, 53.523], "name": "Doncaster", "note": "Where the North Eastern hands the East Coast main line to the Great Northern Railway for the run south."},
+        {"at": [-0.1238, 51.5308], "name": "King's Cross", "note": "Ch. 8: 'The goods leave by the train at 9:30 to-night, and will be due at King's Cross at 4:30' — thence carted east to Carfax at Purfleet."}
+      ],
+      "routeNote": "The fifty boxes travelled Whitby-York (North Eastern), York-Doncaster-King's Cross (Great Northern), then out of London to Purfleet — exactly the East Coast line the novel names.", "routeSource": "Stoker names 'Great Northern Railway' and 'King's Cross' (Ch. 8); the 1890s NER Whitby-York and GNR York-Doncaster-King's Cross East Coast route.", "routeCertainty": "documented",
       "note": "Fifty boxes of common earth by Great Northern Railway to King's Cross, thence to Carfax" },
 
     { "character": "mina", "from": "whitby-crescent", "to": "buda-pesth-hospital", "chapter": 9, "days": 3, "mode": "train",
       "via": [[8.7, 50.1], [16.373, 48.208]],
       "note": "To nurse Jonathan; they marry at his bedside" },
     { "character": "lucy", "from": "whitby-crescent", "to": "hillingham", "chapter": 9, "mode": "train" },
-    { "character": "vanhelsing", "from": "amsterdam", "to": "hillingham", "chapter": 9, "mode": "ship",
+        { "character": "vanhelsing", "from": "amsterdam", "to": "hillingham", "chapter": 9, "mode": "ship",
+      "via": [
+        {"at": [4.12, 51.978], "name": "Hook of Holland", "note": "The night packet's Dutch railhead; the Hook-Harwich steamer service had just opened (1893)."},
+        {"at": [3.3, 52.0], "name": "The North Sea crossing", "note": "The overnight steamer run west across the North Sea."},
+        {"at": [1.29, 51.945], "name": "Harwich", "note": "The English packet port; from here the Great Eastern boat-train ran up to Liverpool Street and across London."}
+      ],
+      "routeNote": "Van Helsing most plausibly came by the Hook of Holland-Harwich night packet and boat-train, not a Thames sail — faster and the standard 1890s Amsterdam-to-London route; then across town to Hampstead.", "routeSource": "1890s Great Eastern Railway Hook of Holland-Harwich packet (opened 1893) plus boat-train; Stoker only says 'boat and boat-train' (implied by the wire summoning him, Ch. 9).", "routeCertainty": "reconstructed",
       "note": "Summoned by Seward's wire; boat and boat-train" },
-    { "character": "vanhelsing", "from": "hillingham", "to": "amsterdam", "chapter": 10, "mode": "ship",
+        { "character": "vanhelsing", "from": "hillingham", "to": "amsterdam", "chapter": 10, "mode": "ship",
+      "via": [
+        {"at": [1.29, 51.945], "name": "Harwich", "note": "The English packet port; from here the Great Eastern boat-train ran up to Liverpool Street and across London."},
+        {"at": [3.3, 52.0], "name": "The North Sea crossing", "note": "The overnight steamer run west across the North Sea."},
+        {"at": [4.12, 51.978], "name": "Hook of Holland", "note": "The night packet's Dutch railhead; the Hook-Harwich steamer service had just opened (1893)."}
+      ],
+      "routeNote": "Van Helsing most plausibly came by the Hook of Holland-Harwich night packet and boat-train, not a Thames sail — faster and the standard 1890s Amsterdam-to-London route; then across town to Hampstead.", "routeSource": "1890s Great Eastern Railway Hook of Holland-Harwich packet (opened 1893) plus boat-train; Stoker only says 'boat and boat-train' (implied by the wire summoning him, Ch. 9).", "routeCertainty": "reconstructed",
       "note": "Back for his books — and his garlic" },
-    { "character": "vanhelsing", "from": "amsterdam", "to": "hillingham", "chapter": 10, "mode": "ship" },
+        { "character": "vanhelsing", "from": "amsterdam", "to": "hillingham", "chapter": 10, "mode": "ship",
+      "via": [
+        {"at": [4.12, 51.978], "name": "Hook of Holland", "note": "The night packet's Dutch railhead; the Hook-Harwich steamer service had just opened (1893)."},
+        {"at": [3.3, 52.0], "name": "The North Sea crossing", "note": "The overnight steamer run west across the North Sea."},
+        {"at": [1.29, 51.945], "name": "Harwich", "note": "The English packet port; from here the Great Eastern boat-train ran up to Liverpool Street and across London."}
+      ],
+      "routeNote": "Van Helsing most plausibly came by the Hook of Holland-Harwich night packet and boat-train, not a Thames sail — faster and the standard 1890s Amsterdam-to-London route; then across town to Hampstead.", "routeSource": "1890s Great Eastern Railway Hook of Holland-Harwich packet (opened 1893) plus boat-train; Stoker only says 'boat and boat-train' (implied by the wire summoning him, Ch. 9).", "routeCertainty": "reconstructed" },
 
     { "character": "dracula", "from": "carfax", "to": "hillingham", "chapter": 11, "mode": "unknown",
       "note": "The night the wolf Bersicker was set at the window" },
