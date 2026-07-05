@@ -108,7 +108,9 @@ function validate(novel, file) {
       fail(file, `chapter must be an integer 1–${maxChapter}`, m);
     }
     if (!MODES.includes(m.mode)) fail(file, `mode must be one of ${MODES.join('/')}`, m);
-    if (m.via) m.via.forEach((p) => checkCoord(file, p, m));
+    // A via entry is either a bare [lng, lat] or a named { at: [lng, lat],
+    // name, note } staging post — validate the coordinate either way.
+    if (m.via) m.via.forEach((p) => checkCoord(file, Array.isArray(p) ? p : p.at, m));
   }
 
   // Each character's journey must be continuous: every movement starts

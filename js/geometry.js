@@ -47,19 +47,43 @@ function densifySegment(a, b) {
   return pts;
 }
 
+// A "via" entry is either a bare [lng, lat] (an unnamed shaping point)
+// or { at: [lng, lat], name, note } — a named staging post the route is
+// known to pass through (a coaching town, a sea call). Named stops let a
+// followed journey narrate its stages ("through Grantham"). Normalise to
+// a common shape; bare arrays keep working untouched.
+function normaliseVia(via) {
+  if (!via) return [];
+  return via.map((v) =>
+    Array.isArray(v) ? { at: v } : { at: v.at, name: v.name, note: v.note }
+  );
+}
+
 // A movement's full path: from -> via... -> to, densified, with a
-// cumulative-distance table for arc-length-true interpolation.
-export function buildPath(fromCoords, viaCoords, toCoords) {
-  const anchors = [fromCoords, ...(viaCoords || []), toCoords];
+// cumulative-distance table for arc-length-true interpolation. `stops`
+// carries any NAMED via points with their position along the path
+// (cum km and fraction t), for the staging-post narration.
+export function buildPath(fromCoords, via, toCoords) {
+  const viaPts = normaliseVia(via);
+  const anchors = [fromCoords, ...viaPts.map((v) => v.at), toCoords];
   const coords = [anchors[0]];
+  const anchorIdx = [0]; // index in coords of each anchor
   for (let i = 1; i < anchors.length; i++) {
     coords.push(...densifySegment(anchors[i - 1], anchors[i]));
+    anchorIdx.push(coords.length - 1);
   }
   const cum = [0];
   for (let i = 1; i < coords.length; i++) {
     cum.push(cum[i - 1] + haversineKm(coords[i - 1], coords[i]));
   }
-  return { coords, cum, totalKm: cum[cum.length - 1] };
+  const totalKm = cum[cum.length - 1];
+  const stops = [];
+  viaPts.forEach((v, k) => {
+    if (!v.name) return;
+    const idx = anchorIdx[k + 1]; // +1: anchors[0] is `from`
+    stops.push({ name: v.name, note: v.note, at: v.at, cum: cum[idx], t: totalKm ? cum[idx] / totalKm : 0 });
+  });
+  return { coords, cum, totalKm, stops };
 }
 
 // The path from its start up to fraction t (0..1) — the trail drawn so
