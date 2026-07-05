@@ -54,15 +54,23 @@ export function createTimeline(novel, paths) {
         continue;
       }
 
-      let resting = c.start ? novel.locationsById[c.start.location].coords : null;
+      // Walk the legs: advance the resting stop through completed legs,
+      // catch an active leg, and note when they next set out.
+      let restLoc = c.start ? c.start.location : null;
+      let restFrom = c.start ? c.start.chapter : 1;
       let active = null;
+      let restUntil = tEnd;
       for (const leg of legs) {
         if (t >= leg.t1) {
-          resting = novel.locationsById[leg.movement.to].coords;
+          restLoc = leg.movement.to;
+          restFrom = leg.t1;
         } else if (t >= leg.t0) {
           active = leg;
           break;
-        } else break;
+        } else {
+          restUntil = leg.t0; // the next departure
+          break;
+        }
       }
 
       out[c.id] = active
@@ -71,7 +79,14 @@ export function createTimeline(novel, paths) {
             moving: true,
             movement: active.movement,
           }
-        : { lngLat: resting, moving: false, movement: null };
+        : {
+            lngLat: novel.locationsById[restLoc].coords,
+            moving: false,
+            movement: null,
+            atLocationId: restLoc,
+            restFrom,
+            restUntil,
+          };
     }
     return out;
   }

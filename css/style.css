@@ -293,6 +293,53 @@ body {
   color: var(--ink-soft);
 }
 
+/* ---- location tile (who you're watching, and where) ---- */
+
+#locationtile {
+  position: absolute;
+  z-index: 11;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: min(440px, calc(100vw - 24px));
+  display: none;
+}
+#locationtile.is-visible {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 16px 6px 7px;
+  background: rgba(46, 36, 23, 0.9);
+  color: var(--paper-bright);
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+}
+body.is-overture #locationtile { display: none !important; }
+
+.loc-tile-disc {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--paper-bright);
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 0 0 0 2px rgba(249, 242, 226, 0.45);
+}
+
+.loc-tile-body { display: flex; flex-direction: column; line-height: 1.15; min-width: 0; }
+.loc-tile-name { font-size: 14px; }
+.loc-tile-where {
+  font-size: 12px;
+  font-style: italic;
+  opacity: 0.85;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* ---- captions ---- */
 
 #captions {

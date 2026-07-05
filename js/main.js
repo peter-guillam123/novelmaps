@@ -20,6 +20,7 @@ import { createPlaces } from './ui/places.js';
 import { createIntro } from './ui/intro.js';
 import { createLibrary } from './ui/library.js';
 import { createOverture } from './ui/overture.js';
+import { createLocationTile } from './ui/locationtile.js';
 
 const map = createMap('map');
 window.plotlinesMap = map; // exposed immediately so a stuck startup can be inspected
@@ -83,6 +84,10 @@ ready
       isPlaying: () => engine.isPlaying(),
     });
     createPlaces(document.getElementById('places'), map, novel, cards, engine, director);
+    const locationTile = createLocationTile(
+      document.getElementById('locationtile'), novel, timeline
+    );
+
     // The overture: the whole story framed, the sweep in a sentence,
     // the cast introduced in the map's own colours — then Start.
     const overture = createOverture(
@@ -93,12 +98,51 @@ ready
       {
         reducedMotion: () => engine.reducedMotion(),
         onStart: ({ play = true } = {}) => {
-          director.arm();
-          if (play) engine.play();
-          else engine.requestRender();
+          if (play) establishStart();
+          else {
+            director.arm();
+            engine.requestRender();
+          }
         },
       }
     );
+
+    // The establishing shot: open close on the protagonist's starting
+    // place, name it, hold a beat, then release into ensemble playback —
+    // so the story doesn't begin mid-journey with a stranger.
+    let establishing = false;
+    let establishTimer = null;
+    function establishStart() {
+      const hero = novel.characters[0].id;
+      director.arm();
+      director.setSpotlight(hero);
+      locationTile.establish(hero, 6000);
+      engine.requestRender();
+      if (engine.reducedMotion()) {
+        director.setSpotlight(null);
+        engine.play();
+        return;
+      }
+      establishing = true;
+      clearTimeout(establishTimer);
+      establishTimer = setTimeout(() => {
+        if (!establishing) return;
+        establishing = false;
+        director.setSpotlight(null);
+        engine.play();
+      }, 3400);
+    }
+    function cancelEstablish() {
+      if (!establishing) return;
+      establishing = false;
+      clearTimeout(establishTimer);
+      director.setSpotlight(null);
+    }
+    // Any playback start (Start's own timer, the play button, Space)
+    // ends the establishing hold cleanly.
+    timeline.on('playState', (p) => {
+      if (p) cancelEstablish();
+    });
 
     function beginStory() {
       enterStory({ restart: true });
@@ -128,6 +172,8 @@ ready
       setExploreStyling(map, explore);
       masthead.setMode(mode);
       if (explore) {
+        cancelEstablish();
+        locationTile.clear();
         engine.pause();
         director.disarm();
         updateActiveLegs(map, novel, {}, paths);
@@ -150,15 +196,16 @@ ready
     }
 
     function restartStory() {
+      cancelEstablish();
       engine.pause();
       timeline.setSelected(null);
       legend.setSelected(null);
       setRouteEmphasis(map, null);
+      locationTile.clear();
       timeline.seek(1);
       director.disarm(); // the overture holds the camera until Start
       if (!overture.show()) {
-        director.arm();
-        engine.play();
+        establishStart();
       }
       updateRecentre();
     }
@@ -166,6 +213,7 @@ ready
     // "Frame the story" appears when the user has taken the camera —
     // but only in story mode, where there's a story to frame.
     recentre.addEventListener('click', () => {
+      cancelEstablish();
       director.arm();
       engine.requestRender();
     });
@@ -177,9 +225,11 @@ ready
     document.getElementById('places').hidden = true;
 
     function selectCharacter(id) {
+      cancelEstablish();
       timeline.setSelected(id);
       setRouteEmphasis(map, id);
       legend.setSelected(id);
+      locationTile.setSubject(id);
       if (id) director.arm();
       engine.requestRender();
     }

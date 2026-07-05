@@ -24,6 +24,7 @@ export function createDirector(map, timeline, novel, paths) {
 
   let armed = true;
   let smoothed = null; // {lng, lat, zoom}
+  let spotlight = null; // a character to frame closely without selecting them
   const stateListeners = [];
 
   function notify() {
@@ -60,14 +61,16 @@ export function createDirector(map, timeline, novel, paths) {
 
   // Compute the target camera for the current instant.
   function target(positions) {
-    const selected = timeline.state.selected;
+    // A selected character (follow mode) or a spotlight (the opening
+    // establishing shot) both mean: frame this one closely.
+    const focus = timeline.state.selected || spotlight;
     const bounds = [];
     let maxZoom;
 
     let contextRelax = 0; // extra zoom-out so long legs keep their geography
 
-    if (selected) {
-      const pos = positions[selected];
+    if (focus) {
+      const pos = positions[focus];
       if (!pos) return null;
       maxZoom = FOLLOW_MAX_ZOOM;
       if (pos.movement) {
@@ -147,6 +150,12 @@ export function createDirector(map, timeline, novel, paths) {
       }
     },
     isArmed: () => armed,
+    // The opening establishing shot frames one character without the
+    // dimming that selection brings.
+    setSpotlight(id) {
+      spotlight = id;
+      smoothed = null;
+    },
     onStateChange(fn) {
       stateListeners.push(fn);
     },
