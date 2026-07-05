@@ -87,13 +87,32 @@ export function createDirector(map, timeline, novel, paths) {
       }
     } else {
       maxZoom = ENSEMBLE_MAX_ZOOM;
+      // Frame the ACTION — the characters actually travelling now, plus the
+      // full geometry of the legs they're on. A character merely resting far
+      // off (the emigrants idle in Australia while David crosses Kent) must
+      // not blow the shot out to the whole globe.
+      const movers = novel.characters
+        .map((c) => positions[c.id])
+        .filter((p) => p && p.moving);
+      if (!movers.length) return null; // a pure rest: hold the current frame
+      for (const pos of movers) {
+        extendBounds(bounds, pos.lngLat);
+        const path = pathByMovement.get(pos.movement);
+        if (path) for (const p of path.coords) extendBounds(bounds, p);
+      }
+      // Bring in resting characters only when they're near the action, so a
+      // "meanwhile, in the same country" reading survives (Lucy in Whitby as
+      // the Demeter closes) but a world away does not. The allowance scales
+      // with the movers' own span: a big journey admits more context.
+      const padLng = Math.max((bounds[1][0] - bounds[0][0]) * 0.6, 0.4);
+      const padLat = Math.max((bounds[1][1] - bounds[0][1]) * 0.6, 0.4);
       for (const c of novel.characters) {
         const pos = positions[c.id];
-        if (!pos) continue;
-        extendBounds(bounds, pos.lngLat);
-        if (pos.movement) {
-          const path = pathByMovement.get(pos.movement);
-          for (const p of path.coords) extendBounds(bounds, p);
+        if (!pos || pos.moving) continue;
+        const [lng, lat] = pos.lngLat;
+        if (lng >= bounds[0][0] - padLng && lng <= bounds[1][0] + padLng &&
+            lat >= bounds[0][1] - padLat && lat <= bounds[1][1] + padLat) {
+          extendBounds(bounds, pos.lngLat);
         }
       }
     }
