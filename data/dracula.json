@@ -249,7 +249,7 @@
         {"at": [1.5, 51.15], "name": "The Straits of Dover, off the North Foreland", "note": "1-2 Aug: hoped to signal 'when in the English Channel'; 2 Aug the mate glimpses North Foreland through lifting fog — 'we are now off in the North Sea.'"},
         {"at": [-0.1, 54.1], "name": "The North Sea, off the Yorkshire coast", "note": "The last leg northward, driving before the storm toward Whitby."}
       ],
-      "routeNote": "The Demeter's log-book route out of the Black Sea and round Europe to Whitby, each turn named from Stoker's dated entries.", "routeSource": "Stoker, Ch. 7, 'Log of the Demeter' (Varna to Whitby): Bosphorus 11 July, Dardanelles/Archipelago 12 July, Cape Matapan 13 July, Gibraltar 22 July, Bay of Biscay 24 July, English Channel 1 Aug, North Foreland/North Sea 2 Aug.", "routeCertainty": "documented",
+      "routeNote": "The Demeter's log-book route out of the Black Sea and round Europe to Whitby, each turn named from Stoker's dated entries.", "routeSource": "Stoker, Ch. 7, 'Log of the Demeter' (Varna to Whitby): Bosphorus 11 July, Dardanelles/Archipelago 12 July, Cape Matapan 13 July, Gibraltar 22 July, Bay of Biscay 24 July, English Channel 1 Aug, North Foreland/North Sea 2 Aug.", "routeCertainty": "novel",
       "note": "The voyage of the Demeter: her whole crew lost, her captain lashed dead to the wheel" },
 
     { "character": "lucy", "from": "whitby-crescent", "to": "east-cliff-churchyard", "chapter": 8, "mode": "foot",

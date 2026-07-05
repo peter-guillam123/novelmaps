@@ -874,23 +874,19 @@
             51.466
           ],
           "name": "Blackheath",
-          "note": "over the Kent Road; first night in a haystack behind Salem House"
+          "note": "sleeps in the corner by his old school, Salem House"
         },
-        {
-          "at": [
-            0.166,
-            51.386
-          ],
-          "name": "near Dartford / Blackheath edge",
-          "note": "robbed of his box and money early on the Dover Road"
-        },
+        [
+          0.166,
+          51.386
+        ],
         {
           "at": [
             0.524,
             51.389
           ],
           "name": "Rochester",
-          "note": "sells his waistcoat; crosses the Medway"
+          "note": "over the Medway bridge — 'three-and-twenty miles' from London"
         },
         {
           "at": [
@@ -898,36 +894,28 @@
             51.381
           ],
           "name": "Chatham",
-          "note": "sleeps by the gun-carriages; sells his jacket"
+          "note": "sleeps on a battery; sells his jacket to the mad old clothes-man next morning"
         },
-        {
-          "at": [
-            0.876,
-            51.294
-          ],
-          "name": "near Faversham",
-          "note": "on the old Dover Road through Kent"
-        },
+        [
+          0.876,
+          51.294
+        ],
         {
           "at": [
             1.079,
             51.279
           ],
           "name": "Canterbury",
-          "note": "the cathedral city on the road to Dover"
+          "note": "the grey cathedral he carries with him ever after"
         },
-        {
-          "at": [
-            1.229,
-            51.199
-          ],
-          "name": "near Shepherdswell / the Downs",
-          "note": "climbing over the last of the Kent chalk toward the coast"
-        }
+        [
+          1.229,
+          51.199
+        ]
       ],
-      "routeNote": "David's runaway walk out of London over the Kent Road and Blackheath, then down the old Dover Road through Kent - Dartford, Rochester and Chatham (where he sleeps by the gun-carriages), on to Canterbury and finally Dover.",
-      "routeSource": "Dickens names the stages in David Copperfield, chs. 12-13: the Kent Road, Blackheath and the haystack behind Salem House, being robbed, selling his clothes at Chatham, and trudging via Rochester and Canterbury to Dover.",
-      "routeCertainty": "documented",
+      "routeNote": "David's runaway walk to his aunt at Dover — robbed in London at the very outset, then down the old Dover Road through Kent, sleeping by his old school at Blackheath, over Rochester bridge and a battery at Chatham, on past Canterbury to Dover on the sixth day.",
+      "routeSource": "Dickens narrates the walk stage by stage, chs. 12-13: robbed at the King's Bench prison wall before he is even clear of London; Blackheath, Rochester bridge, the battery at Chatham, the grey cathedral of Canterbury, and Dover on the sixth day.",
+      "routeCertainty": "novel",
       "note": "The famous flight: robbed on the first day, he walks the whole Dover road, over Rochester bridge and into Chatham, through Canterbury and out onto the downs, selling his clothes as he goes"
     },
     {
@@ -1125,11 +1113,11 @@
         },
         {
           "at": [
-            7.447,
-            46.948
+            6.144,
+            46.204
           ],
-          "name": "Bern",
-          "note": "into the Swiss plateau below the Bernese Oberland"
+          "name": "Geneva",
+          "note": "the one Swiss city Dickens names"
         }
       ],
       "routeNote": "Cross the Channel from Dover to Calais, overland through Paris and Dijon, then into the Bernese Alps - the conventional 1840s tourist route to Switzerland.",
@@ -1147,11 +1135,11 @@
       "via": [
         {
           "at": [
-            7.447,
-            46.948
+            6.144,
+            46.204
           ],
-          "name": "Bern",
-          "note": "leaving the Bernese Oberland"
+          "name": "Geneva",
+          "note": "the one Swiss city Dickens names"
         },
         {
           "at": [

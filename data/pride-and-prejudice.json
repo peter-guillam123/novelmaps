@@ -222,7 +222,7 @@
         {"at": [-1.89, 52.48], "name": "Birmingham"},
         {"at": [-1.56, 53.14], "name": "Matlock", "note": "into the Peak, on toward Chatsworth"}
       ],
-      "routeNote": "The Gardiners' tour, shrunk from the Lakes to Derbyshire, keeping to the road Austen names in a single sentence.", "routeSource": "Austen names the route herself, ch. 42: 'Oxford, Blenheim, Warwick, Kenilworth, Birmingham, etc., are sufficiently known.'", "routeCertainty": "documented",
+      "routeNote": "The Gardiners' tour, shrunk from the Lakes to Derbyshire, keeping to the road Austen names in a single sentence.", "routeSource": "Austen names the route herself, ch. 42: 'Oxford, Blenheim, Warwick, Kenilworth, Birmingham, etc., are sufficiently known.'", "routeCertainty": "novel",
       "note": "The tour, shrunk from the Lakes to Derbyshire; Austen does the whole road in a sentence — 'Oxford, Blenheim, Warwick, Kenilworth, Birmingham, etc., are sufficiently known' — and the celebrated beauties of Matlock and Chatsworth get their due" },
     { "character": "elizabeth", "from": "chatsworth", "to": "lambton", "chapter": 42, "mode": "coach",
       "note": "The principal wonders of the country seen, they bend their steps to the little town of Lambton — with Pemberley, Elizabeth learns from her aunt, not five miles off" },

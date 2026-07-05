@@ -27,8 +27,11 @@ function fillCard(el, loc) {
   if (loc.note) el.querySelector('.card-note').textContent = loc.note;
 }
 
-// How a route's confidence reads in the hover card.
+// How a route's confidence reads in the hover card. "From the novel" is
+// the top tier — the author names the road themselves — and outranks a
+// route merely drawn from a period source.
 const ROUTE_CERTAINTY = {
+  novel: 'From the novel',
   documented: 'Documented route',
   reconstructed: 'Reconstructed — period-plausible',
   illustrative: 'Illustrative — the text is vague',

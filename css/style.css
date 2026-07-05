@@ -725,6 +725,13 @@ body.is-overture #locationtile { display: none !important; }
   line-height: 1.35;
 }
 .route-card-source:empty { display: none; }
+/* Top tier: the author names the road. A filled badge, so it reads as
+   the gold standard at a glance. */
+.badge-route-novel {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--paper-bright);
+}
 .badge-route-documented { border-color: var(--rule); color: var(--ink-soft); }
 .badge-route-reconstructed,
 .badge-route-illustrative {
