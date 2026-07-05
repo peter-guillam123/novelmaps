@@ -6,7 +6,7 @@
 export function createLibrary(container, index) {
   container.innerHTML = `
     <div class="library-scrim"></div>
-    <div class="library-card" role="dialog" aria-modal="true" aria-labelledby="library-title">
+    <div class="library-card" role="dialog" aria-modal="true" aria-labelledby="library-title" tabindex="-1">
       <p class="intro-kicker">A shelf of journeys</p>
       <h1 class="library-title" id="library-title">PlotLines</h1>
       <p class="library-sub">Victorian novels, mapped — every journey in the book,
@@ -44,5 +44,7 @@ export function createLibrary(container, index) {
   slot.innerHTML = `<span class="book-title">more to come</span>`;
   shelf.append(slot);
 
-  container.querySelector('.library-book').focus({ preventScroll: true });
+  // Focus the dialog, not the first book — focusing a spine would lift it
+  // and read as "selected" before anyone's chosen.
+  container.querySelector('.library-card').focus({ preventScroll: true });
 }

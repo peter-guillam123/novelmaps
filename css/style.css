@@ -976,15 +976,17 @@ body.is-overture #captions { display: none !important; }
   box-shadow: inset 0 -13px 0 -10px #6e5335;
 }
 
+.library-card:focus { outline: none; }
+
 .library-book {
   flex: none;
-  width: 76px;
-  height: 265px;
+  width: 78px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 6px 14px;
+  padding: 18px 6px 16px;
   border: 1px solid rgba(46, 36, 23, 0.55);
   border-radius: 3px 6px 1px 1px;
   background:
@@ -1008,10 +1010,10 @@ body.is-overture #captions { display: none !important; }
 
 .book-title {
   writing-mode: vertical-rl;
-  max-height: 190px;
+  max-height: 188px;
   overflow: hidden;
   font-family: var(--display);
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.15;
   letter-spacing: 0.04em;
   color: var(--lettering, #e6d59a);
@@ -1020,10 +1022,10 @@ body.is-overture #captions { display: none !important; }
 
 .book-author {
   writing-mode: vertical-rl;
-  max-height: 46px;
+  max-height: 96px;
   overflow: hidden;
-  font-size: 10.5px;
-  letter-spacing: 0.12em;
+  font-size: 9.5px;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--lettering, #e6d59a);
   opacity: 0.85;
@@ -1057,8 +1059,9 @@ body.is-overture #captions { display: none !important; }
   .library-card { padding: 24px 16px 18px; }
   .library-title { font-size: 42px; }
   .library-shelf { justify-content: flex-start; }
-  .library-book { width: 68px; height: 225px; }
-  .book-title { font-size: 15px; max-height: 160px; }
+  .library-book { width: 70px; height: 260px; }
+  .book-title { font-size: 15px; max-height: 150px; }
+  .book-author { max-height: 82px; }
 }
 
 /* ---- boot error ---- */
