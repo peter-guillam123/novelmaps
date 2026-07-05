@@ -2,8 +2,8 @@ import { createMap } from './map.js';
 import { addNlsOverlay } from './overlay.js';
 import { loadNovelIndex, loadNovel } from './data.js';
 import {
-  buildPaths, addRouteLayers, addActiveLegLayers, addLocationLabels,
-  setRouteEmphasis, setExploreStyling, updateActiveLegs,
+  buildPaths, addRouteLayers, addTrailLayers, addLocationLabels,
+  setRouteEmphasis, setRouteMode, updateTrails,
 } from './routes.js';
 import {
   addCharacterMarkers, updateCharacterMarkers, setCharacterMarkersVisible,
@@ -50,7 +50,7 @@ ready
 
     const paths = buildPaths(novel);
     addRouteLayers(map, novel, paths);
-    addActiveLegLayers(map);
+    addTrailLayers(map);
     addLocationLabels(map);
     addCharacterMarkers(map, novel);
 
@@ -60,7 +60,7 @@ ready
     const engine = createEngine(timeline, () => {
       const positions = timeline.positionsAt(timeline.state.t);
       updateCharacterMarkers(map, novel, positions, timeline.state.selected);
-      updateActiveLegs(map, novel, positions, paths);
+      updateTrails(map, novel, positions, paths);
       return director.update(positions, { instant: engine.reducedMotion() });
     });
 
@@ -114,6 +114,7 @@ ready
     let establishTimer = null;
     function establishStart() {
       const hero = novel.characters[0].id;
+      setRouteMode(map, 'ghost'); // the trail leads from here on
       director.arm();
       director.setSpotlight(hero);
       locationTile.establish(hero, 6000);
@@ -169,14 +170,14 @@ ready
       document.getElementById('captions').hidden = explore;
       document.getElementById('places').hidden = !explore;
       setCharacterMarkersVisible(map, !explore);
-      setExploreStyling(map, explore);
       masthead.setMode(mode);
       if (explore) {
         cancelEstablish();
         locationTile.clear();
         engine.pause();
         director.disarm();
-        updateActiveLegs(map, novel, {}, paths);
+        setRouteMode(map, 'explore');
+        updateTrails(map, novel, {}, paths);
       }
       updateRecentre();
     }
@@ -189,6 +190,7 @@ ready
       if (restart) {
         restartStory();
       } else if (wasExplore) {
+        setRouteMode(map, 'ghost');
         setRouteEmphasis(map, timeline.state.selected);
         director.arm();
         engine.requestRender();
@@ -203,6 +205,8 @@ ready
       setRouteEmphasis(map, null);
       locationTile.clear();
       timeline.seek(1);
+      setRouteMode(map, 'full'); // the overture shows the whole journey
+      updateTrails(map, novel, {}, paths); // no trail drawn yet
       director.disarm(); // the overture holds the camera until Start
       if (!overture.show()) {
         establishStart();

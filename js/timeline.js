@@ -55,17 +55,24 @@ export function createTimeline(novel, paths) {
       }
 
       // Walk the legs: advance the resting stop through completed legs,
-      // catch an active leg, and note when they next set out.
+      // catch an active leg, and note when they next set out. `completed`
+      // (and, for a moving character, the active leg's index) let the
+      // trail renderer know how much of the journey to draw.
       let restLoc = c.start ? c.start.location : null;
       let restFrom = c.start ? c.start.chapter : 1;
       let active = null;
+      let activeIndex = 0;
+      let completed = 0;
       let restUntil = tEnd;
-      for (const leg of legs) {
+      for (let i = 0; i < legs.length; i++) {
+        const leg = legs[i];
         if (t >= leg.t1) {
           restLoc = leg.movement.to;
           restFrom = leg.t1;
+          completed = i + 1;
         } else if (t >= leg.t0) {
           active = leg;
+          activeIndex = i;
           break;
         } else {
           restUntil = leg.t0; // the next departure
@@ -78,6 +85,8 @@ export function createTimeline(novel, paths) {
             lngLat: positionAt(active.path, (t - active.t0) / (active.t1 - active.t0)),
             moving: true,
             movement: active.movement,
+            legIndex: activeIndex,
+            fraction: (t - active.t0) / (active.t1 - active.t0),
           }
         : {
             lngLat: novel.locationsById[restLoc].coords,
@@ -86,6 +95,7 @@ export function createTimeline(novel, paths) {
             atLocationId: restLoc,
             restFrom,
             restUntil,
+            legIndex: completed,
           };
     }
     return out;

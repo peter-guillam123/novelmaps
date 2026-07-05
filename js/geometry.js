@@ -62,6 +62,28 @@ export function buildPath(fromCoords, viaCoords, toCoords) {
   return { coords, cum, totalKm: cum[cum.length - 1] };
 }
 
+// The path from its start up to fraction t (0..1) — the trail drawn so
+// far. Returns the vertices passed plus the interpolated leading point.
+export function slicePath(path, t) {
+  const { coords, cum, totalKm } = path;
+  if (t <= 0 || totalKm === 0) return [coords[0]];
+  if (t >= 1) return coords.slice();
+  const target = t * totalKm;
+  let lo = 1;
+  let hi = cum.length - 1;
+  while (lo < hi) {
+    const mid = (lo + hi) >> 1;
+    if (cum[mid] < target) lo = mid + 1;
+    else hi = mid;
+  }
+  const i = lo;
+  const span = cum[i] - cum[i - 1];
+  const f = span === 0 ? 0 : (target - cum[i - 1]) / span;
+  const a = coords[i - 1];
+  const b = coords[i];
+  return [...coords.slice(0, i), [a[0] + (b[0] - a[0]) * f, a[1] + (b[1] - a[1]) * f]];
+}
+
 // Position at fraction t (0..1) of a path, constant speed by distance.
 // O(log n) binary search over the cumulative table.
 export function positionAt(path, t) {
