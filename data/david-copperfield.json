@@ -748,8 +748,53 @@
       "from": "blunderstone",
       "to": "salem-house",
       "chapter": 5,
-      "mode": "coach",
       "days": 1,
+      "mode": "coach",
+      "via": [
+        {
+          "at": [
+            1.556,
+            52.058
+          ],
+          "name": "Beccles / Bungay approaches",
+          "note": "inland off the Suffolk coast"
+        },
+        {
+          "at": [
+            1.155,
+            52.057
+          ],
+          "name": "Ipswich",
+          "note": "the great coaching town on the London road"
+        },
+        {
+          "at": [
+            0.902,
+            51.889
+          ],
+          "name": "Colchester",
+          "note": "on the old Norwich-London road"
+        },
+        {
+          "at": [
+            0.47,
+            51.735
+          ],
+          "name": "Chelmsford",
+          "note": "the Essex county town"
+        },
+        {
+          "at": [
+            0.183,
+            51.575
+          ],
+          "name": "Romford",
+          "note": "last stage into London from the east"
+        }
+      ],
+      "routeNote": "The old coach road from the Yarmouth/Lowestoft country up to London - through Ipswich, Colchester, Chelmsford and Romford - here bending round the eastern edge of the City to Salem House at Blackheath.",
+      "routeSource": "Cary's New Itinerary / the Great Essex Road (London-Colchester-Ipswich-Norwich turnpike), the standard coaching route between London and East Anglia in the coaching era.",
+      "routeCertainty": "documented",
       "note": "Sent away to Mr Creakle's school after biting Murdstone; the long stage-coach up to Blackheath"
     },
     {
@@ -766,8 +811,53 @@
       "from": "blunderstone",
       "to": "warehouse",
       "chapter": 11,
-      "mode": "coach",
       "days": 1,
+      "mode": "coach",
+      "via": [
+        {
+          "at": [
+            1.556,
+            52.058
+          ],
+          "name": "Beccles / Bungay approaches",
+          "note": "inland off the Suffolk coast"
+        },
+        {
+          "at": [
+            1.155,
+            52.057
+          ],
+          "name": "Ipswich",
+          "note": "the great coaching town on the London road"
+        },
+        {
+          "at": [
+            0.902,
+            51.889
+          ],
+          "name": "Colchester",
+          "note": "on the old Norwich-London road"
+        },
+        {
+          "at": [
+            0.47,
+            51.735
+          ],
+          "name": "Chelmsford",
+          "note": "the Essex county town"
+        },
+        {
+          "at": [
+            0.183,
+            51.575
+          ],
+          "name": "Romford",
+          "note": "last stage into London from the east"
+        }
+      ],
+      "routeNote": "The old coach road from the Yarmouth/Lowestoft country up to London - through Ipswich, Colchester, Chelmsford and Romford - into the City.",
+      "routeSource": "Cary's New Itinerary / the Great Essex Road (London-Colchester-Ipswich-Norwich turnpike), the standard coaching route between London and East Anglia in the coaching era.",
+      "routeCertainty": "documented",
       "note": "Cast out by Murdstone to labour at the riverside warehouse, and to lodge with the Micawbers"
     },
     {
@@ -775,22 +865,69 @@
       "from": "warehouse",
       "to": "dover",
       "chapter": 13,
-      "mode": "foot",
       "days": 6,
+      "mode": "foot",
       "via": [
-        [
-          0.5,
-          51.39
-        ],
-        [
-          0.52,
-          51.38
-        ],
-        [
-          1.079,
-          51.279
-        ]
+        {
+          "at": [
+            0.008,
+            51.466
+          ],
+          "name": "Blackheath",
+          "note": "over the Kent Road; first night in a haystack behind Salem House"
+        },
+        {
+          "at": [
+            0.166,
+            51.386
+          ],
+          "name": "near Dartford / Blackheath edge",
+          "note": "robbed of his box and money early on the Dover Road"
+        },
+        {
+          "at": [
+            0.524,
+            51.389
+          ],
+          "name": "Rochester",
+          "note": "sells his waistcoat; crosses the Medway"
+        },
+        {
+          "at": [
+            0.528,
+            51.381
+          ],
+          "name": "Chatham",
+          "note": "sleeps by the gun-carriages; sells his jacket"
+        },
+        {
+          "at": [
+            0.876,
+            51.294
+          ],
+          "name": "near Faversham",
+          "note": "on the old Dover Road through Kent"
+        },
+        {
+          "at": [
+            1.079,
+            51.279
+          ],
+          "name": "Canterbury",
+          "note": "the cathedral city on the road to Dover"
+        },
+        {
+          "at": [
+            1.229,
+            51.199
+          ],
+          "name": "near Shepherdswell / the Downs",
+          "note": "climbing over the last of the Kent chalk toward the coast"
+        }
       ],
+      "routeNote": "David's runaway walk out of London over the Kent Road and Blackheath, then down the old Dover Road through Kent - Dartford, Rochester and Chatham (where he sleeps by the gun-carriages), on to Canterbury and finally Dover.",
+      "routeSource": "Dickens names the stages in David Copperfield, chs. 12-13: the Kent Road, Blackheath and the haystack behind Salem House, being robbed, selling his clothes at Chatham, and trudging via Rochester and Canterbury to Dover.",
+      "routeCertainty": "documented",
       "note": "The famous flight: robbed on the first day, he walks the whole Dover road, over Rochester bridge and into Chatham, through Canterbury and out onto the downs, selling his clothes as he goes"
     },
     {
@@ -807,8 +944,53 @@
       "from": "canterbury",
       "to": "golden-cross",
       "chapter": 19,
-      "mode": "coach",
       "days": 1,
+      "mode": "coach",
+      "via": [
+        {
+          "at": [
+            0.876,
+            51.294
+          ],
+          "name": "near Faversham",
+          "note": "westbound on the Dover Road"
+        },
+        {
+          "at": [
+            0.528,
+            51.381
+          ],
+          "name": "Chatham",
+          "note": "on the Medway"
+        },
+        {
+          "at": [
+            0.524,
+            51.389
+          ],
+          "name": "Rochester",
+          "note": "crossing the Medway bridge"
+        },
+        {
+          "at": [
+            0.219,
+            51.446
+          ],
+          "name": "Dartford",
+          "note": "last Kentish stage before the London river-crossing"
+        },
+        {
+          "at": [
+            0.017,
+            51.477
+          ],
+          "name": "Blackheath / Shooter's Hill",
+          "note": "over the heath into London"
+        }
+      ],
+      "routeNote": "The London-bound Dover Road from Canterbury - through Faversham, Chatham and Rochester on the Medway, then Dartford and over Blackheath to Charing Cross.",
+      "routeSource": "Cary's New Itinerary / Paterson's Roads: the London-Dover turnpike via Dartford, Rochester, Chatham, Canterbury - the principal road to the Continent.",
+      "routeCertainty": "documented",
       "note": "Schooldays over, a young gentleman sets out to see the world; he puts up at the Golden Cross and falls in again with Steerforth"
     },
     {
@@ -816,8 +998,53 @@
       "from": "golden-cross",
       "to": "yarmouth",
       "chapter": 21,
-      "mode": "coach",
       "days": 1,
+      "mode": "coach",
+      "via": [
+        {
+          "at": [
+            0.183,
+            51.575
+          ],
+          "name": "Romford",
+          "note": "out of London on the Great Essex Road"
+        },
+        {
+          "at": [
+            0.47,
+            51.735
+          ],
+          "name": "Chelmsford",
+          "note": "the Essex county town"
+        },
+        {
+          "at": [
+            0.902,
+            51.889
+          ],
+          "name": "Colchester",
+          "note": "on the Norwich road"
+        },
+        {
+          "at": [
+            1.155,
+            52.057
+          ],
+          "name": "Ipswich",
+          "note": "the great Suffolk coaching town"
+        },
+        {
+          "at": [
+            1.293,
+            52.628
+          ],
+          "name": "Norwich",
+          "note": "the East Anglian capital; road turns east for the coast"
+        }
+      ],
+      "routeNote": "The old Norwich road out of London - through Romford, Chelmsford, Colchester and Ipswich to Norwich, then east to Great Yarmouth on the coast.",
+      "routeSource": "Cary's New Itinerary / the London-Colchester-Ipswich-Norwich-Yarmouth coaching route, the standard road to East Anglia.",
+      "routeCertainty": "documented",
       "note": "He takes Steerforth down to Yarmouth to meet the Peggottys — the fateful introduction"
     },
     {
@@ -861,8 +1088,53 @@
       "from": "gravesend",
       "to": "switzerland",
       "chapter": 58,
-      "mode": "ship",
       "days": 20,
+      "mode": "ship",
+      "via": [
+        {
+          "at": [
+            1.313,
+            51.129
+          ],
+          "name": "Dover",
+          "note": "the Channel packet port"
+        },
+        {
+          "at": [
+            1.851,
+            50.951
+          ],
+          "name": "Calais",
+          "note": "crossing to France"
+        },
+        {
+          "at": [
+            2.352,
+            48.857
+          ],
+          "name": "Paris",
+          "note": "overland through northern France"
+        },
+        {
+          "at": [
+            5.041,
+            47.322
+          ],
+          "name": "Dijon",
+          "note": "up the road toward the Jura and Switzerland"
+        },
+        {
+          "at": [
+            7.447,
+            46.948
+          ],
+          "name": "Bern",
+          "note": "into the Swiss plateau below the Bernese Oberland"
+        }
+      ],
+      "routeNote": "Cross the Channel from Dover to Calais, overland through Paris and Dijon, then into the Bernese Alps - the conventional 1840s tourist route to Switzerland.",
+      "routeSource": "No route named in the text - Dickens simply sends David to wander in Switzerland during his grief. This reconstructs the standard mid-century Channel-Paris-Alps tourist itinerary (Murray's/Baedeker-era).",
+      "routeCertainty": "reconstructed",
       "note": "Abroad to grieve; over the Alps out of Italy into a still Swiss valley, where Agnes's letters finally reach him and his numbness lifts"
     },
     {
@@ -870,8 +1142,53 @@
       "from": "switzerland",
       "to": "canterbury",
       "chapter": 60,
-      "mode": "ship",
       "days": 20,
+      "mode": "ship",
+      "via": [
+        {
+          "at": [
+            7.447,
+            46.948
+          ],
+          "name": "Bern",
+          "note": "leaving the Bernese Oberland"
+        },
+        {
+          "at": [
+            5.041,
+            47.322
+          ],
+          "name": "Dijon",
+          "note": "down through the Jura toward Paris"
+        },
+        {
+          "at": [
+            2.352,
+            48.857
+          ],
+          "name": "Paris",
+          "note": "overland across northern France"
+        },
+        {
+          "at": [
+            1.851,
+            50.951
+          ],
+          "name": "Calais",
+          "note": "the Channel packet port"
+        },
+        {
+          "at": [
+            1.313,
+            51.129
+          ],
+          "name": "Dover",
+          "note": "landing back in Kent"
+        }
+      ],
+      "routeNote": "The return: down out of the Bernese Alps through Dijon and Paris to Calais, across the Channel to Dover, then the short road inland to Canterbury.",
+      "routeSource": "No route named in the text - reconstructs the standard mid-century Alps-Paris-Channel tourist itinerary in reverse. Dickens brings David home to England.",
+      "routeCertainty": "reconstructed",
       "note": "Home at last, three years on, to Agnes at Canterbury — the settled end"
     },
     {
@@ -888,8 +1205,85 @@
       "from": "yarmouth",
       "to": "naples",
       "chapter": 31,
-      "mode": "ship",
       "days": 10,
+      "mode": "ship",
+      "via": [
+        {
+          "at": [
+            1.4,
+            51.9
+          ],
+          "name": "off the North Foreland",
+          "note": "down the North Sea coast of Kent"
+        },
+        {
+          "at": [
+            1.4,
+            51.0
+          ],
+          "name": "the Dover Strait",
+          "note": "through the narrows into the Channel"
+        },
+        {
+          "at": [
+            -1.9,
+            49.9
+          ],
+          "name": "off the Cotentin",
+          "note": "mid-Channel, westbound"
+        },
+        {
+          "at": [
+            -5.9,
+            48.4
+          ],
+          "name": "off Ushant",
+          "note": "clearing the Channel for the Bay of Biscay"
+        },
+        {
+          "at": [
+            -9.5,
+            43.8
+          ],
+          "name": "off Cape Finisterre",
+          "note": "across Biscay to the NW corner of Spain"
+        },
+        {
+          "at": [
+            -9.5,
+            38.7
+          ],
+          "name": "off the coast of Portugal",
+          "note": "past the Tagus, Lisbon abeam"
+        },
+        {
+          "at": [
+            -6.0,
+            36.0
+          ],
+          "name": "the Strait of Gibraltar",
+          "note": "into the Mediterranean"
+        },
+        {
+          "at": [
+            8.0,
+            38.5
+          ],
+          "name": "the western Mediterranean",
+          "note": "passing south of Sardinia"
+        },
+        {
+          "at": [
+            12.5,
+            40.4
+          ],
+          "name": "the Tyrrhenian Sea",
+          "note": "closing the Bay of Naples"
+        }
+      ],
+      "routeNote": "Down the North Sea past the Foreland, through the Dover Strait and English Channel, out past Ushant across the Bay of Biscay, down off Finisterre and the Portuguese coast, through the Strait of Gibraltar and across the western Mediterranean into the Tyrrhenian Sea to Naples.",
+      "routeSource": "Standard age-of-sail North Europe to Mediterranean sailing track (Channel - Biscay - off Finisterre/Portugal - Gibraltar - Tyrrhenian). Dickens names Naples as the destination of Steerforth and Em'ly's flight abroad.",
+      "routeCertainty": "reconstructed",
       "note": "He carries Little Em'ly off across the sea to the villa near Naples"
     },
     {
@@ -906,8 +1300,85 @@
       "from": "yarmouth",
       "to": "naples",
       "chapter": 31,
-      "mode": "ship",
       "days": 10,
+      "mode": "ship",
+      "via": [
+        {
+          "at": [
+            1.4,
+            51.9
+          ],
+          "name": "off the North Foreland",
+          "note": "down the North Sea coast of Kent"
+        },
+        {
+          "at": [
+            1.4,
+            51.0
+          ],
+          "name": "the Dover Strait",
+          "note": "through the narrows into the Channel"
+        },
+        {
+          "at": [
+            -1.9,
+            49.9
+          ],
+          "name": "off the Cotentin",
+          "note": "mid-Channel, westbound"
+        },
+        {
+          "at": [
+            -5.9,
+            48.4
+          ],
+          "name": "off Ushant",
+          "note": "clearing the Channel for the Bay of Biscay"
+        },
+        {
+          "at": [
+            -9.5,
+            43.8
+          ],
+          "name": "off Cape Finisterre",
+          "note": "across Biscay to the NW corner of Spain"
+        },
+        {
+          "at": [
+            -9.5,
+            38.7
+          ],
+          "name": "off the coast of Portugal",
+          "note": "past the Tagus, Lisbon abeam"
+        },
+        {
+          "at": [
+            -6.0,
+            36.0
+          ],
+          "name": "the Strait of Gibraltar",
+          "note": "into the Mediterranean"
+        },
+        {
+          "at": [
+            8.0,
+            38.5
+          ],
+          "name": "the western Mediterranean",
+          "note": "passing south of Sardinia"
+        },
+        {
+          "at": [
+            12.5,
+            40.4
+          ],
+          "name": "the Tyrrhenian Sea",
+          "note": "closing the Bay of Naples"
+        }
+      ],
+      "routeNote": "Down the North Sea past the Foreland, through the Dover Strait and English Channel, out past Ushant across the Bay of Biscay, down off Finisterre and the Portuguese coast, through the Strait of Gibraltar and across the western Mediterranean into the Tyrrhenian Sea to Naples.",
+      "routeSource": "Standard age-of-sail North Europe to Mediterranean sailing track (Channel - Biscay - off Finisterre/Portugal - Gibraltar - Tyrrhenian). Dickens names Naples as the destination of Steerforth and Em'ly's flight abroad.",
+      "routeCertainty": "reconstructed",
       "note": "The elopement: she leaves a letter and is gone with Steerforth to the south"
     },
     {
@@ -915,26 +1386,85 @@
       "from": "naples",
       "to": "gravesend",
       "chapter": 50,
-      "mode": "ship",
       "days": 14,
+      "mode": "ship",
       "via": [
-        [
-          14.0,
-          42.0
-        ],
-        [
-          8.0,
-          44.0
-        ],
-        [
-          2.35,
-          48.86
-        ],
-        [
-          1.85,
-          50.96
-        ]
+        {
+          "at": [
+            12.5,
+            40.4
+          ],
+          "name": "the Tyrrhenian Sea",
+          "note": "standing out from the Bay of Naples"
+        },
+        {
+          "at": [
+            8.0,
+            38.5
+          ],
+          "name": "the western Mediterranean",
+          "note": "passing south of Sardinia"
+        },
+        {
+          "at": [
+            -6.0,
+            36.0
+          ],
+          "name": "the Strait of Gibraltar",
+          "note": "out of the Mediterranean into the Atlantic"
+        },
+        {
+          "at": [
+            -9.5,
+            38.7
+          ],
+          "name": "off the coast of Portugal",
+          "note": "northbound, Lisbon abeam"
+        },
+        {
+          "at": [
+            -9.5,
+            43.8
+          ],
+          "name": "off Cape Finisterre",
+          "note": "NW corner of Spain"
+        },
+        {
+          "at": [
+            -5.9,
+            48.4
+          ],
+          "name": "off Ushant",
+          "note": "across the Bay of Biscay to the Channel mouth"
+        },
+        {
+          "at": [
+            -1.9,
+            49.9
+          ],
+          "name": "off the Cotentin",
+          "note": "up the Channel, eastbound"
+        },
+        {
+          "at": [
+            1.4,
+            51.0
+          ],
+          "name": "the Dover Strait",
+          "note": "through the narrows"
+        },
+        {
+          "at": [
+            1.0,
+            51.5
+          ],
+          "name": "the Thames Estuary",
+          "note": "into the river approaches for Gravesend"
+        }
       ],
+      "routeNote": "The reverse passage: out of the Bay of Naples across the western Mediterranean, through the Strait of Gibraltar, up off Portugal and Finisterre, across Biscay past Ushant, up the English Channel and Dover Strait into the Thames Estuary to Gravesend.",
+      "routeSource": "Mirror of the Yarmouth-to-Naples track; Mr Peggotty brings Em'ly home from the Continent in the novel. Standard Mediterranean to Thames age-of-sail route.",
+      "routeCertainty": "reconstructed",
       "note": "Abandoned, she makes her way back alone — France, and service abroad — until Martha and Mr Peggotty find her hidden in London and bring her to the emigrant ship"
     },
     {
@@ -942,26 +1472,85 @@
       "from": "yarmouth",
       "to": "naples",
       "chapter": 40,
-      "mode": "foot",
       "days": 250,
+      "mode": "foot",
       "via": [
-        [
-          1.85,
-          50.96
-        ],
-        [
-          2.35,
-          48.86
-        ],
-        [
-          4.83,
-          45.76
-        ],
-        [
-          10.0,
-          44.0
-        ]
+        {
+          "at": [
+            1.4,
+            51.9
+          ],
+          "name": "off the North Foreland",
+          "note": "down the North Sea coast of Kent"
+        },
+        {
+          "at": [
+            1.4,
+            51.0
+          ],
+          "name": "the Dover Strait",
+          "note": "through the narrows into the Channel"
+        },
+        {
+          "at": [
+            -1.9,
+            49.9
+          ],
+          "name": "off the Cotentin",
+          "note": "mid-Channel, westbound"
+        },
+        {
+          "at": [
+            -5.9,
+            48.4
+          ],
+          "name": "off Ushant",
+          "note": "clearing the Channel for the Bay of Biscay"
+        },
+        {
+          "at": [
+            -9.5,
+            43.8
+          ],
+          "name": "off Cape Finisterre",
+          "note": "across Biscay to the NW corner of Spain"
+        },
+        {
+          "at": [
+            -9.5,
+            38.7
+          ],
+          "name": "off the coast of Portugal",
+          "note": "past the Tagus, Lisbon abeam"
+        },
+        {
+          "at": [
+            -6.0,
+            36.0
+          ],
+          "name": "the Strait of Gibraltar",
+          "note": "into the Mediterranean"
+        },
+        {
+          "at": [
+            8.0,
+            38.5
+          ],
+          "name": "the western Mediterranean",
+          "note": "passing south of Sardinia"
+        },
+        {
+          "at": [
+            12.5,
+            40.4
+          ],
+          "name": "the Tyrrhenian Sea",
+          "note": "closing the Bay of Naples"
+        }
       ],
+      "routeNote": "Down the North Sea past the Foreland, through the Dover Strait and English Channel, out past Ushant across the Bay of Biscay, down off Finisterre and the Portuguese coast, through the Strait of Gibraltar and across the western Mediterranean into the Tyrrhenian Sea to Naples.",
+      "routeSource": "Standard age-of-sail North Europe to Mediterranean sailing track (Channel - Biscay - off Finisterre/Portugal - Gibraltar - Tyrrhenian). Dickens names Naples as the destination of Steerforth and Em'ly's flight abroad.",
+      "routeCertainty": "reconstructed",
       "note": "The years-long search on foot: across-channel to France 'as if I'd fell down from the sky', then over into Italy, town by town, as far as the Swiss mountains — the path here is illustrative, the novel naming only France, Italy and the mountains"
     },
     {
@@ -969,8 +1558,85 @@
       "from": "naples",
       "to": "gravesend",
       "chapter": 51,
-      "mode": "ship",
       "days": 14,
+      "mode": "ship",
+      "via": [
+        {
+          "at": [
+            12.5,
+            40.4
+          ],
+          "name": "the Tyrrhenian Sea",
+          "note": "standing out from the Bay of Naples"
+        },
+        {
+          "at": [
+            8.0,
+            38.5
+          ],
+          "name": "the western Mediterranean",
+          "note": "passing south of Sardinia"
+        },
+        {
+          "at": [
+            -6.0,
+            36.0
+          ],
+          "name": "the Strait of Gibraltar",
+          "note": "out of the Mediterranean into the Atlantic"
+        },
+        {
+          "at": [
+            -9.5,
+            38.7
+          ],
+          "name": "off the coast of Portugal",
+          "note": "northbound, Lisbon abeam"
+        },
+        {
+          "at": [
+            -9.5,
+            43.8
+          ],
+          "name": "off Cape Finisterre",
+          "note": "NW corner of Spain"
+        },
+        {
+          "at": [
+            -5.9,
+            48.4
+          ],
+          "name": "off Ushant",
+          "note": "across the Bay of Biscay to the Channel mouth"
+        },
+        {
+          "at": [
+            -1.9,
+            49.9
+          ],
+          "name": "off the Cotentin",
+          "note": "up the Channel, eastbound"
+        },
+        {
+          "at": [
+            1.4,
+            51.0
+          ],
+          "name": "the Dover Strait",
+          "note": "through the narrows"
+        },
+        {
+          "at": [
+            1.0,
+            51.5
+          ],
+          "name": "the Thames Estuary",
+          "note": "into the river approaches for Gravesend"
+        }
+      ],
+      "routeNote": "The reverse passage: out of the Bay of Naples across the western Mediterranean, through the Strait of Gibraltar, up off Portugal and Finisterre, across Biscay past Ushant, up the English Channel and Dover Strait into the Thames Estuary to Gravesend.",
+      "routeSource": "Mirror of the Yarmouth-to-Naples track; Mr Peggotty brings Em'ly home from the Continent in the novel. Standard Mediterranean to Thames age-of-sail route.",
+      "routeCertainty": "reconstructed",
       "note": "Home to London with the found Em'ly, and on to the emigrant ship at Gravesend"
     },
     {
@@ -1000,8 +1666,93 @@
       "from": "gravesend",
       "to": "port-middlebay",
       "chapter": 57,
-      "mode": "ship",
       "days": 100,
+      "mode": "ship",
+      "via": [
+        {
+          "at": [
+            -1.4,
+            50.6
+          ],
+          "name": "off the Isle of Wight",
+          "note": "down the English Channel from the Thames"
+        },
+        {
+          "at": [
+            -5.9,
+            48.4
+          ],
+          "name": "off Ushant",
+          "note": "clearing the mouth of the Channel into the Atlantic"
+        },
+        {
+          "at": [
+            -16.9,
+            32.7
+          ],
+          "name": "Madeira",
+          "note": "standard refreshment call to catch the NE trades"
+        },
+        {
+          "at": [
+            -25.0,
+            8.0
+          ],
+          "name": "into the NE trades",
+          "note": "running SW toward the Line"
+        },
+        {
+          "at": [
+            -30.0,
+            -8.0
+          ],
+          "name": "toward the Brazilian coast",
+          "note": "crossing the SE trades near the Brazil bulge"
+        },
+        {
+          "at": [
+            -20.0,
+            -30.0
+          ],
+          "name": "South Atlantic westerlies",
+          "note": "curving SE off the River Plate longitude"
+        },
+        {
+          "at": [
+            18.4,
+            -34.4
+          ],
+          "name": "off the Cape of Good Hope",
+          "note": "Cape Town, the standard refreshment call; many 1840s ships ran on but the track still bent round the Cape"
+        },
+        {
+          "at": [
+            70.0,
+            -39.5
+          ],
+          "name": "Southern Indian Ocean",
+          "note": "running the easting down on the westerlies, north of 40 deg S per Admiralty advice"
+        },
+        {
+          "at": [
+            110.0,
+            -40.5
+          ],
+          "name": "SW of Cape Leeuwin",
+          "note": "moderate latitudes, NOT the extreme 50s of the later clipper route"
+        },
+        {
+          "at": [
+            140.0,
+            -39.5
+          ],
+          "name": "off King Island",
+          "note": "closing the Bass Strait approaches, turning NE for Port Phillip Heads"
+        }
+      ],
+      "routeNote": "The 1840s pre-clipper emigrant passage: down the Channel and out past Ushant, SW to Madeira for the NE trades, across toward the Brazilian coast, SE to round the Cape of Good Hope, then east across the Southern Indian Ocean on the westerlies (moderate ~39-40 deg S, north of the 40th parallel as the Admiralty advised), up to Port Phillip.",
+      "routeSource": "State Library of Victoria, 'Ships' journeys' research guide, and ANU/CEPR economic-history work on migration to Australia (Hatton et al.): early-1840s voyages sailed south toward Brazil then SE, often calling at Cape Town, crossing the Indian Ocean keeping north of 40 deg S per Admiralty recommendation. The deep Roaring-Forties great-circle route was only promoted from ~1852 (Towson's tables, the Marco Polo era) and post-dates the novel.",
+      "routeCertainty": "documented",
       "note": "The long emigrant voyage to Australia: the whole reclaimed company sails together to begin a new life"
     }
   ]
