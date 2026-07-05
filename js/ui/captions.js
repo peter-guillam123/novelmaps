@@ -158,6 +158,44 @@ export function createCaptions(container, novel, timeline, paths) {
     });
   });
 
+  // ---- the years pass ----
+  // A life-spanning novel sweeps across empty years between journeys. A
+  // quiet marker during a long sweep tells the viewer the story is
+  // skipping ahead, not that the app has frozen — and gives the next
+  // journey somewhere to arrive from. Undated novels only; a dated one
+  // shows the passage of time on its clock. Fired once per sweep.
+  const undated = !novel.timeline || novel.timeline.calendar === false;
+  let announcedRest = null; // the next-journey day of the sweep already marked
+
+  function interlude(gap) {
+    const el = document.createElement('p');
+    el.className = 'caption-line is-interlude';
+    el.innerHTML = '<span class="caption-text"></span>';
+    el.querySelector('.caption-text').textContent = gap > 1000 ? 'the years pass…' : 'time passes…';
+    container.append(el);
+    container.classList.add('is-visible');
+    setTimeout(() => {
+      el.classList.add('is-retiring');
+      setTimeout(() => {
+        el.remove();
+        if (!container.querySelector('.caption-line')) container.classList.remove('is-visible');
+      }, 600);
+    }, 2200);
+  }
+
+  timeline.on('tick', (t) => {
+    if (!timeline.state.playing) return;
+    if (timeline.anyMoving(t)) { announcedRest = null; return; }
+    // In a rest, keyed by the day the next journey begins — so the opening
+    // sweep (a childhood, before anyone's moved) is caught, and each sweep
+    // is marked once.
+    const target = timeline.nextMovingDay(t);
+    if (undated && target - t > 400 && announcedRest !== target) {
+      announcedRest = target;
+      interlude(target - t);
+    }
+  });
+
   // A one-off line (the opening "begins at…") — same bottom strip as the
   // journey narration, so all the running commentary lives in one place.
   function announce(character, text) {

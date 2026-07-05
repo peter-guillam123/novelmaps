@@ -391,6 +391,14 @@ body.is-overture #locationtile { display: none !important; }
   align-self: flex-start;
 }
 .caption-line.is-passing .caption-swatch { width: 7px; height: 7px; }
+/* "the years pass…" — a quiet interlude while the map sweeps empty time. */
+.caption-line.is-interlude {
+  background: rgba(46, 36, 23, 0.5);
+  justify-content: center;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  color: var(--paper);
+}
 .caption-line.is-retiring { opacity: 0; }
 
 .caption-swatch {
