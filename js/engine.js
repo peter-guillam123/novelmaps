@@ -15,6 +15,9 @@ export function createEngine(timeline, render) {
   let lastTs = null;
   let stepTimer = null;
   let speedIndex = 0; // index into SPEED_STEPS
+  // A scripted story player may drive the clock itself; then this loop
+  // only paints, and must not also advance time.
+  let externalDriver = false;
   const rmQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
 
   // Normalise this novel to ~STORY_TARGET_SECONDS: sample the day axis to
@@ -38,7 +41,7 @@ export function createEngine(timeline, render) {
     let atEnd = false;
     // In reduced-motion mode the step timer drives time; the loop only
     // paints, it must not also advance.
-    const smoothPlaying = timeline.state.playing && stepTimer == null;
+    const smoothPlaying = timeline.state.playing && stepTimer == null && !externalDriver;
     if (smoothPlaying) {
       // Travelling plays at the base rate; the quiet stretches fast-forward
       // — and any long empty gap is swept to the next journey in at most
@@ -82,6 +85,7 @@ export function createEngine(timeline, render) {
 
   function play() {
     if (isPlaying()) return;
+    if (externalDriver) return; // the story player owns playback
     if (rmQuery.matches) {
       timeline.snapToChapter();
       stepTimer = setInterval(() => {
@@ -126,6 +130,9 @@ export function createEngine(timeline, render) {
     isPlaying,
     requestRender,
     reducedMotion: () => rmQuery.matches,
+    setExternalDriver(v) {
+      externalDriver = !!v;
+    },
     // Cycle 1x -> 2x -> 3x; restart the step timer if it's driving.
     cycleSpeed() {
       speedIndex = (speedIndex + 1) % SPEED_STEPS.length;

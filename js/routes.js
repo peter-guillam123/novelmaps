@@ -300,8 +300,18 @@ function trailFeature(coords, id, colour, dashed, offset) {
 
 // Rebuilt each frame — but the (large) past set only when a leg actually
 // completes, keyed by each character's completed-leg count.
+//
+// In scripted story mode ({ monotonic: true }) the past trails are a
+// high-water mark: a "meanwhile" beat winds the clock back to show a
+// concurrent thread, and the threads already told must stay drawn — the
+// tapestry keeps its finished strands while another is stitched.
 let lastPastSig = null;
-export function updateTrails(map, novel, positions, paths) {
+let highWater = {};
+export function resetTrailMemory() {
+  highWater = {};
+  lastPastSig = null;
+}
+export function updateTrails(map, novel, positions, paths, { monotonic = false } = {}) {
   const { legsByChar, offsets } = ensureIndex(novel, paths);
 
   const live = [];
@@ -317,12 +327,18 @@ export function updateTrails(map, novel, positions, paths) {
   }
   map.getSource('trails-live')?.setData({ type: 'FeatureCollection', features: live });
 
-  const sig = novel.characters.map((c) => positions[c.id]?.legIndex || 0).join(',');
+  const completedFor = (c) => {
+    const now = positions[c.id]?.legIndex || 0;
+    if (!monotonic) return now;
+    highWater[c.id] = Math.max(highWater[c.id] || 0, now);
+    return highWater[c.id];
+  };
+  const sig = novel.characters.map((c) => completedFor(c)).join(',');
   if (sig !== lastPastSig) {
     lastPastSig = sig;
     const past = [];
     for (const c of novel.characters) {
-      const completed = positions[c.id]?.legIndex || 0;
+      const completed = completedFor(c);
       const legs = legsByChar[c.id];
       for (let i = 0; i < completed; i++) {
         past.push(trailFeature(legs[i].path.coords, c.id, CHARACTER_COLOURS[c.colour], legs[i].dashed, offsets[c.id]));

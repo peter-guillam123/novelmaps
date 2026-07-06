@@ -150,6 +150,42 @@ function validate(novel, file) {
     }
   }
 
+  // The story script (scripted story mode): every beat must reference the
+  // real data underneath it — the narration may retell, but it can never
+  // point at a movement or place that isn't on the map. See
+  // docs/STORYTELLING.md.
+  if (novel.story) {
+    const KINDS = ['scene', 'journey', 'removal', 'handoff', 'meanwhile'];
+    const moveKey = (c, f, t, ch) => `${c}|${f}|${t}|${ch}`;
+    const moveKeys = new Set();
+    for (const m of novel.movements) {
+      for (const c of (Array.isArray(m.character) ? m.character : [m.character])) {
+        moveKeys.add(moveKey(c, m.from, m.to, m.chapter));
+      }
+    }
+    novel.story.forEach((b, i) => {
+      const tag = `story beat ${i + 1}`;
+      if (!KINDS.includes(b.kind)) fail(file, `${tag}: kind must be one of ${KINDS.join('/')}`, b);
+      if (!b.narration || !String(b.narration).trim()) fail(file, `${tag}: narration is required`, b);
+      const chars = b.character ? [].concat(b.character) : [];
+      for (const c of chars) {
+        if (!charIds.has(c)) fail(file, `${tag}: unknown character "${c}"`, b);
+      }
+      if (b.kind === 'journey' || b.kind === 'removal') {
+        if (!chars.length) fail(file, `${tag}: ${b.kind} needs a character`, b);
+        if (!chars.some((c) => moveKeys.has(moveKey(c, b.from, b.to, b.chapter)))) {
+          fail(file, `${tag}: no movement matches ${b.from}->${b.to} ch${b.chapter}`, b);
+        }
+      }
+      if (b.kind === 'scene') {
+        if (!b.at || !locIds.has(b.at)) fail(file, `${tag}: scene needs a real "at" place`, b);
+        if (!Number.isInteger(b.chapter)) fail(file, `${tag}: scene needs a chapter`, b);
+      }
+      if (b.kind === 'handoff' && !chars.length) fail(file, `${tag}: handoff needs a character`, b);
+      if (b.at && !locIds.has(b.at)) fail(file, `${tag}: unknown place "${b.at}"`, b);
+    });
+  }
+
   // Each character's journey must be continuous: every movement starts
   // where the previous one ended.
   const lastStop = {};

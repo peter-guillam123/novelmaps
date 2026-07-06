@@ -12,7 +12,7 @@ import { modeIcon } from './modeicons.js';
 // copies of a shared party movement collapse into one line.
 const legKey = (m) => `${m.from}>${m.to}@${m.chapter}:${m.mode}`;
 
-export function createCaptions(container, novel, timeline, paths) {
+export function createCaptions(container, novel, timeline, paths, { scripted = false } = {}) {
   const lines = new Map(); // legKey -> {el, characters, movement, retireTimer}
 
   // Legs per character, in travel order — the same indexing the timeline's
@@ -184,6 +184,7 @@ export function createCaptions(container, novel, timeline, paths) {
   }
 
   timeline.on('tick', (t) => {
+    if (scripted) return; // the script narrates its own sweeps
     if (!timeline.state.playing) return;
     if (timeline.anyMoving(t)) { announcedRest = null; return; }
     // In a rest, keyed by the day the next journey begins — so the opening

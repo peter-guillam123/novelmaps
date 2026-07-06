@@ -3,8 +3,10 @@ import { addNlsOverlay } from './overlay.js';
 import { loadNovelIndex, loadNovel } from './data.js';
 import {
   buildPaths, addRouteLayers, addStopLayers, addTrailLayers, addLocationLabels,
-  setRouteEmphasis, setRouteMode, updateTrails,
+  setRouteEmphasis, setRouteMode, updateTrails, resetTrailMemory,
 } from './routes.js';
+import { createStoryPlayer } from './story.js';
+import { createStoryCard } from './ui/storycard.js';
 import {
   addCharacterMarkers, updateCharacterMarkers, setCharacterMarkersVisible,
 } from './markers.js';
@@ -61,9 +63,43 @@ ready
     const engine = createEngine(timeline, () => {
       const positions = timeline.positionsAt(timeline.state.t);
       updateCharacterMarkers(map, novel, positions, timeline.state.selected);
-      updateTrails(map, novel, positions, paths);
+      updateTrails(map, novel, positions, paths, { monotonic: scripted });
       return director.update(positions, { instant: engine.reducedMotion() });
     });
+
+    // ---- scripted story mode ----
+    // A novel with a `story` script is played as a telling — beats, not a
+    // clock (docs/STORYTELLING.md). The story player drives the timeline;
+    // the engine only paints. Novels without a script keep the plain
+    // clock playback.
+    const scripted = Array.isArray(novel.story) && novel.story.length > 0;
+    let story = null;
+    if (scripted) {
+      engine.setExternalDriver(true);
+      const storyCard = createStoryCard(document.getElementById('storycard'), novel, {
+        onStep: (dir) => story.step(dir),
+      });
+      story = createStoryPlayer(novel, timeline, paths, {
+        director,
+        engine,
+        card: storyCard,
+        emphasize: (id) => setRouteEmphasis(map, id),
+      });
+    }
+    // Everything that starts/stops playback talks to the transport: the
+    // story player when there's a script, the raw engine when not.
+    const transport = scripted
+      ? {
+          play: () => story.play(),
+          pause: () => story.pause(),
+          toggle: () => story.toggle(),
+          isPlaying: () => story.isPlaying(),
+          requestRender: engine.requestRender,
+          reducedMotion: engine.reducedMotion,
+          cycleSpeed: engine.cycleSpeed,
+          speed: engine.speed,
+        }
+      : engine;
 
     // ---- UI ----
     const masthead = createMasthead(document.getElementById('masthead'), index, meta.id, {
@@ -76,13 +112,13 @@ ready
     const legend = createLegend(document.getElementById('legend'), novel, (id) => {
       selectCharacter(id === timeline.state.selected ? null : id);
     });
-    createScrubber(document.getElementById('controls'), novel, timeline, engine);
+    createScrubber(document.getElementById('controls'), novel, timeline, transport);
     // The frame-the-story button lives inside the controls bar, where it
     // can never overlap the caption stack.
     document.getElementById('controls').append(document.getElementById('recentre'));
-    const captions = createCaptions(document.getElementById('captions'), novel, timeline, paths);
+    const captions = createCaptions(document.getElementById('captions'), novel, timeline, paths, { scripted });
     const cards = createCards(map, novel, document.getElementById('sheet'), {
-      isPlaying: () => engine.isPlaying(),
+      isPlaying: () => transport.isPlaying() || engine.isPlaying(),
       reducedMotion: () => engine.reducedMotion(),
     });
     createPlaces(document.getElementById('places'), map, novel, cards, engine, director);
@@ -103,6 +139,7 @@ ready
           if (play) establishStart();
           else {
             director.arm();
+            if (scripted) story.showFirst(); // reveal the telling, paused
             engine.requestRender();
           }
         },
@@ -115,6 +152,14 @@ ready
     let establishing = false;
     let establishTimer = null;
     function establishStart() {
+      // Scripted: the script IS the establishing — its first beat opens
+      // on the protagonist with the time it needs.
+      if (scripted) {
+        setRouteMode(map, 'ghost');
+        director.arm();
+        story.play();
+        return;
+      }
       const hero = novel.characters[0].id;
       setRouteMode(map, 'ghost'); // the trail leads from here on
       director.arm();
@@ -186,11 +231,15 @@ ready
         intro.dismiss();
         overture.hide();
         cancelEstablish();
+        if (scripted) story.pause();
+        document.getElementById('storycard').hidden = true;
         locationTile.clear();
         engine.pause();
         director.disarm();
         setRouteMode(map, 'explore');
         updateTrails(map, novel, {}, paths);
+      } else if (scripted) {
+        document.getElementById('storycard').hidden = false;
       }
       updateRecentre();
     }
@@ -213,6 +262,10 @@ ready
     function restartStory() {
       intro.dismiss(); // clicking Story from the title card replaces it with the overture
       cancelEstablish();
+      if (scripted) {
+        story.stop();
+        resetTrailMemory(); // a fresh telling starts with a clean tapestry
+      }
       engine.pause();
       timeline.setSelected(null);
       legend.setSelected(null);
@@ -244,6 +297,8 @@ ready
 
     function selectCharacter(id) {
       cancelEstablish();
+      // Choosing a character to ride along takes the wheel from the telling.
+      if (scripted && story.isPlaying()) story.pause();
       timeline.setSelected(id);
       setRouteEmphasis(map, id);
       legend.setSelected(id);
@@ -270,13 +325,23 @@ ready
     document.addEventListener('keydown', (e) => {
       if (e.code === 'Space' && !e.target.closest('input, button, select, textarea, a')) {
         e.preventDefault();
-        engine.toggle();
+        transport.toggle();
+      }
+      // Scripted story: arrow keys step the telling beat by beat.
+      if (scripted && mode === 'story' && !e.target.closest('input, select, textarea')) {
+        if (e.key === 'ArrowRight') {
+          e.preventDefault();
+          story.step(1);
+        } else if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          story.step(-1);
+        }
       }
     });
 
     engine.requestRender();
 
-    window.plotlines = { map, novel, timeline, engine, director, selectCharacter };
+    window.plotlines = { map, novel, timeline, engine, director, story, selectCharacter };
   })
   .catch((err) => {
     console.error(err);

@@ -368,6 +368,112 @@ body.is-overture #locationtile { display: none !important; }
 }
 #captions.is-visible { opacity: 1; }
 
+/* ---- the story card (scripted story mode) ---- */
+/* The narrative surface: one beat at a time, text given the time it
+   needs. Sits where the captions live; in scripted mode this card IS the
+   narration, so it takes the spot with room to breathe. */
+#storycard {
+  position: absolute;
+  z-index: 11;
+  left: 50%;
+  bottom: 122px;
+  transform: translateX(-50%);
+  width: min(640px, calc(100vw - 20px));
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+#storycard.is-visible { opacity: 1; pointer-events: auto; }
+body.is-overture #storycard { display: none !important; }
+
+.story-body {
+  flex: 1;
+  min-width: 0;
+  background: var(--paper-bright);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  box-shadow: var(--shadow);
+  padding: 12px 18px 10px;
+  text-align: center;
+}
+.story-kicker {
+  margin: 0 0 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 11.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.story-subject { display: inline-flex; align-items: center; gap: 6px; }
+.story-swatch {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--paper-bright);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.story-title {
+  margin: 4px 0 0;
+  font-family: var(--display);
+  font-size: 18px;
+  line-height: 1.2;
+}
+.story-narration {
+  margin: 6px 0 4px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.story-progress {
+  margin: 2px 0 0;
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  opacity: 0.8;
+}
+.story-step {
+  flex: none;
+  align-self: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--rule);
+  background: var(--paper-bright);
+  color: var(--ink);
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+.story-step:hover:not(:disabled) { background: var(--paper); }
+.story-step:disabled { opacity: 0.35; cursor: default; }
+
+/* Interstitials (meanwhile, handoff) own the moment: a darker, weightier
+   card, so the change of thread or of time reads as a deliberate turn. */
+#storycard.is-interstitial .story-body {
+  background: rgba(46, 36, 23, 0.92);
+  border-color: rgba(46, 36, 23, 0.92);
+  color: var(--paper-bright);
+}
+#storycard.is-interstitial .story-kicker { color: var(--paper); }
+#storycard.is-interstitial .story-narration { font-style: italic; }
+#storycard.is-done .story-kicker { color: var(--accent); }
+
+@media (max-width: 720px) {
+  #storycard { bottom: 158px; }
+  .story-narration { font-size: 14.5px; }
+  .story-step { width: 40px; height: 40px; }
+}
+
 .caption-line {
   display: flex;
   align-items: baseline;
