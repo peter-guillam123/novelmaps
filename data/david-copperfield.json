@@ -511,7 +511,13 @@
       "note": "Blundeston, near Lowestoft: Dickens saw the signpost between Yarmouth and Lowestoft in January 1849 while planning the book, and lifted the name (softening it to Blunderstone). The Rookery house itself is invented.",
       "story": "David's birthplace, and the whole first act of his childhood: born here six months after his father's death, he grows up between his gentle mother and stern Peggotty, until the Murdstones arrive to marry his mother and break the house up. He is sent away, comes home to find his mother dead, and never lives here again.",
       "quote": "I was born at Blunderstone, in Suffolk",
-      "quoteRef": "Ch. 1"
+      "quoteRef": "Ch. 1",
+      "image": {
+        "file": "assets/images/dc-blunderstone.jpg",
+        "caption": "A Suffolk village under its church tower — John Constable, 'Brightwell Church and Village', 1815",
+        "credit": "John Constable, 1815 · Wikimedia Commons · public domain",
+        "indicative": true
+      }
     },
     {
       "id": "yarmouth",
@@ -526,7 +532,12 @@
       "note": "Great Yarmouth is a real town. The Peggottys' home — an upturned barge beached on the Denes, made into a house — is Dickens's invention on the real flats east of the town.",
       "story": "The flat, sea-smelling town where Peggotty's family live in a black boat drawn up on the shore. David is happiest here as a boy; it is the home of Little Em'ly and Ham, and the harbour Mr Peggotty keeps returning to. It is also where the storm comes, at the very end.",
       "quote": "There was a black barge, or some other kind of superannuated boat, not far off, high and dry on the ground, with an iron funnel sticking out of it for a chimney and smoking very cosily",
-      "quoteRef": "Ch. 3"
+      "quoteRef": "Ch. 3",
+      "image": {
+        "file": "assets/images/dc-yarmouth.jpg",
+        "caption": "The beach, gardens and jetty at Great Yarmouth, photographed c.1890–1900",
+        "credit": "Photochrom Print Collection, c.1890–1900 · Library of Congress · Wikimedia Commons · public domain"
+      }
     },
     {
       "id": "salem-house",
@@ -606,7 +617,12 @@
       "note": "The text places Betsey Trotwood 'near Dover'. The cliff-top cottage itself is invented; Dickens is generally thought to have drawn it from 2 Nuckell's Place at Broadstairs, further up the Kent coast — so the town is Dover, but the real-world model is elsewhere. The map trusts the text.",
       "story": "The end of David's desperate walk from London: footsore and ragged, he finds his aunt Betsey Trotwood in her neat cottage above the sea. She takes him in, sees off the pursuing Murdstones, and — for the first time since his mother died — he is safe.",
       "quote": "I am going to Dover,",
-      "quoteRef": "Ch. 13"
+      "quoteRef": "Ch. 13",
+      "image": {
+        "file": "assets/images/dc-dover.jpg",
+        "caption": "Dover sea front, the beach and cliffs below the Castle, photographed c.1890–1900",
+        "credit": "Photochrom Print Collection, c.1890–1900 · Library of Congress · Wikimedia Commons · public domain"
+      }
     },
     {
       "id": "highgate",
@@ -636,7 +652,12 @@
       "note": "A real legal quarter near St Paul's, the seat of the ecclesiastical and admiralty courts. It was a genuine institution, wound up and demolished in 1867 — Dickens describes it as an antique survival even in the 1840s.",
       "story": "The 'lazy old nook' of church-law courts where David is articled as a proctor, buying his way into a profession. Here he falls headlong for Dora Spenlow, his employer's daughter, and here he later scrapes for a living when his aunt's fortune collapses.",
       "quote": "some faded courts held in Doctors' Commons,--a lazy old nook near St.\nPaul's Churchyard",
-      "quoteRef": "Ch. 23"
+      "quoteRef": "Ch. 23",
+      "image": {
+        "file": "assets/images/dc-doctors-commons.jpg",
+        "caption": "The court of Doctors' Commons, aquatint from Ackermann's 'Microcosm of London', 1808",
+        "credit": "Thomas Rowlandson & Augustus Pugin, aquatint by J. Bluck, 1808 · Wikimedia Commons · public domain"
+      }
     },
     {
       "id": "putney",
@@ -681,7 +702,12 @@
       "note": "The real city. The text is explicit: Steerforth and Em'ly keep a villa 'in the neighbourhood of Naples', and it is from there that he abandons her.",
       "story": "The bright southern shore where Steerforth carries Little Em'ly after their elopement, and where — grown tired of her — he leaves her, coldly offering her in marriage to his servant. It is the far point of her ruin, and the turn from which she begins the long road home.",
       "quote": "from the neighbourhood of\nNaples, where we had a villa",
-      "quoteRef": "Ch. 46"
+      "quoteRef": "Ch. 46",
+      "image": {
+        "file": "assets/images/dc-naples.jpg",
+        "caption": "The harbour at Naples, with the city and the Posillipo hill beyond, photographed c.1890–1900",
+        "credit": "Photochrom Print Collection, c.1890–1900 · Library of Congress · Wikimedia Commons · public domain"
+      }
     },
     {
       "id": "gravesend",
@@ -696,7 +722,12 @@
       "note": "A real town on the Thames estuary, the traditional point where emigrant ships took on passengers below London.",
       "story": "The Thames-side port where the emigrant ship lies waiting. Here David watches the whole broken company he loves — Mr Peggotty and the reclaimed Em'ly, the Micawbers, poor Martha — go aboard to sail for Australia and a new life, and waves them out towards the sea.",
       "quote": "my old nurse and I went down to\nGravesend. We found the ship in the river",
-      "quoteRef": "Ch. 57"
+      "quoteRef": "Ch. 57",
+      "image": {
+        "file": "assets/images/dc-gravesend.jpg",
+        "caption": "A three-masted merchantman under tow on the Thames off Gravesend — Samuel Walters, 1839",
+        "credit": "Samuel Walters, 1839 · Wikimedia Commons · public domain"
+      }
     },
     {
       "id": "port-middlebay",
@@ -711,7 +742,13 @@
       "note": "Dickens's invented Australian port. Scholars place it in the Melbourne region by consensus — the colony to which mid-century emigrants of this kind sailed — but the novel never fixes it, so this point stands at Melbourne.",
       "story": "The far side of the world, where the emigrants make good. Mr Peggotty and Em'ly settle to a hard, honest life; and Mr Micawber, of all men, comes into his own at last — 'Port Middlebay District Magistrate', toasted at a public dinner, the eternal debtor turned pillar of a colony.",
       "quote": "WILKINS MICAWBER, ESQUIRE, Port Middlebay District Magistrate",
-      "quoteRef": "Ch. 63"
+      "quoteRef": "Ch. 63",
+      "image": {
+        "file": "assets/images/dc-port-middlebay.jpg",
+        "caption": "Emigrant clippers at the Railway Pier, Sandridge (Port Melbourne), photographed c.1880",
+        "credit": "Charles Nettleton, c.1880 · State Library Victoria · Wikimedia Commons · public domain",
+        "indicative": true
+      }
     },
     {
       "id": "switzerland",
@@ -726,7 +763,13 @@
       "note": "The text names only 'a valley' in the Swiss Alps, reached over one of the great passes out of Italy; it is never located. Geneva is the association most often drawn by scholars, so this point stands in the Alps south of it. An honest approximation.",
       "story": "Where David, crushed by Dora's death and the drowning of Steerforth and Ham, wanders in grief for months. In a still mountain valley, opening a bundle of letters from Agnes, his numbness finally breaks — and he begins, slowly, to live again, and to write.",
       "quote": "I was in Switzerland. I had come out of Italy, over one of the great\npasses of the Alps",
-      "quoteRef": "Ch. 58"
+      "quoteRef": "Ch. 58",
+      "image": {
+        "file": "assets/images/dc-switzerland.jpg",
+        "caption": "A valley in the Bernese Alps — Alexandre Calame, 'The Jungfrau, Switzerland', c.1853–55",
+        "credit": "Alexandre Calame, c.1853–55 · Walters Art Museum · Wikimedia Commons · public domain",
+        "indicative": true
+      }
     }
   ],
   "movements": [
