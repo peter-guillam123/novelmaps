@@ -15,6 +15,7 @@ import { readFileSync } from 'node:fs';
 const READ_BASE_SECONDS = 2.5;
 const READ_PER_WORD_SECONDS = 0.32;
 const BEAT_MIN_SECONDS = 5;
+const ARRIVAL_DWELL_SECONDS = 2.5; // a leg rests on the place reached (see story.js)
 
 const [novelPath, storyPath] = process.argv.slice(2);
 if (!novelPath) {
@@ -91,8 +92,8 @@ story.forEach((b, i) => {
   if (!b.narration || !String(b.narration).trim()) errors.push(`${tag}: no narration`);
   const words = String(b.narration || '').trim().split(/\s+/).length;
   if (words > 60) warns.push(`${tag}: ${words} words — will not be read (cut to ≤45)`);
-  const dur = readTime(b.narration);
-  total += dur;
+  const read = readTime(b.narration);
+  let dur = read; // a leg beat grows below: crossing floor + arrival dwell
 
   const focus = Array.isArray(b.character) ? b.character[0] : b.character;
   if (b.character && ![].concat(b.character).every((c) => charIds.has(c))) errors.push(`${tag}: unknown character`);
@@ -110,6 +111,8 @@ story.forEach((b, i) => {
         errors.push(`${tag}: rewinds the clock (day ${leg.dayStart} < ${Math.round(t)}) with no meanwhile before it`);
       }
       beatT = leg.dayEnd;
+      const travelFloor = b.kind === 'journey' ? Math.min(6 + leg.km / 800, 12) : 0;
+      dur = Math.max(read, travelFloor) + ARRIVAL_DWELL_SECONDS;
     }
   } else if (b.kind === 'scene' || b.kind === 'handoff') {
     if (b.at && !locs[b.at]) errors.push(`${tag}: unknown place "${b.at}"`);
@@ -142,6 +145,7 @@ story.forEach((b, i) => {
   lastExcuse = b.kind === 'handoff' || b.kind === 'meanwhile';
   prevKind = b.kind;
   if (beatT != null) t = beatT;
+  total += dur;
 });
 
 for (const l of legs) {

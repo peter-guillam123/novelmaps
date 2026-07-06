@@ -24,6 +24,7 @@ const CAM_HOLD_MS = 550;        // let the geography be read
 const CAM_SETTLE_MS = 1500;     // push in on the new place
 const NODE_ZOOM = 11.5;         // a town on the historic survey
 const SMALL_MOVE_DEG = 0.18;    // below this, no pull-back is needed
+const ARRIVAL_DWELL_SECONDS = 2.5; // after crossing, rest on the place reached
 
 export function createStoryPlayer(novel, timeline, paths, { map, director, engine, card, emphasize, onProgress }) {
   const chapterDay = (n) => novel.chapters[Math.min(Math.max(n, 1), novel.chapters.length) - 1].day ?? 0;
@@ -52,13 +53,22 @@ export function createStoryPlayer(novel, timeline, paths, { map, director, engin
     return beat;
   });
 
-  const duration = (beat) => {
+  // A leg beat is two acts: the crossing (long enough to read the narration
+  // and to feel the distance) and then a dwell — a beat or two rested on the
+  // place reached, so an arrival lands before anything moves on.
+  const travelDuration = (beat) => {
     const read = readTime(beat.narration);
     if (beat.kind === 'journey' && beat.leg) {
       const travelFloor = Math.min(6 + beat.leg.path.totalKm / 800, 12);
       return Math.max(read, travelFloor);
     }
     return read;
+  };
+  const duration = (beat) => {
+    const t = travelDuration(beat);
+    return ((beat.kind === 'journey' || beat.kind === 'removal') && beat.leg)
+      ? t + ARRIVAL_DWELL_SECONDS
+      : t;
   };
 
   // durations + cumulative, for the continuous progress bar
@@ -162,6 +172,8 @@ export function createStoryPlayer(novel, timeline, paths, { map, director, engin
   let playing = false;
   let elapsed = 0;
   let dur = 0;
+  let cross = 0;        // the crossing portion of a leg beat (dur minus dwell)
+  let arrival = null;   // { after, cam, done } — push into the place, then rest
   let rafId = null;
   let lastTs = null;
   let selfT = null; // the last t we set ourselves (to spot external scrubs)
@@ -192,6 +204,15 @@ export function createStoryPlayer(novel, timeline, paths, { map, director, engin
     const beat = beats[i];
     elapsed = 0;
     dur = durs[i];
+    // Set up the crossing / arrival split for a leg beat: cross for `cross`
+    // seconds, then at `arrival.after` push into the destination and dwell.
+    const isLeg = (beat.kind === 'journey' || beat.kind === 'removal') && beat.leg;
+    cross = isLeg ? Math.max(0.1, dur - ARRIVAL_DWELL_SECONDS) : dur;
+    arrival = null;
+    if (isLeg) {
+      const t = beatTarget(beat);
+      if (t && t.dest) arrival = { after: cross, cam: { center: t.dest, zoom: NODE_ZOOM }, done: false };
+    }
 
     card.show(beat, {
       index: i,
@@ -227,8 +248,14 @@ export function createStoryPlayer(novel, timeline, paths, { map, director, engin
 
     const beat = beats[idx];
     if ((beat.kind === 'journey' || beat.kind === 'removal') && beat.leg && !engine.reducedMotion()) {
-      const f = Math.min(elapsed / dur, 1);
+      const f = Math.min(elapsed / cross, 1); // the crossing fills `cross`, not the whole beat
       selfSeek(beat.t0 + (beat.t1 - beat.t0) * f);
+    }
+    // Arrival: the traveller has crossed — push into the place and let the
+    // remaining dwell rest there before the next beat takes over.
+    if (arrival && !arrival.done && elapsed >= arrival.after) {
+      arrival.done = true;
+      if (!engine.reducedMotion()) applyCam(arrival.cam, CAM_SETTLE_MS, nodeOffset());
     }
     reportProgress();
 
@@ -302,6 +329,7 @@ export function createStoryPlayer(novel, timeline, paths, { map, director, engin
     selfT = null;
     lastPoint = null;
     pendingSettle = null;
+    arrival = null;
     card.hide();
     emphasize(null);
     reportProgress();
