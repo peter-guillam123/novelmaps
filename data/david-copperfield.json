@@ -1047,7 +1047,52 @@
       "chapter": 23,
       "mode": "coach",
       "days": 1,
-      "note": "Back to London to be articled as a proctor in Doctors' Commons, where he meets Dora Spenlow"
+      "note": "Back to London to be articled as a proctor in Doctors' Commons, where he meets Dora Spenlow",
+      "via": [
+        {
+          "at": [
+            1.293,
+            52.628
+          ],
+          "name": "Norwich",
+          "note": "the East Anglian capital; road turns east for the coast"
+        },
+        {
+          "at": [
+            1.155,
+            52.057
+          ],
+          "name": "Ipswich",
+          "note": "the great Suffolk coaching town"
+        },
+        {
+          "at": [
+            0.902,
+            51.889
+          ],
+          "name": "Colchester",
+          "note": "on the Norwich road"
+        },
+        {
+          "at": [
+            0.47,
+            51.735
+          ],
+          "name": "Chelmsford",
+          "note": "the Essex county town"
+        },
+        {
+          "at": [
+            0.183,
+            51.575
+          ],
+          "name": "Romford",
+          "note": "out of London on the Great Essex Road"
+        }
+      ],
+      "routeNote": "Back down the old Norwich road — Norwich, Ipswich, Colchester, Chelmsford and Romford — into London.",
+      "routeSource": "Cary's New Itinerary / the London-Colchester-Ipswich-Norwich-Yarmouth coaching route, the standard road to East Anglia.",
+      "routeCertainty": "documented"
     },
     {
       "character": "david",
@@ -1331,7 +1376,84 @@
       "chapter": 55,
       "mode": "ship",
       "days": 14,
-      "note": "His yacht is driven back onto the Yarmouth sands in the great storm; he and Ham drown within sight of the boat-house"
+      "note": "His yacht is driven back onto the Yarmouth sands in the great storm; he and Ham drown within sight of the boat-house",
+      "via": [
+        {
+          "at": [
+            12.5,
+            40.4
+          ],
+          "name": "the Tyrrhenian Sea",
+          "note": "closing the Bay of Naples"
+        },
+        {
+          "at": [
+            8,
+            38.5
+          ],
+          "name": "the western Mediterranean",
+          "note": "passing south of Sardinia"
+        },
+        {
+          "at": [
+            -6,
+            36
+          ],
+          "name": "the Strait of Gibraltar",
+          "note": "into the Mediterranean"
+        },
+        {
+          "at": [
+            -9.5,
+            38.7
+          ],
+          "name": "off the coast of Portugal",
+          "note": "past the Tagus, Lisbon abeam"
+        },
+        {
+          "at": [
+            -9.5,
+            43.8
+          ],
+          "name": "off Cape Finisterre",
+          "note": "across Biscay to the NW corner of Spain"
+        },
+        {
+          "at": [
+            -5.9,
+            48.4
+          ],
+          "name": "off Ushant",
+          "note": "clearing the Channel for the Bay of Biscay"
+        },
+        {
+          "at": [
+            -1.9,
+            49.9
+          ],
+          "name": "off the Cotentin",
+          "note": "mid-Channel, westbound"
+        },
+        {
+          "at": [
+            1.4,
+            51
+          ],
+          "name": "the Dover Strait",
+          "note": "through the narrows into the Channel"
+        },
+        {
+          "at": [
+            1.4,
+            51.9
+          ],
+          "name": "off the North Foreland",
+          "note": "down the North Sea coast of Kent"
+        }
+      ],
+      "routeNote": "Up out of the Tyrrhenian and the western Mediterranean, through the Strait of Gibraltar, past Portugal and Finisterre, across the Bay of Biscay and up the Channel and the North Sea to the Yarmouth sands.",
+      "routeSource": "Standard age-of-sail North Europe to Mediterranean sailing track (Channel - Biscay - off Finisterre/Portugal - Gibraltar - Tyrrhenian). Dickens names Naples as the destination of Steerforth and Em'ly's flight abroad.",
+      "routeCertainty": "reconstructed"
     },
     {
       "character": "emly",
@@ -2063,7 +2185,8 @@
       "character": "steerforth",
       "chapter": 55,
       "title": "A loose thread",
-      "narration": "One thread is still loose, and it is coming home: a yacht, beating up from the Mediterranean into filthy weather."
+      "narration": "Back to Yarmouth, and the old boat-house on the sands where Ham keeps his watch on the sea. Far off, one loose thread is coming home: a yacht, beating up from the Mediterranean into filthy weather.",
+      "at": "yarmouth"
     },
     {
       "kind": "journey",
