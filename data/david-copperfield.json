@@ -737,7 +737,20 @@
       "chapter": 3,
       "mode": "coach",
       "days": 1,
-      "note": "The childhood fortnight with Peggotty's family — Barkis's cart down to the sea"
+      "note": "The childhood fortnight with Peggotty's family — Barkis's cart down to the sea",
+      "via": [
+        {
+          "at": [
+            1.75,
+            52.478
+          ],
+          "name": "Lowestoft",
+          "note": "the fishing town on the Suffolk coast"
+        }
+      ],
+      "routeNote": "A short local run up the Suffolk coast road from Blundeston through Lowestoft to Great Yarmouth.",
+      "routeSource": "The Suffolk coast road between Lowestoft and Great Yarmouth.",
+      "routeCertainty": "reconstructed"
     },
     {
       "character": "david",
@@ -746,7 +759,20 @@
       "chapter": 4,
       "mode": "coach",
       "days": 1,
-      "note": "Home again — to find his mother married to Mr Murdstone in his absence"
+      "note": "Home again — to find his mother married to Mr Murdstone in his absence",
+      "via": [
+        {
+          "at": [
+            1.75,
+            52.478
+          ],
+          "name": "Lowestoft",
+          "note": "the fishing town on the Suffolk coast"
+        }
+      ],
+      "routeNote": "The return down the Suffolk coast road from Great Yarmouth through Lowestoft to Blundeston.",
+      "routeSource": "The Suffolk coast road between Great Yarmouth and Lowestoft.",
+      "routeCertainty": "reconstructed"
     },
     {
       "character": "david",
@@ -809,7 +835,60 @@
       "chapter": 8,
       "mode": "coach",
       "days": 1,
-      "note": "Home for the holidays — and, soon after, for his mother's death and the breaking-up of the house"
+      "note": "Home for the holidays — and, soon after, for his mother's death and the breaking-up of the house",
+      "via": [
+        {
+          "at": [
+            -0.087,
+            51.505
+          ],
+          "name": "London Bridge",
+          "note": "across the Thames from Blackheath into the City"
+        },
+        {
+          "at": [
+            0.183,
+            51.575
+          ],
+          "name": "Romford",
+          "note": "out of London on the Great Essex (Norwich) road"
+        },
+        {
+          "at": [
+            0.47,
+            51.735
+          ],
+          "name": "Chelmsford",
+          "note": "the Essex county town"
+        },
+        {
+          "at": [
+            0.902,
+            51.889
+          ],
+          "name": "Colchester",
+          "note": "on the Norwich road"
+        },
+        {
+          "at": [
+            1.155,
+            52.057
+          ],
+          "name": "Ipswich",
+          "note": "the great Suffolk coaching town"
+        },
+        {
+          "at": [
+            1.75,
+            52.478
+          ],
+          "name": "Lowestoft",
+          "note": "the Suffolk coast; turn inland for Blunderstone"
+        }
+      ],
+      "routeNote": "From Blackheath across London and up the old Norwich road through Romford, Chelmsford, Colchester and Ipswich, then out to the Suffolk coast at Lowestoft and inland to Blundeston.",
+      "routeSource": "Cary's New Itinerary / the London–Colchester–Ipswich–Norwich coaching route to East Anglia.",
+      "routeCertainty": "documented"
     },
     {
       "character": "david",
@@ -930,7 +1009,20 @@
       "chapter": 15,
       "mode": "coach",
       "days": 1,
-      "note": "Betsey Trotwood settles him at Dr Strong's school, boarding with the Wickfields"
+      "note": "Betsey Trotwood settles him at Dr Strong's school, boarding with the Wickfields",
+      "via": [
+        {
+          "at": [
+            1.205,
+            51.204
+          ],
+          "name": "Barham Downs",
+          "note": "up over the downs from Dover on the Canterbury road"
+        }
+      ],
+      "routeNote": "The Dover Road (Watling Street) inland from Dover, climbing over Barham Downs to Canterbury.",
+      "routeSource": "The Dover Road (Watling Street) — the London–Canterbury–Dover coaching route.",
+      "routeCertainty": "documented"
     },
     {
       "character": "david",
@@ -1101,7 +1193,20 @@
       "chapter": 41,
       "mode": "coach",
       "days": 1,
-      "note": "Courting Dora at her aunts' house after her father's sudden death"
+      "note": "Courting Dora at her aunts' house after her father's sudden death",
+      "via": [
+        {
+          "at": [
+            -0.156,
+            51.494
+          ],
+          "name": "Westminster",
+          "note": "west along the Thames toward the Surrey side"
+        }
+      ],
+      "routeNote": "West across London from Doctors' Commons through Westminster and out to Putney on the river.",
+      "routeSource": "The London–Putney road along the north bank and across to the Surrey side.",
+      "routeCertainty": "reconstructed"
     },
     {
       "character": "david",
@@ -1110,7 +1215,20 @@
       "chapter": 43,
       "mode": "coach",
       "days": 1,
-      "note": "Married; he carries his child-wife home to their little cottage, and their doomed housekeeping begins"
+      "note": "Married; he carries his child-wife home to their little cottage, and their doomed housekeeping begins",
+      "via": [
+        {
+          "at": [
+            -0.128,
+            51.508
+          ],
+          "name": "Charing Cross",
+          "note": "back into the centre of London"
+        }
+      ],
+      "routeNote": "North across London from Putney through Charing Cross and up to Highgate on its northern hill.",
+      "routeSource": "The London–Highgate road north out of the city.",
+      "routeCertainty": "reconstructed"
     },
     {
       "character": "david",
@@ -1119,7 +1237,36 @@
       "chapter": 57,
       "mode": "coach",
       "days": 1,
-      "note": "After Dora's death, he sees the emigrants aboard their ship — and, half-broken, resolves to leave England himself"
+      "note": "After Dora's death, he sees the emigrants aboard their ship — and, half-broken, resolves to leave England himself",
+      "via": [
+        {
+          "at": [
+            -0.106,
+            51.533
+          ],
+          "name": "Islington",
+          "note": "down from Highgate into the City"
+        },
+        {
+          "at": [
+            0.028,
+            51.489
+          ],
+          "name": "New Cross",
+          "note": "out through south-east London onto the Dover Road"
+        },
+        {
+          "at": [
+            0.217,
+            51.446
+          ],
+          "name": "Dartford",
+          "note": "first stage out of London on the Dover Road"
+        }
+      ],
+      "routeNote": "Down from Highgate through Islington and across London, then out on the Dover Road (Watling Street) through New Cross and Dartford to Gravesend.",
+      "routeSource": "The Dover Road (Watling Street) — the London–Canterbury–Dover coaching route.",
+      "routeCertainty": "documented"
     },
     {
       "character": "david",
@@ -1547,84 +1694,68 @@
       "to": "gravesend",
       "chapter": 50,
       "days": 14,
-      "mode": "ship",
+      "mode": "foot",
       "via": [
         {
           "at": [
-            12.5,
-            40.4
+            12.496,
+            41.903
           ],
-          "name": "the Tyrrhenian Sea",
-          "note": "standing out from the Bay of Naples"
+          "name": "Rome",
+          "note": "up through Italy"
         },
         {
           "at": [
-            8,
-            38.5
+            8.934,
+            44.407
           ],
-          "name": "the western Mediterranean",
-          "note": "passing south of Sardinia"
+          "name": "Genoa",
+          "note": "the Ligurian coast"
         },
         {
           "at": [
-            -6,
-            36
+            7.687,
+            45.07
           ],
-          "name": "the Strait of Gibraltar",
-          "note": "out of the Mediterranean into the Atlantic"
+          "name": "Turin",
+          "note": "and back over the Alps"
         },
         {
           "at": [
-            -9.5,
-            38.7
+            4.835,
+            45.764
           ],
-          "name": "off the coast of Portugal",
-          "note": "northbound, Lisbon abeam"
+          "name": "Lyon",
+          "note": "down into France"
         },
         {
           "at": [
-            -9.5,
-            43.8
+            2.352,
+            48.857
           ],
-          "name": "off Cape Finisterre",
-          "note": "NW corner of Spain"
+          "name": "Paris",
+          "note": "service and hiding in France"
         },
         {
           "at": [
-            -5.9,
-            48.4
+            1.615,
+            50.725
           ],
-          "name": "off Ushant",
-          "note": "across the Bay of Biscay to the Channel mouth"
-        },
-        {
-          "at": [
-            -1.9,
-            49.9
-          ],
-          "name": "off the Cotentin",
-          "note": "up the Channel, eastbound"
+          "name": "Boulogne",
+          "note": "to the Channel coast"
         },
         {
           "at": [
             1.4,
-            51
+            51.05
           ],
           "name": "the Dover Strait",
-          "note": "through the narrows"
-        },
-        {
-          "at": [
-            1,
-            51.5
-          ],
-          "name": "the Thames Estuary",
-          "note": "into the river approaches for Gravesend"
+          "note": "then by sea for the Thames"
         }
       ],
-      "routeNote": "The reverse passage: out of the Bay of Naples across the western Mediterranean, through the Strait of Gibraltar, up off Portugal and Finisterre, across Biscay past Ushant, up the English Channel and Dover Strait into the Thames Estuary to Gravesend.",
-      "routeSource": "Mirror of the Yarmouth-to-Naples track; Mr Peggotty brings Em'ly home from the Continent in the novel. Standard Mediterranean to Thames age-of-sail route.",
-      "routeCertainty": "reconstructed",
+      "routeNote": "Her own long way home: up through Italy and over the Alps, in service and hiding across France, then by sea from the coast to the Thames.",
+      "routeSource": "Dickens gives France and 'service abroad', then the sea passage to the Thames; the overland line to a Channel port follows the novel's own order.",
+      "routeCertainty": "illustrative",
       "note": "Abandoned, she makes her way back alone — France, and service abroad — until Martha and Mr Peggotty find her hidden in London and bring her to the emigrant ship"
     },
     {
@@ -1637,80 +1768,64 @@
       "via": [
         {
           "at": [
-            1.4,
-            51.9
+            1.856,
+            50.958
           ],
-          "name": "off the North Foreland",
-          "note": "down the North Sea coast of Kent"
+          "name": "Calais",
+          "note": "across the Channel into France"
         },
         {
           "at": [
-            1.4,
-            51
+            2.352,
+            48.857
           ],
-          "name": "the Dover Strait",
-          "note": "through the narrows into the Channel"
+          "name": "Paris",
+          "note": "through the heart of France"
         },
         {
           "at": [
-            -1.9,
-            49.9
+            4.835,
+            45.764
           ],
-          "name": "off the Cotentin",
-          "note": "mid-Channel, westbound"
+          "name": "Lyon",
+          "note": "south down the Rhône"
         },
         {
           "at": [
-            -5.9,
-            48.4
+            6.9,
+            45.23
           ],
-          "name": "off Ushant",
-          "note": "clearing the Channel for the Bay of Biscay"
+          "name": "the Mont Cenis pass",
+          "note": "over the Alps into Italy"
         },
         {
           "at": [
-            -9.5,
-            43.8
+            7.687,
+            45.07
           ],
-          "name": "off Cape Finisterre",
-          "note": "across Biscay to the NW corner of Spain"
+          "name": "Turin",
+          "note": "down into Piedmont"
         },
         {
           "at": [
-            -9.5,
-            38.7
+            8.934,
+            44.407
           ],
-          "name": "off the coast of Portugal",
-          "note": "past the Tagus, Lisbon abeam"
+          "name": "Genoa",
+          "note": "the Ligurian coast"
         },
         {
           "at": [
-            -6,
-            36
+            12.496,
+            41.903
           ],
-          "name": "the Strait of Gibraltar",
-          "note": "into the Mediterranean"
-        },
-        {
-          "at": [
-            8,
-            38.5
-          ],
-          "name": "the western Mediterranean",
-          "note": "passing south of Sardinia"
-        },
-        {
-          "at": [
-            12.5,
-            40.4
-          ],
-          "name": "the Tyrrhenian Sea",
-          "note": "closing the Bay of Naples"
+          "name": "Rome",
+          "note": "the long road south"
         }
       ],
-      "routeNote": "Down the North Sea past the Foreland, through the Dover Strait and English Channel, out past Ushant across the Bay of Biscay, down off Finisterre and the Portuguese coast, through the Strait of Gibraltar and across the western Mediterranean into the Tyrrhenian Sea to Naples.",
-      "routeSource": "Standard age-of-sail North Europe to Mediterranean sailing track (Channel - Biscay - off Finisterre/Portugal - Gibraltar - Tyrrhenian). Dickens names Naples as the destination of Steerforth and Em'ly's flight abroad.",
-      "routeCertainty": "reconstructed",
+      "routeNote": "Across the Channel into France, and overland on foot — Paris, Lyon, over the Alps by the Mont Cenis pass, then Turin, Genoa and Rome — town by town toward Naples.",
+      "routeSource": "The novel names only France, Italy and 'the mountains'; the line follows the historic overland road to Italy (Paris–Lyon–Mont Cenis–Turin–Rome).",
+      "routeCertainty": "illustrative",
       "note": "The years-long search on foot: across-channel to France 'as if I'd fell down from the sky', then over into Italy, town by town, as far as the Swiss mountains — the path here is illustrative, the novel naming only France, Italy and the mountains"
     },
     {
@@ -1719,84 +1834,68 @@
       "to": "gravesend",
       "chapter": 51,
       "days": 14,
-      "mode": "ship",
+      "mode": "foot",
       "via": [
         {
           "at": [
-            12.5,
-            40.4
+            12.496,
+            41.903
           ],
-          "name": "the Tyrrhenian Sea",
-          "note": "standing out from the Bay of Naples"
+          "name": "Rome",
+          "note": "up through Italy"
         },
         {
           "at": [
-            8,
-            38.5
+            8.934,
+            44.407
           ],
-          "name": "the western Mediterranean",
-          "note": "passing south of Sardinia"
+          "name": "Genoa",
+          "note": "the Ligurian coast"
         },
         {
           "at": [
-            -6,
-            36
+            7.687,
+            45.07
           ],
-          "name": "the Strait of Gibraltar",
-          "note": "out of the Mediterranean into the Atlantic"
+          "name": "Turin",
+          "note": "and back over the Alps"
         },
         {
           "at": [
-            -9.5,
-            38.7
+            4.835,
+            45.764
           ],
-          "name": "off the coast of Portugal",
-          "note": "northbound, Lisbon abeam"
+          "name": "Lyon",
+          "note": "down into France"
         },
         {
           "at": [
-            -9.5,
-            43.8
+            2.352,
+            48.857
           ],
-          "name": "off Cape Finisterre",
-          "note": "NW corner of Spain"
+          "name": "Paris",
+          "note": "service and hiding in France"
         },
         {
           "at": [
-            -5.9,
-            48.4
+            1.615,
+            50.725
           ],
-          "name": "off Ushant",
-          "note": "across the Bay of Biscay to the Channel mouth"
-        },
-        {
-          "at": [
-            -1.9,
-            49.9
-          ],
-          "name": "off the Cotentin",
-          "note": "up the Channel, eastbound"
+          "name": "Boulogne",
+          "note": "to the Channel coast"
         },
         {
           "at": [
             1.4,
-            51
+            51.05
           ],
           "name": "the Dover Strait",
-          "note": "through the narrows"
-        },
-        {
-          "at": [
-            1,
-            51.5
-          ],
-          "name": "the Thames Estuary",
-          "note": "into the river approaches for Gravesend"
+          "note": "then by sea for the Thames"
         }
       ],
-      "routeNote": "The reverse passage: out of the Bay of Naples across the western Mediterranean, through the Strait of Gibraltar, up off Portugal and Finisterre, across Biscay past Ushant, up the English Channel and Dover Strait into the Thames Estuary to Gravesend.",
-      "routeSource": "Mirror of the Yarmouth-to-Naples track; Mr Peggotty brings Em'ly home from the Continent in the novel. Standard Mediterranean to Thames age-of-sail route.",
-      "routeCertainty": "reconstructed",
+      "routeNote": "Home close behind her — back through Italy and over the Alps, across France, and by sea to the Thames.",
+      "routeSource": "Follows Em'ly's continental way home, the road Mr Peggotty had walked in his years of searching.",
+      "routeCertainty": "illustrative",
       "note": "Home to London with the found Em'ly, and on to the emigrant ship at Gravesend"
     },
     {
@@ -1806,7 +1905,60 @@
       "chapter": 36,
       "mode": "coach",
       "days": 3,
-      "note": "Mr Micawber, ever hopeful, takes a confidential clerkship under Uriah Heep at Canterbury"
+      "note": "Mr Micawber, ever hopeful, takes a confidential clerkship under Uriah Heep at Canterbury",
+      "via": [
+        {
+          "at": [
+            0.217,
+            51.446
+          ],
+          "name": "Dartford",
+          "note": "first stage out of London on the Dover Road"
+        },
+        {
+          "at": [
+            0.37,
+            51.442
+          ],
+          "name": "Gravesend",
+          "note": "Thames-side coaching town"
+        },
+        {
+          "at": [
+            0.505,
+            51.389
+          ],
+          "name": "Rochester",
+          "note": "across the Medway bridge"
+        },
+        {
+          "at": [
+            0.528,
+            51.38
+          ],
+          "name": "Chatham",
+          "note": "the naval dockyard town"
+        },
+        {
+          "at": [
+            0.735,
+            51.34
+          ],
+          "name": "Sittingbourne",
+          "note": "a Watling Street posting town"
+        },
+        {
+          "at": [
+            0.892,
+            51.316
+          ],
+          "name": "Faversham",
+          "note": "the last stage before Canterbury"
+        }
+      ],
+      "routeNote": "Out of London on the Dover Road (Watling Street) through Dartford, Gravesend, Rochester, Chatham, Sittingbourne and Faversham to Canterbury.",
+      "routeSource": "The Dover Road (Watling Street) — the London–Canterbury–Dover coaching route.",
+      "routeCertainty": "documented"
     },
     {
       "character": "micawbers",
@@ -1815,7 +1967,44 @@
       "chapter": 52,
       "mode": "coach",
       "days": 3,
-      "note": "He turns on his master in a scene of glorious denunciation, exposing Heep's frauds — then, ruined creditors settled, joins the emigrants"
+      "note": "He turns on his master in a scene of glorious denunciation, exposing Heep's frauds — then, ruined creditors settled, joins the emigrants",
+      "via": [
+        {
+          "at": [
+            0.892,
+            51.316
+          ],
+          "name": "Faversham",
+          "note": "the last stage before Canterbury"
+        },
+        {
+          "at": [
+            0.735,
+            51.34
+          ],
+          "name": "Sittingbourne",
+          "note": "a Watling Street posting town"
+        },
+        {
+          "at": [
+            0.528,
+            51.38
+          ],
+          "name": "Chatham",
+          "note": "the naval dockyard town"
+        },
+        {
+          "at": [
+            0.505,
+            51.389
+          ],
+          "name": "Rochester",
+          "note": "across the Medway bridge"
+        }
+      ],
+      "routeNote": "Back along the Dover Road (Watling Street) west from Canterbury through Faversham, Sittingbourne, Chatham and Rochester to Gravesend.",
+      "routeSource": "The Dover Road (Watling Street) — the London–Canterbury–Dover coaching route.",
+      "routeCertainty": "documented"
     },
     {
       "character": [
