@@ -52,6 +52,8 @@ Then watch it in the browser end-to-end before it goes to the editor.
   prose is *good*. Keep the editor's watch-through at the end.
 
 ## Conventions
+- **Desktop-only.** We stopped budgeting for mobile on this project — ignore
+  the global mobile rules here; don't add mobile-specific work.
 - One commit per theme; British English, sentence case. End commit messages
   with the `Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>` line.
 - Update the About **diary** with any significant change — it is the

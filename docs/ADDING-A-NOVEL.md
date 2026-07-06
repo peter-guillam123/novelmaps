@@ -246,8 +246,10 @@ The pipeline that produced the honest datasets, in order:
 6. **Verify in the browser** — it boots without a boot-error banner; the
    overture frames the home country (not the globe); concurrent journeys
    overlap; any global voyage stays in frame; a place card centres its
-   spot clear of the sheet; the historic overlay shows over Britain. Then
-   a mobile pass.
+   spot clear of the sheet; the historic overlay shows over Britain; and
+   two characters travelling together show as two discs side by side, not
+   one. **PlotLines is desktop-only** — no mobile pass (a project decision;
+   it overrides the global mobile rules).
 7. **Write the script** — the novel's `story` array of narrated beats, per
    `STORYTELLING.md` (the rubric) and its screening loop (draft → rushes →
    **text-vs-map check** → watch-through). The dataset records what is
