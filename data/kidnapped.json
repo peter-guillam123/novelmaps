@@ -337,7 +337,7 @@
       "name": "Isle of Mull (the Ross of Mull)",
       "novelName": "the Island of Mull",
       "coords": [
-        -6.0,
+        -6,
         56.35
       ],
       "certainty": "real",
@@ -550,7 +550,7 @@
         },
         {
           "at": [
-            -5.0,
+            -5,
             58.62
           ],
           "name": "Cape Wrath",
@@ -727,6 +727,209 @@
       "mode": "foot",
       "days": 1,
       "note": "David and Alan part on the Corstorphine road, and David walks on alone into Edinburgh, to the doors of the bank and his fortune."
+    }
+  ],
+  "story": [
+    {
+      "kind": "scene",
+      "character": "david-balfour",
+      "at": "essendean",
+      "chapter": 1,
+      "title": "A June morning",
+      "narration": "David Balfour, newly orphaned, leaves the quiet parish of Essendean one June morning in 1751. The minister hands him a letter: he has kin at the house of Shaws, near Cramond, and a fortune he never knew of."
+    },
+    {
+      "kind": "journey",
+      "character": "david-balfour",
+      "from": "essendean",
+      "to": "house-of-shaws",
+      "chapter": 2,
+      "title": "To the house of Shaws",
+      "narration": "Two days' walk out of the Borders brings him, footsore, to Shaws — not the mansion he imagined but a grim, half-built ruin, one wing roofless against the sky. The country folk cross themselves at its name."
+    },
+    {
+      "kind": "scene",
+      "character": "david-balfour",
+      "at": "house-of-shaws",
+      "chapter": 3,
+      "title": "Uncle Ebenezer",
+      "narration": "Inside waits his uncle Ebenezer, a miser starved of company and hoarding secrets. That night he sends David up a broken stair in the dark, with no candle — a stair that ends in a sheer drop. Lightning saves the boy's neck."
+    },
+    {
+      "kind": "journey",
+      "character": "david-balfour",
+      "from": "house-of-shaws",
+      "to": "queensferry",
+      "chapter": 5,
+      "title": "Down to the ferry",
+      "narration": "Ebenezer smooths it over, then walks David down to the Firth of Forth 'on a little business' with one Captain Hoseason. At the Hawes Inn by the Queen's Ferry, the trap is quietly set."
+    },
+    {
+      "kind": "journey",
+      "character": "david-balfour",
+      "from": "queensferry",
+      "to": "torran-rocks",
+      "chapter": 7,
+      "title": "North about Scotland",
+      "narration": "Coaxed aboard the brig Covenant, David is clubbed down and wakes bound in the hold, at sea, to be sold in the Carolinas. Shunning the Channel, Hoseason stands north about Scotland — round Cape Wrath and down the Hebrides toward the reefs off Mull."
+    },
+    {
+      "kind": "removal",
+      "character": "david-balfour",
+      "from": "torran-rocks",
+      "to": "earraid",
+      "chapter": 14,
+      "title": "The loss of the brig",
+      "narration": "Mid-voyage the Covenant fishes out one Alan Breck Stewart, a Jacobite exile with a belt of gold, and David helps him fight off the crew. Then, steering blind, the brig strikes the Torran Rocks — and David is washed up alone on Earraid."
+    },
+    {
+      "kind": "journey",
+      "character": "david-balfour",
+      "from": "earraid",
+      "to": "isle-of-mull",
+      "chapter": 15,
+      "title": "Across Mull",
+      "narration": "For days he plays castaway on Earraid before grasping that the tide goes out and he can simply wade off. On Mull he sets out east across the long, crooked island on the trail of Alan, who left him a silver button as a token."
+    },
+    {
+      "kind": "journey",
+      "character": "david-balfour",
+      "from": "isle-of-mull",
+      "to": "kinlochaline-morven",
+      "chapter": 16,
+      "title": "Over the Sound",
+      "narration": "From Torosay he takes the ferry across the Sound of Mull to Kinlochaline, on the mainland shore of Morvern — a step nearer the Appin country, and nearer Alan."
+    },
+    {
+      "kind": "journey",
+      "character": "david-balfour",
+      "from": "kinlochaline-morven",
+      "to": "kingairloch-ardgour",
+      "chapter": 16,
+      "title": "Through Morvern",
+      "narration": "He crosses the wild peninsula of Morvern and comes down at last to the shore of Loch Linnhe, near Kingairloch, with the Appin country lying just across the water."
+    },
+    {
+      "kind": "journey",
+      "character": "david-balfour",
+      "from": "kingairloch-ardgour",
+      "to": "lettermore-appin",
+      "chapter": 17,
+      "title": "The death of the Red Fox",
+      "narration": "A boatman rows him over Loch Linnhe into Appin. In the wood of Lettermore he meets Colin Roy Campbell, the King's factor — the hated 'Red Fox' — and, that same minute, a shot cracks from the hillside and Campbell drops dead in the road."
+    },
+    {
+      "kind": "handoff",
+      "character": "alan-breck-stewart",
+      "at": "lettermore-appin",
+      "chapter": 19,
+      "title": "Take to the heather",
+      "narration": "David runs uphill after the vanished gunman and is at once cried out as an accomplice. A hand hauls him into the birches — Alan Breck again, ashore and armed. Now the two are hunted men together, and the flight in the heather begins."
+    },
+    {
+      "kind": "journey",
+      "character": [
+        "david-balfour",
+        "alan-breck-stewart"
+      ],
+      "from": "lettermore-appin",
+      "to": "corrynakiegh",
+      "chapter": 21,
+      "title": "The Heugh of Corrynakiegh",
+      "narration": "They flee up into the Appin hills and lie hidden five days in the rocky cleft of Corrynakiegh, catching trout and lighting a signal fire for money and news, while redcoats comb the glens below for the Red Fox's killers."
+    },
+    {
+      "kind": "journey",
+      "character": [
+        "david-balfour",
+        "alan-breck-stewart"
+      ],
+      "from": "corrynakiegh",
+      "to": "rannoch-moor",
+      "chapter": 22,
+      "title": "The moor",
+      "narration": "East to Rannoch Moor, a great skeleton-firred waste of bog. Under a blazing sun, in full sight of soldiers posted on the hills, they cross it on their bellies, crawling heather-bush to heather-bush until David is utterly spent."
+    },
+    {
+      "kind": "journey",
+      "character": [
+        "david-balfour",
+        "alan-breck-stewart"
+      ],
+      "from": "rannoch-moor",
+      "to": "ben-alder-clunys-cage",
+      "chapter": 23,
+      "title": "Cluny's Cage",
+      "narration": "Driven into the heart of Ben Alder, they are found by the scouts of Cluny Macpherson — a chief in hiding since Culloden — and taken up to his wattled hideaway, Cluny's Cage, slung among the trees on the mountainside."
+    },
+    {
+      "kind": "journey",
+      "character": [
+        "david-balfour",
+        "alan-breck-stewart"
+      ],
+      "from": "ben-alder-clunys-cage",
+      "to": "balquhidder",
+      "chapter": 25,
+      "title": "The quarrel",
+      "narration": "Alan gambles their money away to Cluny at cards, and on the long march south the two quarrel bitterly and nearly part. David falls sick; in a Balquhidder cottage they rest, and Alan out-pipes Robin Oig, a son of Rob Roy, sooner than fight him."
+    },
+    {
+      "kind": "journey",
+      "character": [
+        "david-balfour",
+        "alan-breck-stewart"
+      ],
+      "from": "balquhidder",
+      "to": "stirling-forth",
+      "chapter": 26,
+      "title": "The bridge of Stirling",
+      "narration": "Mended, David comes down out of the Highlands to Stirling, where the bridge is the main pass over the Forth — and held by a sentry. Alan's attempt to talk their way across fails outright, and they must think again."
+    },
+    {
+      "kind": "journey",
+      "character": [
+        "david-balfour",
+        "alan-breck-stewart"
+      ],
+      "from": "stirling-forth",
+      "to": "limekilns-carron",
+      "chapter": 26,
+      "title": "The clachan of Limekilns",
+      "narration": "They slip east under the Ochils to the Forth-side clachan of Limekilns. There a change-house girl, taking David for a hunted young gentleman, is moved to pity — and offers to row them over the water herself, by night."
+    },
+    {
+      "kind": "journey",
+      "character": [
+        "david-balfour",
+        "alan-breck-stewart"
+      ],
+      "from": "limekilns-carron",
+      "to": "queensferry",
+      "chapter": 27,
+      "title": "Across the Forth",
+      "narration": "By night the girl rows the two fugitives over the Forth to the Lothian shore. David comes round to the Queen's Ferry — where his troubles began — to seek out Mr Rankeillor, the family lawyer who holds the key to his inheritance."
+    },
+    {
+      "kind": "journey",
+      "character": [
+        "david-balfour",
+        "alan-breck-stewart"
+      ],
+      "from": "queensferry",
+      "to": "house-of-shaws",
+      "chapter": 28,
+      "title": "The trap re-set",
+      "narration": "Rankeillor believes David's tale and lays a scheme. That night all three go out to Shaws, and Alan, hidden in the dark, draws Ebenezer into boasting that he paid to have his nephew kidnapped. Caught by his own tongue, the old man yields up the estate."
+    },
+    {
+      "kind": "journey",
+      "character": "david-balfour",
+      "from": "house-of-shaws",
+      "to": "edinburgh-british-linen",
+      "chapter": 30,
+      "title": "Good-bye",
+      "narration": "His fortune won, David parts from Alan on the Corstorphine road — Alan to find a ship for France, David on alone into Edinburgh, to the doors of the British Linen bank. Rich, safe, and strangely heavy-hearted."
     }
   ]
 }
