@@ -250,10 +250,20 @@ The pipeline that produced the honest datasets, in order:
    a mobile pass.
 7. **Write the script** — the novel's `story` array of narrated beats, per
    `STORYTELLING.md` (the rubric) and its screening loop (draft → rushes →
-   watch-through). The dataset records what is true; the script decides
-   how it is told. A novel isn't finished without both.
+   **text-vs-map check** → watch-through). The dataset records what is
+   true; the script decides how it is told. A novel isn't finished without
+   both.
 8. **Update** the About page (a diary entry + any new attribution) and add
    the shelf entry to `data/novels.json` with first-edition spine colours.
+
+**The three hard gates** (a book that fails any does not ship): it **loads**
+(`js/data.js` throws on structural slips); **rushes is clean**
+(`errors: 0`); and the **text-vs-map check** passes (a reviewer confirms
+every beat's narration matches the route the map draws — mode, land/sea,
+named places, direction, scene placement, shared-vs-solo; see
+`STORYTELLING.md`'s screening loop). The first two are deterministic and
+run headlessly; the third needs an agent's judgement and is what catches a
+walking journey drawn as a sea voyage.
 
 ---
 
@@ -282,6 +292,34 @@ The pipeline that produced the honest datasets, in order:
   editing JS, prime the changed files (`fetch(p,{cache:'reload'})`) before
   reloading, or verify against the *served* file with `curl` — a stale
   module will fool you into thinking a fix didn't land.
+- **A route must match its mode and its narration.** The commonest content
+  bug is a `via` copied from the wrong journey: Mr Peggotty's *walk* across
+  France once carried the elopement's Gibraltar sea-track, and David's
+  overland Swiss exile was tagged `ship`. The text-vs-map check (screening
+  loop step 3) exists to catch exactly this — run it.
+- **A scene needs an integer `chapter`.** The loader and rushes both reject
+  a chapterless scene now. If a place-moment falls mid-journey (a
+  perpetually-moving character like Fogg), make it a `handoff` — no chapter,
+  no resting check — rather than a chapterless scene.
+- **Shared journeys are one line, not two.** When characters genuinely
+  travel together, give them one movement with an array `character` and a
+  matching array-character beat — don't leave two parallel legs (David and
+  Steerforth once rode to Yarmouth on separate lines). But leave *apart* the
+  ones that only look shared: a pursuit, a funeral, converging-by-different-
+  means, or the same route on different days (Jane rides to Netherfield,
+  Elizabeth walks it the next morning).
+- **A leg crossing the antimeridian** (a trans-Pacific voyage) needs its
+  `via` longitudes to step across the 180° line going the intended way
+  (e.g. 145 → 165 → 180 → −165 → −140), or the line lunges backward across
+  the map. The geometry engine's great-circle densification then draws it
+  correctly — but **verify that crossing in the browser**; it is the one
+  route that can silently draw the wrong way round the world.
+- **A new conveyance means a new mode.** The mode enum is in `js/data.js`
+  and the glyphs in `js/ui/modeicons.js`; add both rather than forcing an
+  odd fit (the `elephant` and wind-`sledge` modes were added for Eighty
+  Days). One caveat left open: that sledge glyph is a *wind*-sledge (a sail
+  on a runner) — a dog-sledge (Frankenstein's Arctic) reuses it and could
+  earn its own variant.
 
 ---
 

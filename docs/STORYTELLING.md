@@ -101,7 +101,31 @@ A script is never shipped on the first draft:
    meanwhile, movements left uncovered, scenes where the character isn't
    actually at the named place. Fix every error; justify or fix every
    warning.
-3. **Screening** — watch it in the browser, end to end, at 1×, as a
+3. **Text-vs-map check** — a reviewer (an LLM agent; it needs judgement,
+   not a script) reads every beat's narration against the route the map
+   will actually **draw** and reports contradictions. Rushes checks how the
+   script *plays*; this checks whether it *tells the truth*. For each beat,
+   cross-check:
+   - **mode** — the narration's implied conveyance (walk / horse / coach /
+     train / ship / elephant / sledge) vs the movement's `mode`;
+   - **land vs sea** — an overland narration on a sea route, or a voyage on
+     an inland route (judge the `via` by its place-names and coordinates; a
+     river journey by boat is correctly `ship`);
+   - **named places** — towns and regions the narration names lie on or near
+     the route (endpoints or `via`);
+   - **direction** — the from→to geography matches the narration;
+   - **scene placement** — a `scene` beat's `at` matches its narration;
+   - **shared-vs-solo** — a movement's `character` array matches who the
+     narration says travels together; a companion the narration names isn't
+     dropped, and a solo flight isn't drawn as a shared line.
+
+   This catches the class of error rushes is blind to. It has found, in
+   practice: Mr Peggotty *walking* across France drawn as a sea voyage round
+   Gibraltar; David's overland Swiss exile tagged `ship`; a phantom
+   traveller (Lord Godalming) galloping in one beat and boarding a launch in
+   the next. Fix every genuine contradiction; a nested-flashback rewind
+   behind a `meanwhile` is correct, not one.
+4. **Screening** — watch it in the browser, end to end, at 1×, as a
    stranger would. Only then does it go in front of the editor.
 
 ## What the player does with it
