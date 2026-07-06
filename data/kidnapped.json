@@ -269,7 +269,13 @@
       "note": "David's home village, fictional and only loosely placed. Stevenson gives a 'quiet country-side' with a kirk and manse, a day or two's walk from Edinburgh; the standard 'Kidnapped trail' places it vaguely in the Borders south-west of the capital. Coordinates are a nominal Pentlands placing.",
       "story": "The quiet parish where David is born and orphaned, and which he leaves one June morning in 1751 with a letter that sends him to claim his inheritance at the House of Shaws.",
       "quote": "I will begin the story of my adventures with a certain morning early in the month of June, the year of grace 1751",
-      "quoteRef": "Ch. 1"
+      "quoteRef": "Ch. 1",
+      "image": {
+        "file": "assets/images/ki-essendean.jpg",
+        "caption": "A lonely house on a Lowland brae, c.1890 — an indicative view of the quiet upland country-side of Essendean, David's invented home parish south-west of Edinburgh",
+        "credit": "Robert W. Little, c.1890 · Wikimedia Commons · public domain",
+        "indicative": true
+      }
     },
     {
       "id": "house-of-shaws",
@@ -284,7 +290,13 @@
       "note": "The house is fictional — a grim, half-built mansion — but Stevenson expressly sites it near Cramond on the Firth of Forth, west of Edinburgh. No single real building is agreed; the district is real, the exact spot a best guess.",
       "story": "The blighted, half-finished house of David's miserly uncle Ebenezer, who first tries to kill him on a broken stair in the dark, then has him kidnapped. David returns at the end to trap the old man into confessing.",
       "quote": "give my boy this letter into his hand, and start him off to the house of Shaws, not far from Cramond",
-      "quoteRef": "Ch. 1"
+      "quoteRef": "Ch. 1",
+      "image": {
+        "file": "assets/images/ki-house-of-shaws.jpg",
+        "caption": "Borthwick Castle, a gaunt Lowland tower house, engraved in the late 18th century — an indicative stand-in for the grim, half-built house of Shaws, which Stevenson invented but sited near Cramond",
+        "credit": "Engraving by P. Mazell, late 18th century · Wikimedia Commons · public domain",
+        "indicative": true
+      }
     },
     {
       "id": "queensferry",
@@ -299,7 +311,12 @@
       "note": "Precisely real. South Queensferry on the Firth of Forth, where the Hawes Inn still stands (now beneath the Forth Bridge). David is decoyed aboard the brig Covenant here. Stevenson knew the inn; coordinates are for it.",
       "story": "The ferry-town on the Forth where Ebenezer walks David down 'on business' and, at the Hawes Inn, has him struck down and carried aboard the Covenant. David returns here at the end to find the lawyer Rankeillor.",
       "quote": "The Hawes Inn, at the Queen's Ferry",
-      "quoteRef": "Ch. 5"
+      "quoteRef": "Ch. 5",
+      "image": {
+        "file": "assets/images/ki-queensferry.jpg",
+        "caption": "The Queensferry from the south-east, with the Firth of Forth and a coach on the shore road, engraved 1843",
+        "credit": "William Miller after Clarkson Stanfield, 1843 · Wikimedia Commons · public domain"
+      }
     },
     {
       "id": "torran-rocks",
@@ -329,7 +346,13 @@
       "note": "A real tidal islet off the south-west tip of the Ross of Mull, near Iona. Stevenson knew it personally — his family's lighthouse firm had a shore station here. David is marooned until he realises at low tide he can wade across.",
       "story": "The little tidal islet where David is cast ashore alone after the wreck, and spends wretched days believing himself trapped — until he grasps that the sea goes out and he can simply walk off.",
       "quote": "in under the southwest end of Mull, off a little isle they call Earraid",
-      "quoteRef": "Ch. 13"
+      "quoteRef": "Ch. 13",
+      "image": {
+        "file": "assets/images/ki-earraid.jpg",
+        "caption": "The ruins of Iona Cathedral from the north-west, c.1860 — Iona lies just off Earraid at the south-west tip of the Ross of Mull, the very corner where David is cast ashore",
+        "credit": "E. J. Bedford, c.1860 · Wikimedia Commons · public domain",
+        "indicative": true
+      }
     },
     {
       "id": "isle-of-mull",
@@ -344,7 +367,13 @@
       "note": "Real island. After escaping Earraid, David crosses the Ross of Mull on foot — 'fifty miles as the crow might fly' — east toward Torosay and the ferry to the mainland. Coordinates are a central point on the Ross.",
       "story": "The long, crooked island David treks across on Alan's silver-button token, guided and half-swindled by the folk of the Ross, working east toward the Appin country.",
       "quote": "big and crooked Island of Mull, from Earraid to Torosay, fifty miles as the crow flies",
-      "quoteRef": "Ch. 15"
+      "quoteRef": "Ch. 15",
+      "image": {
+        "file": "assets/images/ki-isle-of-mull.jpg",
+        "caption": "Fishing smacks off Staffa in choppy seas, with Iona in the distance, 1853 — the Hebridean waters at the south-west end of Mull where David is wrecked",
+        "credit": "Anthony Vandyke Copley Fielding, 1853 · Wikimedia Commons · public domain",
+        "indicative": true
+      }
     },
     {
       "id": "kinlochaline-morven",
@@ -374,7 +403,12 @@
       "note": "Real districts on the mainland opposite Mull. Crossing east, David comes down to the shore of Loch Linnhe near Kingairloch, where he takes a boat over into Appin.",
       "story": "The Loch Linnhe shore where David, near the end of his lonely trek, takes a boat across into Appin — and walks straight into the killing that changes everything.",
       "quote": "our ways lying together as far as to Kingairloch",
-      "quoteRef": "Ch. 16"
+      "quoteRef": "Ch. 16",
+      "image": {
+        "file": "assets/images/ki-kingairloch-ardgour.jpg",
+        "caption": "Loch Linnhe near Fort William, painted on the spot in 1848 — the deep, still sea-loch David comes down to and is rowed across into Appin",
+        "credit": "Watercolour, 1848 (Rijksmuseum) · Wikimedia Commons · CC0"
+      }
     },
     {
       "id": "lettermore-appin",
@@ -404,7 +438,13 @@
       "note": "A rocky cleft where David and Alan lie up for five days after the murder. Not precisely fixed; trail-followers associate it with the Glen Duror / Coire hills of Appin. Fictionalised or lightly renamed; position approximate.",
       "story": "The hidden cleft in the Appin hills where the two shelter, fish for trout, and signal for money and news, while the redcoats scour the country below for the murderers.",
       "quote": "The name of the cleft was the Heugh of Corrynakiegh",
-      "quoteRef": "Ch. 21"
+      "quoteRef": "Ch. 21",
+      "image": {
+        "file": "assets/images/ki-corrynakiegh.jpg",
+        "caption": "A Highland glen and sea-loch in Argyll, 1867 — an indicative view of the Appin hill country where the invented cleft of Corrynakiegh hides the two fugitives",
+        "credit": "Robert S. Duncanson, 1867 · Wikimedia Commons · public domain",
+        "indicative": true
+      }
     },
     {
       "id": "rannoch-moor",
@@ -419,7 +459,12 @@
       "note": "Real, and one of Britain's largest expanses of blanket bog. The great desolate waste crossed in the flight in the heather, where David nearly collapses. Coordinates are the centre of the moor.",
       "story": "The vast, skeleton-firred bog the fugitives cross by crawling from heather-bush to heather-bush under a blazing sun, in full view of the soldiers on the surrounding hills — the set-piece of the whole flight.",
       "quote": "there was quite a forest of dead firs, standing like skeletons. A wearier-looking desert man never saw",
-      "quoteRef": "Ch. 22"
+      "quoteRef": "Ch. 22",
+      "image": {
+        "file": "assets/images/ki-rannoch-moor.jpg",
+        "caption": "The Moor of Rannoch, painted 1868 — the great desolate bog the fugitives crawl across in full view of the soldiers",
+        "credit": "Andrew MacCallum, 1868 · Wikimedia Commons · public domain"
+      }
     },
     {
       "id": "ben-alder-clunys-cage",
@@ -434,7 +479,13 @@
       "note": "Ben Alder is a real, precisely-locatable mountain; Cluny's Cage — the wattled hideout where the real fugitive chief Cluny Macpherson sheltered them — has no exactly-agreed spot, traditionally placed on the wooded flank above Loch Ericht. Coordinates are the Ben Alder summit as anchor; the Cage itself is approximate.",
       "story": "The mountain into whose 'heart' the flight drives them, where Cluny Macpherson's scouts take them up to his wicker hiding-place. Feverish, David quarrels bitterly with Alan over money gambled away.",
       "quote": "into the heart of that dismal mountain of Ben Alder",
-      "quoteRef": "Ch. 23"
+      "quoteRef": "Ch. 23",
+      "image": {
+        "file": "assets/images/ki-ben-alder-clunys-cage.jpg",
+        "caption": "A storm breaking over a Highland mountain pass (Glen Coe), engraved 1836 after Turner — an indicative view of the wild mountain fastness of Ben Alder, into whose heart the flight drives David and Alan",
+        "credit": "William Miller after J. M. W. Turner, 1836 · Wikimedia Commons · public domain",
+        "indicative": true
+      }
     },
     {
       "id": "balquhidder",
@@ -449,7 +500,12 @@
       "note": "Real — the MacGregor country in the braes of Balquhidder, where the piping-duel between Alan and Robin Oig (a son of the historical Rob Roy) takes place. Rob Roy's grave is in the kirkyard.",
       "story": "The glen where David falls sick and the two rest, and where Alan out-plays Robin Oig, one of Rob Roy's sons, on the pipes rather than fight him. When David mends, the flight resumes.",
       "quote": "the western end of the country of Balquhidder",
-      "quoteRef": "Ch. 25"
+      "quoteRef": "Ch. 25",
+      "image": {
+        "file": "assets/images/ki-balquhidder.jpg",
+        "caption": "November on the Braes of Balquhidder — the MacGregor country where David falls sick and Alan out-pipes a son of Rob Roy",
+        "credit": "Thomas Hunt, 1914 · Wikimedia Commons · public domain"
+      }
     },
     {
       "id": "stirling-forth",
@@ -464,7 +520,12 @@
       "note": "Real. The fugitives must cross the Forth; Stirling Bridge is 'the main pass over that river'. Foiled by the sentry, they slip east down the Ochils to find a boat lower down. Coordinates for the Old Bridge of Stirling.",
       "story": "The guarded bridge that 'bridles the wild Hielandman' — where Alan's ruse fails to get them across, and they must turn east and downstream to steal a passage over the Forth.",
       "quote": "Stirling Bridge, which is the main pass over that river",
-      "quoteRef": "Ch. 26"
+      "quoteRef": "Ch. 26",
+      "image": {
+        "file": "assets/images/ki-stirling-forth.jpg",
+        "caption": "Stirling Castle on its rock above the Forth, painted c.1840 — the town guarding the bridge that 'bridles the wild Hielandman'",
+        "credit": "Montague Stanley, c.1840 · Wikimedia Commons · public domain"
+      }
     },
     {
       "id": "limekilns-carron",
@@ -494,7 +555,12 @@
       "note": "Real. The novel ends with David walking into Edinburgh to claim his fortune at the British Linen Company, a real bank founded in 1746. Coordinates for the Old Town.",
       "story": "Journey's end: David, his inheritance won and Alan parted from him on the Corstorphine road, walks into the city 'to the very doors of the British Linen Company's bank' — rich, and heavy-hearted.",
       "quote": "The hand of Providence brought me in my drifting to the very doors of the British Linen Company's bank",
-      "quoteRef": "Ch. 30"
+      "quoteRef": "Ch. 30",
+      "image": {
+        "file": "assets/images/ki-edinburgh-british-linen.jpg",
+        "caption": "Edinburgh Castle above the Grassmarket, photographed c.1865–85 — the Old Town David walks into at journey's end to claim his fortune",
+        "credit": "George Washington Wilson, c.1865–85 · Wikimedia Commons · public domain"
+      }
     }
   ],
   "movements": [
