@@ -553,6 +553,21 @@
       }
     },
     {
+      "id": "darcy-london",
+      "region": "town-kent",
+      "name": "Mayfair (Mr Darcy's town house)",
+      "novelName": "town",
+      "coords": [
+        -0.1485,
+        51.5125
+      ],
+      "certainty": "conjectured",
+      "note": "Best guess. Austen never gives the address of Darcy's London house, only that he keeps one — Sir William asks 'You have a house in town, I conclude?' and Darcy bows. A man of ten thousand a year kept his establishment in the fashionable West End, not at the Gardiners' Cheapside; placed in Mayfair, and deliberately distinct from Gracechurch Street.",
+      "story": "Darcy's town house — his London base between Netherfield, Rosings and Pemberley, and (though the novel keeps it quiet) where he directs the secret hunt that saves Lydia.",
+      "quote": "“You have a house in town, I conclude?” Mr. Darcy bowed.",
+      "quoteRef": "Sir William at the assembly"
+    },
+    {
       "id": "hunsford",
       "region": "town-kent",
       "name": "Near Westerham, Kent",
@@ -743,7 +758,7 @@
     {
       "character": "darcy",
       "from": "netherfield",
-      "to": "gracechurch-street",
+      "to": "darcy-london",
       "chapter": 21,
       "mode": "coach",
       "via": [
@@ -906,7 +921,7 @@
     },
     {
       "character": "darcy",
-      "from": "gracechurch-street",
+      "from": "darcy-london",
       "to": "hunsford",
       "chapter": 30,
       "mode": "coach",
@@ -936,7 +951,7 @@
     {
       "character": "darcy",
       "from": "hunsford",
-      "to": "gracechurch-street",
+      "to": "darcy-london",
       "chapter": 37,
       "mode": "coach",
       "via": [
@@ -1146,7 +1161,7 @@
     },
     {
       "character": "darcy",
-      "from": "gracechurch-street",
+      "from": "darcy-london",
       "to": "pemberley",
       "chapter": 43,
       "mode": "coach",
@@ -1352,7 +1367,7 @@
     {
       "character": "darcy",
       "from": "pemberley",
-      "to": "gracechurch-street",
+      "to": "darcy-london",
       "chapter": 47,
       "mode": "coach",
       "via": [
@@ -1570,7 +1585,7 @@
     },
     {
       "character": "darcy",
-      "from": "gracechurch-street",
+      "from": "darcy-london",
       "to": "netherfield",
       "chapter": 53,
       "mode": "coach",
@@ -1709,7 +1724,7 @@
       "kind": "journey",
       "character": "darcy",
       "from": "netherfield",
-      "to": "gracechurch-street",
+      "to": "darcy-london",
       "chapter": 21,
       "title": "To town",
       "narration": "They are gone. Jane is left with a cold note and no explanation, and Bingley — kept in town, kept in the dark — never comes back. Elizabeth suspects Darcy's hand in it, and is right, though it will be a year before she knows how right."
@@ -1760,7 +1775,7 @@
     {
       "kind": "journey",
       "character": "darcy",
-      "from": "gracechurch-street",
+      "from": "darcy-london",
       "to": "hunsford",
       "chapter": 30,
       "title": "The Easter visit",
@@ -1786,7 +1801,7 @@
       "kind": "journey",
       "character": "darcy",
       "from": "hunsford",
-      "to": "gracechurch-street",
+      "to": "darcy-london",
       "chapter": 37,
       "title": "He is gone",
       "narration": "The gentlemen leave Rosings the very next morning, back towards town, the letter already doing its slow work. Elizabeth stays on another fortnight, her whole picture of two men — the charming one and the proud one — quietly turning inside out."
@@ -1867,7 +1882,7 @@
     {
       "kind": "removal",
       "character": "darcy",
-      "from": "gracechurch-street",
+      "from": "darcy-london",
       "to": "pemberley",
       "chapter": 43,
       "title": "Home before he is expected",
@@ -1973,7 +1988,7 @@
       "kind": "removal",
       "character": "darcy",
       "from": "pemberley",
-      "to": "gracechurch-street",
+      "to": "darcy-london",
       "chapter": 47,
       "title": "The secret hunt",
       "narration": "Darcy has followed the runaways to town a day behind them. He runs Mrs Younge to ground, finds Wickham, and — for Elizabeth's sake, telling no one — pays his debts and buys the wedding that saves her sister's name. It will surface only later, in a letter."
@@ -2019,7 +2034,7 @@
     {
       "kind": "journey",
       "character": "darcy",
-      "from": "gracechurch-street",
+      "from": "darcy-london",
       "to": "netherfield",
       "chapter": 53,
       "title": "The right man returns",
