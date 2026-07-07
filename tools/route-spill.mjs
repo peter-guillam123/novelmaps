@@ -92,37 +92,45 @@ function analyseLeg(byId, m) {
     wrongKm, maxRun, pct: (wrongKm / path.totalKm) * 100, worst };
 }
 
-function analyseBook(file) {
-  const novel = JSON.parse(readFileSync(file, 'utf8'));
-  if (!novel.movements) return null;
+// The per-novel analysis, exported so the rushes gate runs it too.
+export function analyseSpills(novel) {
+  if (!novel.movements) return [];
   const byId = Object.fromEntries(novel.locations.map((l) => [l.id, l]));
   const flags = [];
   for (const m of novel.movements) {
     const r = analyseLeg(byId, m);
     if (r && r.maxRun > FLAG_KM && r.pct >= PCT_FLOOR) flags.push(r);
   }
-  flags.sort((a, b) => b.maxRun - a.maxRun);
-  return { title: novel.title, legs: novel.movements.length, flags };
+  return flags.sort((a, b) => b.maxRun - a.maxRun);
 }
 
-const files = process.argv.slice(2).length
-  ? process.argv.slice(2)
-  : readdirSync('data').filter((f) => f.endsWith('.json') && f !== 'novels.json').map((f) => `data/${f}`);
+function analyseBook(file) {
+  const novel = JSON.parse(readFileSync(file, 'utf8'));
+  if (!novel.movements) return null;
+  return { title: novel.title, legs: novel.movements.length, flags: analyseSpills(novel) };
+}
 
-let totalFlags = 0;
-for (const file of files) {
-  const r = analyseBook(file);
-  if (!r) continue;
-  const head = `\n${r.title}  (${r.legs} legs)`;
-  if (!r.flags.length) { console.log(`${head} — clean`); continue; }
-  console.log(`${head} — ${r.flags.length} spill${r.flags.length > 1 ? 's' : ''}:`);
-  for (const f of r.flags) {
-    totalFlags++;
-    const medium = f.wantLand ? 'over water' : 'over land';
-    console.log(
-      `  ${f.mode.padEnd(8)} ${f.from} -> ${f.to}`.padEnd(52) +
-      `${medium}: ${Math.round(f.maxRun)}km run (${f.pct.toFixed(0)}% of ${Math.round(f.totalKm)}km)` +
-      (f.worst ? `  @ [${f.worst[0].toFixed(1)}, ${f.worst[1].toFixed(1)}]` : ''));
+// CLI — only when run directly (rushes imports analyseSpills instead).
+if (process.argv[1] && process.argv[1].endsWith('route-spill.mjs')) {
+  const files = process.argv.slice(2).length
+    ? process.argv.slice(2)
+    : readdirSync('data').filter((f) => f.endsWith('.json') && f !== 'novels.json').map((f) => `data/${f}`);
+
+  let totalFlags = 0;
+  for (const file of files) {
+    const r = analyseBook(file);
+    if (!r) continue;
+    const head = `\n${r.title}  (${r.legs} legs)`;
+    if (!r.flags.length) { console.log(`${head} — clean`); continue; }
+    console.log(`${head} — ${r.flags.length} spill${r.flags.length > 1 ? 's' : ''}:`);
+    for (const f of r.flags) {
+      totalFlags++;
+      const medium = f.wantLand ? 'over water' : 'over land';
+      console.log(
+        `  ${f.mode.padEnd(8)} ${f.from} -> ${f.to}`.padEnd(52) +
+        `${medium}: ${Math.round(f.maxRun)}km run (${f.pct.toFixed(0)}% of ${Math.round(f.totalKm)}km)` +
+        (f.worst ? `  @ [${f.worst[0].toFixed(1)}, ${f.worst[1].toFixed(1)}]` : ''));
+    }
   }
+  console.log(`\n${totalFlags} leg${totalFlags === 1 ? '' : 's'} flagged across ${files.length} book${files.length === 1 ? '' : 's'} (contiguous wrong-medium run > ${FLAG_KM}km).`);
 }
-console.log(`\n${totalFlags} leg${totalFlags === 1 ? '' : 's'} flagged across ${files.length} book${files.length === 1 ? '' : 's'} (contiguous wrong-medium run > ${FLAG_KM}km).`);

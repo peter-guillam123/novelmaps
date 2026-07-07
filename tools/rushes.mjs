@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 // Rushes: perform a story script headless and report how it will play —
 // runtime, beat durations, camera jumps, unreadable text, silent rewinds,
-// movements left uncovered, scenes that contradict the map. Part of the
+// movements left uncovered, scenes that contradict the map. It also runs the
+// route-spill check (a leg drawn across the wrong medium). Part of the
 // screening loop in docs/STORYTELLING.md: no script ships un-rushed.
 //
 // Usage:
@@ -9,6 +10,7 @@
 //   node tools/rushes.mjs data/<novel>.json story.json    (draft alongside)
 
 import { readFileSync } from 'node:fs';
+import { analyseSpills } from './route-spill.mjs';
 
 // Keep in sync with js/constants.js (the tool is standalone: the repo has
 // no package.json, so it can't import the app's ES modules directly).
@@ -155,6 +157,14 @@ story.forEach((b, i) => {
 for (const l of legs) {
   const key = `${l.from}>${l.to}@${l.chapter}`;
   if (!covered.has(key)) warns.push(`movement ${l.character}: ${key} never appears in the script — its trail will pop in undramatised`);
+}
+
+// Route honesty: a leg drawn across the wrong medium (a train over the sea, a
+// ship over land). Reported here so the standard gate catches it; fix with
+// `via` points or tag the medium (river/canal). See tools/route-spill.mjs.
+for (const f of analyseSpills(novel)) {
+  const medium = f.wantLand ? 'over water' : 'over land';
+  warns.push(`route ${f.mode} ${f.from}->${f.to}: drawn ${medium} for ${Math.round(f.maxRun)}km (${f.pct.toFixed(0)}% of the leg) — add via points, or tag the medium`);
 }
 
 const m = Math.floor(total / 60), s = Math.round(total % 60);
