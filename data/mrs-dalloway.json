@@ -188,7 +188,12 @@
       "note": "Best-supported placement, not an exact address. Woolf never gives the street, but the Dalloways live in Westminster 'over twenty' years, always within earshot of Big Ben and St Margaret's, and Richard 'entered Dean's Yard' just before reaching his door. Dean's Yard, beside the Abbey, is the standard reading; the party is held here.",
       "story": "Clarissa sets out to buy the flowers, returns to prepare, receives Peter's surprise visit, and holds her party here.",
       "quote": "For having lived in Westminster--how many years now? over twenty,--one feels even in the midst of the traffic, or waking at night, Clarissa was positive, a particular hush, or solemnity; an indescribable pause; a suspense (but that might be her heart, affected, they said, by influenza) before Big Ben strikes.",
-      "quoteRef": "Clarissa setting out in Westminster"
+      "quoteRef": "Clarissa setting out in Westminster",
+      "image": {
+        "file": "assets/images/md-westminster-abbey.jpg",
+        "caption": "Westminster Abbey from the Dean's Yard side, the precinct where the Dalloways' house is placed, photographed c.1890",
+        "credit": "Detroit Publishing Co. photochrom, c.1890 · Library of Congress · public domain"
+      }
     },
     {
       "id": "bond-street",
@@ -317,7 +322,12 @@
       "certainty": "real",
       "story": "The presumed destination of the grey motor car; a crowd waits at the Palace gates and along the Mall, and the skywriting aeroplane roars over them.",
       "quote": "A small crowd meanwhile had gathered at the gates of Buckingham Palace.",
-      "quoteRef": "The crowd at the Palace gates"
+      "quoteRef": "The crowd at the Palace gates",
+      "image": {
+        "file": "assets/images/md-buckingham-palace.jpg",
+        "caption": "Buckingham Palace and the Victoria Memorial from the Mall, photographed c.1912",
+        "credit": "Judges Ltd. postcard, c.1912 · Wikimedia Commons · public domain"
+      }
     },
     {
       "id": "whitehall",
@@ -332,7 +342,12 @@
       "note": "The 'empty tomb' the marching boys carry a wreath to is the Cenotaph, which stands in Whitehall — but it is a 1920 monument, later than the 1885-1903 map beneath it. Noted, not pinned.",
       "story": "Peter Walsh marches up Whitehall after leaving Clarissa, overtaken by a column of uniformed boys bound for the empty tomb; later Elizabeth's omnibus rushes up the same street.",
       "quote": "No! No! he cried. She is not dead! I am not old, he cried, and marched up Whitehall, as if there rolled down to him, vigorous, unending, his future.",
-      "quoteRef": "Peter Walsh marches up Whitehall"
+      "quoteRef": "Peter Walsh marches up Whitehall",
+      "image": {
+        "file": "assets/images/md-whitehall.jpg",
+        "caption": "Whitehall, the Horse Guards, photographed c.1890",
+        "credit": "Detroit Publishing Co. photochrom, c.1890 · Library of Congress · public domain"
+      }
     },
     {
       "id": "trafalgar-square",
@@ -346,7 +361,12 @@
       "certainty": "real",
       "story": "Peter Walsh, alone and unknown at half-past eleven, feels a sudden exhilaration under Gordon's statue, then follows a young woman across the square towards the Haymarket.",
       "quote": "the strangeness of standing alone, alive, unknown, at half-past eleven in Trafalgar Square overcame him",
-      "quoteRef": "Peter Walsh in Trafalgar Square"
+      "quoteRef": "Peter Walsh in Trafalgar Square",
+      "image": {
+        "file": "assets/images/md-trafalgar-square.jpg",
+        "caption": "Trafalgar Square, Nelson's Column and the fountains, photographed c.1890",
+        "credit": "Detroit Publishing Co. photochrom, c.1890 · Library of Congress · public domain"
+      }
     },
     {
       "id": "army-navy-stores",
@@ -375,7 +395,12 @@
       "certainty": "real",
       "story": "Elizabeth rides the omnibus up Whitehall and the Strand — a rare venture east — past Somerset House, dreaming of a profession, before turning for home.",
       "quote": "This was Somerset House.",
-      "quoteRef": "Elizabeth's omnibus up the Strand"
+      "quoteRef": "Elizabeth's omnibus up the Strand",
+      "image": {
+        "file": "assets/images/md-strand.jpg",
+        "caption": "The Strand, looking east, photographed 1901",
+        "credit": "H. C. White Co. stereograph, 1901 · Library of Congress · public domain"
+      }
     },
     {
       "id": "bloomsbury",
@@ -404,7 +429,12 @@
       "certainty": "real",
       "story": "The skywriting aeroplane is followed east out of the West End until it is lost over Greenwich, where Mr Bentley, rolling his lawn, watches it dwindle to a symbol of the soul.",
       "quote": "away and away the aeroplane shot; soaring over Greenwich and all the masts; over the little island of grey churches, St. Paul’s and the rest",
-      "quoteRef": "The aeroplane over Greenwich"
+      "quoteRef": "The aeroplane over Greenwich",
+      "image": {
+        "file": "assets/images/md-greenwich.jpg",
+        "caption": "The prospect from One Tree Hill in Greenwich Park over the Royal Naval College, the Thames and its masts, and London beyond — engraving after Pieter Tillemans, c.1752",
+        "credit": "Pieter Tillemans / Robert Sayer engraving, c.1752 · National Maritime Museum, Greenwich · public domain"
+      }
     }
   ],
   "movements": [
