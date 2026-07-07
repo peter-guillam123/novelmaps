@@ -1429,6 +1429,22 @@
       "note": "The secret hunt, reported only in Mrs Gardiner's September letter: he left Derbyshire a day behind the travellers, found Mrs Younge, found Wickham, and bought the wedding"
     },
     {
+      "character": "darcy",
+      "from": "darcy-london",
+      "to": "gracechurch-street",
+      "chapter": 51,
+      "mode": "coach",
+      "note": "Darcy calls on Mr Gardiner in Gracechurch Street to settle the Lydia business in secret."
+    },
+    {
+      "character": "darcy",
+      "from": "gracechurch-street",
+      "to": "darcy-london",
+      "chapter": 51,
+      "mode": "coach",
+      "note": "The debts paid and the marriage bought, he goes back across town, his part kept quiet."
+    },
+    {
       "character": "lydia",
       "from": "gracechurch-street",
       "to": "longbourn",
@@ -1991,7 +2007,29 @@
       "to": "darcy-london",
       "chapter": 47,
       "title": "The secret hunt",
-      "narration": "Darcy has followed the runaways to town a day behind them. He runs Mrs Younge to ground, finds Wickham, and — for Elizabeth's sake, telling no one — pays his debts and buys the wedding that saves her sister's name. It will surface only later, in a letter."
+      "narration": "Darcy has followed the runaways to town a day behind them. He runs Mrs Younge to ground and finds Wickham — and resolves, for Elizabeth's sake and telling no one, to put right the ruin he blames himself for having let happen."
+    },
+    {
+      "kind": "journey",
+      "character": "darcy",
+      "from": "darcy-london",
+      "to": "gracechurch-street",
+      "chapter": 51,
+      "title": "At the Gardiners' door",
+      "narration": "He does the last of it in Cheapside. Darcy calls at the Gardiners' house in Gracechurch Street — the very address he once sneered at — and there, with Mr Gardiner, quietly settles Wickham's debts and buys the marriage that saves the Bennets."
+    },
+    {
+      "kind": "removal",
+      "character": "darcy",
+      "from": "gracechurch-street",
+      "to": "darcy-london",
+      "chapter": 51,
+      "title": "The debt paid",
+      "narration": "The business done and the Gardiners sworn to keep his name out of it, he goes back across town — telling no one what Elizabeth will only learn, much later, by accident."
+    },
+    {
+      "kind": "meanwhile",
+      "narration": "Meanwhile, back among the Bennets — who know nothing of Darcy's hand in any of it — the wedding itself goes forward."
     },
     {
       "kind": "removal",
