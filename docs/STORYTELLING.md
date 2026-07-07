@@ -118,8 +118,9 @@ A script is never shipped on the first draft:
    performs the script headless and reports: total runtime, per-beat
    durations, camera-jump sizes, over-long narrations, rewinds without a
    meanwhile, movements left uncovered, scenes where the character isn't
-   actually at the named place. Fix every error; justify or fix every
-   warning.
+   actually at the named place, and route spills (a leg drawn across the
+   wrong medium — see ADDING-A-NOVEL §3). Fix every error; justify or fix
+   every warning.
 3. **Text-vs-map check** — a reviewer (an LLM agent; it needs judgement,
    not a script) reads every beat's narration against the route the map
    will actually **draw** and reports contradictions. Rushes checks how the

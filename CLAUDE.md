@@ -31,7 +31,9 @@ Gold-standard exemplars to match: `data/dracula.json` (dataset shape) and
 2. **rushes is clean.** `node tools/rushes.mjs data/<slug>.json` →
    `errors: 0` (justify every warning). Screens runtime, camera jumps,
    unreadable text, silent rewinds, uncovered movements, scene-vs-map
-   contradictions.
+   contradictions, and route spills (a leg drawn across the wrong medium —
+   a train over the sea, a ship over land; fix with `via` points or a
+   `river`/`canal` medium tag).
 3. **The text-vs-map check passes.** A reviewer reads every beat's narration
    against the route the map will actually draw (mode, land/sea, named
    places, direction, scene placement, shared-vs-solo) and reports

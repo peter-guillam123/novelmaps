@@ -191,7 +191,8 @@ clip a headland. `node tools/route-spill.mjs [data/<slug>.json]` samples each
 drawn path against a coarse land polygon and flags any leg whose *contiguous*
 wrong-medium run is long enough to be a real lie (a train across the Adriatic,
 a steamer cutting the Malay peninsula) rather than an honest short hop (the
-Channel, a harbour mouth). Fix a flag by adding `via` points that hug the real
+Channel, a harbour mouth). It also runs inside `rushes`, so a spill shows up
+in the standard gate. Fix a flag by adding `via` points that hug the real
 coast, road or shipping lane — the same lever as route provenance. Two honest
 exceptions the tool already ignores: a `sledge` leg (its medium is snow and
 sea-ice, not the land/water binary), and a **river-boat**, which runs through
