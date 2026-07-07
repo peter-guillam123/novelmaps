@@ -26,6 +26,10 @@
     {
       "id": "arctic",
       "name": "The Arctic"
+    },
+    {
+      "id": "france",
+      "name": "France & the Mediterranean"
     }
   ],
   "mapHome": {
@@ -519,8 +523,8 @@
       "name": "A town on the Irish coast",
       "novelName": "the town where Mr. Kirwin is magistrate",
       "coords": [
-        -8.5,
-        54.6
+        -8.44,
+        54.63
       ],
       "certainty": "conjectured",
       "note": "The town is unnamed; the text says only that Victor, adrift from Orkney, is blown to an Irish coast and hauled before the magistrate Mr. Kirwin. Scholarship places the landfall on Ireland's north-west (the plausible drift from Orkney). This point sits on that coast as a best guess; the position is not the novel's.",
@@ -627,6 +631,46 @@
         "credit": "W. H. Smyth, 'Perilous Position of HMS Terror, 1837', c.1846 · Royal Museums Greenwich / Wikimedia Commons · public domain",
         "indicative": true
       }
+    },
+    {
+      "id": "thurso",
+      "region": "british-isles",
+      "name": "Thurso, on the Caithness coast",
+      "novelName": "the northern coast",
+      "coords": [
+        -3.52,
+        58.6
+      ],
+      "certainty": "conjectured",
+      "note": "The novel sends Victor across 'the northern highlands' to 'the coast' to take a boat for the Orkneys but names no town; Thurso is the natural embarkation on the Caithness shore.",
+      "story": "The north coast of Scotland, where Victor takes a boat out to the remotest of the Orkneys."
+    },
+    {
+      "id": "le-havre",
+      "region": "france",
+      "name": "Havre-de-Grace (Le Havre)",
+      "novelName": "Havre-de-Grace",
+      "coords": [
+        0.107,
+        49.49
+      ],
+      "certainty": "real",
+      "story": "The French port where Victor and his father land from Ireland, on the road home to Geneva.",
+      "quote": "We took our passage on board a vessel bound for Havre-de-Grace",
+      "quoteRef": "leaving Ireland"
+    },
+    {
+      "id": "marseille",
+      "region": "france",
+      "name": "Marseille",
+      "novelName": "the blue Mediterranean",
+      "coords": [
+        5.37,
+        43.3
+      ],
+      "certainty": "conjectured",
+      "note": "Victor follows 'the windings of the Rhone' to 'the blue Mediterranean' and takes ship after the creature; the text names no port, but the Rhone reaches the sea at Marseille.",
+      "story": "Where the Rhone meets the Mediterranean, and Victor takes passage after the creature, bound for the Black Sea."
     }
   ],
   "movements": [
@@ -1104,32 +1148,38 @@
     {
       "character": "victor",
       "from": "perth",
-      "to": "orkney-island",
+      "to": "thurso",
       "chapter": 21,
-      "days": 5,
       "mode": "coach",
       "via": [
-        {
-          "at": [
-            -3.5,
-            57.5
-          ],
-          "name": "The northern highlands",
-          "note": "'I traversed the northern highlands and fixed on one of the remotest of the Orkneys' — up through the Highlands to the far coast."
-        },
-        {
-          "at": [
-            -3.1,
-            58.6
-          ],
-          "name": "The Caithness coast",
-          "note": "The northern mainland, whence a boat crosses to the outer Orkney isles."
-        }
+        [
+          -3.95,
+          57.05
+        ],
+        [
+          -4.15,
+          57.85
+        ]
       ],
-      "routeNote": "Leaving Clerval at Perth, Victor crosses the northern Highlands to the Caithness coast and takes a boat out to a remote Orkney island. Shelley names the Highlands and the Orkneys but not the towns between; reconstructs the overland-and-ferry route.",
-      "routeSource": "Shelley, Ch. 19–20: 'I traversed the northern highlands and fixed on one of the remotest of the Orkneys.' Reconstructs the Perth–Orkney route.",
       "routeCertainty": "reconstructed",
-      "note": "Alone to a bare rock, to finish the loathsome work"
+      "routeSource": "The novel names only 'the northern highlands' and 'the coast'; reconstructed up through Sutherland to Caithness.",
+      "note": "Victor crosses the northern Highlands alone to the Caithness coast."
+    },
+    {
+      "character": "victor",
+      "from": "thurso",
+      "to": "orkney-island",
+      "chapter": 21,
+      "mode": "ship",
+      "via": [
+        [
+          -3.42,
+          58.82
+        ]
+      ],
+      "routeCertainty": "documented",
+      "routeSource": "The Pentland Firth crossing to the Orkneys.",
+      "note": "A boat out across the Pentland Firth to one of the remotest of the Orkneys."
     },
     {
       "character": "victor",
@@ -1139,22 +1189,22 @@
       "days": 3,
       "mode": "ship",
       "via": [
-        {
-          "at": [
-            -6,
-            58
-          ],
-          "name": "Adrift on the sea",
-          "note": "Having sunk the female creature's remains, Victor falls asleep in his little boat and wakes far out, a rising wind carrying him he knows not where."
-        },
-        {
-          "at": [
-            -8,
-            55.5
-          ],
-          "name": "The Irish coast in sight",
-          "note": "He steers for a steeple sighted behind a promontory, and enters a small harbour — into the hands of a hostile crowd."
-        }
+        [
+          -4.6,
+          58.95
+        ],
+        [
+          -6.8,
+          58.2
+        ],
+        [
+          -8.0,
+          56.6
+        ],
+        [
+          -8.6,
+          55.2
+        ]
       ],
       "routeNote": "Adrift from Orkney after sinking the female creature's remains, Victor is blown south-west across open sea and lands on an Irish coast. Shelley gives only 'the land had a wild and rocky appearance' and the town of magistrate Kirwin; the drift and Irish landfall are reconstructed toward the conjectured Irish town.",
       "routeSource": "Shelley, Ch. 20–21: Victor cast adrift, then landing at an unnamed Irish town before Mr. Kirwin. No course given; reconstructs the drift from Orkney to Ireland.",
@@ -1169,14 +1219,30 @@
       "days": 30,
       "mode": "ship",
       "via": [
-        {
-          "at": [
-            -5,
-            57
-          ],
-          "name": "Across the sea",
-          "note": "Clerval's own last journey is off the page — but his body is carried to the Irish shore, the creature's fingermarks on its throat."
-        }
+        [
+          -2.55,
+          56.5
+        ],
+        [
+          -1.3,
+          57.5
+        ],
+        [
+          -1.2,
+          58.1
+        ],
+        [
+          -4.0,
+          59.0
+        ],
+        [
+          -7.2,
+          57.4
+        ],
+        [
+          -8.4,
+          55.3
+        ]
       ],
       "routeNote": "Clerval leaves Perth to rejoin Victor and is murdered by the creature; his body turns up on the Irish coast where Victor lands. The path is entirely off-page — drawn only as a gesture to the place his corpse is found.",
       "routeSource": "Shelley, Ch. 21: the murdered man is Clerval, found on the Irish shore. His route is unnarrated; illustrative.",
@@ -1186,32 +1252,61 @@
     {
       "character": "victor",
       "from": "ireland-town",
+      "to": "le-havre",
+      "chapter": 23,
+      "mode": "ship",
+      "via": [
+        [
+          -9.3,
+          54.8
+        ],
+        [
+          -11.0,
+          54.2
+        ],
+        [
+          -11.4,
+          52.0
+        ],
+        [
+          -7.0,
+          49.9
+        ],
+        [
+          -2.0,
+          49.7
+        ],
+        [
+          0.0,
+          49.6
+        ]
+      ],
+      "routeCertainty": "novel",
+      "routeSource": "'We took our passage on board a vessel bound for Havre-de-Grace' — round the south of Ireland and up the Channel.",
+      "note": "Acquitted, Victor sails from Ireland with his father, bound for Havre-de-Grace."
+    },
+    {
+      "character": "victor",
+      "from": "le-havre",
       "to": "geneva",
       "chapter": 23,
-      "days": 20,
-      "mode": "ship",
+      "mode": "coach",
       "via": [
         {
           "at": [
-            -1.5,
-            49
+            2.352,
+            48.857
           ],
-          "name": "Across to France",
-          "note": "Acquitted at last, Victor sails with his father from Ireland to France, then travels overland home."
+          "name": "Paris"
         },
-        {
-          "at": [
-            4.5,
-            47
-          ],
-          "name": "Through France",
-          "note": "Overland across France toward Switzerland and the family house at Geneva, the wedding to Elizabeth now settled."
-        }
+        [
+          4.5,
+          47.6
+        ]
       ],
-      "routeNote": "Acquitted, Victor sails from Ireland with his father and returns overland through France to Geneva. Shelley narrates the release and the homeward direction but not the towns; reconstructs the Ireland–France–Geneva route.",
-      "routeSource": "Shelley, Ch. 21–22: acquitted, Victor leaves Ireland with his father and returns toward Geneva. Reconstructs the route.",
-      "routeCertainty": "reconstructed",
-      "note": "Home at last — to marry Elizabeth"
+      "routeCertainty": "novel",
+      "routeSource": "'we landed at Havre-de-Grace… towards Paris' — then overland to Geneva.",
+      "note": "Home overland through France, by way of Paris, to Geneva."
     },
     {
       "character": [
@@ -1267,45 +1362,121 @@
       "routeNote": "From the Alpine meeting the creature shadows Victor across the whole second journey — Orkney, Ireland, home — keeping its threat ('I shall be with you on your wedding-night'), and reaches Evian to strangle Elizabeth. The path is a single illustrative thread standing for a pursuit told only glancingly.",
       "routeSource": "The creature's threat and its killings of Clerval (Ireland) and Elizabeth (Evian) are the visible marks of a pursuit Shelley otherwise leaves off-page. Illustrative.",
       "routeCertainty": "illustrative",
-      "note": "Always a step behind Victor — keeping its promise for the wedding night"
+      "note": "Always a step behind Victor — keeping its promise for the wedding night (The Orkney waypoint is deliberate — the creature shadows Victor everywhere; its Channel crossing is a side effect, spill-exempt.)",
+      "spillOk": true
     },
     {
       "character": "victor",
       "from": "geneva",
-      "to": "black-sea",
+      "to": "marseille",
       "chapter": 25,
-      "days": 60,
-      "mode": "ship",
+      "mode": "coach",
       "via": [
         {
           "at": [
-            4.83,
-            43.95
+            4.835,
+            45.76
           ],
-          "name": "The Rhône to the Mediterranean",
-          "note": "'I followed the windings of the Rhone' down to the sea, where he sees the creature board a ship by night."
+          "name": "Lyon"
         },
-        {
-          "at": [
-            12,
-            37
-          ],
-          "name": "The Mediterranean",
-          "note": "'The blue Mediterranean appeared' — Victor takes passage in the same ship bound for the Black Sea."
-        },
-        {
-          "at": [
-            28.98,
-            41.02
-          ],
-          "name": "The Bosphorus",
-          "note": "Through the straits at Constantinople into the Black Sea, the pursuit passing out of western Europe."
-        }
+        [
+          4.85,
+          44.0
+        ]
       ],
-      "routeNote": "The vow of vengeance sets Victor on the creature's trail down the Rhône to the Mediterranean and, in the same ship as his enemy, through to the Black Sea — the turns Shelley names as the pursuit leaves Europe.",
-      "routeSource": "Shelley, Ch. 24: 'I followed the windings of the Rhone… The blue Mediterranean appeared… a vessel bound for the Black Sea. I took my passage in the same ship.'",
       "routeCertainty": "novel",
-      "note": "The pursuit begins — down the Rhône and out to sea"
+      "routeSource": "'I followed the windings of the Rhone' down to the Mediterranean.",
+      "note": "The pursuit begins: down the windings of the Rhone to the blue Mediterranean."
+    },
+    {
+      "character": "victor",
+      "from": "marseille",
+      "to": "black-sea",
+      "chapter": 25,
+      "mode": "ship",
+      "via": [
+        [
+          6.5,
+          42.2
+        ],
+        [
+          7.6,
+          41.0
+        ],
+        [
+          7.9,
+          39.3
+        ],
+        [
+          9.0,
+          38.3
+        ],
+        [
+          11.5,
+          37.6
+        ],
+        [
+          13.9,
+          36.3
+        ],
+        [
+          18.0,
+          36.4
+        ],
+        [
+          22.0,
+          35.0
+        ],
+        [
+          25.0,
+          34.2
+        ],
+        [
+          26.2,
+          36.4
+        ],
+        [
+          26.4,
+          38.4
+        ],
+        [
+          26.18,
+          40.02
+        ],
+        {
+          "at": [
+            26.42,
+            40.18
+          ],
+          "name": "the Dardanelles"
+        },
+        [
+          26.72,
+          40.42
+        ],
+        [
+          27.6,
+          40.62
+        ],
+        [
+          28.4,
+          40.82
+        ],
+        {
+          "at": [
+            29.0,
+            41.05
+          ],
+          "name": "the Bosphorus"
+        },
+        [
+          32.0,
+          42.6
+        ]
+      ],
+      "routeCertainty": "novel",
+      "routeSource": "By sea after the creature — through the Mediterranean and the straits into the Black Sea.",
+      "note": "He takes passage after the creature by night, through the Mediterranean and the straits to the Black Sea."
     },
     {
       "character": "victor",
@@ -1659,10 +1830,19 @@
       "kind": "journey",
       "character": "victor",
       "from": "perth",
+      "to": "thurso",
+      "chapter": 21,
+      "title": "Alone to the coast",
+      "narration": "Leaving Clerval at Perth, Victor crosses the northern Highlands alone to the Caithness coast, sick of the work he has promised and the second creature he must make."
+    },
+    {
+      "kind": "journey",
+      "character": "victor",
+      "from": "thurso",
       "to": "orkney-island",
       "chapter": 21,
-      "title": "Alone to a bare rock",
-      "narration": "Leaving Clerval at Perth, Victor crosses the northern Highlands to the coast and takes a boat to one of the remotest of the Orkneys — a bare rock of three huts and five souls, where he sets up his laboratory to finish the thing alone."
+      "title": "A bare rock",
+      "narration": "From there he takes a boat out to one of the remotest of the Orkneys — a bare rock of three wretched huts — and sets up his laboratory to make the she-creature the monster has demanded."
     },
     {
       "kind": "scene",
@@ -1706,10 +1886,19 @@
       "kind": "journey",
       "character": "victor",
       "from": "ireland-town",
+      "to": "le-havre",
+      "chapter": 23,
+      "title": "Acquitted, and away",
+      "narration": "Victor is thrown into prison and a raving fever, and acquitted only when the dates clear him of Clerval's murder. Broken, he sails from Ireland with his father, bound for Havre-de-Grace."
+    },
+    {
+      "kind": "journey",
+      "character": "victor",
+      "from": "le-havre",
       "to": "geneva",
       "chapter": 23,
-      "title": "Acquitted, and home",
-      "narration": "Victor is thrown into prison and a raving fever, and acquitted only when the timing clears him. Broken, he sails from Ireland with his father and returns overland through France to Geneva, the wedding to Elizabeth now settled at last."
+      "title": "Home to a wedding",
+      "narration": "They land in France and travel home overland by way of Paris to Geneva — where a wedding to Elizabeth is waiting, and the creature's promise to be with him on his wedding night."
     },
     {
       "kind": "journey",
@@ -1761,10 +1950,19 @@
       "kind": "journey",
       "character": "victor",
       "from": "geneva",
+      "to": "marseille",
+      "chapter": 25,
+      "title": "Down the Rhône",
+      "narration": "Elizabeth murdered and his father dead of grief, Victor has nothing left but the hunt. He follows the windings of the Rhône down to the blue Mediterranean, tracking the fiend by the clues it leaves to keep the chase alive."
+    },
+    {
+      "kind": "journey",
+      "character": "victor",
+      "from": "marseille",
       "to": "black-sea",
       "chapter": 25,
-      "title": "Down the Rhône, out to sea",
-      "narration": "He follows the windings of the Rhône to the Mediterranean, where he sees the creature slip aboard a ship by night bound for the Black Sea, and takes passage in the same vessel — the pursuit passing now out of western Europe altogether."
+      "title": "Out to sea, after him",
+      "narration": "At the coast he sees the creature slip aboard a ship by night, bound for the Black Sea, and takes passage after it — through the Mediterranean and the straits, always a day behind."
     },
     {
       "kind": "journey",
