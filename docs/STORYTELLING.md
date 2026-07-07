@@ -90,6 +90,25 @@ shared journey (the focus is the first named).
    over ~60 won't be read (the rushes tool warns). Vary the rhythm:
    scene, journey, journey, scene reads better than strict alternation.
 
+## Converging paths — narrating the near-miss
+
+A few books run on coincidence rather than journey: characters crossing the
+same city on the same day, always just missing one another. The engine
+already shows it — a finished path stays drawn faintly, so a live character
+visibly crosses an earlier one — and the telling does the rest. When two
+threads pass the same ground close in time, spend a beat on it: name the
+gap, from the pane, in the present tense of the character we're with. "Only
+twenty minutes earlier, Stephen had stood on the very spot Bloom now
+crosses." The map shows the *where*; the narration supplies the *when*, and
+the ache of the miss.
+
+Two cautions. The crossing must be **true** — the same place, and the stated
+time-gap matching the timed data (the text-vs-map check verifies it below);
+a beautiful near-miss the data doesn't bear out is still a lie. And don't
+narrate every coincidence or none will land — pick the few the book itself
+leans on. This is a technique for the near-miss class of book (see
+`ADDING-A-NOVEL.md` §3), not a rule for every novel.
+
 ## The screening loop
 
 A script is never shipped on the first draft:
@@ -118,6 +137,11 @@ A script is never shipped on the first draft:
    - **shared-vs-solo** — a movement's `character` array matches who the
      narration says travels together; a companion the narration names isn't
      dropped, and a solo flight isn't drawn as a shared line.
+   - **crossings** — any near-miss the narration asserts (one character on a
+     spot another lately passed, "twenty minutes earlier…") is true against
+     the timed movements: the two paths really share that point, and the
+     stated gap matches the clock. A crossing the data doesn't bear out is a
+     lie, however good the line — cut it or fix the timing.
 
    This catches the class of error rushes is blind to. It has found, in
    practice: Mr Peggotty *walking* across France drawn as a sea voyage round

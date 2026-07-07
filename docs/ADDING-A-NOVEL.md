@@ -184,6 +184,34 @@ travel icon and shapes how you research the path:
   40th parallel. Always check the route against the book's decade, not the
   most famous version of it.
 
+### Timing converging paths — the near-miss class
+
+Most books are one person going somewhere. A few are the opposite: two or
+more people crossing the same ground over a single day, forever just
+missing each other — Bloom and Stephen around Dublin, Clarissa and Septimus
+across London. The near-miss is the whole point of such a book, and it is
+**told, not computed**: a finished route already stays drawn faintly, so one
+character's bright path visibly crosses another's dimmed one, and the script
+names the coincidence in the pane. No new machinery — but two data
+disciplines the ordinary books don't need:
+
+1. **Time the movements honestly.** When the story collapses to a single
+   day the clock runs in hours, so `startDay` and `days` become *fractional*
+   days (8 a.m. is `0.333`; a forty-minute walk is `0.028`). The timeline
+   axis is already real-valued, so this needs no new field — but the numbers
+   must be *true*, because a crossing the narration later asserts has to
+   actually happen at those positions and those times. Both candidate novels
+   hand you the clock: Ulysses is timed to the minute in the topographical
+   guides, and Dalloway has Big Ben striking the hours as a motif.
+2. **Find the crossings before you script.** For each pair of characters,
+   list the places they both pass and how far apart in time — those
+   coincidences are the beats worth writing. (A helper could list them from
+   the timed data; build it only once we're past the first such book.)
+
+Where the record won't support a precise time, don't manufacture one:
+narrate the crossing softly ("earlier that morning") rather than fake a
+false "twenty minutes". The honesty spine holds here too.
+
 ---
 
 ## 4. Images — the third hierarchy
@@ -302,6 +330,17 @@ walking journey drawn as a sea voyage.
 - **Overlay period.** The default overlay is the 1885–1903 OS survey; for a
   Regency or earlier book that's an anachronism to declare on About (the
   OS Old Series exists but isn't yet servable as a seamless layer).
+- **A single-day book runs the clock in hours — verify the ticker.** The
+  timeline axis is real-valued, so fractional-day movements *play* fine, but
+  the clock/ticker (`js/ui/format.js`) has only ever shown calendar dates and
+  life-stage phrases; confirm it renders a sub-day time sensibly, or lean on
+  the beat narration to carry the hour, before relying on it. Untested until
+  the first single-day novel (see §3, the near-miss class).
+- **The NLS overlay is Great Britain only — Ireland is not on the bucket.**
+  London serves at street zoom, but Dublin 404s across every Irish layer name
+  on the keyless `mapseries-tilesets` bucket (probed). A Dublin book renders
+  on the sepia vector base but has no genuine period paper under it until an
+  Irish tile source is found — a research task, not a given.
 - **Dev-loop gotcha:** the preview browser caches ES modules hard. After
   editing JS, prime the changed files (`fetch(p,{cache:'reload'})`) before
   reloading, or verify against the *served* file with `curl` — a stale
