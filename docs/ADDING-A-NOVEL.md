@@ -307,9 +307,12 @@ The pipeline that produced the honest datasets, in order:
    it overrides the global mobile rules).
 7. **Write the script** — the novel's `story` array of narrated beats, per
    `STORYTELLING.md` (the rubric) and its screening loop (draft → rushes →
-   **text-vs-map check** → watch-through). The dataset records what is
-   true; the script decides how it is told. A novel isn't finished without
-   both.
+   **text-vs-map check** → **completeness check** → watch-through). The
+   dataset records what is true; the script decides how it is told. The
+   completeness check is the one that asks what major beat — often a
+   non-travel one, invisible to the mechanical gates — has been *missed*
+   (it is why P&P nearly shipped without Mr Collins). A novel isn't finished
+   without both an honest dataset and a watchable, complete script.
 8. **Update** the About page (a diary entry + any new attribution) and add
    the shelf entry to `data/novels.json` with first-edition spine colours.
 

@@ -150,7 +150,25 @@ A script is never shipped on the first draft:
    traveller (Lord Godalming) galloping in one beat and boarding a launch in
    the next. Fix every genuine contradiction; a nested-flashback rewind
    behind a `meanwhile` is correct, not one.
-4. **Screening** — watch it in the browser, end to end, at 1×, as a
+4. **Completeness check** — the other blind spot. Rushes and the text-vs-map
+   check both police what *is* in the script; neither can see what's
+   *missing*, because knowing which of a novel's moments matter needs someone
+   who has read the book. In particular a major **non-travel** turning point
+   — a proposal, a betrothal, a death, a revelation at a fixed place — has no
+   movement to be "uncovered", so it slips past every mechanical check. So a
+   reviewer (an LLM agent; it needs judgement) reads the novel against the
+   script and asks: *which turning points does this skip, and does a stranger
+   need any of them to follow the story?* Report them as candidate `scene`
+   beats, each with one line on why it earns a stop.
+
+   The bar is deliberately **high**, because PlotLines is not trying to tell
+   the whole book. Flag only the **load-bearing** (a later beat leans on it)
+   or the **stranger-confusing** (its absence leaves a plot hole) — never
+   every subplot, or the pass drowns the script in stops. The editor decides
+   what actually goes in. This is what would have caught P&P shipping without
+   Mr Collins's proposal and Charlotte Lucas's acceptance — the betrothal the
+   whole Kent hinge silently depends on.
+5. **Screening** — watch it in the browser, end to end, at 1×, as a
    stranger would. Only then does it go in front of the editor.
 
 ## What the player does with it
