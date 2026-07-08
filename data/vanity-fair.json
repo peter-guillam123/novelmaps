@@ -1,0 +1,596 @@
+{
+  "title": "Vanity Fair",
+  "author": "William Makepeace Thackeray",
+  "year": 1848,
+  "gutenbergId": 599,
+  "quotesVerified": true,
+  "timeline": {
+    "epoch": "1813-06-01",
+    "calendar": true,
+    "span": "c.1813–1830: two girls out of school, the road to Waterloo, and the long after"
+  },
+  "overture": ["Two girls leave school together and part at the gate — Becky Sharp, penniless and clever, to claw her way up through governessing and marriage into Mayfair and a scandal; and gentle, moneyed Amelia Sedley, to be ruined, widowed at Waterloo, and to endure. Their lives cross London, the field of Waterloo, and the Continent, and meet again, at the last, in a little German court — a novel without a hero, and a whole world in it."],
+  "sources": [
+    {
+      "name": "Project Gutenberg #599 — the full text; place-names and quotes verified verbatim",
+      "url": "https://www.gutenberg.org/ebooks/599"
+    },
+    {
+      "name": "Real geography (Russell Square, Chiswick Mall, Brighton, Ostend, Brussels, Waterloo); the fictional Queen's Crawley and Pumpernickel flagged, the latter long identified with Weimar",
+      "url": "https://en.wikipedia.org/wiki/Vanity_Fair_(novel)"
+    }
+  ],
+  "regions": [
+    {
+      "id": "london",
+      "name": "London"
+    },
+    {
+      "id": "england",
+      "name": "The country: Hampshire and Brighton"
+    },
+    {
+      "id": "waterloo",
+      "name": "The road to Waterloo"
+    },
+    {
+      "id": "continent",
+      "name": "The Continent"
+    }
+  ],
+  "mapHome": {
+    "bounds": [
+      [-0.6, 50.4],
+      [11.8, 52.2]
+    ]
+  },
+  "chapters": [
+    {
+      "n": 1,
+      "title": "Chiswick",
+      "dateInStory": "c.1813 — leaving school",
+      "day": 0
+    },
+    {
+      "n": 2,
+      "title": "Russell Square",
+      "dateInStory": "the season",
+      "day": 20
+    },
+    {
+      "n": 3,
+      "title": "Queen's Crawley",
+      "dateInStory": "governess days",
+      "day": 60
+    },
+    {
+      "n": 4,
+      "title": "The marriages",
+      "dateInStory": "spring 1815",
+      "day": 700
+    },
+    {
+      "n": 5,
+      "title": "Brighton",
+      "dateInStory": "the honeymoon",
+      "day": 725
+    },
+    {
+      "n": 6,
+      "title": "The crossing",
+      "dateInStory": "June 1815",
+      "day": 740
+    },
+    {
+      "n": 7,
+      "title": "Brussels",
+      "dateInStory": "the eve of the battle",
+      "day": 745
+    },
+    {
+      "n": 8,
+      "title": "Waterloo",
+      "dateInStory": "18 June 1815",
+      "day": 747
+    },
+    {
+      "n": 9,
+      "title": "The rise",
+      "dateInStory": "the years after",
+      "day": 1500
+    },
+    {
+      "n": 10,
+      "title": "The fall",
+      "dateInStory": "the scandal",
+      "day": 3500
+    },
+    {
+      "n": 11,
+      "title": "Exile",
+      "dateInStory": "the wandering years",
+      "day": 4000
+    },
+    {
+      "n": 12,
+      "title": "Pumpernickel",
+      "dateInStory": "the play played out",
+      "day": 5200
+    }
+  ],
+  "characters": [
+    {
+      "id": "becky",
+      "name": "Becky Sharp",
+      "colour": "madder",
+      "role": "Penniless, brilliant and unscrupulous; she claws her way from a charity pupil to the drawing-rooms of Mayfair and the presence of the King, and falls as fast — the engine of the book, and its rising line",
+      "start": {
+        "location": "chiswick",
+        "chapter": 1
+      }
+    },
+    {
+      "id": "amelia",
+      "name": "Amelia Sedley",
+      "colour": "slate",
+      "role": "Gentle, moneyed and soft-hearted; ruined by her father's bankruptcy, widowed at Waterloo, and left to endure a long genteel poverty — the book's enduring line, set against Becky's rise",
+      "start": {
+        "location": "chiswick",
+        "chapter": 1
+      }
+    },
+    {
+      "id": "george",
+      "name": "George Osborne",
+      "colour": "ochre",
+      "role": "Amelia's vain, dashing husband, who marries her against his father's will and is killed at Waterloo weeks later — a line that runs to the battlefield and stops",
+      "start": {
+        "location": "russell-square",
+        "chapter": 2
+      }
+    }
+  ],
+  "locations": [
+    {
+      "id": "chiswick",
+      "region": "london",
+      "name": "Chiswick Mall",
+      "novelName": "Miss Pinkerton's academy",
+      "coords": [-0.2445, 51.4875],
+      "certainty": "identified",
+      "note": "Chiswick Mall is real; the academy is fictional but explicitly sited there.",
+      "story": "Miss Pinkerton's genteel academy on the real riverside street of Chiswick Mall, where the book opens: Becky and Amelia are turned out into the world, and Becky flings the presentation dictionary back into the garden.",
+      "quote": "So much for the Dixonary; and, thank God, I'm out of Chiswick.",
+      "quoteRef": "Ch. 2, Becky"
+    },
+    {
+      "id": "russell-square",
+      "region": "london",
+      "name": "Russell Square",
+      "novelName": "Russell Square",
+      "coords": [-0.1257, 51.5222],
+      "certainty": "real",
+      "story": "The Bloomsbury square where the wealthy Sedleys and, facing them, the Osbornes both live — the comfortable world Amelia is born into and loses when her father is ruined, and to which she gives up her son."
+    },
+    {
+      "id": "queens-crawley",
+      "region": "england",
+      "name": "Queen's Crawley, Hampshire",
+      "novelName": "Queen's Crawley",
+      "coords": [-1.2, 51.02],
+      "certainty": "conjectured",
+      "note": "Best guess. Queen's Crawley and its villages (Mudbury, Squashmore) are fictional; the text fixes only 'Hants', within reach of Southampton. Placed in central Hampshire and flagged conjectured.",
+      "story": "Sir Pitt Crawley's crumbling Hampshire seat, where Becky goes as governess and lays the foundations of her fortune — charming the old baronet and secretly marrying his son Rawdon. Wholly invented; the text places it in Hampshire, near a Southampton doctor."
+    },
+    {
+      "id": "brighton",
+      "region": "england",
+      "name": "Brighton",
+      "novelName": "Brighton",
+      "coords": [-0.1372, 50.8225],
+      "certainty": "real",
+      "story": "The seaside resort of George and Amelia's honeymoon, where Becky and Rawdon join them — until Dobbin brings the order that sends the regiment abroad, and the whole party for the war."
+    },
+    {
+      "id": "curzon-street",
+      "region": "london",
+      "name": "Curzon Street, Mayfair",
+      "novelName": "Curzon Street",
+      "coords": [-0.147, 51.5065],
+      "certainty": "real",
+      "note": "Curzon Street is real Mayfair; the house number is invented.",
+      "story": "Becky and Rawdon's married house in Mayfair, the height of her rise — 'living well on nothing a year', received at Court, the favourite of Lord Steyne — and the scene of the scandal that brings it all down."
+    },
+    {
+      "id": "fulham",
+      "region": "london",
+      "name": "Fulham",
+      "novelName": "Fulham",
+      "coords": [-0.195, 51.47],
+      "certainty": "real",
+      "story": "The modest cottage where the widowed Amelia lives out her years of genteel poverty with her parents and little Georgy, before the son is given up to old Osborne's wealth."
+    },
+    {
+      "id": "ostend",
+      "region": "waterloo",
+      "name": "Ostend",
+      "novelName": "Ostend",
+      "coords": [2.9286, 51.2154],
+      "certainty": "real",
+      "story": "The Belgian port where the packet lands the regiment and its followers, on the road to the war — Ghent and Bruges beyond it, and Brussels at the end."
+    },
+    {
+      "id": "brussels",
+      "region": "waterloo",
+      "name": "Brussels",
+      "novelName": "Brussels",
+      "coords": [4.3517, 50.8503],
+      "certainty": "real",
+      "story": "Where the army gathers and the English wait — the Duchess of Richmond's ball on the eve, the guns heard in the night, and Amelia praying through the day of the battle a few miles to the south."
+    },
+    {
+      "id": "waterloo",
+      "region": "waterloo",
+      "name": "Waterloo (Mont-Saint-Jean)",
+      "novelName": "the field of Waterloo",
+      "coords": [4.4047, 50.6783],
+      "certainty": "real",
+      "note": "The battlefield at Mont-Saint-Jean, Braine-l'Alleud; the Lion's Mound marker was raised 1820–26, after the battle.",
+      "story": "The field south of Brussels where the battle is fought on 18 June 1815 — and where George Osborne is killed, a bullet through his heart, in the book's most famous line.",
+      "quote": "Amelia was praying for George, who was lying on his face, dead, with a bullet through his heart.",
+      "quoteRef": "Ch. 32"
+    },
+    {
+      "id": "boulogne",
+      "region": "continent",
+      "name": "Boulogne-sur-Mer",
+      "novelName": "Boulogne",
+      "coords": [1.6147, 50.7264],
+      "certainty": "real",
+      "story": "The French coast where Becky begins her long Continental exile after the scandal — 'Queen of British Boulogne' for a season, until the old creditors and the old stories find her out and move her on.",
+      "quote": "the French coast at Boulogne, that refuge of so much exiled English.",
+      "quoteRef": "Ch. 64"
+    },
+    {
+      "id": "pumpernickel",
+      "region": "continent",
+      "name": "Pumpernickel (Weimar)",
+      "novelName": "Pumpernickel",
+      "coords": [11.3235, 50.9795],
+      "certainty": "conjectured",
+      "note": "Pumpernickel is fictional; placed at Weimar, the town it is generally identified with, and flagged conjectured.",
+      "story": "Thackeray's invented little German grand-duchy, with its court and its opera — where Amelia, Dobbin and Jos come to rest at the end, and where a sunk and shabby Becky reappears to close the account. Long identified with Weimar, where Thackeray had stayed."
+    }
+  ],
+  "movements": [
+    {
+      "character": [
+        "becky",
+        "amelia"
+      ],
+      "from": "chiswick",
+      "to": "russell-square",
+      "chapter": 2,
+      "mode": "coach",
+      "startDay": 0.5,
+      "days": 0.2,
+      "via": [
+        { "at": [-0.2, 51.49], "name": "Hammersmith" }
+      ],
+      "note": "The two friends leave school in the Sedley carriage — Amelia in tears, Becky flinging Dr Johnson's dictionary back over the gate — and drive together into town, where Becky's first campaign, on Amelia's fat brother Jos, comes to nothing"
+    },
+    {
+      "character": "becky",
+      "from": "russell-square",
+      "to": "queens-crawley",
+      "chapter": 3,
+      "mode": "coach",
+      "startDay": 30.0,
+      "days": 0.6,
+      "via": [
+        { "at": [-0.76, 51.29], "name": "Bagshot Heath" },
+        { "at": [-1.09, 51.26], "name": "Basingstoke" }
+      ],
+      "note": "With no fortune of her own, Becky takes a governess's place at Sir Pitt Crawley's Hampshire seat — outside seat on the Trafalgar coach in the rain — and sets about charming the whole crumbling house",
+      "routeNote": "West out of London by the Hampshire road — Bagshot, Basingstoke — into the country.",
+      "routeSource": "The stage-coach road from London into Hampshire.",
+      "routeCertainty": "documented"
+    },
+    {
+      "character": "becky",
+      "from": "queens-crawley",
+      "to": "curzon-street",
+      "chapter": 4,
+      "mode": "coach",
+      "startDay": 700.0,
+      "days": 0.6,
+      "via": [
+        { "at": [-1.09, 51.26], "name": "Basingstoke" },
+        { "at": [-0.76, 51.29], "name": "Bagshot Heath" }
+      ],
+      "note": "Secretly married to Rawdon Crawley, she comes up to London to begin her real ascent — a little house in Mayfair, living brilliantly on nothing a year, and climbing toward the King's own drawing-room",
+      "routeNote": "Back up the Hampshire road to London and Mayfair.",
+      "routeSource": "The stage-coach road, reversed.",
+      "routeCertainty": "documented"
+    },
+    {
+      "character": "becky",
+      "from": "curzon-street",
+      "to": "boulogne",
+      "chapter": 11,
+      "mode": "ship",
+      "startDay": 3600.0,
+      "days": 1.0,
+      "via": [
+        { "at": [0.9, 51.45], "name": "the Thames estuary" },
+        { "at": [1.55, 51.15], "name": "the Downs, off Kent" },
+        { "at": [1.6, 50.9], "name": "the Channel" }
+      ],
+      "note": "The Steyne scandal breaks; Rawdon casts her off and society shuts its doors. Becky slips across the Channel to Boulogne, the first refuge of her long exile among the Continental English",
+      "routeNote": "Down the Thames and across the Channel to the French coast at Boulogne.",
+      "routeSource": "The cross-Channel packet to Boulogne.",
+      "routeCertainty": "documented"
+    },
+    {
+      "character": "becky",
+      "from": "boulogne",
+      "to": "pumpernickel",
+      "chapter": 12,
+      "mode": "unknown",
+      "startDay": 4600.0,
+      "days": 30.0,
+      "note": "Then the long downward drift — Dieppe, the German spa towns, cards and shabby lodgings and worse — sinking year by year, until she washes up in the little court of Pumpernickel"
+    },
+    {
+      "character": [
+        "amelia",
+        "george"
+      ],
+      "from": "russell-square",
+      "to": "brighton",
+      "chapter": 5,
+      "mode": "coach",
+      "startDay": 725.0,
+      "days": 0.3,
+      "via": [
+        { "at": [-0.1, 51.37], "name": "Croydon" },
+        { "at": [-0.19, 51.11], "name": "Crawley" }
+      ],
+      "note": "Married at last — George against his father's will, and disinherited for it — the young couple honeymoon at Brighton, where the Crawleys join them and the officers idle, until the order comes to embark",
+      "routeNote": "Down the Brighton road — Croydon, Crawley — to the sea.",
+      "routeSource": "The London-to-Brighton turnpike.",
+      "routeCertainty": "documented"
+    },
+    {
+      "character": [
+        "amelia",
+        "george"
+      ],
+      "from": "brighton",
+      "to": "ostend",
+      "chapter": 6,
+      "mode": "ship",
+      "startDay": 738.0,
+      "days": 0.6,
+      "via": [
+        { "at": [0.6, 50.75], "name": "the Channel" },
+        { "at": [1.9, 51.15], "name": "off the Flemish coast" }
+      ],
+      "note": "The regiment for the Continent: the whole party takes the packet across to Ostend, Jos blustering about the coming campaign, the war a rumour and an excitement not yet a horror",
+      "routeNote": "By packet across the Channel to Ostend.",
+      "routeSource": "The Ostend packet (the heroines cross by Ramsgate; the transports down the river).",
+      "routeCertainty": "documented"
+    },
+    {
+      "character": [
+        "amelia",
+        "george"
+      ],
+      "from": "ostend",
+      "to": "brussels",
+      "chapter": 7,
+      "mode": "coach",
+      "startDay": 743.0,
+      "days": 0.5,
+      "via": [
+        { "at": [3.2247, 51.2093], "name": "Bruges" },
+        { "at": [3.7174, 51.0543], "name": "Ghent" }
+      ],
+      "note": "On through Bruges and Ghent to Brussels, filling with troops and gaiety — the shops, the parks, the Duchess of Richmond's ball — the last brilliant days before the guns",
+      "routeNote": "Overland by Bruges and Ghent to Brussels.",
+      "routeSource": "The road from Ostend to Brussels.",
+      "routeCertainty": "documented"
+    },
+    {
+      "character": "george",
+      "from": "brussels",
+      "to": "waterloo",
+      "chapter": 8,
+      "mode": "horse",
+      "startDay": 747.0,
+      "days": 0.3,
+      "note": "The drums beat in the night; the army marches out south to meet Napoleon. Amelia clings to George and he goes — and by the end of that day, a few miles off at Mont-Saint-Jean, he is lying dead on the field, a bullet through his heart"
+    },
+    {
+      "character": "amelia",
+      "from": "brussels",
+      "to": "fulham",
+      "chapter": 9,
+      "mode": "unknown",
+      "startDay": 756.0,
+      "days": 20.0,
+      "note": "Widowed, and carrying George's child, Amelia is brought home to England — down at last to a small cottage at Fulham and years of gentle, grinding poverty"
+    },
+    {
+      "character": "amelia",
+      "from": "fulham",
+      "to": "pumpernickel",
+      "chapter": 12,
+      "mode": "unknown",
+      "startDay": 5200.0,
+      "days": 20.0,
+      "note": "Long after, faithful Dobbin home from India carries the little party — Amelia, Jos, and Georgy — up the Rhine to the quiet court of Pumpernickel, where Amelia will at last see Dobbin's worth"
+    }
+  ],
+  "story": [
+    {
+      "kind": "scene",
+      "character": [
+        "becky",
+        "amelia"
+      ],
+      "at": "chiswick",
+      "chapter": 1,
+      "title": "Two girls leave school",
+      "narration": "Two girls finish at Miss Pinkerton's academy on Chiswick Mall: gentle, wealthy Amelia Sedley, wept over by all, and poor, sharp, penniless Becky Sharp, who leaves with nothing but her wits — and flings the school's parting gift, a dictionary, back into the garden as the carriage pulls away."
+    },
+    {
+      "kind": "journey",
+      "character": [
+        "becky",
+        "amelia"
+      ],
+      "from": "chiswick",
+      "to": "russell-square",
+      "chapter": 2,
+      "title": "To Russell Square",
+      "narration": "They drive into London together, Becky a guest in the Sedleys' rich house on Russell Square. Her first campaign is on Amelia's vain, fat brother Jos — but it comes to nothing, and with no fortune to fall back on she must go out and earn her bread."
+    },
+    {
+      "kind": "handoff",
+      "character": "becky",
+      "at": "russell-square",
+      "chapter": 2,
+      "title": "Becky's way up",
+      "narration": "Follow Becky first. Without money or family, the only door open to her is service — a governess's place in the country, and the long game of making herself indispensable."
+    },
+    {
+      "kind": "journey",
+      "character": "becky",
+      "from": "russell-square",
+      "to": "queens-crawley",
+      "chapter": 3,
+      "title": "Governess at Queen's Crawley",
+      "narration": "At Sir Pitt Crawley's tumbledown Hampshire hall she charms everyone — the coarse old baronet, his rich sister, his son. And quietly, cleverly, she marries that son, Rawdon Crawley, a guardsman and his aunt's favourite — a secret that will cost him the aunt's fortune."
+    },
+    {
+      "kind": "journey",
+      "character": "becky",
+      "from": "queens-crawley",
+      "to": "curzon-street",
+      "chapter": 4,
+      "title": "The rise",
+      "narration": "Married, she comes up to London to begin the ascent she was born for: a little house in Mayfair, living dazzlingly 'on nothing a year', and climbing, charm by charm and debt by debt, toward presentation at the King's own court."
+    },
+    {
+      "kind": "meanwhile",
+      "narration": "Now wind back, and turn to Amelia. While Becky schemed in Hampshire, ruin came to Russell Square: her father Sedley is bankrupt, and the match with George Osborne all but broken."
+    },
+    {
+      "kind": "journey",
+      "character": [
+        "amelia",
+        "george"
+      ],
+      "from": "russell-square",
+      "to": "brighton",
+      "chapter": 5,
+      "title": "Married, and to the war",
+      "narration": "George marries her — pushed to it by his friend Dobbin, who loves Amelia himself but cannot bear to see her jilted — and is disinherited for it. They honeymoon at Brighton, the officers idling by the sea, until Dobbin brings the order that the regiment sails for the Continent."
+    },
+    {
+      "kind": "journey",
+      "character": [
+        "amelia",
+        "george"
+      ],
+      "from": "brighton",
+      "to": "ostend",
+      "chapter": 6,
+      "title": "Across the Channel",
+      "narration": "The whole party takes the packet across to Ostend, Jos loud about the coming campaign, the war still a thrilling rumour rather than a horror."
+    },
+    {
+      "kind": "journey",
+      "character": [
+        "amelia",
+        "george"
+      ],
+      "from": "ostend",
+      "to": "brussels",
+      "chapter": 7,
+      "title": "Brussels, before the battle",
+      "narration": "On through Bruges and Ghent to Brussels — the city filling with troops and gaiety, the shops and the parks and the Duchess of Richmond's great ball: the last brilliant nights before the guns."
+    },
+    {
+      "kind": "journey",
+      "character": "george",
+      "from": "brussels",
+      "to": "waterloo",
+      "chapter": 8,
+      "title": "Waterloo",
+      "narration": "In the night the drums beat and the army marches south. Amelia clings to George; he goes. And by the end of that long day, a few miles off at Mont-Saint-Jean, he is lying on his face on the field, dead, a bullet through his heart — while in Brussels she prays for a man already gone."
+    },
+    {
+      "kind": "journey",
+      "character": "amelia",
+      "from": "brussels",
+      "to": "fulham",
+      "chapter": 9,
+      "title": "The widow of Fulham",
+      "narration": "Widowed at twenty, and carrying George's child, Amelia is brought home to England — and down, as the Sedleys sink, to a small cottage at Fulham and long years of gentle poverty, her whole heart poured into her boy."
+    },
+    {
+      "kind": "meanwhile",
+      "narration": "Turn back to Becky, at the very top of the wheel while Amelia is at the bottom of it — mistress of Mayfair, wit of the town, the plaything and favourite of the great Lord Steyne."
+    },
+    {
+      "kind": "scene",
+      "character": "becky",
+      "at": "curzon-street",
+      "chapter": 10,
+      "title": "The fall",
+      "narration": "Then it breaks. Rawdon, arrested for debt and freed, comes home to find her alone with Steyne and the diamonds — and casts her off. The scandal empties every drawing-room in London. In an afternoon the whole glittering structure is gone."
+    },
+    {
+      "kind": "journey",
+      "character": "becky",
+      "from": "curzon-street",
+      "to": "boulogne",
+      "chapter": 11,
+      "title": "Exile",
+      "narration": "Cast out, Becky slips across the Channel to Boulogne — 'Queen of British Boulogne' for a season among the exiled English, until the old debts and the old stories catch her up and move her on."
+    },
+    {
+      "kind": "journey",
+      "character": "becky",
+      "from": "boulogne",
+      "to": "pumpernickel",
+      "chapter": 12,
+      "title": "The wandering years",
+      "narration": "And then the long descent: Dieppe, the German spa towns, the card-tables and the shabby inns, sinking year by year — until she fetches up, faded and disreputable, in the little court of Pumpernickel."
+    },
+    {
+      "kind": "meanwhile",
+      "narration": "And so the two threads, parted at the school gate a lifetime ago, run together one last time. Faithful Dobbin, home from India, brings Amelia and her brother abroad — and up the Rhine to the same quiet town."
+    },
+    {
+      "kind": "journey",
+      "character": "amelia",
+      "from": "fulham",
+      "to": "pumpernickel",
+      "chapter": 12,
+      "title": "Up the Rhine",
+      "narration": "At Pumpernickel Amelia, Jos and Dobbin come to rest, and — with a hard word from Becky, of all people, about the George she has mourned so long — Amelia at last turns to the man who has loved her for twenty years."
+    },
+    {
+      "kind": "scene",
+      "character": "amelia",
+      "at": "pumpernickel",
+      "chapter": 12,
+      "day": 5260,
+      "title": "The play played out",
+      "narration": "There the account closes: Becky sunk and shabby but surviving, Amelia quietly happy at last, Jos dead under Becky's shadow. Which of us is happy in this world, the showman asks — and shuts the puppets back in their box, for the play is played out."
+    }
+  ]
+}

@@ -99,6 +99,15 @@
     "spine": { "cloth": "#c9a227", "text": "#a63d33" }
   },
   {
+    "id": "vanity-fair",
+    "title": "Vanity Fair",
+    "author": "William Makepeace Thackeray",
+    "year": 1848,
+    "file": "data/vanity-fair.json",
+    "blurb": "Two girls leave school and part at the gate — clever, penniless Becky Sharp climbing to Mayfair and a scandal, gentle Amelia Sedley ruined and widowed at Waterloo. London, the battlefield, and the Continent, and a whole world in it.",
+    "spine": { "cloth": "#6b2f3c", "text": "#e6d2a8" }
+  },
+  {
     "id": "eighty-days",
     "title": "Around the World in Eighty Days",
     "author": "Jules Verne",
