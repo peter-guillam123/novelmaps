@@ -1547,7 +1547,21 @@ body.is-overture #captions { display: none !important; }
   html.touch .library-title { font-size: 30px; margin: 0; }
   html.touch .library-sub { font-size: 12px; line-height: 1.4; margin: 5px auto 0; max-width: 36rem; }
   html.touch .intro-kicker, html.touch .intro-hints { display: none; }
-  html.touch .library-shelf { margin-top: 12px; }
+  /* On a short phone screen, collapse the stacked bookcase back to one
+     horizontally-swiped shelf, so the whole collection sits on a single
+     screen rather than scrolling down. The rows dissolve into one flex row
+     (display: contents), and the board moves back onto the shelf itself. */
+  html.touch .library-shelf {
+    margin-top: 12px;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 0 10px 10px;
+    border-bottom: 10px solid #8a6a45;
+    box-shadow: inset 0 -13px 0 -10px #6e5335;
+  }
+  html.touch .shelf-row { display: contents; }
   html.touch .library-book { height: 150px; }
   html.touch .book-title { font-size: 12px; max-height: 92px; }
   html.touch .book-author { font-size: 9px; max-height: 42px; }
