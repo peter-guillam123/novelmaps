@@ -59,6 +59,13 @@ const ICONS = {
     '<path d="M2.4 11.6h8.7c1 0 1.8-.6 2.2-1.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>' +
     '<path d="M6 11.6V3.4l3.7 3.1L6 8" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>' +
     '<path d="M3.8 13.4q4-1.3 7.4 0" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>',
+  // Martian fighting-machine: a domed hood on three splayed striding legs,
+  // a handling-tentacle hanging (The War of the Worlds)
+  tripod:
+    '<path d="M4.7 6.6a3.3 2.6 0 0 1 6.6 0" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>' +
+    '<path d="M4.7 6.6h6.6" stroke="currentColor" stroke-width="1.2"/>' +
+    '<path d="M5.6 6.9 2.7 13.8M8 7.1 8.3 14M10.4 6.9 13.4 12.4" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>' +
+    '<path d="M9.2 7.2q1.2 1.8 2.2 2.3" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>',
   // dotted line for an unrecorded mode
   unknown:
     '<path d="M3 8h10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="1 2.5"/>',
@@ -74,6 +81,7 @@ const PHRASE = {
   ship: 'by ship',
   elephant: 'by elephant',
   sledge: 'by wind-sledge',
+  tripod: 'in the fighting-machines',
   unknown: 'onward',
 };
 

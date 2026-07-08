@@ -28,7 +28,7 @@ const PCT_FLOOR = 6;  // …and only if it's this % of the leg (cuts coastal noi
 // `unknown` (no claim), `sledge` (polar — its medium is snow and sea-ice, not
 // the land/water binary). A `ship` leg may set `"medium": "river"` to opt out
 // (a river-boat honestly runs through land — the Rhine, the Sereth).
-const LAND_MODES = new Set(['foot', 'horse', 'coach', 'omnibus', 'motor', 'train', 'elephant']);
+const LAND_MODES = new Set(['foot', 'horse', 'coach', 'omnibus', 'motor', 'train', 'elephant', 'tripod']);
 const SKIP_MODES = new Set(['unknown', 'sledge']);
 
 // ---- load the land polygons, each ring-group with a bbox for prefiltering ----

@@ -106,5 +106,14 @@
     "file": "data/thirty-nine-steps.json",
     "blurb": "A dead man's secret, a milkman's disguise, and one hunted man run the length of Britain — Galloway moor to a chalk stair on the Channel, on the eve of the war.",
     "spine": { "cloth": "#37506b", "text": "#e0d0a8" }
+  },
+  {
+    "id": "war-of-the-worlds",
+    "title": "The War of the Worlds",
+    "author": "H. G. Wells",
+    "year": 1898,
+    "file": "data/war-of-the-worlds.json",
+    "blurb": "A cylinder falls on a Surrey common and the Martians turn a heat-ray on England — one man's flight across the Thames into a dead London, his brother's escape to the sea, and the tripods' march on the city.",
+    "spine": { "cloth": "#7e2f22", "text": "#e4d3ad" }
   }
 ]
