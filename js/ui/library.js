@@ -35,9 +35,13 @@ export function createLibrary(container, index) {
     book.style.setProperty('--lettering', novel.spine?.text || '#e6d59a');
     book.innerHTML = `
       <span class="book-title"></span>
-      <span class="book-author"></span>`;
+      <span class="book-foot">
+        <span class="book-author"></span>
+        <span class="book-year"></span>
+      </span>`;
     book.querySelector('.book-title').textContent = novel.title;
     book.querySelector('.book-author').textContent = novel.author;
+    book.querySelector('.book-year').textContent = novel.year;
     book.addEventListener('click', () => {
       location.search = `novel=${novel.id}`;
     });

@@ -1314,6 +1314,22 @@ body.is-overture #captions { display: none !important; }
   opacity: 0.85;
 }
 
+/* author (vertical) with a small horizontal date stamped at the foot */
+.book-foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+}
+.book-year {
+  writing-mode: horizontal-tb;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  font-variant-numeric: tabular-nums;
+  color: var(--lettering, #e6d59a);
+  opacity: 0.6;
+}
+
 .library-book-empty {
   background: transparent;
   border: 1px dashed var(--rule);
