@@ -1571,4 +1571,20 @@ body.is-overture #captions { display: none !important; }
   /* a slimmer control bar */
   html.touch #controls { gap: 8px; padding: 5px 10px; }
   html.touch #controls .clock-date { font-size: 15px; }
+
+  /* TOP LEVEL (the overture): the framing card must share the screen with the
+     masthead nav, not cover it. Centred, it sat on top of Story/Explore/About;
+     dock it clear of the left rail and let it scroll if the cast runs long, so
+     the nav stays reachable and the back-button state feels like a real home. */
+  html.touch body.is-overture .overture-panel {
+    left: calc(env(safe-area-inset-left) + 216px);
+    right: calc(env(safe-area-inset-right) + 8px);
+    bottom: calc(env(safe-area-inset-bottom) + 8px);
+    transform: none;
+    width: auto;
+    max-height: calc(100vh - 16px);
+    overflow-y: auto;
+  }
+  /* keep the nav above the card even if a future layout makes them touch */
+  html.touch body.is-overture #rail { z-index: 21; }
 }
