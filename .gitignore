@@ -1,0 +1,5 @@
+# macOS finder junk
+.DS_Store
+
+# stray image candidates / scratch dropped at the repo root
+/t_*.jpg
