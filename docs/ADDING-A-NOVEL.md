@@ -199,6 +199,23 @@ sea-ice, not the land/water binary), and a **river-boat**, which runs through
 land by design — mark such a `ship` leg `"medium": "river"` (the Rhine, the
 Sereth up to the castle) and the detector leaves it alone.
 
+### Making a river leg follow the river — the river-tracer
+
+`medium: "river"` stops the detector complaining, but the leg is still *drawn*
+as the usual sparse polyline — which on a long, winding river (the Congo up to
+Kurtz) cuts straight across the land instead of following the water. Where the
+river *is* the story, trace it. `node tools/river-trace.mjs "<River[,River2…]>"
+<lng,lat> <lng,lat> [--eps KM]` loads Natural Earth's public-domain river
+centrelines (named rivers, vendored in `tools/data/`), finds the named river,
+walks the shortest path along the water between the two endpoints, simplifies
+it (Douglas–Peucker, `--eps` in km) and prints a paste-ready chain of `via`
+coordinates. Bake those into the leg's `via` (keep `medium: "river"`); label
+the handful of real ports/stations along it as `{ "at": …, "name": … }` beads
+and leave the rest as bare shaping points. It is author-time only — the runtime
+still just draws the polyline. Caveat: the centreline is generalised at map
+scale, so it follows the river convincingly but not every oxbow. Reusable for
+any river book (the Mississippi, the Nile, the Volga).
+
 ### Timing converging paths — the near-miss class
 
 Most books are one person going somewhere. A few are the opposite: two or
