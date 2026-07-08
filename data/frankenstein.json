@@ -1003,22 +1003,25 @@
       "days": 10,
       "mode": "ship",
       "via": [
-        {
-          "at": [
-            8.24,
-            50
-          ],
-          "name": "Mainz",
-          "note": "Down the Rhine by boat: 'The course of the Rhine below Mainz becomes much more picturesque.'"
-        },
-        {
-          "at": [
-            6.96,
-            50.94
-          ],
-          "name": "Cologne",
-          "note": "'Beyond Cologne we descended to the plains of Holland' — the last of the gorge country."
-        }
+        { "at": [8.228, 50.038], "name": "Mainz", "note": "Down the Rhine by boat: 'The course of the Rhine below Mainz becomes much more picturesque.'" },
+        [8.1736, 50.0457],
+        [7.8779, 49.9728],
+        [7.7651, 50.0637],
+        [7.7199, 50.1584],
+        [7.6513, 50.1788],
+        [7.5793, 50.2499],
+        [7.6479, 50.2608],
+        [7.592, 50.3155],
+        [7.613, 50.3837],
+        [7.5808, 50.4112],
+        [7.3872, 50.4492],
+        [7.3325, 50.4868],
+        [7.2133, 50.5958],
+        [7.175, 50.699],
+        [6.9756, 50.8399],
+        [7.0514, 50.8908],
+        [6.9856, 50.9017],
+        { "at": [6.9627, 50.9427], "name": "Cologne", "note": "'Beyond Cologne we descended to the plains of Holland' — the last of the gorge country." }
       ],
       "routeNote": "Victor and Clerval descend the Rhine by boat from Strasbourg through Mainz and Cologne to the plains of Holland and Rotterdam — the very towns Shelley names as they pass.",
       "routeSource": "Shelley, Ch. 18: 'descend the Rhine in a boat from Strasburgh to Rotterdam', naming Mainz, Cologne and the plains of Holland.",
