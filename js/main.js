@@ -302,6 +302,13 @@ ready
       director.arm();
       engine.requestRender();
     });
+
+    // Mobile "back": end the journey and return to the top-level overture
+    // (the title pane and cast). Shown only during a mobile-landscape
+    // journey by CSS; harmless off touch devices.
+    document.getElementById('mobile-stop').addEventListener('click', () => {
+      enterStory({ restart: true });
+    });
     function updateRecentre() {
       recentre.hidden = director.isArmed() || mode === 'explore';
     }

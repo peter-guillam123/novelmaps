@@ -53,7 +53,14 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  /* stop iOS Safari inflating text in landscape (it was blowing up the
+     map attribution to giant size) */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
+
+/* the mobile "end the journey" button — hidden entirely off touch devices */
+#mobile-stop { display: none; }
 
 body {
   font-family: var(--serif);
@@ -1534,4 +1541,34 @@ body.is-overture #captions { display: none !important; }
   html.touch .library-book { height: 150px; }
   html.touch .book-title { font-size: 12px; max-height: 92px; }
   html.touch .book-author { font-size: 9px; max-height: 42px; }
+}
+
+/* ---- landscape phone: radical declutter for the journey + fixes ---- */
+@media (orientation: landscape) and (max-height: 560px) {
+  /* keep the spine text inside the shortened spines (was overflowing) */
+  html.touch .library-book { height: 178px; padding: 10px 5px 10px; overflow: hidden; }
+  html.touch .book-title { font-size: 11px; max-height: 108px; line-height: 1.05; }
+  html.touch .book-author { font-size: 8.5px; max-height: 48px; }
+
+  /* the map attribution is required but must be a whisper, not a banner */
+  html.touch .maplibregl-ctrl-attrib { font-size: 9px; line-height: 1.25; padding: 0 4px; }
+
+  /* DURING A JOURNEY (not the overture): give the map the whole screen —
+     drop the title/cast pane and the map toggle, offer a back button that
+     returns to the top-level view (the overture, with the pane and cast) */
+  html.touch body:not(.is-overture) #rail,
+  html.touch body:not(.is-overture) .nls-control { display: none; }
+  html.touch body:not(.is-overture) #mobile-stop {
+    display: flex; align-items: center; justify-content: center;
+    position: absolute; z-index: 12;
+    top: calc(env(safe-area-inset-top) + 8px);
+    left: calc(env(safe-area-inset-left) + 8px);
+    width: 44px; height: 44px; border-radius: 50%; padding: 0;
+    background: var(--paper-bright); border: 1px solid var(--rule);
+    box-shadow: var(--shadow); color: var(--ink); cursor: pointer;
+  }
+
+  /* a slimmer control bar */
+  html.touch #controls { gap: 8px; padding: 5px 10px; }
+  html.touch #controls .clock-date { font-size: 15px; }
 }
