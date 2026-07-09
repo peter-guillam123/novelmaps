@@ -108,6 +108,15 @@
     "spine": { "cloth": "#6b2f3c", "text": "#e6d2a8" }
   },
   {
+    "id": "anna-karenina",
+    "title": "Anna Karenina",
+    "author": "Leo Tolstoy",
+    "year": 1878,
+    "file": "data/anna-karenina.json",
+    "blurb": "Two loves running opposite ways down one dead-straight Russian railway — and the train at the end of it.",
+    "spine": { "cloth": "#5e2a2a", "text": "#e8dcc0" }
+  },
+  {
     "id": "eighty-days",
     "title": "Around the World in Eighty Days",
     "author": "Jules Verne",
