@@ -169,7 +169,12 @@
       "note": "The cruising yawl Nellie swings to her anchor in the Lower Hope, off Gravesend, waiting for the turn of the tide; the exact spot is Conrad's to keep, but the reach is named.",
       "story": "Where the whole tale is told. Five old friends aboard a yawl wait for the tide to turn on the Thames estuary, and Marlow — a seaman still, sitting cross-legged like an idol — begins the story of the one voyage that marked him. 'And this also,' he says, looking at London's glow, 'has been one of the dark places of the earth.'",
       "quote": "The sea-reach of the Thames stretched before us like the beginning of an interminable waterway.",
-      "quoteRef": "Part I"
+      "quoteRef": "Part I",
+      "image": {
+        "file": "assets/images/hod-thames.jpg",
+        "caption": "The Nore Light at the mouth of the Thames, painted by W. L. Wyllie c.1900 — the estuary sea-reach where the Nellie swings at her anchor and Marlow begins his tale.",
+        "credit": "W. L. Wyllie, The Nore Light (c.1900) · Royal Museums Greenwich · Wikimedia Commons · public domain"
+      }
     },
     {
       "id": "london",
@@ -181,7 +186,12 @@
       "note": "The tale is framed on the Thames estuary, but it begins in London: Marlow, home from the sea and restless, waits out the Company appointment his aunt's connections secure before he crosses to Brussels to sign on.",
       "story": "Home from the sea and out of a ship, Marlow loafs about London until his aunt's Continental connections land him the Company's appointment — skipper of a river steamboat — and a summons to Brussels to sign the contract.",
       "quote": "I was loafing about, hindering you fellows in your work and invading your homes.",
-      "quoteRef": "Ch. 1"
+      "quoteRef": "Ch. 1",
+      "image": {
+        "file": "assets/images/hod-london.jpg",
+        "caption": "The Thames Embankment, London, photographed c.1890 — where Marlow, home from the sea, loafs about until the Company's appointment finds him.",
+        "credit": "Detroit Publishing Co. photochrom, c.1890 · Library of Congress · public domain"
+      }
     },
     {
       "id": "brussels",
@@ -193,7 +203,12 @@
       "note": "Conrad never names it, but the Company's headquarters is Brussels — the seat of the Société Anonyme Belge pour le Commerce du Haut-Congo, which employed him in 1890. 'A whited sepulchre' is the identification the text all but signs.",
       "story": "The Company's city, where Marlow signs the contract. In the waiting-room two women knit black wool, guarding the door; a doctor measures his skull 'in the interests of science' and asks, mildly, whether there has been madness in his family. Everything here forebodes.",
       "quote": "...a city that always makes me think of a whited sepulchre.",
-      "quoteRef": "Part I"
+      "quoteRef": "Part I",
+      "image": {
+        "file": "assets/images/hod-brussels.jpg",
+        "caption": "The Palais de Justice, Brussels — the monumental, tomb-still city Marlow thinks of as a whited sepulchre, where he signs on at the Company's headquarters.",
+        "credit": "Postcard, late 19th century · Wikimedia Commons · public domain"
+      }
     },
     {
       "id": "bordeaux",
@@ -205,7 +220,13 @@
       "note": "Best guess for the embarkation. The novel names only 'a French steamer' that calls at every port down the coast; Conrad himself sailed from Bordeaux in May 1890, and a French colonial mail-boat would leave from there.",
       "story": "The French Atlantic port where Marlow takes ship for Africa — down to the coast to join the steamer that will carry him a month south, past a coast like an enigma.",
       "quote": "Watching a coast as it slips by the ship is like thinking about an enigma.",
-      "quoteRef": "Part I"
+      "quoteRef": "Part I",
+      "image": {
+        "file": "assets/images/hod-bordeaux.jpg",
+        "caption": "The harbour at Bordeaux, painted by Eugène Boudin in 1874 — indicative of the French Atlantic port where Marlow takes ship for the coast; the novel names only 'a French steamer'.",
+        "credit": "Eugène Boudin, Bordeaux, the Harbour (1874) · Walters Art Museum · Wikimedia Commons · public domain",
+        "indicative": true
+      }
     },
     {
       "id": "boma",
@@ -217,7 +238,8 @@
       "note": "The estuary landfall. Conrad's own ship, the Ville de Maçeio, landed him near here; the text calls it only the mouth of the big river.",
       "story": "The mouth of the great river, thirty days down the coast. From here the Company's launches work up the last navigable reach to the first station — the ocean voyage over, the true descent about to begin.",
       "quote": "...the edge of a colossal jungle, so dark-green as to be almost black, fringed with white surf.",
-      "quoteRef": "Part I"
+      "quoteRef": "Part I",
+      "imageBlank": "The Congo-mouth station survives in the period record only as colonial imagery of the Free State; a considered blank is the honest choice."
     },
     {
       "id": "matadi",
@@ -229,7 +251,8 @@
       "note": "The Outer or Lower Station, below the first cataracts, where ocean navigation ends and Conrad's Congo Diary begins. Identified as Matadi from the diary and the railway then being cut inland.",
       "story": "The Outer Station: a railway being blasted into the hillside to no clear purpose, boilers rusting in the grass. And in a shade off the path, the grove where the used-up labourers of the Company have crawled away to die. The book's moral centre, met in its first pages.",
       "quote": "...black shadows of disease and starvation, lying confusedly in the greenish gloom.",
-      "quoteRef": "Part I"
+      "quoteRef": "Part I",
+      "imageBlank": "Like the other river stations, Matadi comes down to us only through Congo Free State photographs; left deliberately blank."
     },
     {
       "id": "leopoldville",
@@ -241,7 +264,8 @@
       "note": "The Central Station on the great pool where the river becomes navigable again above the cataracts — Léopoldville, today Kinshasa. Marlow finds his command sunk here and waits.",
       "story": "The Central Station, at the head of the two-hundred-mile portage. Marlow arrives to find his steamboat at the bottom of the river, and spends weeks fishing it up and patching it while the agents intrigue for advancement — and here he first hears the name Kurtz: the best agent the Company has, alone up-river, gone quiet.",
       "quote": "It was on a back water surrounded by scrub and forest, with a pretty border of smelly mud on one side.",
-      "quoteRef": "Part I"
+      "quoteRef": "Part I",
+      "imageBlank": "The Central Station on Stanley Pool has no honest period view free of the colonial record; left blank."
     },
     {
       "id": "below-station",
@@ -253,7 +277,8 @@
       "note": "Best guess. The text places the blinding fog and the attack about eight miles below Kurtz's station; no exact spot is given. Pinned just downstream of Stanley Falls.",
       "story": "Where the river turns deadly. A dense white fog halts the steamer at dawn; then, in the last miles below the station, arrows come out of the silent bank, and the African helmsman is killed at Marlow's feet — the price of the approach to Kurtz.",
       "quote": "When the sun rose there was a white fog, very warm and clammy, and more blinding than the night.",
-      "quoteRef": "Part II"
+      "quoteRef": "Part II",
+      "imageBlank": "An unlocated stretch of river — the fog and the ambush some eight miles below the station; there is nothing to picture."
     },
     {
       "id": "stanley-falls",
@@ -265,7 +290,8 @@
       "note": "The innermost station, at the great falls that were the limit of navigation — Stanley Falls, today Kisangani, and the furthest point Conrad himself reached in 1890.",
       "story": "Kurtz's station, at the head of the navigable river: a ruined house, a broken fence, and fence-posts topped with human heads turned inward. A mad Russian in harlequin patches keeps the last of the ivory and the last of Kurtz's genius. The wilderness had found the man out early, and taken him for its own.",
       "quote": "His was an impenetrable darkness.",
-      "quoteRef": "Part III"
+      "quoteRef": "Part III",
+      "imageBlank": "The inner station at the falls appears in period pictures only as part of the colonial expedition; a considered blank."
     },
     {
       "id": "death-point",
@@ -277,7 +303,8 @@
       "note": "Author-withheld. Kurtz dies on the down-river passage when the steamer breaks down 'at the head of an island'; Conrad names no place. Pinned, conjecturally, on the great northward bend below Basoko.",
       "story": "Where Kurtz dies. Carried down-stream on a stretcher, his life going out with the brown current, he sums up everything he has seen and done and been in a whisper — 'The horror! The horror!' — and is gone. They bury something in a muddy hole, and the steamer goes on.",
       "quote": "'The horror! The horror!'",
-      "quoteRef": "Part III"
+      "quoteRef": "Part III",
+      "imageBlank": "Conrad names no place for Kurtz's death ('the head of an island'); it keeps its silence, and so does the map."
     }
   ],
   "movements": [
