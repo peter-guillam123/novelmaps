@@ -11,7 +11,7 @@ function cardHtml(loc) {
     <p class="card-novel-name"></p>
     <p class="card-real-name"></p>
     ${loc.story ? '<p class="card-story"></p>' : ''}
-    <blockquote class="card-quote"><span></span> <cite></cite></blockquote>
+    ${loc.quote ? '<blockquote class="card-quote"><span></span> <cite></cite></blockquote>' : ''}
     <p class="${badgeClass}"></p>
     ${loc.note ? '<p class="card-note"></p>' : ''}`;
 }
@@ -21,8 +21,10 @@ function fillCard(el, loc) {
   el.querySelector('.card-real-name').textContent =
     loc.name === loc.novelName ? '' : loc.name;
   if (loc.story) el.querySelector('.card-story').textContent = loc.story;
-  el.querySelector('.card-quote span').textContent = `“${loc.quote}”`;
-  el.querySelector('.card-quote cite').textContent = loc.quoteRef;
+  if (loc.quote) {
+    el.querySelector('.card-quote span').textContent = `“${loc.quote}”`;
+    el.querySelector('.card-quote cite').textContent = loc.quoteRef || '';
+  }
   el.querySelector('.badge').textContent = CERTAINTY_LABELS[loc.certainty];
   if (loc.note) el.querySelector('.card-note').textContent = loc.note;
 }
