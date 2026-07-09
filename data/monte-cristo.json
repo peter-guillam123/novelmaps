@@ -160,7 +160,12 @@
       "certainty": "real",
       "story": "Where it begins and, for a while, ends: the Old Port and the look-out at Notre-Dame de la Garde; the Catalans and La Réserve, where Dantès is betrothed to Mercédès and, at the feast, arrested on Danglars's forged denunciation.",
       "quote": "On the 24th of February, 1815, the look-out at Notre-Dame de la Garde signalled the three-master, the Pharaon from Smyrna, Trieste, and Naples.",
-      "quoteRef": "Ch. 1"
+      "quoteRef": "Ch. 1",
+      "image": {
+        "file": "assets/images/mc-marseille.jpg",
+        "caption": "The Vieux-Port at Marseilles, painted by Alphonse Moutte in 1876 — the working harbour that is Edmond Dantès's home, and the quay he is torn from on the day of his arrest.",
+        "credit": "Alphonse Moutte, Déchargement d'un brick à Marseille (1876) · Wikimedia Commons · public domain"
+      }
     },
     {
       "id": "chateau-dif",
@@ -171,7 +176,12 @@
       "certainty": "real",
       "story": "The island fortress off Marseille where Dantès is walled up without trial for fourteen years — and where the Abbé Faria, tunnelling in error into his cell, gives him an education, a purpose, and the secret of the treasure buried on Monte Cristo.",
       "quote": "The treasure I speak of really exists, and I offer to make you the possessor of it.",
-      "quoteRef": "Ch. 17, the Abbé Faria"
+      "quoteRef": "Ch. 17, the Abbé Faria",
+      "image": {
+        "file": "assets/images/mc-chateau-dif.jpg",
+        "caption": "The Château d'If off Marseilles, drawn by the American painter Miner Kilbourne Kellogg around 1850 — the island fortress where Dantès is buried alive for fourteen years, and from which he escapes into the sea.",
+        "credit": "Miner Kilbourne Kellogg, Château d'If (c.1850) · Smithsonian American Art Museum · Wikimedia Commons · public domain"
+      }
     },
     {
       "id": "tiboulen",
@@ -181,7 +191,8 @@
       "coords": [5.3007, 43.2795],
       "certainty": "identified",
       "note": "Named in the text ('Tiboulen and Lemaire are a league from the Château d'If'); a real Frioul islet, the exact landing conjectured.",
-      "story": "The bare islet, a league from the prison, that Dantès reaches after being flung into the sea sewn in the dead Faria's shroud — the first ground of his freedom, where smugglers take him up."
+      "story": "The bare islet, a league from the prison, that Dantès reaches after being flung into the sea sewn in the dead Faria's shroud — the first ground of his freedom, where smugglers take him up.",
+      "imageBlank": "The isle of Tiboulen is a bare rock in the Frioul group; no contemporaneous view of the specific islet exists, and a generic sea view would misrepresent it."
     },
     {
       "id": "monte-cristo",
@@ -192,7 +203,8 @@
       "certainty": "real",
       "story": "The uninhabited rock in the Tuscan archipelago where Faria's fortune lies hidden in a cave — and, at the last, the isle Dantès withdraws to and sails from. It gives him his new name and his new self.",
       "quote": "In the first, blazed piles of golden coin; in the second, were ranged bars of unpolished gold.",
-      "quoteRef": "Ch. 24"
+      "quoteRef": "Ch. 24",
+      "imageBlank": "Only modern photographs of the uninhabited Isola di Montecristo exist on the archives; no honest period view of the title island was found."
     },
     {
       "id": "rome",
@@ -203,7 +215,12 @@
       "certainty": "real",
       "story": "Where the Count of Monte Cristo first appears in society, at the Carnival — mysterious, magnificent, saving young Albert de Morcerf from bandits and so buying his way into the Paris the boy's father inhabits. Later, the net closes here on the last of the enemies.",
       "quote": "the Colosseum by moonlight, as he had shown him Saint Peter's by daylight.",
-      "quoteRef": "Ch. 34"
+      "quoteRef": "Ch. 34",
+      "image": {
+        "file": "assets/images/mc-rome.jpg",
+        "caption": "The Piazza del Popolo, painted by Ippolito Caffi in 1847 — the Roman square where the Count makes his entrance during Carnival, and where Franz and Albert watch the crowds pour towards the Corso.",
+        "credit": "Ippolito Caffi, Piazza del Popolo (1847) · Wikimedia Commons · public domain"
+      }
     },
     {
       "id": "paris",
@@ -215,7 +232,12 @@
       "note": "The Count's addresses (No. 30 Avenue des Champs-Élysées; Auteuil, Rue de la Fontaine) are real streets with invented numbers; the pin marks the city.",
       "story": "The stage of the revenge: the Count's house on the Champs-Élysées and his second at Auteuil, where Villefort's buried secret waits. Here his three enemies have risen high — a banker, a peer, a prosecutor — and here, one by one, he brings them down.",
       "quote": "I am Edmond Dantès!",
-      "quoteRef": "Ch. 116, the unmasking"
+      "quoteRef": "Ch. 116, the unmasking",
+      "image": {
+        "file": "assets/images/mc-paris.jpg",
+        "caption": "The Place de la Concorde and the Champs-Élysées around 1840 — the grand avenue on which the Count takes a house to begin his patient reckoning with the men who ruined Edmond Dantès.",
+        "credit": "Anonymous, the Place de la Concorde and the Champs-Élysées (c.1836–54) · Wikimedia Commons · public domain"
+      }
     },
     {
       "id": "yanina",
@@ -224,7 +246,12 @@
       "novelName": "Yanina",
       "coords": [20.8537, 39.665],
       "certainty": "real",
-      "story": "The court of Ali Pasha in Epirus, where Haydée is a princess — until the French officer Fernand, taken into Ali's trust, betrays him to the Turks for gold. Her father is killed; the crime, twenty years buried, is the thread the Count pulls to destroy the Count de Morcerf."
+      "story": "The court of Ali Pasha in Epirus, where Haydée is a princess — until the French officer Fernand, taken into Ali's trust, betrays him to the Turks for gold. Her father is killed; the crime, twenty years buried, is the thread the Count pulls to destroy the Count de Morcerf.",
+      "image": {
+        "file": "assets/images/mc-yanina.jpg",
+        "caption": "The citadel of Yanina seen across its lake, drawn by Louis Dupré in 1827 — Ali Pasha's city, and the scene of the betrayal by Fernand Mondego that shadows the whole novel.",
+        "credit": "Louis Dupré, The palace and castle of Ioannina seen from the lake (1827) · Wikimedia Commons · public domain"
+      }
     },
     {
       "id": "constantinople",
@@ -233,7 +260,12 @@
       "novelName": "Constantinople",
       "coords": [28.9784, 41.0082],
       "certainty": "real",
-      "story": "Where the child Haydée and her mother are sold into slavery after Yanina falls — and where, years on, the Count of Monte Cristo finds and buys her, and with her the proof of Fernand's treason."
+      "story": "Where the child Haydée and her mother are sold into slavery after Yanina falls — and where, years on, the Count of Monte Cristo finds and buys her, and with her the proof of Fernand's treason.",
+      "image": {
+        "file": "assets/images/mc-constantinople.jpg",
+        "caption": "Constantinople and the Bosphorus at sunset, painted by Ivan Aivazovsky in 1856 — the eastern capital through which Haydée passes into slavery, and out of it, at the Count's hand.",
+        "credit": "Ivan Aivazovsky, View of Constantinople and the Bosphorus (1856) · Wikimedia Commons · public domain"
+      }
     },
     {
       "id": "the-east",
@@ -243,7 +275,8 @@
       "coords": [24.0, 37.0],
       "certainty": "conjectured",
       "note": "The destination is unnamed in the text ('the blue line separating the sky from the Mediterranean'); the pin marks the eastward heading, drawn as an open sea-leg.",
-      "story": "No fixed harbour — the open sea toward the Levant, where the white sail of the Count's yacht dwindles at the last, carrying Edmond and Haydée away from the world that made and unmade him."
+      "story": "No fixed harbour — the open sea toward the Levant, where the white sail of the Count's yacht dwindles at the last, carrying Edmond and Haydée away from the world that made and unmade him.",
+      "imageBlank": "'The East' is deliberately unnamed — the Count simply sails into the sunrise at the close — so there is no real place to depict."
     }
   ],
   "movements": [
