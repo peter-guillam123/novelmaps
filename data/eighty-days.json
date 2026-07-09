@@ -346,7 +346,8 @@
       "certainty": "real",
       "story": "The party takes the evening train for the Continent, bound over the Channel for Paris and the Mont Cenis road to Brindisi. The race has begun.",
       "quote": "Phileas Fogg, at twenty-five minutes past seven, left the Reform Club",
-      "quoteRef": "Ch. 4"
+      "quoteRef": "Ch. 4",
+      "imageBlank": "No clean period image of Charing Cross's main-line departure platform surfaced; the one etching found is of the underground frontage, heavily annotated in its mount — a logged blank beats a mislabelled print."
     },
     {
       "id": "paris",
@@ -726,7 +727,13 @@
       "certainty": "real",
       "story": "A failing suspension bridge over a torrent. The engineer takes it at full speed to jump the gap; the train clears it and the bridge falls into the rapids behind.",
       "quote": "The bridge at Medicine Bow is shaky",
-      "quoteRef": "Ch. 28"
+      "quoteRef": "Ch. 28",
+      "image": {
+        "file": "assets/images/atw-medicine-bow.jpg",
+        "caption": "A. J. Russell's photograph of the Union Pacific's high timber trestle at Dale Creek, Wyoming, c.1868 — indicative of the shaky bridge Fogg's train clears at full speed near Medicine Bow.",
+        "credit": "Andrew J. Russell · Beinecke Library, Yale · Wikimedia Commons · public domain",
+        "indicative": true
+      }
     },
     {
       "id": "plum-creek",
@@ -740,7 +747,13 @@
       "certainty": "real",
       "story": "On the plains a war-party of Sioux storms the train. In the running fight Passepartout uncouples the locomotive to stop the cars at the fort — and is carried off by the Indians.",
       "quote": "Do you know Plum Creek?",
-      "quoteRef": "Ch. 29"
+      "quoteRef": "Ch. 29",
+      "image": {
+        "file": "assets/images/atw-plum-creek.jpg",
+        "caption": "A Union Pacific station on the Nebraska plains in 1869, freight cars at the platform — indicative of the small prairie stops like Plum Creek, where a Sioux war-party storms Fogg's train.",
+        "credit": "U.S. Geological Survey, 1869 · Wikimedia Commons · public domain",
+        "indicative": true
+      }
     },
     {
       "id": "fort-kearney",
@@ -755,7 +768,12 @@
       "note": "Verne spells it 'Fort Kearney'; the real post on the Platte is Fort Kearny, near present Kearney, Nebraska. This point is at the fort's site on the south bank of the Platte.",
       "story": "The train halts at the fort for protection. Fogg gives up the wager without hesitation to lead a party of soldiers after his servant — and rescues him. But the train has gone on without them; they are stranded, and must find another way to Omaha.",
       "quote": "The commanding officer of Fort Kearney was there.",
-      "quoteRef": "Ch. 30"
+      "quoteRef": "Ch. 30",
+      "image": {
+        "file": "assets/images/atw-fort-kearney.jpg",
+        "caption": "The stage station at Fort Kearny on the Platte, drawn in 1863 with its coaches for Omaha — the post where Fogg leaves the wager to rescue Passepartout, and is stranded, needing another way east.",
+        "credit": "1863 lithograph · U.S. National Archives · Wikimedia Commons · public domain"
+      }
     },
     {
       "id": "omaha",
@@ -788,7 +806,12 @@
       "certainty": "real",
       "story": "Reached on the 10th, 'already risen from its ruins' a year after the Great Fire. Fogg changes trains at once for the run east to New York.",
       "quote": "it reached Chicago,\nalready risen from its ruins",
-      "quoteRef": "Ch. 31"
+      "quoteRef": "Ch. 31",
+      "image": {
+        "file": "assets/images/atw-chicago.jpg",
+        "caption": "Chicago from Lake Michigan in an 1874 Currier & Ives bird's-eye view — the city already risen from its ruins, where Fogg changes at once for the run east to New York.",
+        "credit": "Currier & Ives, 1874 · Library of Congress · Wikimedia Commons · public domain"
+      }
     },
     {
       "id": "new-york",
