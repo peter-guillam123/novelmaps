@@ -72,6 +72,14 @@ const ICONS = {
     '<path d="M6.7 11.7C5.8 11.7 5.65 10.75 6.25 10.3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>' +
     '<path d="M6.7 11.7H12.7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>' +
     '<path d="M12.7 11.7C13.6 11.7 13.75 10.7 13.1 10.2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>',
+  // raft: a log raft in slight perspective with a steering sweep and water —
+  // Huck and Jim's craft down the Mississippi (Huckleberry Finn). Distinct
+  // from the sailing ship: no mast, no hull, just lashed logs on the current.
+  raft:
+    '<path d="M2.4 10.5 11.7 10.5 13.1 9.3 3.8 9.3Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>' +
+    '<path d="M5.7 9.3 4.3 10.5M8.1 9.3 6.7 10.5M10.5 9.3 9.1 10.5" stroke="currentColor" stroke-width="0.9"/>' +
+    '<path d="M4.7 9.7 2.3 6.0l-1 .5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>' +
+    '<path d="M1.8 12.4q1.3-.9 2.6 0 1.3.9 2.6 0 1.3-.9 2.6 0 1.3.9 2.6 0" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>',
   // Martian fighting-machine: a domed hood on three splayed striding legs,
   // a handling-tentacle hanging (The War of the Worlds)
   tripod:
@@ -92,6 +100,7 @@ const PHRASE = {
   motor: 'by motor-car',
   train: 'by train',
   ship: 'by ship',
+  raft: 'by raft',
   elephant: 'by elephant',
   sledge: 'by wind-sledge',
   dogsled: 'by dog-sled',

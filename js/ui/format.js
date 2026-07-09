@@ -33,6 +33,7 @@ const VERBS = {
   omnibus: ['rides the omnibus', 'ride the omnibus'],
   motor: ['drives', 'drive'],
   ship: ['sails', 'sail'],
+  raft: ['drifts downriver', 'drift downriver'],
   foot: ['goes on foot', 'go on foot'],
   horse: ['rides', 'ride'],
   elephant: ['rides', 'ride'],
