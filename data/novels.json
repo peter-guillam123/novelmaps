@@ -72,6 +72,15 @@
     "spine": { "cloth": "#3d5c3d", "text": "#e6d59a" }
   },
   {
+    "id": "les-miserables",
+    "title": "Les Misérables",
+    "author": "Victor Hugo",
+    "year": 1862,
+    "file": "data/les-miserables.json",
+    "blurb": "A convict remade by one act of mercy, and his road across France to the Paris barricade — hunted every mile.",
+    "spine": { "cloth": "#5a2733", "text": "#e6d8bf" }
+  },
+  {
     "id": "call-of-the-wild",
     "title": "The Call of the Wild",
     "author": "Jack London",

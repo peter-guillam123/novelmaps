@@ -1,0 +1,1129 @@
+{
+  "title": "Les Misérables",
+  "author": "Victor Hugo",
+  "year": 1862,
+  "gutenbergId": 135,
+  "quotesVerified": true,
+  "translation": "Isabel F. Hapgood (Project Gutenberg #135)",
+  "timeline": {
+    "epoch": "1815-10-01",
+    "calendar": true,
+    "span": "1815–1833 (the historical frame Hugo sets: from Valjean's release after Waterloo to his death, with the June 1832 rising precisely dated)"
+  },
+  "overture": "Jean Valjean's road across France and seventeen years — galley-convict to mayor to fugitive — drawn on the real map: Toulon, the Bishop's candlesticks at Digne, the mills of the north, the child at Montfermeil, and the Paris of the barricade, the sewers and one merciful death.",
+  "sources": "Victor Hugo, Les Misérables (1862), in Isabel Hapgood's translation (Project Gutenberg #135); the royal post-road network (Cassini/état-major); standard Hugo topography (Digne, Montreuil-sur-Mer, the Rue de la Chanvrerie).",
+  "regions": [
+    {
+      "id": "the-south",
+      "name": "Provence & the galleys"
+    },
+    {
+      "id": "the-north",
+      "name": "The north — Madeleine's country"
+    },
+    {
+      "id": "paris-and-around",
+      "name": "Paris, and the road in"
+    }
+  ],
+  "mapHome": {
+    "bounds": [
+      [
+        0.5,
+        42.6
+      ],
+      [
+        7.2,
+        51.0
+      ]
+    ]
+  },
+  "chapters": [
+    {
+      "n": 1,
+      "title": "The galleys",
+      "day": 0
+    },
+    {
+      "n": 2,
+      "title": "The Bishop",
+      "day": 4
+    },
+    {
+      "n": 3,
+      "title": "Father Madeleine",
+      "day": 1000
+    },
+    {
+      "n": 4,
+      "title": "The trial at Arras",
+      "day": 2900
+    },
+    {
+      "n": 5,
+      "title": "Cosette",
+      "day": 3000
+    },
+    {
+      "n": 6,
+      "title": "The convent",
+      "day": 3120
+    },
+    {
+      "n": 7,
+      "title": "The Rue Plumet",
+      "day": 5480
+    },
+    {
+      "n": 8,
+      "title": "The barricade",
+      "day": 6093
+    },
+    {
+      "n": 9,
+      "title": "The sewers",
+      "day": 6095
+    },
+    {
+      "n": 10,
+      "title": "The candlesticks",
+      "day": 6450
+    }
+  ],
+  "characters": [
+    {
+      "id": "valjean",
+      "name": "Jean Valjean",
+      "colour": "prussian",
+      "role": "A convict remade by one act of mercy, hunted across seventeen years for a broken parole.",
+      "start": {
+        "location": "toulon-bagne",
+        "chapter": 1
+      }
+    },
+    {
+      "id": "javert",
+      "name": "Javert",
+      "colour": "slate",
+      "role": "The police inspector who hunts Valjean, and cannot survive being shown mercy.",
+      "start": {
+        "location": "montreuil-sur-mer",
+        "chapter": 3
+      }
+    },
+    {
+      "id": "fantine",
+      "name": "Fantine",
+      "colour": "ochre",
+      "role": "Cosette's mother, ruined and dying, whose child Valjean swears to save.",
+      "start": {
+        "location": "montfermeil",
+        "chapter": 3
+      }
+    },
+    {
+      "id": "cosette",
+      "name": "Cosette",
+      "colour": "aubergine",
+      "role": "Fantine's daughter, freed from the Thénardiers and raised by Valjean.",
+      "start": {
+        "location": "montfermeil",
+        "chapter": 3
+      }
+    }
+  ],
+  "locations": [
+    {
+      "id": "toulon-bagne",
+      "region": "the-south",
+      "name": "the galleys at Toulon",
+      "novelName": "the galleys of Toulon",
+      "coords": [
+        5.929,
+        43.1165
+      ],
+      "certainty": "real",
+      "note": "The bagne (convict-prison) on Toulon's naval harbour, where Valjean served nineteen years and, later re-imprisoned, escaped by feigning death from the Orion's yardarm.",
+      "story": "Where it begins and nearly ends. Nineteen years at the oar — for stealing a loaf of bread for his sister's children, and for trying to escape. Released in 1815 with a yellow passport that shuts every door; dragged back in 1823, and escaped again.",
+      "quote": "nineteen years in the galleys: five years for house-breaking and burglary; fourteen years for having attempted to escape on four occasions",
+      "quoteRef": "Vol. I, Bk 2",
+      "image": {
+        "file": "assets/images/lm-toulon.jpg",
+        "caption": "The bagne — the convict-prison and arsenal — on the harbour at Toulon, where Valjean served nineteen years. Period engraving.",
+        "credit": "From 'Histoire des Bagnes' (Zaccone), c.1870s · Wikimedia Commons · public domain"
+      }
+    },
+    {
+      "id": "digne",
+      "region": "the-south",
+      "name": "Digne",
+      "novelName": "D—— (Digne)",
+      "coords": [
+        6.234,
+        44.0925
+      ],
+      "certainty": "real",
+      "note": "The Alpine town where Bishop Myriel (modelled on Bienvenu de Miollis of Digne) takes the outcast in; Hugo veils it as 'D——'.",
+      "story": "The turn of the whole book. Turned away everywhere, Valjean is fed and housed by the Bishop — and repays him by stealing the silver. Caught, he is not denounced: the Bishop gives him the silver candlesticks too, and buys his soul for good.",
+      "quote": "Jean Valjean, my brother, you no longer belong to evil, but to good. It is your soul that I buy from you; I withdraw it from black thoughts and the spirit of perdition, and I give it to God.",
+      "quoteRef": "Vol. I, Bk 2",
+      "image": {
+        "file": "assets/images/lm-digne.jpg",
+        "caption": "Digne below its Alpine crags, 1838 — the town where the Bishop's candlesticks remake Valjean.",
+        "credit": "After Rauch, 'Guide pittoresque', 1838 · Wikimedia Commons · public domain"
+      }
+    },
+    {
+      "id": "montreuil-sur-mer",
+      "region": "the-north",
+      "name": "Montreuil-sur-Mer",
+      "novelName": "M—— sur M——",
+      "coords": [
+        1.762,
+        50.464
+      ],
+      "certainty": "real",
+      "note": "The fortified hill-town in the Pas-de-Calais where Valjean, as 'Father Madeleine', becomes a manufacturer and mayor; Hugo veils it as 'M—— sur M——' but names it in full at the close.",
+      "story": "Valjean remade: under a false name he grows rich, turns the town prosperous, and is made its mayor. Here Fantine works in his factory and is ruined; here he confesses his true name to save a stranger, and here he is taken again.",
+      "image": {
+        "file": "assets/images/lm-montreuil.jpg",
+        "caption": "The abbey church of Montreuil-sur-Mer, drawn c.1815 — 'Father Madeleine's' town in the north.",
+        "credit": "A. L. Goblain, c.1815 · Wikimedia Commons · public domain"
+      }
+    },
+    {
+      "id": "arras",
+      "region": "the-north",
+      "name": "Arras",
+      "novelName": "Arras",
+      "coords": [
+        2.7772,
+        50.291
+      ],
+      "certainty": "real",
+      "note": "The assize town where the tramp Champmathieu is tried as the 'real' Jean Valjean, and to which Valjean drives through the night to confess.",
+      "story": "The court where an innocent man stands accused of being Jean Valjean. Through a sleepless night Valjean fights the temptation to let him hang for it — then races here by cabriolet and, in open court, gives himself up: 'I am Jean Valjean.'",
+      "imageBlank": "No honest period view of the Arras townscape surfaced — only countryside near the town; the assize town keeps a logged blank rather than a mislabel."
+    },
+    {
+      "id": "montfermeil",
+      "region": "paris-and-around",
+      "name": "Montfermeil",
+      "novelName": "Montfermeil, near Paris",
+      "coords": [
+        2.568,
+        48.8985
+      ],
+      "certainty": "real",
+      "note": "The village east of Paris with the Thénardiers' inn, where Fantine leaves little Cosette and Valjean later comes to rescue her (Christmas 1823).",
+      "story": "The inn where the child Cosette is kept as a drudge by the cruel Thénardiers, and where Valjean, keeping his promise to her dying mother, buys her freedom and leads her away into the dark toward Paris.",
+      "image": {
+        "file": "assets/images/lm-montfermeil.jpg",
+        "caption": "Valjean leads Cosette away from the Thénardiers' inn at Montfermeil — an illustration of the scene by Alphonse de Neuville, 1865.",
+        "credit": "Alphonse de Neuville, 1865 · Maison de Victor Hugo (Paris Musées) · CC0",
+        "indicative": true
+      }
+    },
+    {
+      "id": "gorbeau-house",
+      "region": "paris-and-around",
+      "name": "the Gorbeau house",
+      "novelName": "the Gorbeau hovel",
+      "coords": [
+        2.3615,
+        48.8378
+      ],
+      "certainty": "identified",
+      "note": "A lightly fictionalised real tenement Hugo sites on the boulevard de l'Hôpital by the Salpêtrière (nos. 50–52); the 'Gorbeau' name is his.",
+      "story": "Valjean and Cosette's first Paris hiding place, a decayed tenement on the southern edge of the city — until Javert, who has picked up the scent, closes in one winter night.",
+      "imageBlank": "Hugo's decayed tenement on the boulevard de l'Hôpital; no specific period view exists, and a generic slum would be filler — a logged blank."
+    },
+    {
+      "id": "petit-picpus-convent",
+      "region": "paris-and-around",
+      "name": "the Petit-Picpus convent",
+      "novelName": "the convent of the Petit-Picpus",
+      "coords": [
+        2.3958,
+        48.842
+      ],
+      "certainty": "conjectured",
+      "note": "Hugo openly admits the convent is largely invented ('Le Petit-Picpus... hardly ever had any existence') but places it in the real Petit-Picpus quarter off the Rue Picpus; the coordinate is a best guess on that street.",
+      "story": "Escaping Javert over a wall, Valjean carries Cosette into a convent, where the old gardener he once saved takes them in. For five hidden years the hunted man and the child live safe behind its walls, she at school, he as the under-gardener.",
+      "imageBlank": "Hugo openly calls the convent all but invented; there is nothing honest to picture, so a logged blank."
+    },
+    {
+      "id": "rue-plumet",
+      "region": "paris-and-around",
+      "name": "the house in the Rue Plumet",
+      "novelName": "the Rue Plumet",
+      "coords": [
+        2.3145,
+        48.8492
+      ],
+      "certainty": "real",
+      "note": "The real Rue Plumet (renamed Rue Oudinot in 1867, 7th arr.); the walled garden house is Hugo's placing.",
+      "story": "The quiet garden house where Cosette grows into a young woman — and where, through the railings, the student Marius sees her, and the two fall silently, wholly in love, as Paris drifts toward revolt.",
+      "imageBlank": "The walled garden house is Hugo's, and no period view of the real Rue Plumet came to hand — a logged blank."
+    },
+    {
+      "id": "rue-de-la-chanvrerie-barricade",
+      "region": "paris-and-around",
+      "name": "the barricade, Rue de la Chanvrerie",
+      "novelName": "the barricade of the Rue de la Chanvrerie",
+      "coords": [
+        2.3482,
+        48.862
+      ],
+      "certainty": "identified",
+      "note": "The real Rue de la Chanvrerie, a short lane by Les Halles swept away in the Halles clearances of the 1850s–60s; the wine-shop Corinthe is Hugo's fiction set on it. Coordinate at its historic position.",
+      "story": "The barricade of the June 1832 rising, where the students of the ABC and their friends fight and die for a republic. Marius comes here to die for love; Valjean comes to save him; and here Valjean holds the life of his captured hunter, Javert, in his hands — and lets him go.",
+      "quote": "Long live the Republic!",
+      "quoteRef": "Vol. V, Bk 1",
+      "image": {
+        "file": "assets/images/lm-barricade.jpg",
+        "caption": "The June 1832 rising — the barricade and its dead. Wood engraving, 1870, of the event Hugo sets his students' last stand in.",
+        "credit": "Pierre Édouard Frère (after Breval), 1870 · Wikimedia Commons · public domain",
+        "indicative": true
+      }
+    },
+    {
+      "id": "grand-egout-outfall",
+      "region": "paris-and-around",
+      "name": "the Grand Sewer",
+      "novelName": "the Grand Sewer of Paris",
+      "coords": [
+        2.2985,
+        48.8628
+      ],
+      "certainty": "identified",
+      "note": "Hugo names the escape point exactly — the Grand Sewer's outfall to the Seine 'between the Pont des Invalides and the Pont de Jéna'; the exact grating is his staging, the stretch is real.",
+      "story": "The nightmare passage. With the barricade fallen and Marius shot but breathing, Valjean carries the unconscious young man on his back for miles through the filth and dark of the Paris sewers, and comes out at last on the bank of the Seine.",
+      "image": {
+        "file": "assets/images/lm-sewers.jpg",
+        "caption": "The Paris sewers, photographed by Nadar in 1861 — the vaulted tunnels through which Valjean carries the wounded Marius.",
+        "credit": "Nadar (Félix Tournachon), 1861 · Wikimedia Commons · public domain",
+        "indicative": true
+      }
+    },
+    {
+      "id": "rue-de-lhomme-arme",
+      "region": "paris-and-around",
+      "name": "the Rue de l'Homme-Armé",
+      "novelName": "No. 7, Rue de l'Homme-Armé",
+      "coords": [
+        2.3565,
+        48.8585
+      ],
+      "certainty": "real",
+      "note": "The real Rue de l'Homme-Armé in the Marais, absorbed into the Rue des Archives in 1851; Hugo gives the address, No. 7.",
+      "story": "Where the story ends. His secret told and Cosette married to Marius, Valjean withdraws to a bare room to die, believing he has lost her. She and Marius learn the truth and reach him at the last — and by the light of the Bishop's candlesticks, at peace, he dies.",
+      "quote": "He sleeps. Although his fate was very strange, he lived. He died when he had no longer his angel. The thing came to pass simply, of itself, as the night comes when day is gone.",
+      "quoteRef": "Vol. V, Bk 9",
+      "image": {
+        "file": "assets/images/lm-oldstreet.jpg",
+        "caption": "A narrow lane of old Paris — Charles Marville photographed the medieval streets just before Haussmann swept them away; the kind of quarter where Valjean lives out his last days.",
+        "credit": "Charles Marville, c.1865 · Wikimedia Commons · public domain",
+        "indicative": true
+      }
+    },
+    {
+      "id": "pont-au-change",
+      "region": "paris-and-around",
+      "name": "the Pont au Change",
+      "novelName": "the Seine at the Pont au Change",
+      "coords": [
+        2.347,
+        48.8565
+      ],
+      "certainty": "real",
+      "note": "The real Pont au Change by the Châtelet, where Hugo sets Javert's drowning in the race of water below the bridge.",
+      "story": "Javert's end. Having lived his whole life for the letter of the law, and been shown mercy by the very man he hunted, the inspector cannot reconcile the two. He walks to the parapet in the dark and gives himself to the river.",
+      "image": {
+        "file": "assets/images/lm-pont-au-change.jpg",
+        "caption": "The Pont au Change and the Tour Saint-Jacques by the Châtelet — the bridge where Javert gives himself to the Seine.",
+        "credit": "Engraving after Hoffbauer, c.1875 · Wikimedia Commons · public domain"
+      }
+    }
+  ],
+  "movements": [
+    {
+      "character": "valjean",
+      "from": "toulon-bagne",
+      "to": "digne",
+      "chapter": 1,
+      "mode": "foot",
+      "days": 4,
+      "startDay": 0.4,
+      "via": [
+        {
+          "at": [
+            6.041,
+            43.191
+          ],
+          "name": "Solliès-Pont"
+        },
+        [
+          6.313,
+          43.464
+        ],
+        {
+          "at": [
+            6.737,
+            43.433
+          ],
+          "name": "Fréjus"
+        },
+        [
+          7.017,
+          43.552
+        ],
+        {
+          "at": [
+            6.925,
+            43.66
+          ],
+          "name": "Grasse"
+        },
+        [
+          6.845,
+          43.755
+        ],
+        {
+          "at": [
+            6.512,
+            43.844
+          ],
+          "name": "Castellane"
+        },
+        {
+          "at": [
+            6.371,
+            43.955
+          ],
+          "name": "Barrême"
+        }
+      ],
+      "note": "Released with a convict's yellow passport, turned from every door, Valjean walks four days north across Provence to Digne.",
+      "routeCertainty": "reconstructed",
+      "routeNote": "Hugo names Grasse (Valjean's four-day walk from Toulon, with wages earned at the Grasse distillery); the connecting road is the reconstructed Provençal post road via the coast and the pre-Route-Napoléon mountain road to Digne.",
+      "routeSource": "Les Misérables I.2; reconstructed early-19th-c. Provençal roads."
+    },
+    {
+      "character": "valjean",
+      "from": "digne",
+      "to": "montreuil-sur-mer",
+      "chapter": 2,
+      "mode": "coach",
+      "days": 18,
+      "startDay": 4.8,
+      "via": [
+        {
+          "at": [
+            5.786,
+            43.829
+          ],
+          "name": "Manosque"
+        },
+        {
+          "at": [
+            4.805,
+            43.949
+          ],
+          "name": "Avignon"
+        },
+        {
+          "at": [
+            4.892,
+            44.933
+          ],
+          "name": "Valence"
+        },
+        {
+          "at": [
+            4.835,
+            45.76
+          ],
+          "name": "Lyon"
+        },
+        {
+          "at": [
+            3.334,
+            46.565
+          ],
+          "name": "Moulins"
+        },
+        {
+          "at": [
+            3.162,
+            46.99
+          ],
+          "name": "Nevers"
+        },
+        {
+          "at": [
+            2.7,
+            48.404
+          ],
+          "name": "Fontainebleau"
+        },
+        {
+          "at": [
+            2.352,
+            48.857
+          ],
+          "name": "Paris"
+        },
+        {
+          "at": [
+            2.296,
+            49.894
+          ],
+          "name": "Amiens"
+        },
+        {
+          "at": [
+            1.834,
+            50.106
+          ],
+          "name": "Abbeville"
+        }
+      ],
+      "note": "He vanishes — and resurfaces years later, the length of France away, as the rich manufacturer and mayor 'Father Madeleine'.",
+      "routeCertainty": "documented",
+      "routeNote": "Untold in the novel; traced along the real royal post roads — the Durance and Rhône to Lyon, the Lyon–Paris road, then the Paris–Calais road through Amiens to the Pas-de-Calais.",
+      "routeSource": "The Bourbon-era royal post roads of France (Cassini / état-major network)."
+    },
+    {
+      "character": "fantine",
+      "from": "montfermeil",
+      "to": "montreuil-sur-mer",
+      "chapter": 3,
+      "mode": "foot",
+      "days": 6,
+      "startDay": 1000.4,
+      "via": [
+        {
+          "at": [
+            2.35,
+            48.86
+          ],
+          "name": "Paris"
+        },
+        {
+          "at": [
+            2.296,
+            49.894
+          ],
+          "name": "Amiens"
+        },
+        {
+          "at": [
+            1.834,
+            50.106
+          ],
+          "name": "Abbeville"
+        }
+      ],
+      "note": "Abandoned in Paris with a child, Fantine leaves little Cosette at the Thénardiers' inn and trudges north to find honest work at Madeleine's factory.",
+      "routeCertainty": "documented",
+      "routeNote": "North from Montfermeil, around Paris and up the Amiens road to the Pas-de-Calais.",
+      "routeSource": "The Bourbon-era royal post roads of France (Cassini / état-major network)."
+    },
+    {
+      "character": "valjean",
+      "from": "montreuil-sur-mer",
+      "to": "arras",
+      "chapter": 4,
+      "mode": "coach",
+      "days": 1,
+      "startDay": 2900.4,
+      "via": [
+        {
+          "at": [
+            2.038,
+            50.36
+          ],
+          "name": "Hesdin"
+        },
+        {
+          "at": [
+            2.335,
+            50.381
+          ],
+          "name": "Saint-Pol-sur-Ternoise"
+        },
+        {
+          "at": [
+            2.616,
+            50.316
+          ],
+          "name": "Tinques"
+        }
+      ],
+      "note": "Through the night he drives by cabriolet to the Arras assizes, to give himself up in place of the innocent Champmathieu.",
+      "routeCertainty": "novel",
+      "routeNote": "Hugo names every relay — Scaufflaire's 'Hesdin… Saint-Pol… Arras', and the narrated drive through Hesdin, Saint-Pol and Tinques.",
+      "routeSource": "Les Misérables I.7."
+    },
+    {
+      "character": "valjean",
+      "from": "arras",
+      "to": "montreuil-sur-mer",
+      "chapter": 4,
+      "mode": "coach",
+      "days": 1,
+      "startDay": 2901.4,
+      "via": [
+        {
+          "at": [
+            2.616,
+            50.316
+          ],
+          "name": "Tinques"
+        },
+        {
+          "at": [
+            2.335,
+            50.381
+          ],
+          "name": "Saint-Pol-sur-Ternoise"
+        },
+        {
+          "at": [
+            2.038,
+            50.36
+          ],
+          "name": "Hesdin"
+        }
+      ],
+      "note": "He drives back through the same night to Fantine's deathbed — but Javert is close behind.",
+      "routeCertainty": "novel",
+      "routeNote": "The same posting road reversed, through Tinques, Saint-Pol and Hesdin.",
+      "routeSource": "Les Misérables I.7–8."
+    },
+    {
+      "character": "valjean",
+      "from": "montreuil-sur-mer",
+      "to": "toulon-bagne",
+      "chapter": 4,
+      "mode": "coach",
+      "days": 16,
+      "startDay": 2902.4,
+      "via": [
+        {
+          "at": [
+            2.296,
+            49.894
+          ],
+          "name": "Amiens"
+        },
+        {
+          "at": [
+            2.352,
+            48.857
+          ],
+          "name": "Paris"
+        },
+        {
+          "at": [
+            4.835,
+            45.76
+          ],
+          "name": "Lyon"
+        },
+        {
+          "at": [
+            4.805,
+            43.949
+          ],
+          "name": "Avignon"
+        },
+        {
+          "at": [
+            5.6,
+            43.3
+          ],
+          "name": "Aix-en-Provence"
+        }
+      ],
+      "note": "Arrested at Fantine's bedside, Valjean is dragged back the length of France to the galleys at Toulon.",
+      "routeCertainty": "documented",
+      "routeNote": "The post roads south, back to the bagne.",
+      "routeSource": "The Bourbon-era royal post roads of France (Cassini / état-major network)."
+    },
+    {
+      "character": "valjean",
+      "from": "toulon-bagne",
+      "to": "montfermeil",
+      "chapter": 5,
+      "mode": "foot",
+      "days": 22,
+      "startDay": 3000,
+      "via": [
+        {
+          "at": [
+            4.835,
+            45.76
+          ],
+          "name": "Lyon"
+        },
+        {
+          "at": [
+            3.162,
+            46.99
+          ],
+          "name": "Nevers"
+        },
+        {
+          "at": [
+            2.7,
+            48.404
+          ],
+          "name": "Fontainebleau"
+        },
+        {
+          "at": [
+            2.55,
+            48.75
+          ],
+          "name": "the eastern approaches"
+        }
+      ],
+      "note": "But he escapes — feigning drowning from a ship's yardarm — and travels secretly north to keep his promise to Fantine and free her child.",
+      "routeCertainty": "reconstructed",
+      "routeNote": "Untold; an escaped convict's covert journey north from Toulon toward Paris and Montfermeil.",
+      "routeSource": "The Bourbon-era royal post roads of France (Cassini / état-major network)."
+    },
+    {
+      "character": [
+        "valjean",
+        "cosette"
+      ],
+      "from": "montfermeil",
+      "to": "gorbeau-house",
+      "chapter": 5,
+      "mode": "foot",
+      "days": 1,
+      "startDay": 3022,
+      "via": [
+        {
+          "at": [
+            2.529,
+            48.884
+          ],
+          "name": "Gagny"
+        },
+        {
+          "at": [
+            2.483,
+            48.902
+          ],
+          "name": "Bondy"
+        },
+        {
+          "at": [
+            2.409,
+            48.894
+          ],
+          "name": "Pantin"
+        },
+        {
+          "at": [
+            2.37,
+            48.884
+          ],
+          "name": "the Barrière de la Villette"
+        }
+      ],
+      "note": "He buys Cosette from the Thénardiers and leads the frightened child through the winter night down into Paris, to hide in the Gorbeau tenement.",
+      "routeCertainty": "documented",
+      "routeNote": "Hugo places Montfermeil between Livry and Chelles and names the Gagny road and Bondy; down the plateau to the north-east barrière and into Paris.",
+      "routeSource": "Les Misérables II.3."
+    },
+    {
+      "character": [
+        "valjean",
+        "cosette"
+      ],
+      "from": "gorbeau-house",
+      "to": "petit-picpus-convent",
+      "chapter": 6,
+      "mode": "foot",
+      "days": 1,
+      "startDay": 3124.4,
+      "via": [
+        [
+          2.378,
+          48.84
+        ]
+      ],
+      "note": "Cornered by Javert one night, Valjean escapes over a wall with Cosette into a convent, where they live hidden and safe for years.",
+      "routeCertainty": "illustrative",
+      "routeNote": "A short flight across the Left Bank to the Petit-Picpus quarter.",
+      "routeSource": "Les Misérables II.5–6."
+    },
+    {
+      "character": "javert",
+      "from": "montreuil-sur-mer",
+      "to": "gorbeau-house",
+      "chapter": 6,
+      "mode": "coach",
+      "days": 4,
+      "startDay": 3120.4,
+      "via": [
+        {
+          "at": [
+            1.834,
+            50.106
+          ],
+          "name": "Abbeville"
+        },
+        {
+          "at": [
+            2.296,
+            49.894
+          ],
+          "name": "Amiens"
+        },
+        {
+          "at": [
+            2.352,
+            48.857
+          ],
+          "name": "Paris"
+        }
+      ],
+      "note": "Inspector Javert, who never believed in Madeleine, follows the trail to Paris and corners Valjean and the child at the Gorbeau house.",
+      "routeCertainty": "documented",
+      "routeNote": "The Paris road south from the Pas-de-Calais, on the scent.",
+      "routeSource": "The Bourbon-era royal post roads of France (Cassini / état-major network)."
+    },
+    {
+      "character": [
+        "valjean",
+        "cosette"
+      ],
+      "from": "petit-picpus-convent",
+      "to": "rue-plumet",
+      "chapter": 7,
+      "mode": "foot",
+      "days": 1,
+      "startDay": 5480,
+      "via": [
+        [
+          2.352,
+          48.848
+        ]
+      ],
+      "note": "Cosette grown, they leave the convent for a quiet garden house in the Rue Plumet.",
+      "routeCertainty": "illustrative",
+      "routeSource": "Les Misérables IV.3."
+    },
+    {
+      "character": "valjean",
+      "from": "rue-plumet",
+      "to": "rue-de-la-chanvrerie-barricade",
+      "chapter": 8,
+      "mode": "foot",
+      "days": 1,
+      "startDay": 6093,
+      "via": [
+        [
+          2.33,
+          48.855
+        ]
+      ],
+      "note": "Learning Cosette loves Marius — who has gone to die at the June barricade — Valjean crosses Paris to the Rue de la Chanvrerie to save him.",
+      "routeCertainty": "documented",
+      "routeNote": "Across the river to the insurgent quarter by Les Halles.",
+      "routeSource": "Les Misérables V.1."
+    },
+    {
+      "character": "javert",
+      "from": "gorbeau-house",
+      "to": "rue-de-la-chanvrerie-barricade",
+      "chapter": 8,
+      "mode": "foot",
+      "days": 1,
+      "startDay": 6094,
+      "via": [
+        [
+          2.352,
+          48.855
+        ]
+      ],
+      "note": "Years of hunting later, Javert goes as a police spy into the June barricade — and is unmasked, and bound.",
+      "routeCertainty": "documented",
+      "routeSource": "Les Misérables V.1."
+    },
+    {
+      "character": "valjean",
+      "from": "rue-de-la-chanvrerie-barricade",
+      "to": "grand-egout-outfall",
+      "chapter": 9,
+      "mode": "foot",
+      "days": 1,
+      "startDay": 6095.4,
+      "via": [
+        [
+          2.34,
+          48.86
+        ],
+        [
+          2.32,
+          48.862
+        ]
+      ],
+      "note": "The barricade fallen, Valjean carries the wounded Marius on his back through miles of the Paris sewers to the bank of the Seine.",
+      "routeCertainty": "novel",
+      "routeNote": "Through the Grand Sewer to its outfall 'between the Pont des Invalides and the Pont de Jéna'.",
+      "routeSource": "Les Misérables V.3."
+    },
+    {
+      "character": "javert",
+      "from": "rue-de-la-chanvrerie-barricade",
+      "to": "pont-au-change",
+      "chapter": 9,
+      "mode": "foot",
+      "days": 1,
+      "startDay": 6096.4,
+      "via": [
+        [
+          2.348,
+          48.859
+        ]
+      ],
+      "note": "Set free by the man he hunted, Javert cannot bear it. He walks to the Pont au Change and drowns himself in the Seine.",
+      "routeCertainty": "novel",
+      "routeNote": "From Les Halles down to the river at the Pont au Change.",
+      "routeSource": "Les Misérables V.4."
+    },
+    {
+      "character": "valjean",
+      "from": "grand-egout-outfall",
+      "to": "rue-de-lhomme-arme",
+      "chapter": 10,
+      "mode": "foot",
+      "days": 1,
+      "startDay": 6450,
+      "via": [
+        [
+          2.33,
+          48.858
+        ]
+      ],
+      "note": "Marius recovers and weds Cosette; Valjean withdraws to a bare room in the Rue de l'Homme-Armé to die.",
+      "routeCertainty": "illustrative",
+      "routeSource": "Les Misérables V.6–9."
+    }
+  ],
+  "story": [
+    {
+      "kind": "scene",
+      "character": "valjean",
+      "at": "toulon-bagne",
+      "chapter": 1,
+      "title": "The galleys",
+      "narration": "Meet Jean Valjean: nineteen years in the galleys at Toulon — five for stealing a loaf of bread for his sister's starving children, fourteen more for trying to escape. In 1815 he is set free with a yellow passport that brands him, and shuts every door.",
+      "day": 0
+    },
+    {
+      "kind": "journey",
+      "character": "valjean",
+      "from": "toulon-bagne",
+      "to": "digne",
+      "chapter": 1,
+      "narration": "Turned away everywhere, he walks four days north across Provence to the little Alpine town of Digne."
+    },
+    {
+      "kind": "scene",
+      "character": "valjean",
+      "at": "digne",
+      "chapter": 2,
+      "title": "The Bishop's candlesticks",
+      "narration": "There the aged Bishop Myriel takes him in and feeds him — and Valjean repays him by stealing the silver in the night. Caught and dragged back, he is not denounced: the Bishop gives him the candlesticks too, and tells him his soul is bought for good.",
+      "day": 4.4
+    },
+    {
+      "kind": "journey",
+      "character": "valjean",
+      "from": "digne",
+      "to": "montreuil-sur-mer",
+      "chapter": 2,
+      "narration": "The vow remakes him. He vanishes, and years later, the length of France away, has become 'Father Madeleine' — a rich manufacturer and the beloved mayor of Montreuil-sur-Mer."
+    },
+    {
+      "kind": "handoff",
+      "character": "fantine",
+      "at": "montfermeil",
+      "chapter": 3,
+      "narration": "We turn to a young Parisian woman, Fantine, abandoned with a baby daughter. Unable to keep the child, she leaves little Cosette at an inn at Montfermeil, in the keeping of the grasping Thénardiers, and goes north to find work.",
+      "day": 1000
+    },
+    {
+      "kind": "journey",
+      "character": "fantine",
+      "from": "montfermeil",
+      "to": "montreuil-sur-mer",
+      "chapter": 3,
+      "narration": "She finds it at Madeleine's factory in Montreuil — until her secret child is discovered and she is cast out, and sinks, selling her hair and her teeth and at last herself, to pay the Thénardiers' endless demands."
+    },
+    {
+      "kind": "scene",
+      "character": "valjean",
+      "at": "montreuil-sur-mer",
+      "chapter": 3,
+      "title": "A promise to Fantine",
+      "narration": "Valjean learns, too late, that his own factory dismissed the dying Fantine. At her bedside he swears to find and raise her daughter as his own. It is the promise the rest of his life will keep.",
+      "day": 1006.4
+    },
+    {
+      "kind": "handoff",
+      "character": "valjean",
+      "at": "montreuil-sur-mer",
+      "chapter": 4,
+      "narration": "Then the law closes in from an unexpected side: a bewildered tramp, Champmathieu, has been seized and is about to be tried at Arras as the escaped convict Jean Valjean.",
+      "day": 2900
+    },
+    {
+      "kind": "journey",
+      "character": "valjean",
+      "from": "montreuil-sur-mer",
+      "to": "arras",
+      "chapter": 4,
+      "narration": "After a night of torment, Valjean drives by cabriolet through the dark — Hesdin, Saint-Pol, Tinques — and in the courtroom rises to save the innocent man: 'I am Jean Valjean.'"
+    },
+    {
+      "kind": "journey",
+      "character": "valjean",
+      "from": "arras",
+      "to": "montreuil-sur-mer",
+      "chapter": 4,
+      "narration": "He drives back to Fantine — but Inspector Javert is waiting. Fantine dies of the shock, and Valjean is seized at her bedside."
+    },
+    {
+      "kind": "removal",
+      "character": "valjean",
+      "from": "montreuil-sur-mer",
+      "to": "toulon-bagne",
+      "chapter": 4,
+      "narration": "Condemned again, he is taken back the length of France to the galleys at Toulon."
+    },
+    {
+      "kind": "journey",
+      "character": "valjean",
+      "from": "toulon-bagne",
+      "to": "montfermeil",
+      "chapter": 5,
+      "narration": "Months later he escapes the bagne by feigning death in the sea, and makes his way secretly north to Montfermeil to keep his word — and buys Cosette out of her servitude."
+    },
+    {
+      "kind": "journey",
+      "character": [
+        "valjean",
+        "cosette"
+      ],
+      "from": "montfermeil",
+      "to": "gorbeau-house",
+      "chapter": 5,
+      "narration": "Through the winter night he leads the frightened child down into Paris, and the two go to ground in a decayed tenement, the Gorbeau house."
+    },
+    {
+      "kind": "handoff",
+      "character": "javert",
+      "at": "montreuil-sur-mer",
+      "chapter": 6,
+      "narration": "But the hunter has never stopped. Inspector Javert, who never believed in 'Madeleine', has picked up the scent again.",
+      "day": 3120
+    },
+    {
+      "kind": "journey",
+      "character": "javert",
+      "from": "montreuil-sur-mer",
+      "to": "gorbeau-house",
+      "chapter": 6,
+      "narration": "He follows the trail to Paris and closes on the Gorbeau house one winter night."
+    },
+    {
+      "kind": "journey",
+      "character": [
+        "valjean",
+        "cosette"
+      ],
+      "from": "gorbeau-house",
+      "to": "petit-picpus-convent",
+      "chapter": 6,
+      "narration": "Trapped, Valjean escapes over a wall with Cosette into a convent — where the old man he once saved shelters them, and for five hidden years they are safe, she at school, he a gardener."
+    },
+    {
+      "kind": "journey",
+      "character": [
+        "valjean",
+        "cosette"
+      ],
+      "from": "petit-picpus-convent",
+      "to": "rue-plumet",
+      "chapter": 7,
+      "narration": "Cosette grows into a young woman, and they leave the convent for a walled garden house in the Rue Plumet — where, through the railings, the poor student Marius sees her, and they fall wholly in love."
+    },
+    {
+      "kind": "journey",
+      "character": "valjean",
+      "from": "rue-plumet",
+      "to": "rue-de-la-chanvrerie-barricade",
+      "chapter": 8,
+      "narration": "In June 1832 Paris rises. Marius, believing Cosette lost to him, goes to die at the students' barricade in the Rue de la Chanvrerie — and Valjean, to save the boy Cosette loves, follows him there."
+    },
+    {
+      "kind": "journey",
+      "character": "javert",
+      "from": "gorbeau-house",
+      "to": "rue-de-la-chanvrerie-barricade",
+      "chapter": 8,
+      "narration": "Javert goes to the barricade too, as a police spy — and is caught, and bound, and handed a death sentence by the rebels."
+    },
+    {
+      "kind": "scene",
+      "character": "valjean",
+      "at": "rue-de-la-chanvrerie-barricade",
+      "chapter": 8,
+      "title": "The barricade",
+      "narration": "The barricade is stormed and nearly all the young men die for their republic. Given the bound Javert to shoot, Valjean instead cuts him loose and lets him go. Then he finds Marius, shot but living, among the dead.",
+      "day": 6095
+    },
+    {
+      "kind": "journey",
+      "character": "valjean",
+      "from": "rue-de-la-chanvrerie-barricade",
+      "to": "grand-egout-outfall",
+      "chapter": 9,
+      "narration": "With the boy on his back, Valjean goes down into the sewers and carries him for miles through the dark and filth, coming out at last on the bank of the Seine."
+    },
+    {
+      "kind": "journey",
+      "character": "javert",
+      "from": "rue-de-la-chanvrerie-barricade",
+      "to": "pont-au-change",
+      "chapter": 9,
+      "narration": "Javert, spared by the man he swore to take, cannot reconcile the law with such mercy. He walks to the Pont au Change and lets the river have him."
+    },
+    {
+      "kind": "journey",
+      "character": "valjean",
+      "from": "grand-egout-outfall",
+      "to": "rue-de-lhomme-arme",
+      "chapter": 10,
+      "narration": "Marius recovers and marries Cosette. His secret confessed, Valjean quietly withdraws to a bare room in the Rue de l'Homme-Armé, believing he has given her up for good."
+    },
+    {
+      "kind": "scene",
+      "character": "valjean",
+      "at": "rue-de-lhomme-arme",
+      "chapter": 10,
+      "title": "The candlesticks, at the last",
+      "narration": "Cosette and Marius learn the truth and reach him at the last. By the light of the Bishop's two candlesticks, forgiven and at peace, Jean Valjean dies. His grave is left unmarked.",
+      "day": 6451
+    }
+  ]
+}
