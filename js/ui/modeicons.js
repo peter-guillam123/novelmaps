@@ -59,6 +59,19 @@ const ICONS = {
     '<path d="M2.4 11.6h8.7c1 0 1.8-.6 2.2-1.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>' +
     '<path d="M6 11.6V3.4l3.7 3.1L6 8" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>' +
     '<path d="M3.8 13.4q4-1.3 7.4 0" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>',
+  // dog-sled: a harnessed dog (left, facing left) drawing a sled by a taut
+  // trace — Buck's trade for five chapters (The Call of the Wild). A real dog
+  // team, distinct from the wind-sledge's sail.
+  dogsled:
+    '<path d="M1.4 8.9 2.6 8.4 2.9 7.1" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"/>' +
+    '<path d="M2.9 7.35q.25-.6.5 0" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>' +
+    '<path d="M3.1 7.5C4 7.15 4.9 7.15 5.5 7.5" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>' +
+    '<path d="M5.5 7.5c.55-.2.75-.85.45-1.5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>' +
+    '<path d="M3.2 8.5v2.5M5.15 8.6v2.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>' +
+    '<path d="M5.7 8.7 6.9 11.2" stroke="currentColor" stroke-width="1.05" stroke-linecap="round"/>' +
+    '<path d="M6.7 11.7C5.8 11.7 5.65 10.75 6.25 10.3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>' +
+    '<path d="M6.7 11.7H12.7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>' +
+    '<path d="M12.7 11.7C13.6 11.7 13.75 10.7 13.1 10.2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>',
   // Martian fighting-machine: a domed hood on three splayed striding legs,
   // a handling-tentacle hanging (The War of the Worlds)
   tripod:
@@ -81,6 +94,7 @@ const PHRASE = {
   ship: 'by ship',
   elephant: 'by elephant',
   sledge: 'by wind-sledge',
+  dogsled: 'by dog-sled',
   tripod: 'in the fighting-machines',
   unknown: 'onward',
 };

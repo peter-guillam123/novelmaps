@@ -37,6 +37,7 @@ const VERBS = {
   horse: ['rides', 'ride'],
   elephant: ['rides', 'ride'],
   sledge: ['sails the sledge', 'sail the sledge'],
+  dogsled: ['drives the dog-team', 'drive the dog-team'],
   tripod: ['stride', 'stride'],
   unknown: ['moves', 'move'],
 };
