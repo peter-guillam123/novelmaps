@@ -1,20 +1,18 @@
-// The masthead: project name, novel title, author, mode tabs — and the
-// visible way back to the shelf.
+// The masthead: the wordmark (the way back to the shelf), the novel title,
+// author and mode tabs — nothing more. Everything optional — the library
+// link, the standing pages, the 1890s slider — now lives under the settings
+// cog, so the top-left box stays as small as it can.
 
 export function createMasthead(container, index, activeId, { onMode } = {}) {
   const novelMeta = index.find((n) => n.id === activeId);
   container.innerHTML = `
-    <p class="masthead-kicker">PlotLines</p>
+    <a class="masthead-kicker" href="./" title="Back to the library">PlotLines</a>
     <h1 class="masthead-title"></h1>
     <p class="masthead-byline"></p>
     <div class="mode-tabs" role="group" aria-label="Mode">
       <button type="button" data-mode="story" aria-pressed="true">Story</button>
       <button type="button" data-mode="explore" aria-pressed="false">Explore</button>
-    </div>
-    <nav class="masthead-links" aria-label="PlotLines">
-      <a class="masthead-link masthead-library" href="./">&#8617; Library</a>
-      <a class="masthead-link" href="about.html">About</a>
-    </nav>`;
+    </div>`;
   container.querySelector('.masthead-title').textContent = novelMeta.title;
   container.querySelector('.masthead-byline').textContent =
     `${novelMeta.author}, ${novelMeta.year}`;

@@ -119,12 +119,16 @@ body {
 }
 
 .masthead-kicker {
+  display: inline-block;
   margin: 0;
   font-size: 11px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--ink-soft);
+  text-decoration: none;
+  transition: color 0.15s;
 }
+a.masthead-kicker:hover { color: var(--accent); }
 
 .masthead-title {
   margin: 2px 0 0;
@@ -140,20 +144,6 @@ body {
   font-size: 14px;
   color: var(--ink-soft);
 }
-
-.masthead-links {
-  display: flex;
-  gap: 12px;
-  margin-top: 2px;
-}
-.masthead-link {
-  font-size: 13px;
-  font-style: italic;
-  color: var(--accent);
-  text-decoration: none;
-  padding: 4px 0;
-}
-.masthead-link:hover { text-decoration: underline; }
 
 /* ---- legend ---- */
 
@@ -996,35 +986,93 @@ body.is-overture #storycard { display: none !important; }
   cursor: pointer;
 }
 
-/* ---- NLS historic overlay control ---- */
+/* ---- settings cog + pane ---- */
 
-.nls-control {
+/* A MapLibre control group for the zoom-button chrome, placed by hand just
+   above the transport bar rather than in the map's bottom-right stack. */
+.settings-fab {
+  position: absolute;
+  right: 10px;
+  bottom: 84px; /* clears the floating transport bar (~71px) */
+  z-index: 5;
+  margin: 0;
+}
+.settings-cog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink);
+}
+.settings-cog svg { display: block; transition: transform 0.3s ease; }
+.settings-cog[aria-expanded='true'] svg { transform: rotate(60deg); }
+
+.settings-pane {
+  position: absolute;
+  right: 10px;
+  bottom: 122px; /* above the cog (84 + 29 + gap) */
+  z-index: 6;
+  width: 246px;
+  max-width: calc(100vw - 20px);
   background: var(--paper-bright);
   border: 1px solid var(--rule);
   border-radius: 3px;
-  padding: 6px 10px;
-  font-family: var(--serif);
-  font-size: 13px;
-  color: var(--ink);
   box-shadow: var(--shadow);
+  padding: 14px 16px;
+  font-family: var(--serif);
+  color: var(--ink);
+  animation: settings-rise 0.16s ease-out;
+}
+@keyframes settings-rise {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: none; }
 }
 
-.nls-toggle {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  min-height: 40px;
-  cursor: pointer;
+.settings-group { margin-bottom: 12px; }
+.settings-title {
+  margin: 0 0 3px;
+  font-family: var(--display);
+  font-weight: normal;
+  font-size: 17px;
 }
-
-.nls-toggle input { accent-color: var(--accent); width: 16px; height: 16px; }
-
-.nls-opacity input {
-  width: 110px;
+.settings-note {
+  margin: 0 0 9px;
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: var(--ink-soft);
+}
+.settings-slider {
+  width: 100%;
   accent-color: var(--accent);
-  display: block;
   min-height: 24px;
+  display: block;
 }
+.settings-scale {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1px;
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.settings-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: 11px;
+  border-top: 1px solid var(--rule);
+}
+/* No rule above the links when they stand alone (a non-British book). */
+.settings-overlay + .settings-links { }
+.settings-pane > .settings-links:first-child { border-top: 0; padding-top: 0; }
+.settings-link {
+  font-size: 14px;
+  color: var(--accent);
+  text-decoration: none;
+  padding: 6px 0;
+}
+.settings-link:hover { text-decoration: underline; }
 
 .visually-hidden {
   position: absolute;
@@ -1605,7 +1653,7 @@ body.is-overture #captions { display: none !important; }
      drop the title/cast pane and the map toggle, offer a back button that
      returns to the top-level view (the overture, with the pane and cast) */
   html.touch body:not(.is-overture) #rail,
-  html.touch body:not(.is-overture) .nls-control { display: none; }
+  html.touch body:not(.is-overture) .settings-pane { display: none; }
   html.touch body:not(.is-overture) #mobile-stop {
     display: flex; align-items: center; justify-content: center;
     position: absolute; z-index: 12;

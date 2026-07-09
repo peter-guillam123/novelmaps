@@ -21,11 +21,27 @@ function firstSymbolLayerId(map) {
   return layer ? layer.id : undefined;
 }
 
+// The overlay is meaningful only where the story sets foot in Great Britain
+// — the scans stop at the coast. A book that never touches Britain (the
+// Count's France, Marlow's Congo) gets no layer and no control at all.
+function touchesBritain(novel) {
+  const [w, s, e, n] = GB_BOUNDS;
+  return (novel.locations || []).some((l) => {
+    const c = l.coords;
+    return c && c[0] >= w && c[0] <= e && c[1] >= s && c[1] <= n;
+  });
+}
+
+// Adds the historic layer (British books only) and returns a small API the
+// settings pane drives — the DOM lives there, not here. Returns
+// `{ available: false }` for a book with no British ground.
 export function addNlsOverlay(map, novel = {}) {
+  if (!touchesBritain(novel)) return { available: false };
+
   // A novel may point at a different NLS series via its overlay field;
   // the 1890s one-inch is the default.
   const tiles = novel.overlay?.tiles || NLS_TILE_URL;
-  const label = novel.overlay?.label || '1890s map';
+  const label = novel.overlay?.label || 'the 1890s map';
 
   map.addSource(SOURCE_ID, {
     type: 'raster',
@@ -47,9 +63,8 @@ export function addNlsOverlay(map, novel = {}) {
     firstSymbolLayerId(map)
   );
 
-  const control = buildOpacityControl(map, label);
+  const onGone = [];
   let failed = false;
-
   map.on('error', (e) => {
     if (failed || !e || e.sourceId !== SOURCE_ID) return;
     const status = e.error && e.error.status;
@@ -60,49 +75,17 @@ export function addNlsOverlay(map, novel = {}) {
       failed = true;
       console.warn(`NLS overlay unavailable (HTTP ${status}); continuing on the base map.`);
       if (map.getLayer(LAYER_ID)) map.setLayoutProperty(LAYER_ID, 'visibility', 'none');
-      control.remove();
+      onGone.forEach((cb) => cb());
     }
   });
 
-  return control;
-}
-
-// A small parchment control: checkbox to toggle the scans, slider for
-// their opacity. Registered as a MapLibre IControl.
-function buildOpacityControl(map, label) {
-  const root = document.createElement('div');
-  root.className = 'maplibregl-ctrl nls-control';
-  root.innerHTML = `
-    <label class="nls-toggle">
-      <input type="checkbox" checked>
-      <span></span>
-    </label>
-    <label class="nls-opacity">
-      <span class="visually-hidden">Historic map opacity</span>
-      <input type="range" min="0" max="100" value="${Math.round(NLS_DEFAULT_OPACITY * 100)}"
-             aria-label="Historic map opacity">
-    </label>`;
-
-  root.querySelector('.nls-toggle span').textContent = label;
-  const checkbox = root.querySelector('input[type=checkbox]');
-  const slider = root.querySelector('input[type=range]');
-
-  checkbox.addEventListener('change', () => {
-    map.setLayoutProperty(LAYER_ID, 'visibility', checkbox.checked ? 'visible' : 'none');
-    slider.disabled = !checkbox.checked;
-  });
-  slider.addEventListener('input', () => {
-    map.setPaintProperty(LAYER_ID, 'raster-opacity', slider.valueAsNumber / 100);
-  });
-
-  const control = {
-    onAdd: () => root,
-    onRemove: () => root.remove(),
-    remove: () => {
-      if (root.isConnected) map.removeControl(control);
-    },
+  return {
+    available: true,
+    label,
+    defaultOpacity: NLS_DEFAULT_OPACITY,
+    setVisible: (v) => map.setLayoutProperty(LAYER_ID, 'visibility', v ? 'visible' : 'none'),
+    setOpacity: (o) => map.setPaintProperty(LAYER_ID, 'raster-opacity', o),
+    // Called if the tiles fail mid-session, so the pane can retire the slider.
+    onUnavailable: (cb) => onGone.push(cb),
   };
-  // top-right, under the zoom buttons — top-left belongs to the masthead.
-  map.addControl(control, 'top-right');
-  return control;
 }

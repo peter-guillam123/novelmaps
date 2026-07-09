@@ -23,6 +23,7 @@ import { createIntro } from './ui/intro.js';
 import { createLibrary } from './ui/library.js';
 import { createOverture } from './ui/overture.js';
 import { createLocationTile } from './ui/locationtile.js';
+import { createSettings } from './ui/settings.js';
 
 const map = createMap('map');
 window.plotlinesMap = map; // exposed immediately so a stuck startup can be inspected
@@ -48,7 +49,8 @@ ready
       return;
     }
     document.title = `${meta.title} · PlotLines`;
-    addNlsOverlay(map, novel);
+    const overlay = addNlsOverlay(map, novel);
+    createSettings(map, { overlay });
 
     const paths = buildPaths(novel);
     addRouteLayers(map, novel, paths);
