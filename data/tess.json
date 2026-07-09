@@ -541,7 +541,8 @@
       "note": "Shaftesbury, by universal identification (Hardy's Wessex map; Lea 1913).",
       "story": "The hill-town on the Vale's rim, shining in Tess's childhood evenings like a row of lamps. It is her gateway out of Blackmoor: the Chaseborough carrier's van starts from here.",
       "quote": "above all, the town of Shaston standing majestically on its height; its windows shining like lamps in the evening sun",
-      "quoteRef": "Ch. 5"
+      "quoteRef": "Ch. 5",
+      "imageBlank": "No period photograph or engraved view of Shaftesbury (Hardy's Shaston) or Gold Hill exists in the public domain — only an antique town-plan, which would sit oddly beside the book's scenic images; a blank is the honest choice."
     },
     {
       "id": "trantridge",
@@ -556,7 +557,8 @@
       "note": "Trantridge is universally identified with Pentridge (Hardy's map; Lea 1913). The Slopes itself — the Stoke-d'Urbervilles' bright new villa — is Hardy's invention, so the house is folded into the village here.",
       "story": "The Slopes, the spick-and-span house of the Stoke-d'Urbervilles: northern money wearing a bought name. Tess comes to claim kin with people who are no kin at all, keeps Mrs d'Urberville's poultry, and is taught to whistle to bullfinches under Alec's supervision.",
       "quote": "She alighted from the van at Trantridge Cross, and ascended on foot a hill in the direction of the district known as The Chase",
-      "quoteRef": "Ch. 5"
+      "quoteRef": "Ch. 5",
+      "imageBlank": "Trantridge is the hamlet of Pentridge and The Slopes is Hardy's invention; Commons holds no public-domain image of Pentridge, only modern photographs, so there is no honest specific picture."
     },
     {
       "id": "chaseborough",
@@ -571,7 +573,8 @@
       "note": "Cranborne, identified since Lea (1913) — Hardy drew the novel's inn from the real Fleur-de-Lys at Cranborne.",
       "story": "The decayed market-town where the Trantridge work-folk dance and drink away their Saturday nights. On a September fair-night Tess waits too long for company on the walk home, and accepts a lift from the wrong man.",
       "quote": "going every Saturday night, when work was done, to Chaseborough, a decayed market-town two or three miles distant",
-      "quoteRef": "Ch. 10"
+      "quoteRef": "Ch. 10",
+      "imageBlank": "Chaseborough is Cranborne; there is no public-domain contemporaneous view of the town — every image of it is a modern photograph — so a logged blank is more honest than an off-period substitute."
     },
     {
       "id": "the-chase",
@@ -586,7 +589,8 @@
       "note": "Cranborne Chase, named all but openly; the identification is universal (Hardy's map; Lea 1913).",
       "story": "The oldest wood in England — primaeval yews and oaks, Druidical mistletoe. Riding home in fog, Alec loses the way here not quite honestly; what happens under the trees Hardy keeps in darkness, and it is the night that breaks Tess's life in two.",
       "quote": "A bit of The Chase—the oldest wood in England.",
-      "quoteRef": "Ch. 11, Alec d'Urberville"
+      "quoteRef": "Ch. 11, Alec d'Urberville",
+      "imageBlank": "Cranborne Chase (Hardy's The Chase) survives in the public domain only as old boundary maps, not woodland views; rather than a map beside the scenic images, a considered blank."
     },
     {
       "id": "talbothays",
@@ -702,7 +706,8 @@
       "note": "Evershot, by universal identification (Lea 1913); the novel's Sow-and-Acorn is the real Acorn Inn.",
       "story": "The halfway village on Tess's great midwinter walk: breakfast at a cottage by the church going out, a sadder halt coming back — and, a little beyond, the barn where the voice of the preaching ranter is one she knows.",
       "quote": "She made a halt here, and breakfasted a second time, heartily enough—not at the Sow-and-Acorn, for she avoided inns, but at a cottage by the church",
-      "quoteRef": "Ch. 44"
+      "quoteRef": "Ch. 44",
+      "imageBlank": "Evershead is Evershot; Commons holds no public-domain image of the village — the real Acorn Inn and every street view survive only in modern photographs."
     },
     {
       "id": "flintcomb-ash",
@@ -717,7 +722,8 @@
       "note": "The farm is invented and the site disputed: Lea (1913) placed it near Nettlecombe Tout, Kay-Robinson (1972) argued for the Doles Ash area above Plush. This point stands on that stretch of chalk upland.",
       "story": "The starve-acre farm: swede-hacking in the rain, reed-drawing in snow, the relentless threshing-machine, all under a farmer with a grudge. Alec d'Urberville — newly converted, then swiftly unconverted — lays siege to her here through the winter.",
       "quote": "There was no exaggeration in Marian's definition of Flintcomb-Ash farm as a starve-acre place.",
-      "quoteRef": "Ch. 43"
+      "quoteRef": "Ch. 43",
+      "imageBlank": "Flintcomb-Ash is an invented farm on a disputed upland site; there is no real spot to picture and no distinct public-domain chalk-upland view that isn't generic — a blank is honest for a conjectured place."
     },
     {
       "id": "sandbourne",
