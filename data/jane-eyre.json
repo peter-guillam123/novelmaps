@@ -396,7 +396,8 @@
       "note": "Lowood is drawn from the Clergy Daughters' School at Cowan Bridge, which the Brontë sisters attended and where two of them sickened; the identification is long-settled biographically. This point is Cowan Bridge, near Kirkby Lonsdale. Lowton, the local market town, stands in for the real Kirkby Lonsdale nearby.",
       "story": "The charity school, cold, half-starved and preached at by the hypocrite Brocklehurst. Here Jane meets the patient Helen Burns and the kind Miss Temple — and here a typhus spring kills off the weakest girls, Helen among them. Reforms follow, and Jane stays eight years, six as pupil and two as teacher.",
       "quote": "What is Lowood Institution?",
-      "quoteRef": "Ch. 3"
+      "quoteRef": "Ch. 3",
+      "imageBlank": "No period image of the Clergy Daughters' School at Cowan Bridge (Brontë's Lowood) is in the public domain, and a serene beauty-spot view of the surrounding valley would prettify the book's grimmest place — a blank is the honest choice."
     },
     {
       "id": "brocklebridge",
@@ -411,7 +412,13 @@
       "note": "Brocklebridge is Brontë's name for the parish serving Lowood; it is not separately locatable, so this point sits by the school at Cowan Bridge. Helen Burns is a composite drawn largely from Charlotte's own sister Maria, who died of consumption caught at the school.",
       "story": "Where Helen Burns is buried. For fifteen years her grave was only a grassy mound; then a grey marble tablet marked it, inscribed with her name and the single word 'Resurgam' — I shall rise again.",
       "quote": "Her grave is in Brocklebridge churchyard",
-      "quoteRef": "Ch. 9"
+      "quoteRef": "Ch. 9",
+      "image": {
+        "file": "assets/images/je-brocklebridge.jpg",
+        "caption": "A churchyard above the River Lune at Kirkby Lonsdale, close by Cowan Bridge, painted by Turner around 1818 — indicative of Brocklebridge churchyard, the burial ground of the parish the school walked to, where Helen Burns is laid to rest.",
+        "credit": "J. M. W. Turner, 'Kirkby Lonsdale Churchyard', c.1818 · Wikimedia Commons · public domain",
+        "indicative": true
+      }
     },
     {
       "id": "thornfield",
@@ -468,7 +475,13 @@
       "note": "Millcote — 'a large manufacturing town on the banks of the A——', six miles from Thornfield — is Brontë's invention; readers usually gesture toward Sheffield or a Sheffield-like town on the eastern edge of the Peak. This point stands on that road, six miles from North Lees toward the industrial valleys, without claiming a single real town.",
       "story": "The busy manufacturing town six miles from Thornfield, where the coaches set Jane down, where Rochester's guests come from and his errands are run, and where he buys the finery and the carriage for a wedding that never happens.",
       "quote": "Millcote was a large manufacturing town on the banks of the A——: a busy place enough, doubtless",
-      "quoteRef": "Ch. 10"
+      "quoteRef": "Ch. 10",
+      "image": {
+        "file": "assets/images/je-millcote.jpg",
+        "caption": "Leeds from Beeston Hill in 1816 — mill chimneys smoking beyond fields hung with drying cloth, in Turner's view of the West Riding manufacturing town. It stands in for Brontë's invented Millcote, where Jane steps down from the coach.",
+        "credit": "J. M. W. Turner, 'Leeds', 1816 · Wikimedia Commons · public domain",
+        "indicative": true
+      }
     },
     {
       "id": "whitcross",
