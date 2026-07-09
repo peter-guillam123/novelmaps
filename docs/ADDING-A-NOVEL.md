@@ -67,6 +67,17 @@ truth for allowed values, this document explains them.
   inks and dyes, not neon.
 - `start.location` must exist. Every character's movements must form a
   continuous chain from `start` (the validator catches teleports).
+- **The disc monogram is two initials — first name + last name** — so
+  Fitzwilliam Darcy reads **FD**, not a lonely F. It is derived
+  automatically (`characterInitial` in `js/ui/format.js`): a leading title
+  is dropped so the monogram is the person, not the honorific (Count
+  Dracula → D, Professor Van Helsing → VH), and a single-name character
+  keeps one letter (Danglars, Haydée). Where the automatic pair reads wrong
+  — a name whose salient words aren't first-and-last — set an explicit
+  `"initials"` on the character to override it (Lady Catherine de Bourgh →
+  `"initials": "LC"`, not the derived CB). Check each cast's monograms as
+  you build: two letters must be unambiguous *within that book* and sit
+  cleanly on the disc.
 
 ### Locations
 
