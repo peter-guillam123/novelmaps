@@ -119,16 +119,32 @@ body {
 }
 
 .masthead-kicker {
-  display: inline-block;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35em;
   margin: 0;
   font-size: 11px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--ink-soft);
+  color: var(--accent);
   text-decoration: none;
   transition: color 0.15s;
 }
-a.masthead-kicker:hover { color: var(--accent); }
+.masthead-kicker .kicker-arrow {
+  font-size: 12px;
+  transition: transform 0.15s;
+}
+.masthead-kicker .kicker-word {
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s;
+}
+a.masthead-kicker:hover .kicker-word { border-bottom-color: currentColor; }
+a.masthead-kicker:hover .kicker-arrow { transform: translateX(-2px); }
+a.masthead-kicker:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
 
 .masthead-title {
   margin: 2px 0 0;

@@ -6,7 +6,9 @@
 export function createMasthead(container, index, activeId, { onMode } = {}) {
   const novelMeta = index.find((n) => n.id === activeId);
   container.innerHTML = `
-    <a class="masthead-kicker" href="./" title="Back to the library">PlotLines</a>
+    <a class="masthead-kicker" href="./" title="Back to the library" aria-label="Back to the library">
+      <span class="kicker-arrow" aria-hidden="true">&larr;</span><span class="kicker-word">PlotLines</span>
+    </a>
     <h1 class="masthead-title"></h1>
     <p class="masthead-byline"></p>
     <div class="mode-tabs" role="group" aria-label="Mode">
