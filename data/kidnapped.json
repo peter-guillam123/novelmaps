@@ -331,7 +331,8 @@
       "note": "A real, notoriously dangerous reef stretching south and west off the Ross of Mull. The Covenant strikes here in the dark. The reef spreads over miles, so the single point is representative but the feature is real and charted.",
       "story": "The reef, off the south-west end of Mull near Iona, where the brig Covenant is thrown by the tide and beats herself to pieces — scattering the crew and casting David up alone.",
       "quote": "I'm thinking,\" said Alan, \"these'll be what they call the Torran Rocks",
-      "quoteRef": "Ch. 13"
+      "quoteRef": "Ch. 13",
+      "imageBlank": "No period view of the Torran Rocks reef itself exists; the one candidate is a bright 1920s beach study whose calm undercuts the Covenant's wreck — a blank is more honest."
     },
     {
       "id": "earraid",
@@ -388,7 +389,12 @@
       "note": "Real. David takes the ferry from Torosay across the Sound of Mull to Kinlochaline on the Morvern peninsula, then crosses it. Kinlochaline is a precise real location; Morvern a real district.",
       "story": "The mainland shore David is ferried to across the Sound of Mull, and the wild peninsula of Morvern he crosses, still following Alan's trail toward Appin.",
       "quote": "There is a regular ferry from Torosay to Kinlochaline on the mainland",
-      "quoteRef": "Ch. 16"
+      "quoteRef": "Ch. 16",
+      "image": {
+        "file": "assets/images/ki-kinlochaline-morven.jpg",
+        "caption": "Kinlochaline Castle at the head of Loch Aline in Morvern, painted by Horatio McCulloch in 1855 — the mainland shore where David steps off the ferry from Mull and sets out across the Highlands.",
+        "credit": "Horatio McCulloch, 'Kinlochaline Castle, Morvern', 1855 · Kelvingrove Art Gallery · Wikimedia Commons · public domain"
+      }
     },
     {
       "id": "kingairloch-ardgour",
@@ -423,7 +429,13 @@
       "note": "Real and commemorated. In the wood of Lettermore near Ballachulish, Colin Roy Campbell of Glenure — the 'Red Fox', the King's factor — is shot dead by an unseen marksman: the real 1752 Appin Murder (Stevenson pins it to 1751), for which James Stewart was hanged. A cairn marks the spot; coordinates are for the monument.",
       "story": "The Appin wood where David, arriving at the worst possible moment, sees the Red Fox shot from the hillside — and, marked as a suspect, falls in with Alan Breck and takes to his heels. Here the flight begins.",
       "quote": "there came the shot of a firelock from higher up the hill; and with the very sound of it Glenure fell upon the road",
-      "quoteRef": "Ch. 17"
+      "quoteRef": "Ch. 17",
+      "image": {
+        "file": "assets/images/ki-lettermore-appin.jpg",
+        "caption": "Glen Coe, in the Appin country near Ballachulish, engraved after Turner in 1836 — the brooding Highland ground of the wood of Lettermore, where the Red Fox, Colin Campbell, is shot dead in the Appin Murder.",
+        "credit": "William Miller after J. M. W. Turner, 'Glen Coe', 1836 · Yale Center for British Art · Wikimedia Commons · public domain",
+        "indicative": true
+      }
     },
     {
       "id": "corrynakiegh",
@@ -540,7 +552,8 @@
       "note": "Real village on the north shore of the Forth, looking across the Hope to Queensferry. Here a serving-girl, moved by pity, steals a boat and rows the fugitives across at night to the Lothian shore near Carriden. Precisely locatable.",
       "story": "The little Forth-side clachan where a change-house girl, taking David for a hunted gentleman, rows them over the water single-handed by night — the quiet, kindly climax of the flight.",
       "quote": "came to the little clachan of Limekilns. This is a place that sits near in by the water-side",
-      "quoteRef": "Ch. 26"
+      "quoteRef": "Ch. 26",
+      "imageBlank": "The Forth crossing at Queensferry is already pictured elsewhere in the book, and Limekilns clachan has no period view of its own; left a considered blank rather than repeat the ferry scene."
     },
     {
       "id": "edinburgh-british-linen",
