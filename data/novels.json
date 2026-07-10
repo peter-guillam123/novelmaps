@@ -99,6 +99,15 @@
     "spine": { "cloth": "#5a2733", "text": "#e6d8bf" }
   },
   {
+    "id": "kim",
+    "title": "Kim",
+    "author": "Rudyard Kipling",
+    "year": 1901,
+    "file": "data/kim.json",
+    "blurb": "A bazaar orphan and an old lama walk the Grand Trunk Road together — the boy's search for a soldier's Red Bull, the lama's for a holy river.",
+    "spine": { "cloth": "#9c6b2f", "text": "#efe2c2" }
+  },
+  {
     "id": "nils",
     "title": "The Wonderful Adventures of Nils",
     "author": "Selma Lagerlöf",
