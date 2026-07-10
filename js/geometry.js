@@ -59,6 +59,21 @@ function normaliseVia(via) {
   );
 }
 
+// slerp's longitude comes from atan2, so it snaps to [-180, 180]: a leg
+// crossing the antimeridian jumps 180 -> -179 mid-path, which both the
+// line renderer and the linear interpolator read as a -359° lunge clear
+// across the map. Unwrap the sequence so it stays continuous (…179, 180,
+// 181…). MapLibre still displays 181° correctly as -179°; it just no
+// longer draws (or flies the peg) the long way round. (haversine is
+// periodic, so distances are unaffected either way.)
+function unwrapLongitudes(coords) {
+  for (let i = 1; i < coords.length; i++) {
+    const d = coords[i][0] - coords[i - 1][0];
+    if (d > 180) coords[i] = [coords[i][0] - 360, coords[i][1]];
+    else if (d < -180) coords[i] = [coords[i][0] + 360, coords[i][1]];
+  }
+}
+
 // A movement's full path: from -> via... -> to, densified, with a
 // cumulative-distance table for arc-length-true interpolation. `stops`
 // carries any NAMED via points with their position along the path
@@ -66,12 +81,13 @@ function normaliseVia(via) {
 export function buildPath(fromCoords, via, toCoords) {
   const viaPts = normaliseVia(via);
   const anchors = [fromCoords, ...viaPts.map((v) => v.at), toCoords];
-  const coords = [anchors[0]];
+  const coords = [[...anchors[0]]];
   const anchorIdx = [0]; // index in coords of each anchor
   for (let i = 1; i < anchors.length; i++) {
     coords.push(...densifySegment(anchors[i - 1], anchors[i]));
     anchorIdx.push(coords.length - 1);
   }
+  unwrapLongitudes(coords);
   const cum = [0];
   for (let i = 1; i < coords.length; i++) {
     cum.push(cum[i - 1] + haversineKm(coords[i - 1], coords[i]));
