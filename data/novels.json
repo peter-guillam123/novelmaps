@@ -63,6 +63,15 @@
     "spine": { "cloth": "#5f2a26", "text": "#dccdb0" }
   },
   {
+    "id": "lost-world",
+    "title": "The Lost World",
+    "author": "Arthur Conan Doyle",
+    "year": 1912,
+    "file": "data/lost-world.json",
+    "blurb": "A reporter, a raging genius, a sceptic and a hunter go up the Amazon to a plateau where the age of dinosaurs never ended — and the bridge is toppled behind them.",
+    "spine": { "cloth": "#1f4a44", "text": "#d8c8a2" }
+  },
+  {
     "id": "monte-cristo",
     "title": "The Count of Monte Cristo",
     "author": "Alexandre Dumas",
