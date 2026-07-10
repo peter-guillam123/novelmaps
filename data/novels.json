@@ -99,6 +99,15 @@
     "spine": { "cloth": "#5a2733", "text": "#e6d8bf" }
   },
   {
+    "id": "nils",
+    "title": "The Wonderful Adventures of Nils",
+    "author": "Selma Lagerlöf",
+    "year": 1906,
+    "file": "data/nils.json",
+    "blurb": "A boy shrunk to thumb-size is carried the length of Sweden on the back of a wild goose — Skåne to Lapland and home, and made kind by the journey.",
+    "spine": { "cloth": "#3a5877", "text": "#d8c07a" }
+  },
+  {
     "id": "call-of-the-wild",
     "title": "The Call of the Wild",
     "author": "Jack London",
