@@ -99,6 +99,15 @@
     "spine": { "cloth": "#2e4034", "text": "#dcd2ac" }
   },
   {
+    "id": "henry-iv",
+    "title": "Henry IV",
+    "author": "William Shakespeare",
+    "year": 1597,
+    "file": "data/henry-iv.json",
+    "blurb": "A truant prince, a fat knight, and a crown in doubt — from the Boar's Head tavern to the field at Shrewsbury, and a rebellion carried the length of England.",
+    "spine": { "cloth": "#6b2222", "text": "#d9b45a" }
+  },
+  {
     "id": "frankenstein",
     "title": "Frankenstein",
     "author": "Mary Shelley",
