@@ -382,6 +382,12 @@ The pipeline that produced the honest datasets, in order:
    afterthought — it lives here so it can't be skipped.
 9. **Update** the About page (a diary entry + any new attribution) and add
    the shelf entry to `data/novels.json` with first-edition spine colours.
+10. **Rebuild the atlas index.** `node tools/build-atlas.mjs` regenerates
+    `data/atlas.json` — the one lightweight file of every place-pin across the
+    whole shelf that the atlas view (`atlas.html`) draws. A new book does **not**
+    appear on the atlas until this is run, so it is part of shipping, not an
+    afterthought. (The atlas is a separate door with its own map; it never loads
+    the images eagerly — a pin's picture loads only when its card is opened.)
 
 **The four hard gates** (a book that fails any does not ship): it **loads**
 (`js/data.js` throws on structural slips); **rushes is clean**

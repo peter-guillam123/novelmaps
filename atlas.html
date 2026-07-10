@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The atlas — PlotLines</title>
+  <meta name="description" content="Every place in every book on one map — the whole shelf of classics, pin by pin.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="stylesheet" href="vendor/maplibre-gl/maplibre-gl.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="atlas-page">
+  <div id="map" aria-label="A map of every place across all the books"></div>
+
+  <header class="atlas-masthead">
+    <a class="atlas-back" href="index.html">&larr; PLOTLINES &middot; the shelf</a>
+    <h1>The atlas</h1>
+    <p class="atlas-sub">Every place in every book, on one map.</p>
+    <p class="atlas-count" id="atlas-count"></p>
+    <div class="atlas-books" id="atlas-books" role="group" aria-label="Filter by book"></div>
+  </header>
+
+  <aside class="atlas-card" id="atlas-card" hidden aria-live="polite"></aside>
+
+  <script src="vendor/maplibre-gl/maplibre-gl.js"></script>
+  <script type="module" src="js/atlas.js"></script>
+</body>
+</html>

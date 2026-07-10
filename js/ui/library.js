@@ -20,7 +20,8 @@ export function createLibrary(container, index) {
         wherever the story walks in Britain. Take one down.</p>
       <div class="library-shelf" role="group" aria-label="The shelf"></div>
       <p class="intro-hints">Each book opens with a choice: watch the story, or
-        explore its places.</p>
+        explore its places &middot; <a class="library-atlas" href="atlas.html">or
+        see every place at once, on the atlas &rarr;</a></p>
     </div>`;
 
   const shelf = container.querySelector('.library-shelf');
