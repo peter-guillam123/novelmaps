@@ -1379,7 +1379,8 @@
       "from": "montanvert",
       "to": "evian",
       "chapter": 24,
-      "days": 300,
+      "startDay": 550,
+      "days": 179,
       "mode": "foot",
       "via": [
         {
@@ -1545,7 +1546,7 @@
       "from": "evian",
       "to": "arctic-coast",
       "chapter": 25,
-      "days": 260,
+      "days": 202,
       "mode": "sledge",
       "via": [
         {
@@ -1578,6 +1579,7 @@
       "from": "arctic-coast",
       "to": "arctic-ice",
       "chapter": 25,
+      "startDay": 963,
       "days": 30,
       "mode": "sledge",
       "via": [
