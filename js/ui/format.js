@@ -142,3 +142,25 @@ export const CERTAINTY_LABELS = {
   identified: 'Identified place',
   conjectured: 'Best guess',
 };
+
+// Distance across the map, in miles. Our routes are approximate (great-circle
+// arcs and illustrative gestures), so a stated total is rounded to two
+// significant figures and hedged with "about" — never a false-precise number.
+// The live odometer, being visibly a running meter, shows whole miles.
+const KM_TO_MILES = 0.621371;
+export const kmToMiles = (km) => km * KM_TO_MILES;
+
+export function aboutMiles(miles) {
+  if (!miles || miles < 1) return '';
+  let n;
+  if (miles < 95) n = Math.round(miles / 10) * 10; // nearest ten
+  else {
+    const mag = Math.pow(10, Math.floor(Math.log10(miles)) - 1);
+    n = Math.round(miles / mag) * mag; // two significant figures
+  }
+  return `about ${n.toLocaleString('en-GB')} miles`;
+}
+
+export function milesTicker(miles) {
+  return `${Math.round(miles).toLocaleString('en-GB')} mi`;
+}

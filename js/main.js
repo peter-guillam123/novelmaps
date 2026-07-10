@@ -98,6 +98,7 @@ ready
         card: storyCard,
         emphasize: (id) => setRouteEmphasis(map, id),
         onProgress: (frac) => scrubber && scrubber.setStoryProgress(frac),
+        onDistance: (miles) => scrubber && scrubber.setDistance(miles),
       });
     }
     // Everything that starts/stops playback talks to the transport: the
@@ -152,6 +153,7 @@ ready
       paths,
       {
         reducedMotion: () => engine.reducedMotion(),
+        totalMiles: story ? story.totalMiles : 0,
         onStart: ({ play = true } = {}) => {
           if (play) establishStart();
           else {

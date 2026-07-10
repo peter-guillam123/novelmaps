@@ -27,7 +27,7 @@
 import {
   READ_BASE_SECONDS, READ_PER_WORD_SECONDS, BEAT_MIN_SECONDS,
 } from './constants.js';
-import { storyTime, roman } from './ui/format.js';
+import { storyTime, roman, kmToMiles } from './ui/format.js';
 
 // Camera timings, in *content* seconds (so at 1× they line up exactly with
 // the beat clock: a peg gated to start at moveSec begins just as the
@@ -43,7 +43,7 @@ const ARRIVAL_DWELL_SECONDS = 2.5; // after crossing, rest on the place reached
 const NODE_ZOOM = 11.5;          // a town on the historic survey
 const SMALL_MOVE_DEG = 0.18;     // below this, no pull-back is needed
 
-export function createStoryPlayer(novel, timeline, paths, { map, director, engine, card, emphasize, onProgress }) {
+export function createStoryPlayer(novel, timeline, paths, { map, director, engine, card, emphasize, onProgress, onDistance }) {
   const chapterDay = (n) => novel.chapters[Math.min(Math.max(n, 1), novel.chapters.length) - 1].day ?? 0;
 
   const readTime = (text) => {
@@ -122,6 +122,19 @@ export function createStoryPlayer(novel, timeline, paths, { map, director, engin
       }
     }
   }
+
+  // cumulative distance, for the odometer: only journeys/removals travel, and
+  // the running total climbs in script order (so it only ever goes up, even
+  // when a `meanwhile` winds the clock back). Shared legs count once — one
+  // beat, one leg. It is the whole telling's travel, across the cast.
+  let accKm = 0;
+  for (const beat of beats) {
+    beat.kmBefore = accKm;
+    if ((beat.kind === 'journey' || beat.kind === 'removal') && beat.leg) {
+      accKm += beat.leg.path.totalKm;
+    }
+  }
+  const totalMiles = kmToMiles(accKm);
 
   // durations + cumulative, for the continuous progress bar
   const durs = beats.map((b) => b.dur);
@@ -204,10 +217,26 @@ export function createStoryPlayer(novel, timeline, paths, { map, director, engin
     timeline.seek(t);
     engine.requestRender();
   }
+  // Miles travelled so far — the fraction of the live leg comes from the peg's
+  // actual position (selfT), so the odometer always matches the marker, whether
+  // it is crossing, paused mid-route, or stepped straight to a leg's end.
+  function currentMiles() {
+    if (idx < 0) return 0;
+    const beat = beats[idx];
+    let km = beat.kmBefore;
+    if ((beat.kind === 'journey' || beat.kind === 'removal') && beat.leg
+        && selfT != null && beat.t1 > beat.t0) {
+      const f = Math.min(Math.max((selfT - beat.t0) / (beat.t1 - beat.t0), 0), 1);
+      km += beat.leg.path.totalKm * f;
+    }
+    return kmToMiles(km);
+  }
   function reportProgress() {
-    if (!onProgress) return;
-    const frac = idx < 0 ? 0 : Math.min((cumBefore[idx] + Math.min(elapsed, durs[idx])) / totalDur, 1);
-    onProgress(frac);
+    if (onProgress) {
+      const frac = idx < 0 ? 0 : Math.min((cumBefore[idx] + Math.min(elapsed, durs[idx])) / totalDur, 1);
+      onProgress(frac);
+    }
+    if (onDistance) onDistance(currentMiles());
   }
 
   // The reader scrubbing the timeline takes the wheel: pause the telling.
@@ -323,7 +352,7 @@ export function createStoryPlayer(novel, timeline, paths, { map, director, engin
     playing = false;
     timeline.setPlaying(false);
     cancel();
-    card.done();
+    card.done(totalMiles);
     reportProgress();
   }
 
@@ -372,6 +401,7 @@ export function createStoryPlayer(novel, timeline, paths, { map, director, engin
 
   return {
     hasScript: beats.length > 0,
+    totalMiles,
     play,
     pause,
     toggle: () => (playing ? pause() : play()),

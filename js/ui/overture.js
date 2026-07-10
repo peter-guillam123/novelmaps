@@ -4,9 +4,9 @@
 // — their colours and letters. Then Start.
 
 import { CHARACTER_COLOURS } from '../constants.js';
-import { characterInitial } from './format.js';
+import { characterInitial, aboutMiles } from './format.js';
 
-export function createOverture(container, map, novel, paths, { onStart, reducedMotion }) {
+export function createOverture(container, map, novel, paths, { onStart, reducedMotion, totalMiles = 0 }) {
   // The opening overview frames the novel's home canvas (mapHome) — the
   // country the story mostly lives in — so a single far journey (David's
   // emigration to Australia) doesn't zoom the opening out to the whole
@@ -39,11 +39,17 @@ export function createOverture(container, map, novel, paths, { onStart, reducedM
     container.innerHTML = `
       <div class="overture-panel" role="dialog" aria-labelledby="overture-text">
         <p class="overture-text" id="overture-text"></p>
+        <p class="overture-distance"></p>
         <ul class="overture-cast" role="list"></ul>
         <p class="overture-note"></p>
         <button type="button" class="overture-start">Start the journey</button>
       </div>`;
     container.querySelector('.overture-text').textContent = novel.overture;
+
+    // The scale of the thing, in miles — the overture is where the sweep lives.
+    const dist = container.querySelector('.overture-distance');
+    if (totalMiles >= 1) dist.textContent = `The whole journey — ${aboutMiles(totalMiles)}.`;
+    else dist.remove();
 
     // A book whose action pre-dates any surviving map (Henry IV, 1403) owns
     // that honestly in one line before it starts, rather than pretending the

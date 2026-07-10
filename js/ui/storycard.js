@@ -7,7 +7,7 @@
 // aria-live so the narration is also the screen-reader telling.
 
 import { CHARACTER_COLOURS } from '../constants.js';
-import { characterInitial } from './format.js';
+import { characterInitial, aboutMiles } from './format.js';
 import { modeIcon, modePhrase } from './modeicons.js';
 
 export function createStoryCard(container, novel, { onStep, onExplore }) {
@@ -51,9 +51,11 @@ export function createStoryCard(container, novel, { onStep, onExplore }) {
   // telling ends on an invitation to go and walk them, not a dead "The end".
   const placeCount = (novel.locations || []).length;
   const hasImages = (novel.locations || []).some((l) => l.image);
-  const invitation = hasImages
-    ? `That's the whole journey told. Now the map is yours: wander the ${placeCount} places at your own pace, each carrying the book's own words and, where one survives, a real period picture.`
-    : `That's the whole journey told. Now the map is yours: wander the ${placeCount} places at your own pace, each carrying the book's own words and the story of what happened there.`;
+  const placesClause = hasImages
+    ? `wander the ${placeCount} places at your own pace, each carrying the book's own words and, where one survives, a real period picture.`
+    : `wander the ${placeCount} places at your own pace, each carrying the book's own words and the story of what happened there.`;
+  const invitationText = (totalMiles) =>
+    `That's the whole journey told${totalMiles ? ` — ${aboutMiles(totalMiles)} of it` : ''}. Now the map is yours: ${placesClause}`;
 
   function show(beat, { index, total, clock, focusChar, mode }) {
     container.classList.remove('is-interstitial', 'is-done');
@@ -103,7 +105,7 @@ export function createStoryCard(container, novel, { onStep, onExplore }) {
     container.classList.add('is-visible');
   }
 
-  function done() {
+  function done(totalMiles) {
     container.classList.add('is-done');
     clockEl.textContent = 'The end';
     subjectEl.innerHTML = '';
@@ -111,7 +113,7 @@ export function createStoryCard(container, novel, { onStep, onExplore }) {
     modeEl.hidden = true;
     titleEl.hidden = true;
     progressEl.hidden = true;
-    narrationEl.textContent = invitation;
+    narrationEl.textContent = invitationText(totalMiles);
     narrationEl.classList.add('is-invitation');
     nextBtn.disabled = true;      // nothing after the end; ◂ still steps back in
     exploreBtn.hidden = !onExplore;

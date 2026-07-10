@@ -6,7 +6,7 @@
 // characters are travelling at each moment, so the quiet stretches read as
 // pale gaps and the busy passages as deep madder.
 
-import { chapterHeading, storyTime } from './format.js';
+import { chapterHeading, storyTime, milesTicker } from './format.js';
 
 function mix(a, b, f) {
   const pa = [1, 3, 5].map((i) => parseInt(a.slice(i, i + 2), 16));
@@ -56,6 +56,7 @@ export function createScrubber(container, novel, timeline, engine, { scripted = 
           <span class="clock-date"></span>
           <span class="clock-elapsed"></span>
         </span>
+        <span class="story-distance" aria-hidden="true"></span>
         <span class="chapter-ref">
           <span class="chapter-numeral"></span>
           <span class="chapter-title"></span>
@@ -156,6 +157,7 @@ export function createScrubber(container, novel, timeline, engine, { scripted = 
   // Scripted story: the player pushes its continuous progress here, so the
   // bar always advances — the reassurance the reader needs that it's
   // working, even while a still scene holds.
+  const distanceEl = container.querySelector('.story-distance');
   return {
     setStoryProgress(frac) {
       const pct = Math.max(0, Math.min(1, frac)) * 100;
@@ -163,6 +165,10 @@ export function createScrubber(container, novel, timeline, engine, { scripted = 
       activityEl.style.background =
         `linear-gradient(90deg, var(--accent) 0 ${pct}%, var(--rule) ${pct}% 100%)`;
       range.setAttribute('aria-valuetext', `${Math.round(pct)}% through the story`);
+    },
+    // The odometer: distance travelled so far, ticking up as journeys play.
+    setDistance(miles) {
+      distanceEl.textContent = miles >= 0.5 ? milesTicker(miles) : '';
     },
   };
 }

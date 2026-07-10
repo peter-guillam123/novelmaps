@@ -856,11 +856,21 @@ body.is-overture #storycard { display: none !important; }
 .chapter-heading {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
   gap: 10px;
   margin-bottom: 4px;
   white-space: nowrap;
   overflow: hidden;
 }
+/* the odometer — distance travelled, ticking up as journeys play; time sits
+   on the sides (clock, chapter), the space travelled in the middle. */
+.story-distance {
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
+}
+.story-distance:empty { display: none; }
 /* the story clock — the date/season ticking, made the hero */
 .story-clock {
   display: flex;
@@ -879,9 +889,8 @@ body.is-overture #storycard { display: none !important; }
   color: var(--ink-soft);
 }
 .clock-elapsed:empty { display: none; }
-/* the chapter reference — now secondary, pushed to the right */
+/* the chapter reference — secondary, at the right (space-between places it) */
 .chapter-ref {
-  margin-left: auto;
   display: flex;
   align-items: baseline;
   gap: 6px;
@@ -1460,6 +1469,13 @@ body.is-overture #captions { display: none !important; }
   margin: 0;
   font-size: 16px;
   line-height: 1.55;
+}
+.overture-distance {
+  margin: 10px 0 0;
+  font-style: italic;
+  font-size: 13px;
+  letter-spacing: 0.01em;
+  color: var(--ink-soft);
 }
 
 .overture-cast {
