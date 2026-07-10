@@ -180,6 +180,15 @@
     "spine": { "cloth": "#5e2a2a", "text": "#e8dcc0" }
   },
   {
+    "id": "war-and-peace",
+    "title": "War and Peace",
+    "author": "Leo Tolstoy",
+    "year": 1869,
+    "file": "data/war-and-peace.json",
+    "blurb": "Five lives and an army: the Petersburg salons and the country estates, and then Napoleon's half-million pouring over the Niemen to Moscow — and crawling back a thread.",
+    "spine": { "cloth": "#5a4130", "text": "#d3b877" }
+  },
+  {
     "id": "huckleberry-finn",
     "title": "Adventures of Huckleberry Finn",
     "author": "Mark Twain",
