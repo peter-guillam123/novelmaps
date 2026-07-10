@@ -59,7 +59,7 @@ for (const c of Object.keys(byChar)) {
     const pts = [locs[m.from].coords, ...(m.via || []).map(viaAt), locs[m.to].coords];
     let dist = 0;
     for (let i = 1; i < pts.length; i++) dist += km(pts[i - 1], pts[i]);
-    legs.push({ character: c, from: m.from, to: m.to, chapter: m.chapter, dayStart, dayEnd: dayStart + dur, km: dist, pts });
+    legs.push({ character: c, from: m.from, to: m.to, chapter: m.chapter, dayStart, dayEnd: dayStart + dur, km: dist, pts, explicit: m.startDay != null });
     cursor = dayStart + dur;
   }
 }
@@ -157,6 +157,46 @@ story.forEach((b, i) => {
 for (const l of legs) {
   const key = `${l.from}>${l.to}@${l.chapter}`;
   if (!covered.has(key)) warns.push(`movement ${l.character}: ${key} never appears in the script — its trail will pop in undramatised`);
+}
+
+// Convergent legs out of sync: two characters ostensibly on the SAME journey
+// (same from/to/chapter — a shadow boarding the quarry's steamer, companions
+// on one deck) where one DEPARTS the shared origin before the other has even
+// ARRIVED there. Left to the chapter clock, a character pre-positioned at a
+// waypoint carries none of the main traveller's accumulated time, so they set
+// off early and glide ahead of the very person they are meant to be with (Fix
+// sails from Suez before Fogg's ship has docked; Aouda leaves Pillaji before
+// Fogg reaches her). This is stricter than mere start-day drift, so a genuine
+// detour (Dracula's hunters searching two more lairs, arriving later because
+// they did more) is left alone. A deliberate stagger carries an explicit
+// startDay, and those are skipped too.
+{
+  const startOf = (c) => novel.characters.find((x) => x.id === c)?.start;
+  const startDayOf = (c) => { const s = startOf(c); return s ? chapterDay(s.chapter) : 0; };
+  const legsByChar = {};
+  for (const l of legs) (legsByChar[l.character] = legsByChar[l.character] || []).push(l);
+  // Is character c at place X by day d? (started there, or a prior leg landed there.)
+  const atPlaceBy = (c, X, d) =>
+    (startOf(c)?.location === X && startDayOf(c) <= d + 1e-9) ||
+    (legsByChar[c] || []).some((l) => l.to === X && l.dayEnd <= d + 1e-9);
+
+  const groups = new Map();
+  for (const l of legs) {
+    const key = `${l.from}>${l.to}@${l.chapter}`;
+    (groups.get(key) || groups.set(key, []).get(key)).push(l);
+  }
+  for (const group of groups.values()) {
+    if (group.length < 2) continue;
+    for (const a of group) {
+      if (a.explicit) continue;
+      const b = group.find((x) => x.character !== a.character && !x.explicit &&
+        !atPlaceBy(x.character, a.from, a.dayStart) && a.dayStart < a.dayEnd);
+      if (b) {
+        warns.push(`convergent legs out of sync: ${a.from}>${a.to}@${a.chapter} — ${a.character} departs day ${Math.round(a.dayStart)}, before ${b.character} has even reached ${a.from} (they should travel together; set an explicit startDay on the follower, or share the leg)`);
+        break; // one per group is enough
+      }
+    }
+  }
 }
 
 // Route honesty: a leg drawn across the wrong medium (a train over the sea, a

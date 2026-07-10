@@ -1118,6 +1118,7 @@
       "to": "bombay",
       "chapter": 9,
       "days": 9,
+      "startDay": 11,
       "mode": "ship",
       "via": [
         [
@@ -1262,6 +1263,7 @@
       "to": "allahabad",
       "chapter": 13,
       "days": 1,
+      "startDay": 22,
       "mode": "elephant",
       "via": [
         {
@@ -1745,6 +1747,7 @@
       "to": "omaha",
       "chapter": 32,
       "days": 1,
+      "startDay": 70,
       "mode": "sledge",
       "via": [
         {

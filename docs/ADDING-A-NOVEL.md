@@ -458,6 +458,20 @@ still yours.
   when she arrives), or a next-day journey (Jane rides day 44, Elizabeth walks
   day 45). Alec never travels *with* Tess; he lies in wait ahead or trails
   behind.
+- **A character who waits at a waypoint and then joins the main traveller
+  needs an explicit `startDay` on the leg they set off on together.** The
+  auto-timing chains each character's legs from *their own* start-chapter's
+  day. The main traveller (Fogg) carries the accumulated days of getting to
+  the waypoint; a character pre-positioned there (Fix waiting at Suez, Aouda
+  held at Pillaji) carries none — so, left to the chapter clock, they *depart
+  the waypoint before the traveller has even arrived*, and glide ahead of the
+  very person they are meant to be following. Set the joining leg's `startDay`
+  to the traveller's arrival day (or share the leg *and* set it), so the
+  waiter rests in place until they show up. `rushes` now catches this: it flags
+  when one character departs a shared origin before another same-journey
+  character has reached it. (A genuine detour — the party splitting to search
+  two more lairs and rightly arriving later — is not flagged; only the
+  leave-before-they-arrive trap.)
 - **Don't lodge two characters at one node when the book gives them
   different addresses.** A single "London" pin quietly sends everyone to the
   same doorstep. Darcy once shared the Gardiners' Cheapside house (Gracechurch
