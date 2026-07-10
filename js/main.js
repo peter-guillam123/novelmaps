@@ -89,6 +89,7 @@ ready
       engine.setExternalDriver(true);
       const storyCard = createStoryCard(document.getElementById('storycard'), novel, {
         onStep: (dir) => story.step(dir),
+        onExplore: () => setMode('explore'),
       });
       story = createStoryPlayer(novel, timeline, paths, {
         map,

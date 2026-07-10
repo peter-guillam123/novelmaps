@@ -486,6 +486,25 @@ body.is-overture #storycard { display: none !important; }
 .story-step:hover:not(:disabled) { background: var(--paper); }
 .story-step:disabled { opacity: 0.35; cursor: default; }
 
+/* The end-of-telling invitation: a slightly warmer narration, and an accent
+   button that hands the reader on to the places (their words and pictures). */
+.story-narration.is-invitation { font-size: 15px; }
+.story-explore {
+  margin: 12px auto 2px;
+  min-height: 40px;
+  padding: 8px 22px;
+  border: none;
+  border-radius: 3px;
+  background: var(--accent);
+  color: var(--paper-bright);
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+.story-explore:hover { background: #8e332b; }
+.story-explore:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
 /* Interstitials (meanwhile, handoff) own the moment: a darker, weightier
    card, so the change of thread or of time reads as a deliberate turn. */
 #storycard.is-interstitial .story-body {

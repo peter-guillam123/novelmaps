@@ -10,7 +10,7 @@ import { CHARACTER_COLOURS } from '../constants.js';
 import { characterInitial } from './format.js';
 import { modeIcon, modePhrase } from './modeicons.js';
 
-export function createStoryCard(container, novel, { onStep }) {
+export function createStoryCard(container, novel, { onStep, onExplore }) {
   // Mirror-identical arrows: one right-pointing triangle, the prev flipped
   // on its x-axis, so the two buttons can never disagree on shape.
   const tri = (dir) =>
@@ -28,6 +28,7 @@ export function createStoryCard(container, novel, { onStep }) {
       <h3 class="story-title"></h3>
       <p class="story-narration"></p>
       <p class="story-progress"></p>
+      <button type="button" class="story-explore" hidden>Explore the places</button>
     </div>
     <button type="button" class="story-step story-step-next" aria-label="Next scene">${tri(1)}</button>`;
 
@@ -39,13 +40,29 @@ export function createStoryCard(container, novel, { onStep }) {
   const progressEl = container.querySelector('.story-progress');
   const prevBtn = container.querySelector('.story-step-prev');
   const nextBtn = container.querySelector('.story-step-next');
+  const exploreBtn = container.querySelector('.story-explore');
 
   prevBtn.addEventListener('click', () => onStep(-1));
   nextBtn.addEventListener('click', () => onStep(1));
+  exploreBtn.addEventListener('click', () => onExplore && onExplore());
+
+  // The map holds every place's own words and, for most books, a period
+  // picture — riches a viewer who only watches the story never opens. So the
+  // telling ends on an invitation to go and walk them, not a dead "The end".
+  const placeCount = (novel.locations || []).length;
+  const hasImages = (novel.locations || []).some((l) => l.image);
+  const invitation = hasImages
+    ? `That's the whole journey told. Now the map is yours: wander the ${placeCount} places at your own pace, each carrying the book's own words and, where one survives, a real period picture.`
+    : `That's the whole journey told. Now the map is yours: wander the ${placeCount} places at your own pace, each carrying the book's own words and the story of what happened there.`;
 
   function show(beat, { index, total, clock, focusChar, mode }) {
     container.classList.remove('is-interstitial', 'is-done');
     container.classList.toggle('is-interstitial', beat.kind === 'meanwhile' || beat.kind === 'handoff');
+    // Leaving the end state (a step back into the story) restores the beat UI.
+    exploreBtn.hidden = true;
+    titleEl.hidden = !beat.title;
+    narrationEl.classList.remove('is-invitation');
+    progressEl.hidden = false;
 
     // Just the icons: the character's coloured disc (matching their map
     // marker) and, on a journey, the mode glyph. The words live on as a
@@ -89,6 +106,17 @@ export function createStoryCard(container, novel, { onStep }) {
   function done() {
     container.classList.add('is-done');
     clockEl.textContent = 'The end';
+    subjectEl.innerHTML = '';
+    subjectEl.removeAttribute('title');
+    modeEl.hidden = true;
+    titleEl.hidden = true;
+    progressEl.hidden = true;
+    narrationEl.textContent = invitation;
+    narrationEl.classList.add('is-invitation');
+    nextBtn.disabled = true;      // nothing after the end; ◂ still steps back in
+    exploreBtn.hidden = !onExplore;
+    container.hidden = false;
+    container.classList.add('is-visible');
   }
 
   function hide() {
