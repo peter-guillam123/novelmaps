@@ -8,7 +8,7 @@
   "mapNote": "No map survives from Shakespeare's England of 1403, so the Victorian survey stays off for this one; the places are plotted on the modern land, whose coastline and rivers are essentially unchanged.",
   "overlay": false,
   "mapHome": { "bounds": [[-4.8, 50.7], [0.95, 55.7]] },
-  "timeline": { "epoch": null, "calendar": false, "span": "a decade, compressed", "unit": "year" },
+  "timeline": { "epoch": null, "calendar": false, "span": "a decade, compressed", "duration": "a decade", "unit": "year" },
   "sources": [
     "Holinshed's Chronicles (Shakespeare's source for the reign, the Battle of Shrewsbury, and the tripartite indenture at Bangor).",
     "The historic road network is the surviving Roman/medieval line: Watling Street, the Dover Road, Ermin Way and the Great North Road, as they stood c.1403."

@@ -27,7 +27,7 @@
 import {
   READ_BASE_SECONDS, READ_PER_WORD_SECONDS, BEAT_MIN_SECONDS,
 } from './constants.js';
-import { storyTime, roman, kmToMiles } from './ui/format.js';
+import { storyTime, roman, kmToMiles, humanDuration } from './ui/format.js';
 
 // Camera timings, in *content* seconds (so at 1× they line up exactly with
 // the beat clock: a peg gated to start at moveSec begins just as the
@@ -135,6 +135,24 @@ export function createStoryPlayer(novel, timeline, paths, { map, director, engin
     }
   }
   const totalMiles = kmToMiles(accKm);
+
+  // Elapsed time of the whole telling. A dated book (real calendar) gets its
+  // span computed from the beats' day range; an undated book's clock is a
+  // fiction, so it uses its authored `timeline.duration` phrase, or nothing.
+  const chapDay = (n) =>
+    novel.chapters[Math.min(Math.max(n, 1), novel.chapters.length) - 1].day;
+  let minT = Infinity, maxT = -Infinity;
+  for (const b of beats) {
+    if (b.t0 != null) { minT = Math.min(minT, b.t0); maxT = Math.max(maxT, b.t1); }
+    else if ((b.kind === 'scene' || b.kind === 'handoff') && b.chapter) {
+      const day = typeof b.day === 'number' ? b.day : chapDay(b.chapter);
+      minT = Math.min(minT, day); maxT = Math.max(maxT, day);
+    }
+  }
+  const spanDays = maxT > minT ? maxT - minT : 0;
+  const totalSpan = novel.timeline && novel.timeline.calendar
+    ? (spanDays > 0 ? humanDuration(spanDays) : null)
+    : (novel.timeline && novel.timeline.duration) || null;
 
   // durations + cumulative, for the continuous progress bar
   const durs = beats.map((b) => b.dur);
@@ -352,7 +370,7 @@ export function createStoryPlayer(novel, timeline, paths, { map, director, engin
     playing = false;
     timeline.setPlaying(false);
     cancel();
-    card.done(totalMiles);
+    card.done(totalMiles, totalSpan);
     reportProgress();
   }
 
@@ -402,6 +420,7 @@ export function createStoryPlayer(novel, timeline, paths, { map, director, engin
   return {
     hasScript: beats.length > 0,
     totalMiles,
+    totalSpan,
     play,
     pause,
     toggle: () => (playing ? pause() : play()),

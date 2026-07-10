@@ -164,3 +164,30 @@ export function aboutMiles(miles) {
 export function milesTicker(miles) {
   return `${Math.round(miles).toLocaleString('en-GB')} mi`;
 }
+
+// A story's elapsed time, humanised. Only honest for a *dated* book, whose
+// clock ticks real calendar dates; an undated book's day-offsets are invented
+// (or, like Henry IV, a decade deliberately compressed), so it carries its own
+// `timeline.duration` phrase instead. Rounded, like the miles.
+export function humanDuration(days) {
+  const d = days;
+  if (d < 1.5) return 'a single day';
+  if (d < 14) return `${Math.round(d)} days`;
+  if (d < 100) {
+    const n = d < 40 ? Math.round(d) : Math.round(d / 10) * 10; // e.g. 84 → 80
+    return `${d < 40 ? '' : 'about '}${n} days`;
+  }
+  const months = d / 30.44;
+  if (months < 18) return `about ${Math.round(months)} months`;
+  const years = Math.round(d / 365.25);
+  return `about ${years} year${years === 1 ? '' : 's'}`;
+}
+
+// "about 2,500 miles and a decade" — one "about" carries both, so a leading
+// "about" is stripped off the time phrase when the two are joined.
+export function milesAndTime(miles, spanPhrase) {
+  const m = aboutMiles(miles);
+  if (!m) return '';
+  if (!spanPhrase) return m;
+  return `${m} and ${spanPhrase.replace(/^about\s+/i, '')}`;
+}

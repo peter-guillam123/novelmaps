@@ -154,6 +154,7 @@ ready
       {
         reducedMotion: () => engine.reducedMotion(),
         totalMiles: story ? story.totalMiles : 0,
+        totalSpan: story ? story.totalSpan : null,
         onStart: ({ play = true } = {}) => {
           if (play) establishStart();
           else {
