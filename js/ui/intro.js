@@ -9,14 +9,14 @@ export function createIntro(container, novel, onBegin, onExplore) {
       <p class="intro-kicker">PlotLines presents</p>
       <h2 class="intro-title" id="intro-title"></h2>
       <p class="intro-byline"></p>
-      <p class="intro-blurb">Every journey in the novel, drawn on a period map —
+      <p class="intro-blurb">Every journey in the book, drawn on a period map —
         the whole story played out, all its characters at once.</p>
       <div class="intro-actions">
         <button type="button" class="intro-begin">Begin the story</button>
         <button type="button" class="intro-explore">Explore the map</button>
       </div>
       <p class="intro-hints">Space plays and pauses &middot; select a character to
-        ride along &middot; touch any stop for the novel's own words</p>
+        ride along &middot; touch any stop for the book's own words</p>
       <a class="intro-back" href="./">&#8617; Choose another book</a>
     </div>`;
 
