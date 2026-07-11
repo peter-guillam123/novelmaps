@@ -45,6 +45,17 @@ export function buildPaths(novel) {
   });
 }
 
+// The Minard band's width encodes the surviving numbers (in thousands): a
+// fat band leaving at ~400,000, a thread crawling back at ~10,000. Shared by
+// the full "study" band (overture / explore) and the per-leg play overlay so
+// the two always match.
+const MINARD_WIDTH = ['interpolate', ['linear'], ['get', 'strength'], 10, 2.5, 50, 6, 150, 13, 400, 28];
+// In the study band, advance and retreat are pulled to opposite sides of the
+// road so the thin return is never buried under the fat advance. The two legs
+// run antiparallel, so a single constant offset separates them — the advance
+// (drawn west→east) falls one side, the retreat (east→west) the other.
+const MINARD_STUDY_OFFSET = 13;
+
 export function addRouteLayers(map, novel, paths) {
   const offsets = characterOffsets(novel.characters);
 
@@ -115,8 +126,8 @@ export function addRouteLayers(map, novel, paths) {
     layout: lineLayout,
     paint: {
       'line-color': ['case', ['==', ['get', 'phase'], 'retreat'], '#4a4238', ['get', 'colour']],
-      'line-width': ['interpolate', ['linear'], ['get', 'strength'], 10, 2, 50, 5, 150, 11, 400, 20],
-      'line-offset': ['case', ['==', ['get', 'phase'], 'retreat'], 13, 0],
+      'line-width': MINARD_WIDTH,
+      'line-offset': MINARD_STUDY_OFFSET,
       'line-opacity': 0.82,
     },
   });
@@ -264,10 +275,13 @@ export function setRouteMode(map, mode) {
   for (const l of ['routes-solid', 'routes-dashed']) {
     map.setPaintProperty(l, 'line-opacity', web);
   }
-  // The Minard band stays bold where its shape is meant to be read (the
-  // overture and explore), and dims during play so the moving trails carry.
+  // The full Minard band — the whole assembled taper — belongs to the still
+  // "study" views, where its shape is meant to be read (the overture and
+  // explore). During play it is hidden entirely; the per-leg `minard-live`
+  // overlay carries the army's current strength, one leg at a time, so the
+  // advance and retreat never sit stacked and obscuring each other.
   if (map.getLayer('routes-minard')) {
-    map.setPaintProperty('routes-minard', 'line-opacity', mode === 'full' ? 0.85 : mode === 'explore' ? 0.7 : 0.2);
+    map.setPaintProperty('routes-minard', 'line-opacity', mode === 'full' ? 0.85 : mode === 'explore' ? 0.7 : 0);
   }
   const vis = mode === 'explore' ? 'none' : 'visible';
   for (const l of TRAIL_LAYERS) map.setLayoutProperty(l, 'visibility', vis);
@@ -295,7 +309,7 @@ function ensureIndex(novel, paths) {
 }
 
 export function addTrailLayers(map) {
-  for (const id of ['trails-past', 'trails-live']) {
+  for (const id of ['trails-past', 'trails-live', 'minard-live']) {
     map.addSource(id, { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
   }
   const layout = { 'line-cap': 'round', 'line-join': 'round' };
@@ -316,6 +330,21 @@ export function addTrailLayers(map) {
     id: 'trails-past-dashed', type: 'line', source: 'trails-past',
     filter: ['get', 'dashed'], layout,
     paint: base({ 'line-width': width, 'line-opacity': 0.4, 'line-dasharray': [2.2, 1.8] }),
+  });
+
+  // The Minard band as a play overlay: only the army leg being travelled
+  // right now, drawn as far as it has got. It appears leg by leg, one at a
+  // time, so the fat advance and the thin retreat are never on screen
+  // together — the return can't be buried under the march. Sits beneath the
+  // bright live trail, which still leads the eye along the road.
+  map.addLayer({
+    id: 'minard-live', type: 'line', source: 'minard-live', layout,
+    paint: {
+      'line-color': ['case', ['==', ['get', 'phase'], 'retreat'], '#4a4238', ['get', 'colour']],
+      'line-width': MINARD_WIDTH,
+      'line-offset': ['get', 'offset'],
+      'line-opacity': 0.9,
+    },
   });
 
   // the bright leading trail, over a soft paper glow
@@ -347,6 +376,14 @@ function trailFeature(coords, id, colour, dashed, offset) {
   };
 }
 
+function minardFeature(coords, colour, strength, phase, offset) {
+  return {
+    type: 'Feature',
+    geometry: { type: 'LineString', coordinates: coords },
+    properties: { colour, strength, phase, offset },
+  };
+}
+
 // Rebuilt each frame — but the (large) past set only when a leg actually
 // completes, keyed by each character's completed-leg count.
 //
@@ -364,6 +401,7 @@ export function updateTrails(map, novel, positions, paths, { monotonic = false }
   const { legsByChar, offsets } = ensureIndex(novel, paths);
 
   const live = [];
+  const minardLive = [];
   for (const c of novel.characters) {
     const pos = positions[c.id];
     if (!pos || !pos.moving) continue;
@@ -372,9 +410,15 @@ export function updateTrails(map, novel, positions, paths, { monotonic = false }
     const coords = slicePath(leg.path, pos.fraction);
     if (coords.length >= 2) {
       live.push(trailFeature(coords, c.id, CHARACTER_COLOURS[c.colour], leg.dashed, offsets[c.id]));
+      // an army leg also carries its Minard band, only while it's the leg
+      // underfoot — one width at a time, stepping down as the army dies.
+      if (leg.minard) {
+        minardLive.push(minardFeature(coords, CHARACTER_COLOURS[c.colour], leg.strength, leg.phase, offsets[c.id]));
+      }
     }
   }
   map.getSource('trails-live')?.setData({ type: 'FeatureCollection', features: live });
+  map.getSource('minard-live')?.setData({ type: 'FeatureCollection', features: minardLive });
 
   const completedFor = (c) => {
     const now = positions[c.id]?.legIndex || 0;
