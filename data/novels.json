@@ -232,5 +232,14 @@
     "file": "data/ulysses.json",
     "blurb": "A single Dublin day from breakfast to the small hours — one wandering ad-man, one grieving poet forever just missing him on the same streets, and Molly awake on Eccles Street.",
     "spine": { "cloth": "#3f6cae", "text": "#f4eede" }
+  },
+  {
+    "id": "madame-bovary",
+    "title": "Madame Bovary",
+    "author": "Gustave Flaubert",
+    "year": 1856,
+    "file": "data/madame-bovary.json",
+    "blurb": "A farmer's daughter, fed on romantic novels, dreams of Paris and passion and never gets further than Rouen — a whole life, and its ruin, inside forty miles of Normandy.",
+    "spine": { "cloth": "#c4ad5e", "text": "#33301f" }
   }
 ]
