@@ -390,7 +390,10 @@ The pipeline that produced the honest datasets, in order:
     the images eagerly — a pin's picture loads only when its card is opened.)
 
 **The four hard gates** (a book that fails any does not ship): it **loads**
-(`js/data.js` throws on structural slips); **rushes is clean**
+(`node tools/validate.mjs data/<slug>.json` → `load clean` — this runs the
+REAL `js/data.js` loader headlessly, which `rushes` does NOT; it catches
+structural slips including non-sequential chapter numbers, the gap that took
+the live map down when *Kim* skipped chapter 10); **rushes is clean**
 (`errors: 0`); the **text-vs-map check** passes (a reviewer confirms
 every beat's narration matches the route the map draws — mode, land/sea,
 named places, direction, scene placement, shared-vs-solo; see
