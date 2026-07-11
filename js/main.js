@@ -62,12 +62,19 @@ ready
     const timeline = createTimeline(novel, paths);
     const director = createDirector(map, timeline, novel, paths);
 
-    const engine = createEngine(timeline, () => {
+    // One render frame: positions → markers, trails (and the Minard overlay),
+    // then the camera. Extracted so the debug hook (window.plotlines.renderAt)
+    // can force a single frame at any moment — the preview tab throttles the
+    // real animation loop when backgrounded, freezing playback, which makes
+    // trail/overlay animations impossible to watch; this lets a frame be
+    // driven by hand for inspection.
+    function renderFrame({ camera = true, instant } = {}) {
       const positions = timeline.positionsAt(timeline.state.t);
       updateCharacterMarkers(map, novel, positions, timeline.state.selected);
       updateTrails(map, novel, positions, paths, { monotonic: scripted });
-      return director.update(positions, { instant: engine.reducedMotion() });
-    });
+      if (camera) return director.update(positions, { instant: instant ?? engine.reducedMotion() });
+    }
+    const engine = createEngine(timeline, () => renderFrame());
 
     // Co-located markers are dodged apart by a fixed number of screen pixels,
     // so the spread has to recompute as the map zooms. Playback re-renders
@@ -368,7 +375,19 @@ ready
 
     engine.requestRender();
 
-    window.plotlines = { map, novel, timeline, engine, director, story, selectCharacter };
+    // Debug: force a single render frame at a given story-clock day, without
+    // waiting for the (throttle-prone) animation loop — invaluable when the
+    // preview tab is backgrounded and playback is frozen. Pass a day to seek
+    // there first; `{ camera: true }` also moves the camera, otherwise it's
+    // left where it is so you can frame a spot and inspect. In scripted mode
+    // this seeks under the story player, so it's for looking, not resuming.
+    const renderAt = (day, { camera = false } = {}) => {
+      if (typeof day === 'number') timeline.seek(day);
+      renderFrame({ camera, instant: true });
+      if (map.triggerRepaint) map.triggerRepaint();
+      return timeline.state.t;
+    };
+    window.plotlines = { map, novel, timeline, engine, director, story, selectCharacter, renderAt };
   })
   .catch((err) => {
     console.error(err);
