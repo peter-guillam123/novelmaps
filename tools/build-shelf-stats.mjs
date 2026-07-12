@@ -38,6 +38,7 @@ export const SPANS = {
   'monte-cristo': [8760, '24 years'],
   'madame-bovary': [3300, '9 years'],
   'tess': [1600, '4 years'],
+  'jude-the-obscure': [6570, '18 years'],
   'les-miserables': [7000, '18 years'],
   'devils-elixir': [LIFETIME, 'a lifetime'],
   'ulysses': [1, 'one day'],

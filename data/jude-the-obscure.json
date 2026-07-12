@@ -1,0 +1,1692 @@
+{
+  "title": "Jude the Obscure",
+  "author": "Thomas Hardy",
+  "year": 1895,
+  "gutenbergId": 153,
+  "overture": "A stonemason's boy dreams of Christminster, the city of learning that will never let him in. His whole life circles it - and he dies within sight of its spires.",
+  "mapHome": {
+    "bounds": [
+      [
+        -2.45,
+        50.92
+      ],
+      [
+        -0.85,
+        51.86
+      ]
+    ]
+  },
+  "timeline": {
+    "epoch": null,
+    "calendar": false,
+    "span": "about eighteen years",
+    "duration": "18 years",
+    "unit": "year"
+  },
+  "sources": [
+    "Hardy's own 1912 Wessex Edition map and preface fix most identifications",
+    "F. B. Pinion, A Hardy Companion; Kay-Robinson, The Landscape of Thomas Hardy (Wessex place-names)",
+    "The Thomas Hardy Society, Hardy's Wessex (Marygreen=Fawley, Christminster=Oxford, etc.)",
+    "Railway histories: GWR Oxford branch (1844), Berks & Hants (1847), Reading-Basingstoke (1848); LSWR Salisbury (1857) and Semley (1859, the railhead for Shaftesbury); the Wantage Tramway (1875)"
+  ],
+  "regions": [
+    {
+      "id": "marygreen-country",
+      "name": "The Marygreen country"
+    },
+    {
+      "id": "christminster",
+      "name": "Christminster"
+    },
+    {
+      "id": "the-south",
+      "name": "Melchester and Shaston"
+    },
+    {
+      "id": "the-wandering",
+      "name": "Aldbrickham and elsewhere"
+    },
+    {
+      "id": "beyond",
+      "name": "Beyond Wessex"
+    }
+  ],
+  "chapters": [
+    {
+      "n": 1,
+      "when": "a boy at Marygreen",
+      "day": 0
+    },
+    {
+      "n": 2,
+      "when": "a boy at Marygreen",
+      "day": 12
+    },
+    {
+      "n": 3,
+      "when": "a boy at Marygreen",
+      "day": 24
+    },
+    {
+      "n": 4,
+      "when": "a boy at Marygreen",
+      "day": 36
+    },
+    {
+      "n": 5,
+      "when": "the stonemason, and Arabella",
+      "day": 2900
+    },
+    {
+      "n": 6,
+      "when": "the stonemason, and Arabella",
+      "day": 2967
+    },
+    {
+      "n": 7,
+      "when": "the stonemason, and Arabella",
+      "day": 3033
+    },
+    {
+      "n": 8,
+      "when": "the stonemason, and Arabella",
+      "day": 3100
+    },
+    {
+      "n": 9,
+      "when": "the stonemason, and Arabella",
+      "day": 3167
+    },
+    {
+      "n": 10,
+      "when": "the stonemason, and Arabella",
+      "day": 3233
+    },
+    {
+      "n": 11,
+      "when": "the stonemason, and Arabella",
+      "day": 3300
+    },
+    {
+      "n": 12,
+      "when": "Christminster at last",
+      "day": 3450
+    },
+    {
+      "n": 13,
+      "when": "Christminster at last",
+      "day": 3538
+    },
+    {
+      "n": 14,
+      "when": "Christminster at last",
+      "day": 3627
+    },
+    {
+      "n": 15,
+      "when": "Christminster at last",
+      "day": 3715
+    },
+    {
+      "n": 16,
+      "when": "Christminster at last",
+      "day": 3803
+    },
+    {
+      "n": 17,
+      "when": "Christminster at last",
+      "day": 3892
+    },
+    {
+      "n": 18,
+      "when": "Christminster at last",
+      "day": 3980
+    },
+    {
+      "n": 19,
+      "when": "Melchester, and Sue",
+      "day": 4100
+    },
+    {
+      "n": 20,
+      "when": "Melchester, and Sue",
+      "day": 4176
+    },
+    {
+      "n": 21,
+      "when": "Melchester, and Sue",
+      "day": 4251
+    },
+    {
+      "n": 22,
+      "when": "Melchester, and Sue",
+      "day": 4327
+    },
+    {
+      "n": 23,
+      "when": "Melchester, and Sue",
+      "day": 4402
+    },
+    {
+      "n": 24,
+      "when": "Melchester, and Sue",
+      "day": 4478
+    },
+    {
+      "n": 25,
+      "when": "Melchester, and Sue",
+      "day": 4553
+    },
+    {
+      "n": 26,
+      "when": "Melchester, and Sue",
+      "day": 4629
+    },
+    {
+      "n": 27,
+      "when": "Melchester, and Sue",
+      "day": 4704
+    },
+    {
+      "n": 28,
+      "when": "Melchester, and Sue",
+      "day": 4780
+    },
+    {
+      "n": 29,
+      "when": "Shaston, and the parting",
+      "day": 4900
+    },
+    {
+      "n": 30,
+      "when": "Shaston, and the parting",
+      "day": 4980
+    },
+    {
+      "n": 31,
+      "when": "Shaston, and the parting",
+      "day": 5060
+    },
+    {
+      "n": 32,
+      "when": "Shaston, and the parting",
+      "day": 5140
+    },
+    {
+      "n": 33,
+      "when": "Shaston, and the parting",
+      "day": 5220
+    },
+    {
+      "n": 34,
+      "when": "Shaston, and the parting",
+      "day": 5300
+    },
+    {
+      "n": 35,
+      "when": "the free years, and the road",
+      "day": 5450
+    },
+    {
+      "n": 36,
+      "when": "the free years, and the road",
+      "day": 5526
+    },
+    {
+      "n": 37,
+      "when": "the free years, and the road",
+      "day": 5601
+    },
+    {
+      "n": 38,
+      "when": "the free years, and the road",
+      "day": 5677
+    },
+    {
+      "n": 39,
+      "when": "the free years, and the road",
+      "day": 5753
+    },
+    {
+      "n": 40,
+      "when": "the free years, and the road",
+      "day": 5829
+    },
+    {
+      "n": 41,
+      "when": "the free years, and the road",
+      "day": 5904
+    },
+    {
+      "n": 42,
+      "when": "the free years, and the road",
+      "day": 5980
+    },
+    {
+      "n": 43,
+      "when": "Christminster again, and the end",
+      "day": 6100
+    },
+    {
+      "n": 44,
+      "when": "Christminster again, and the end",
+      "day": 6147
+    },
+    {
+      "n": 45,
+      "when": "Christminster again, and the end",
+      "day": 6194
+    },
+    {
+      "n": 46,
+      "when": "Christminster again, and the end",
+      "day": 6241
+    },
+    {
+      "n": 47,
+      "when": "Christminster again, and the end",
+      "day": 6288
+    },
+    {
+      "n": 48,
+      "when": "Christminster again, and the end",
+      "day": 6335
+    },
+    {
+      "n": 49,
+      "when": "Christminster again, and the end",
+      "day": 6382
+    },
+    {
+      "n": 50,
+      "when": "Christminster again, and the end",
+      "day": 6429
+    },
+    {
+      "n": 51,
+      "when": "Christminster again, and the end",
+      "day": 6476
+    },
+    {
+      "n": 52,
+      "when": "Christminster again, and the end",
+      "day": 6523
+    },
+    {
+      "n": 53,
+      "when": "Christminster again, and the end",
+      "day": 6570
+    }
+  ],
+  "characters": [
+    {
+      "id": "jude",
+      "name": "Jude Fawley",
+      "colour": "madder",
+      "role": "the stonemason who dreams of Christminster",
+      "start": {
+        "location": "marygreen",
+        "chapter": 1
+      }
+    },
+    {
+      "id": "sue",
+      "name": "Sue Bridehead",
+      "colour": "prussian",
+      "role": "his free-thinking cousin, whom he cannot marry and cannot leave",
+      "start": {
+        "location": "christminster",
+        "chapter": 12
+      }
+    },
+    {
+      "id": "arabella",
+      "name": "Arabella Donn",
+      "colour": "sienna",
+      "role": "the pig-farmer’s daughter who twice traps him into marriage",
+      "start": {
+        "location": "cresscombe",
+        "chapter": 6
+      }
+    },
+    {
+      "id": "phillotson",
+      "name": "Richard Phillotson",
+      "colour": "slate",
+      "role": "the schoolmaster whose Christminster dream Jude inherits, and Sue’s husband",
+      "start": {
+        "location": "marygreen",
+        "chapter": 1
+      }
+    }
+  ],
+  "locations": [
+    {
+      "id": "marygreen",
+      "region": "marygreen-country",
+      "name": "Great Fawley, Berkshire",
+      "novelName": "Marygreen",
+      "coords": [
+        -1.429,
+        51.5563
+      ],
+      "certainty": "identified",
+      "note": "Hardy named the hamlet for his grandmother Mary Head, who lived at Fawley; Jude's surname comes from the village. The church and downland setting are Fawley's; the village fabric is idealised.",
+      "story": "Jude's boyhood village on the Berkshire downs, his great-aunt Drusilla's home. Here the schoolmaster Phillotson leaves for Christminster, planting the dream that will govern Jude's life.",
+      "quote": "Jude, my child, don't you ever marry. 'Tisn't for the Fawleys to take that step any more.",
+      "quoteRef": "Part I, ch. 2",
+      "imageBlank": "Fawley is a tiny downland hamlet with no distinctive period view; a blank is honester than a generic village."
+    },
+    {
+      "id": "brown-house",
+      "region": "marygreen-country",
+      "name": "The Brown House, on the Ridgeway",
+      "novelName": "the Brown House",
+      "coords": [
+        -1.427,
+        51.573
+      ],
+      "certainty": "conjectured",
+      "note": "A former inn/barn on the downs ridge above Marygreen. Hardy names it plainly but the exact spot is approximate - marked a best guess.",
+      "story": "The ridge above Marygreen where the boy Jude climbs to catch, on a clear evening, the far-off glow of Christminster's lights - his first sight of the city he will spend his life reaching for.",
+      "quote": "The heavenly Jerusalem",
+      "quoteRef": "Part I, ch. 3",
+      "imageBlank": "a conjectured ridge landmark on the Ridgeway; no honest period image of the exact spot."
+    },
+    {
+      "id": "alfredston",
+      "region": "marygreen-country",
+      "name": "Wantage, Berkshire",
+      "novelName": "Alfredston",
+      "coords": [
+        -1.4275,
+        51.5882
+      ],
+      "certainty": "identified",
+      "note": "Hardy named the market town for King Alfred, born at Wantage. The accepted identification (Hardy's map).",
+      "story": "The market town five miles north of Marygreen where Jude is apprenticed to a stonemason and learns the craft that will keep him all his life - and never buy him past the college gates.",
+      "imageBlank": "no clean public-domain period view of Wantage market town came to hand."
+    },
+    {
+      "id": "cresscombe",
+      "region": "marygreen-country",
+      "name": "Letcombe Bassett, Berkshire",
+      "novelName": "Cresscombe",
+      "coords": [
+        -1.436,
+        51.5638
+      ],
+      "certainty": "identified",
+      "note": "The watercress village about two miles south-west of Wantage; Arabella's pig farm. Accepted identification (Hardy's map).",
+      "story": "Arabella Donn's home, where she catches Jude's eye across the brook and traps him into a marriage that will shadow the rest of his life.",
+      "imageBlank": "Letcombe Bassett is a small watercress village with no distinctive period view."
+    },
+    {
+      "id": "christminster",
+      "region": "christminster",
+      "name": "Oxford",
+      "novelName": "Christminster",
+      "coords": [
+        -1.2578,
+        51.7519
+      ],
+      "certainty": "identified",
+      "note": "Hardy's 'city of light', the least-disguised place in his Wessex. Within it he renames the colleges - Biblioll is Balliol (the Master's rejection letter), Cardinal is Christ Church (the ideal) - but one Oxford pin carries the map.",
+      "story": "The university city Jude worships and can never enter. He carves its very stones as a mason while its colleges bar him for his class; he returns to it again and again, and dies within sound of its festival.",
+      "quote": "It is a city of light",
+      "quoteRef": "Part I, ch. 3",
+      "image": {
+        "file": "assets/images/jude-christminster.jpg",
+        "caption": "Christminster is Oxford: the High Street and the college spires, photochrom of the 1890s",
+        "credit": "Photoglob Zürich / Detroit Publishing Co. photochrom · Library of Congress (ppmsc.08764) · public domain"
+      }
+    },
+    {
+      "id": "lumsdon",
+      "region": "christminster",
+      "name": "Cumnor, Berkshire",
+      "novelName": "Lumsdon",
+      "coords": [
+        -1.3389,
+        51.733
+      ],
+      "certainty": "identified",
+      "note": "The village just west of Oxford where Phillotson keeps a school; accepted identification (Hardy's map).",
+      "story": "The village outside Christminster where Phillotson teaches and takes Sue on as his assistant - the schoolroom where she and Jude grow close under the older man's eye.",
+      "imageBlank": "Cumnor village has no distinctive period view in the public domain."
+    },
+    {
+      "id": "melchester",
+      "region": "the-south",
+      "name": "Salisbury, Wiltshire",
+      "novelName": "Melchester",
+      "coords": [
+        -1.7957,
+        51.068
+      ],
+      "certainty": "identified",
+      "note": "The cathedral city, Melchester across all Hardy's Wessex. Undisputed.",
+      "story": "The cathedral city where Sue trains as a teacher and Jude, following her, works on the cathedral stone. Here she flees the college over the fields to him, and here their doomed closeness deepens.",
+      "image": {
+        "file": "assets/images/jude-melchester.jpg",
+        "caption": "Melchester is Salisbury: the cathedral and spire from the river, photochrom of the 1890s",
+        "credit": "Detroit Publishing Co. photochrom · Library of Congress (LCCN 2002708088) · public domain"
+      }
+    },
+    {
+      "id": "shaston",
+      "region": "the-south",
+      "name": "Shaftesbury, Dorset",
+      "novelName": "Shaston",
+      "coords": [
+        -2.1969,
+        51.0058
+      ],
+      "certainty": "identified",
+      "note": "The hill town of Shaftesbury; Phillotson's school and Sue's married home (Old-Grove's Place, now Ox House). Hardy's map; undisputed. The town had no railway - Semley was its railhead.",
+      "story": "The hill town where Sue, married to Phillotson, teaches beside him and cannot bear his touch. From here she asks his leave to go to Jude - and, astonishingly, he grants it.",
+      "imageBlank": "no public-domain period view of Shaftesbury (Gold Hill) came to hand for this pass."
+    },
+    {
+      "id": "aldbrickham",
+      "region": "the-wandering",
+      "name": "Reading, Berkshire",
+      "novelName": "Aldbrickham",
+      "coords": [
+        -0.9781,
+        51.4543
+      ],
+      "certainty": "identified",
+      "note": "The large town where Jude and Sue live together unmarried. Accepted identification (Hardy's map).",
+      "story": "The town where Jude and Sue set up house, unmarried, and try to be let alone. Respectable society will not have them; the whispering drives them out onto the road.",
+      "quote": "The flowers in the bride's hand are sadly like the garland which decked the heifers of sacrifice in old times!",
+      "quoteRef": "Part V, ch. 4",
+      "imageBlank": "no clean period photochrom of Reading came to hand in the public domain."
+    },
+    {
+      "id": "kennetbridge",
+      "region": "the-wandering",
+      "name": "Newbury, Berkshire",
+      "novelName": "Kennetbridge",
+      "coords": [
+        -1.323,
+        51.4014
+      ],
+      "certainty": "identified",
+      "note": "Named for the River Kennet on which Newbury stands. Accepted identification (Hardy's map).",
+      "story": "The fair town where the fallen family scrape a living - Sue selling the little spiced 'Christminster cakes' Jude bakes, the dream reduced to a stall of pastry replicas of the colleges.",
+      "imageBlank": "no distinctive public-domain period view of Newbury came to hand."
+    },
+    {
+      "id": "stoke-barehills",
+      "region": "the-wandering",
+      "name": "Basingstoke, Hampshire",
+      "novelName": "Stoke-Barehills",
+      "coords": [
+        -1.0876,
+        51.2665
+      ],
+      "certainty": "identified",
+      "note": "The town of the Great Wessex Agricultural Show the couple visit. Accepted identification (Hardy's map).",
+      "story": "The great agricultural show where Jude and Sue, briefly happy among the crowds, are watched by Arabella - who reads in their tenderness the ruin she can help along.",
+      "imageBlank": "no distinctive public-domain period view of Basingstoke came to hand."
+    },
+    {
+      "id": "leddenton",
+      "region": "the-south",
+      "name": "Gillingham, Dorset",
+      "novelName": "Leddenton",
+      "coords": [
+        -2.2723,
+        51.0378
+      ],
+      "certainty": "identified",
+      "note": "Home of the schoolmaster Gillingham, Phillotson's friend - Hardy's private joke, renaming the town Gillingham 'Leddenton' while a character keeps the name Gillingham. Accepted identification.",
+      "story": "Where Phillotson's old friend Gillingham lives, the sober voice that warns him against letting Sue go - the friend who watches him ruin his career for a principle.",
+      "imageBlank": "Gillingham is a minor place (Phillotson’s friend’s town); no image needed."
+    },
+    {
+      "id": "london-lambeth",
+      "region": "beyond",
+      "name": "Lambeth, London",
+      "novelName": "London",
+      "coords": [
+        -0.116,
+        51.499
+      ],
+      "certainty": "real",
+      "note": "Named plainly, not disguised. Arabella and her second husband keep a public house in Lambeth; London is also the port she sails from.",
+      "story": "Where Arabella washes up between her marriages, keeping a Lambeth tavern - and the port from which she once emigrated, and to which she returns to close in on Jude again.",
+      "imageBlank": "a nondescript Lambeth tavern between Arabella’s marriages; no honest specific period image."
+    },
+    {
+      "id": "australia",
+      "region": "beyond",
+      "name": "Australia",
+      "novelName": "Australia",
+      "coords": [
+        151.2093,
+        -33.8688
+      ],
+      "certainty": "conjectured",
+      "note": "The text names only 'Australia' as the family's emigration; the exact colony is not given, so the pin (Sydney) is a best-guess anchor for a destination the book leaves vague.",
+      "story": "The far country Arabella emigrates to with her family when the marriage to Jude collapses - out of the story for years, until she returns, widowed and harder, to find him again.",
+      "imageBlank": "the text names only “Australia”; the exact colony is unknown, so no honest specific image."
+    }
+  ],
+  "movements": [
+    {
+      "character": "phillotson",
+      "from": "marygreen",
+      "to": "christminster",
+      "chapter": 1,
+      "mode": "coach",
+      "days": 1,
+      "note": "The schoolmaster leaves for the city, meaning to take a degree and be ordained.",
+      "via": [
+        {
+          "at": [
+            -1.4275,
+            51.5882
+          ],
+          "name": "Alfredston",
+          "note": "the market town on the road north"
+        },
+        [
+          -1.34,
+          51.66
+        ]
+      ],
+      "routeNote": "The downland road north off the Berkshire downs, up through Alfredston toward Christminster.",
+      "routeSource": "no route named in the text - reconstructs the road from Marygreen (Fawley) to Christminster (Oxford).",
+      "routeCertainty": "reconstructed"
+    },
+    {
+      "character": "arabella",
+      "from": "cresscombe",
+      "to": "marygreen",
+      "chapter": 9,
+      "mode": "foot",
+      "days": 1,
+      "note": "Arabella marries Jude and they take a roadside cottage near Marygreen."
+    },
+    {
+      "character": "arabella",
+      "from": "marygreen",
+      "to": "australia",
+      "chapter": 11,
+      "mode": "ship",
+      "days": 75,
+      "note": "The Australian emigration - Arabella quits Jude and sails with her family.",
+      "via": [
+        {
+          "at": [
+            -0.116,
+            51.499
+          ],
+          "name": "London",
+          "note": "the emigrant ship sails from the Port of London"
+        },
+        [
+          0.8,
+          51.42
+        ],
+        [
+          1.5,
+          51
+        ],
+        [
+          -1.5,
+          50
+        ],
+        [
+          -5.5,
+          48.5
+        ],
+        [
+          -11,
+          45
+        ],
+        [
+          -14,
+          35
+        ],
+        [
+          -18,
+          20
+        ],
+        [
+          -22,
+          8
+        ],
+        [
+          -18,
+          -6
+        ],
+        [
+          -5,
+          -20
+        ],
+        [
+          10,
+          -34
+        ],
+        {
+          "at": [
+            18.42,
+            -34.36
+          ],
+          "name": "Cape of Good Hope",
+          "note": "the period sailing passage keeps round the Cape"
+        },
+        [
+          30,
+          -37
+        ],
+        [
+          60,
+          -40
+        ],
+        [
+          95,
+          -42
+        ],
+        [
+          130,
+          -43
+        ],
+        [
+          147,
+          -44
+        ],
+        [
+          152,
+          -40
+        ],
+        [
+          152.5,
+          -34
+        ]
+      ],
+      "routeNote": "The book names only Australia; drawn as the period emigrant sailing passage round the Cape of Good Hope.",
+      "routeSource": "no route named in the text - the pre-clipper sailing track rounds the Cape (see ADDING-A-NOVEL on the Australia trap).",
+      "routeCertainty": "illustrative"
+    },
+    {
+      "character": "jude",
+      "from": "marygreen",
+      "to": "christminster",
+      "chapter": 12,
+      "mode": "coach",
+      "days": 1,
+      "note": "Jude carts and walks the eighteen miles up to the city and hires out as a mason on its colleges.",
+      "via": [
+        [
+          -1.427,
+          51.573
+        ],
+        {
+          "at": [
+            -1.4275,
+            51.5882
+          ],
+          "name": "Alfredston"
+        },
+        [
+          -1.34,
+          51.66
+        ]
+      ],
+      "routeNote": "Up past the Brown House ridge and through Alfredston, the road climbing north to Christminster.",
+      "routeSource": "no single route named - reconstructs the Marygreen-to-Christminster road.",
+      "routeCertainty": "reconstructed"
+    },
+    {
+      "character": "phillotson",
+      "from": "christminster",
+      "to": "lumsdon",
+      "chapter": 14,
+      "startDay": 3620,
+      "mode": "foot",
+      "days": 1,
+      "note": "His own degree long since abandoned, Phillotson keeps a village school at Lumsdon, just outside the city."
+    },
+    {
+      "character": "sue",
+      "from": "christminster",
+      "to": "lumsdon",
+      "chapter": 14,
+      "startDay": 3627,
+      "mode": "foot",
+      "days": 1,
+      "note": "Jude gets Sue placed as pupil-teacher under Phillotson at Lumsdon."
+    },
+    {
+      "character": "sue",
+      "from": "lumsdon",
+      "to": "melchester",
+      "chapter": 19,
+      "startDay": 4100,
+      "mode": "train",
+      "days": 1,
+      "note": "Sue goes to the training college at Melchester.",
+      "via": [
+        {
+          "at": [
+            -1.2417,
+            51.6094
+          ],
+          "name": "Didcot",
+          "note": "the GWR junction"
+        },
+        {
+          "at": [
+            -1.7797,
+            51.5646
+          ],
+          "name": "Swindon"
+        }
+      ],
+      "routeNote": "GWR from the Christminster country down to Melchester.",
+      "routeSource": "GWR via Didcot and Swindon toward Salisbury (reached 1856).",
+      "routeCertainty": "documented"
+    },
+    {
+      "character": "jude",
+      "from": "christminster",
+      "to": "melchester",
+      "chapter": 19,
+      "startDay": 4108,
+      "mode": "train",
+      "days": 1,
+      "note": "The dream in ashes, Jude follows Sue south to the cathedral city, telling himself he goes to read Divinity.",
+      "via": [
+        {
+          "at": [
+            -1.2417,
+            51.6094
+          ],
+          "name": "Didcot"
+        },
+        {
+          "at": [
+            -1.7797,
+            51.5646
+          ],
+          "name": "Swindon"
+        },
+        {
+          "at": [
+            -2.1857,
+            51.26
+          ],
+          "name": "Westbury"
+        }
+      ],
+      "routeNote": "GWR from Christminster (Oxford) to Melchester (Salisbury), via Didcot, Swindon and Westbury.",
+      "routeSource": "GWR route to Salisbury (1856).",
+      "routeCertainty": "documented"
+    },
+    {
+      "character": "phillotson",
+      "from": "lumsdon",
+      "to": "shaston",
+      "chapter": 24,
+      "startDay": 4470,
+      "mode": "train",
+      "days": 1,
+      "note": "Phillotson takes a large boys’ school in his native hill-town of Shaston.",
+      "via": [
+        {
+          "at": [
+            -1.7797,
+            51.5646
+          ],
+          "name": "Swindon"
+        },
+        {
+          "at": [
+            -1.7957,
+            51.068
+          ],
+          "name": "Melchester"
+        },
+        {
+          "at": [
+            -2.147,
+            51.049
+          ],
+          "name": "Semley",
+          "note": "the railhead for Shaston; the last miles up the hill by cart"
+        }
+      ],
+      "routeNote": "Rail down toward Melchester and on to Semley, then the climb into Shaston, which has no station of its own.",
+      "routeSource": "LSWR to Semley (1859), the railhead 2.5 miles from Shaftesbury; the town itself was never railed.",
+      "routeCertainty": "documented"
+    },
+    {
+      "character": "sue",
+      "from": "melchester",
+      "to": "shaston",
+      "chapter": 24,
+      "startDay": 4486,
+      "mode": "train",
+      "days": 1,
+      "note": "Married at Melchester with Jude giving her away, Sue goes to Phillotson’s house at Shaston - and cannot bear him near her.",
+      "via": [
+        {
+          "at": [
+            -2.147,
+            51.049
+          ],
+          "name": "Semley",
+          "note": "the railhead for Shaston; the last climb by cart"
+        }
+      ],
+      "routeNote": "LSWR west to Semley, then up the hill by road into Shaston.",
+      "routeSource": "LSWR to Semley (1859); Shaftesbury had no station.",
+      "routeCertainty": "documented"
+    },
+    {
+      "character": "jude",
+      "from": "melchester",
+      "to": "christminster",
+      "chapter": 26,
+      "startDay": 4632,
+      "mode": "train",
+      "days": 1,
+      "note": "His aunt dying and his old master wanting him, Jude goes back up. At Alfredston Road he meets Sue; in the city, Arabella, home from Australia and pulling beer.",
+      "via": [
+        {
+          "at": [
+            -2.1857,
+            51.26
+          ],
+          "name": "Westbury"
+        },
+        {
+          "at": [
+            -1.7797,
+            51.5646
+          ],
+          "name": "Swindon"
+        },
+        {
+          "at": [
+            -1.421,
+            51.612
+          ],
+          "name": "Alfredston Road",
+          "note": "the down station where Jude meets Sue"
+        },
+        {
+          "at": [
+            -1.2417,
+            51.6094
+          ],
+          "name": "Didcot"
+        }
+      ],
+      "routeNote": "GWR back up to Christminster, past the Alfredston Road station on the main line.",
+      "routeSource": "GWR main line via Swindon and Didcot; Wantage Road (Alfredston Road) is on it.",
+      "routeCertainty": "documented"
+    },
+    {
+      "character": "arabella",
+      "from": "australia",
+      "to": "london-lambeth",
+      "chapter": 24,
+      "startDay": 4400,
+      "mode": "ship",
+      "days": 75,
+      "note": "Her Australian marriage soured, Arabella sails home to England and a Lambeth bar.",
+      "via": [
+        [
+          152.5,
+          -34
+        ],
+        [
+          152,
+          -40
+        ],
+        [
+          147,
+          -44
+        ],
+        [
+          130,
+          -43
+        ],
+        [
+          95,
+          -42
+        ],
+        [
+          60,
+          -40
+        ],
+        [
+          30,
+          -37
+        ],
+        {
+          "at": [
+            18.42,
+            -34.36
+          ],
+          "name": "Cape of Good Hope"
+        },
+        [
+          10,
+          -34
+        ],
+        [
+          -5,
+          -20
+        ],
+        [
+          -18,
+          -6
+        ],
+        [
+          -22,
+          8
+        ],
+        [
+          -18,
+          20
+        ],
+        [
+          -14,
+          35
+        ],
+        [
+          -11,
+          45
+        ],
+        [
+          -5.5,
+          48.5
+        ],
+        [
+          -1.5,
+          50
+        ],
+        [
+          1.5,
+          51
+        ],
+        [
+          0.8,
+          51.42
+        ]
+      ],
+      "routeNote": "The return sailing passage round the Cape into the Port of London.",
+      "routeSource": "no route named - the period passage from Australia, rounding the Cape.",
+      "routeCertainty": "illustrative"
+    },
+    {
+      "character": "arabella",
+      "from": "london-lambeth",
+      "to": "christminster",
+      "chapter": 26,
+      "startDay": 4620,
+      "mode": "train",
+      "days": 1,
+      "note": "She drifts up to Christminster to pull beer - and serves her forgotten first husband.",
+      "via": [
+        {
+          "at": [
+            -1.2417,
+            51.6094
+          ],
+          "name": "Didcot"
+        }
+      ],
+      "routeNote": "GWR up from London to Christminster.",
+      "routeSource": "GWR Paddington main line via Didcot to Oxford.",
+      "routeCertainty": "documented"
+    },
+    {
+      "character": "jude",
+      "from": "christminster",
+      "to": "melchester",
+      "chapter": 28,
+      "mode": "train",
+      "days": 1,
+      "note": "Rebuffed by the city and unsettled by both women, Jude retreats again to Melchester and his cathedral work.",
+      "via": [
+        {
+          "at": [
+            -1.2417,
+            51.6094
+          ],
+          "name": "Didcot"
+        },
+        {
+          "at": [
+            -1.7797,
+            51.5646
+          ],
+          "name": "Swindon"
+        },
+        {
+          "at": [
+            -2.1857,
+            51.26
+          ],
+          "name": "Westbury"
+        }
+      ],
+      "routeNote": "GWR back down to Melchester.",
+      "routeSource": "GWR to Salisbury.",
+      "routeCertainty": "documented"
+    },
+    {
+      "character": "sue",
+      "from": "shaston",
+      "to": "melchester",
+      "chapter": 32,
+      "mode": "train",
+      "days": 1,
+      "note": "Freed by Phillotson, Sue takes the omnibus down the hill and the train to Melchester, where Jude waits.",
+      "via": [
+        {
+          "at": [
+            -2.147,
+            51.049
+          ],
+          "name": "Semley",
+          "note": "down the hill by road to the railhead"
+        }
+      ],
+      "routeNote": "Road down to Semley, then LSWR to Melchester.",
+      "routeSource": "LSWR from Semley to Salisbury.",
+      "routeCertainty": "documented"
+    },
+    {
+      "character": [
+        "jude",
+        "sue"
+      ],
+      "from": "melchester",
+      "to": "aldbrickham",
+      "chapter": 33,
+      "mode": "train",
+      "days": 1,
+      "note": "The cousins go together to Aldbrickham and set up house, unmarried, meaning only to be let alone.",
+      "via": [
+        {
+          "at": [
+            -1.4879,
+            51.2113
+          ],
+          "name": "Andover"
+        },
+        {
+          "at": [
+            -1.0876,
+            51.2665
+          ],
+          "name": "Basingstoke",
+          "note": "changing to the GWR for Reading"
+        }
+      ],
+      "routeNote": "LSWR to Basingstoke, then GWR on to Aldbrickham.",
+      "routeSource": "LSWR Salisbury-Basingstoke (1857); GWR Basingstoke-Reading (1848).",
+      "routeCertainty": "documented"
+    },
+    {
+      "character": [
+        "jude",
+        "sue"
+      ],
+      "from": "aldbrickham",
+      "to": "stoke-barehills",
+      "chapter": 39,
+      "mode": "train",
+      "days": 1,
+      "note": "A bright day out with the children to the Great Wessex Agricultural Show - where, unseen in the crowd, Arabella watches their tenderness and marks it for spoiling."
+    },
+    {
+      "character": [
+        "jude",
+        "sue"
+      ],
+      "from": "stoke-barehills",
+      "to": "kennetbridge",
+      "chapter": 41,
+      "mode": "coach",
+      "days": 2,
+      "note": "Driven from town to town once neighbours learn they are not married, the family fetches up at Kennetbridge, Sue selling the spiced “Christminster cakes” Jude bakes."
+    },
+    {
+      "character": [
+        "jude",
+        "sue"
+      ],
+      "from": "kennetbridge",
+      "to": "christminster",
+      "chapter": 43,
+      "mode": "train",
+      "days": 1,
+      "note": "On Remembrance Day, as the university parades its scarlet Doctors, the ragged family returns to Christminster. “Humiliation Day for me,” says Jude.",
+      "via": [
+        {
+          "at": [
+            -1.2417,
+            51.6094
+          ],
+          "name": "Didcot"
+        }
+      ],
+      "routeNote": "GWR up from Kennetbridge (Newbury) to Christminster via Didcot.",
+      "routeSource": "GWR Berks & Hants (Reading-Newbury, 1847) and the Oxford branch (1844).",
+      "routeCertainty": "documented"
+    },
+    {
+      "character": "phillotson",
+      "from": "shaston",
+      "to": "marygreen",
+      "chapter": 48,
+      "mode": "train",
+      "days": 1,
+      "note": "Disgraced for freeing Sue, Phillotson has sunk back to the small school at Marygreen where the story began.",
+      "via": [
+        {
+          "at": [
+            -2.147,
+            51.049
+          ],
+          "name": "Semley"
+        },
+        {
+          "at": [
+            -1.7957,
+            51.068
+          ],
+          "name": "Melchester"
+        },
+        {
+          "at": [
+            -1.421,
+            51.612
+          ],
+          "name": "Alfredston Road"
+        }
+      ],
+      "routeNote": "Rail from Semley up toward the Marygreen country.",
+      "routeSource": "LSWR and GWR back to the Alfredston district.",
+      "routeCertainty": "reconstructed"
+    },
+    {
+      "character": "sue",
+      "from": "christminster",
+      "to": "marygreen",
+      "chapter": 49,
+      "mode": "train",
+      "days": 1,
+      "note": "In self-punishment Sue leaves Jude and remarries Phillotson at Marygreen, giving her body to the man she cannot love, to atone.",
+      "via": [
+        {
+          "at": [
+            -1.2417,
+            51.6094
+          ],
+          "name": "Didcot"
+        },
+        {
+          "at": [
+            -1.421,
+            51.612
+          ],
+          "name": "Alfredston Road"
+        }
+      ],
+      "routeNote": "GWR down to the Alfredston Road station, then across to Marygreen.",
+      "routeSource": "GWR main line to Wantage Road (Alfredston Road).",
+      "routeCertainty": "reconstructed"
+    },
+    {
+      "character": "jude",
+      "from": "christminster",
+      "to": "marygreen",
+      "chapter": 51,
+      "mode": "coach",
+      "days": 1,
+      "note": "Dying, Jude drags himself out in cold rain to Marygreen for one last sight of Sue in her husband’s church. The journey finishes him.",
+      "via": [
+        {
+          "at": [
+            -1.2417,
+            51.6094
+          ],
+          "name": "Didcot"
+        },
+        {
+          "at": [
+            -1.421,
+            51.612
+          ],
+          "name": "Alfredston Road"
+        },
+        [
+          -1.43,
+          51.58
+        ]
+      ],
+      "routeNote": "Rail to Alfredston Road, then across the wet downs to Marygreen.",
+      "routeSource": "no route named - reconstructs the road back to Marygreen.",
+      "routeCertainty": "reconstructed"
+    },
+    {
+      "character": "jude",
+      "from": "marygreen",
+      "to": "christminster",
+      "chapter": 52,
+      "mode": "coach",
+      "days": 1,
+      "note": "He gets himself back to Christminster, soaked and failing, to the city that never let him in.",
+      "via": [
+        [
+          -1.43,
+          51.58
+        ],
+        {
+          "at": [
+            -1.421,
+            51.612
+          ],
+          "name": "Alfredston Road"
+        },
+        {
+          "at": [
+            -1.2417,
+            51.6094
+          ],
+          "name": "Didcot"
+        }
+      ],
+      "routeNote": "The road back off the downs and rail up to Christminster.",
+      "routeSource": "no route named - reconstructs the return.",
+      "routeCertainty": "reconstructed"
+    }
+  ],
+  "story": [
+    {
+      "kind": "scene",
+      "character": "jude",
+      "at": "marygreen",
+      "chapter": 1,
+      "title": "A boy left behind",
+      "narration": "Jude Fawley, an orphan, is raised by his great-aunt at Marygreen on the Berkshire downs. When the village schoolmaster leaves for Christminster, the boy’s whole future takes its shape."
+    },
+    {
+      "kind": "journey",
+      "character": "phillotson",
+      "from": "marygreen",
+      "to": "christminster",
+      "chapter": 1,
+      "title": "The schoolmaster goes up",
+      "narration": "Richard Phillotson carts off to Christminster, eighteen miles north, meaning to take a degree and be ordained. Jude watches him out of sight and fixes on the city as his own promised land."
+    },
+    {
+      "kind": "scene",
+      "character": "jude",
+      "at": "brown-house",
+      "chapter": 3,
+      "title": "A city of light",
+      "narration": "On the ridge above Marygreen the boy strains northward until, one clear evening, he catches the far glow of Christminster’s lamps - a city of light, the place where learning lives, the thing he means to reach."
+    },
+    {
+      "kind": "scene",
+      "character": "arabella",
+      "at": "cresscombe",
+      "chapter": 6,
+      "title": "Arabella at the brook",
+      "narration": "Meanwhile at Cresscombe, Arabella Donn, a pig-farmer’s handsome, earthy daughter, sets her cap at the grown Jude across the brook - and by an old country trick contrives to make him marry her."
+    },
+    {
+      "kind": "journey",
+      "character": "arabella",
+      "from": "cresscombe",
+      "to": "marygreen",
+      "chapter": 9,
+      "title": "A country marriage",
+      "narration": "Snared by a feigned pregnancy, Jude marries Arabella and takes a roadside cottage. The boy who meant to read Greek finds himself, instead, keeping a pig."
+    },
+    {
+      "kind": "scene",
+      "character": "jude",
+      "at": "marygreen",
+      "chapter": 10,
+      "title": "The pig-killing",
+      "narration": "The winter pig-killing goes wrong: Jude, too tender to do it slowly for better meat, botches it, and Arabella rounds on him. The mismatch is complete. Soon after, her family emigrates."
+    },
+    {
+      "kind": "handoff",
+      "character": "arabella",
+      "at": "marygreen",
+      "chapter": 11,
+      "title": "Arabella’s exit",
+      "narration": "We leave Jude a moment. Arabella’s people are bound for Australia, and she means to go with them - out of his life, she supposes, for good."
+    },
+    {
+      "kind": "journey",
+      "character": "arabella",
+      "from": "marygreen",
+      "to": "australia",
+      "chapter": 11,
+      "title": "Arabella emigrates",
+      "narration": "Arabella sails with her people for Australia, quitting Jude without ceremony. On the far side of the world she vanishes from his story for years."
+    },
+    {
+      "kind": "handoff",
+      "character": "jude",
+      "at": "marygreen",
+      "chapter": 12,
+      "title": "Back in Wessex",
+      "narration": "And so back to Jude, alone again in the Marygreen country, free at last to take up the dream he had laid down. Freed and ashamed, he fixes once more on Christminster."
+    },
+    {
+      "kind": "journey",
+      "character": "jude",
+      "from": "marygreen",
+      "to": "christminster",
+      "chapter": 12,
+      "title": "Christminster at last",
+      "narration": "Jude carts and walks the eighteen miles up to Christminster and hires out as a stonemason, carving the mouldings of the very colleges he means, somehow, to enter. By night he reads."
+    },
+    {
+      "kind": "scene",
+      "character": "jude",
+      "at": "christminster",
+      "chapter": 13,
+      "title": "His cousin Sue",
+      "narration": "In the city he seeks out his cousin, Sue Bridehead - quick, sceptical, restless, lettering texts in an ecclesiastical shop. He falls, helplessly and forbiddenly, half in love with her."
+    },
+    {
+      "kind": "removal",
+      "character": "phillotson",
+      "from": "christminster",
+      "to": "lumsdon",
+      "chapter": 14,
+      "title": "The schoolmaster settles",
+      "narration": "Phillotson, his own Christminster dream long since failed, keeps a country school at Lumsdon just outside the city."
+    },
+    {
+      "kind": "journey",
+      "character": "sue",
+      "from": "christminster",
+      "to": "lumsdon",
+      "chapter": 14,
+      "title": "Sue to the school",
+      "narration": "Meaning only her good, Jude gets Sue placed as pupil-teacher under Phillotson at Lumsdon. He has handed the woman he loves to his old idol."
+    },
+    {
+      "kind": "scene",
+      "character": "jude",
+      "at": "christminster",
+      "chapter": 15,
+      "title": "Remain in your own sphere",
+      "narration": "Jude writes to five college heads asking how a working man might study. Only the Master of Biblioll replies: remain in your own sphere and stick to your trade. The wall is absolute."
+    },
+    {
+      "kind": "journey",
+      "character": "sue",
+      "from": "lumsdon",
+      "to": "melchester",
+      "chapter": 19,
+      "title": "Sue to the college",
+      "narration": "Sue goes south to a teachers’ training college at Melchester, the cathedral city."
+    },
+    {
+      "kind": "journey",
+      "character": "jude",
+      "from": "christminster",
+      "to": "melchester",
+      "chapter": 19,
+      "title": "After her",
+      "narration": "The dream in ashes and the cousin in his blood, Jude packs up and follows Sue to Melchester, telling himself he goes to read Divinity and work on the cathedral stone."
+    },
+    {
+      "kind": "scene",
+      "character": "jude",
+      "at": "melchester",
+      "chapter": 20,
+      "title": "The night out",
+      "narration": "On a country walk the cousins miss the last train and shelter, blamelessly, overnight. It is enough: the college expels Sue, and she escapes across the river to Jude."
+    },
+    {
+      "kind": "removal",
+      "character": "phillotson",
+      "from": "lumsdon",
+      "to": "shaston",
+      "chapter": 24,
+      "title": "The schoolmaster’s town",
+      "narration": "Phillotson takes a large boys’ school in his native hill-town of Shaston, up above the vale - a town so steep the railway never reached it."
+    },
+    {
+      "kind": "scene",
+      "character": "sue",
+      "at": "melchester",
+      "chapter": 24,
+      "title": "A marriage of fear",
+      "narration": "Jude is still bound to the absent Arabella and cannot marry her, and Sue is frightened of her own heart. So she marries Phillotson at Melchester - Jude, of all men, giving her away - against every instinct, out of propriety and dread."
+    },
+    {
+      "kind": "journey",
+      "character": "sue",
+      "from": "melchester",
+      "to": "shaston",
+      "chapter": 24,
+      "title": "To the hill town",
+      "narration": "Sue goes to Phillotson’s house at Shaston as his wife - by rail to Semley, the railhead, then up the hill by cart - and finds she cannot bear him near her."
+    },
+    {
+      "kind": "meanwhile",
+      "narration": "Meanwhile, over these same years, Arabella’s Australian life had come apart - and she was making her way back to England."
+    },
+    {
+      "kind": "journey",
+      "character": "arabella",
+      "from": "australia",
+      "to": "london-lambeth",
+      "chapter": 24,
+      "title": "Arabella returns",
+      "narration": "Her marriage in the colony soured, Arabella sails the long passage home round the Cape to England, and a Lambeth bar."
+    },
+    {
+      "kind": "journey",
+      "character": "arabella",
+      "from": "london-lambeth",
+      "to": "christminster",
+      "chapter": 26,
+      "title": "The barmaid",
+      "narration": "She drifts up to Christminster to pull beer - and there, of all the men in England, serves her forgotten first husband his drink."
+    },
+    {
+      "kind": "journey",
+      "character": "jude",
+      "from": "melchester",
+      "to": "christminster",
+      "chapter": 26,
+      "title": "Back to the city",
+      "narration": "His aunt dying and his old master wanting him, Jude goes back up. At Alfredston Road he meets Sue, miserable in her marriage; in the city he stumbles on Arabella behind a bar."
+    },
+    {
+      "kind": "journey",
+      "character": "jude",
+      "from": "christminster",
+      "to": "melchester",
+      "chapter": 28,
+      "title": "No place here",
+      "narration": "Rebuffed by the city and shaken by both women, Jude retreats once more to Melchester and the cathedral stone."
+    },
+    {
+      "kind": "scene",
+      "character": "sue",
+      "at": "shaston",
+      "chapter": 29,
+      "title": "What they are to each other",
+      "narration": "At Shaston, Sue’s revulsion from her husband deepens. Jude comes over to see her, and the cousins admit at last what they are to each other, though both are bound to others."
+    },
+    {
+      "kind": "scene",
+      "character": "phillotson",
+      "at": "shaston",
+      "chapter": 31,
+      "title": "A cruel kindness",
+      "narration": "Sue begs Phillotson to let her go to Jude. Against the warning of his friend Gillingham and against his own ruin, the schoolmaster consents - and it costs him his post and his good name."
+    },
+    {
+      "kind": "journey",
+      "character": "sue",
+      "from": "shaston",
+      "to": "melchester",
+      "chapter": 32,
+      "title": "She leaves",
+      "narration": "Sue quits Shaston and her husband, the omnibus down the hill and the train to Melchester, where Jude is waiting for her."
+    },
+    {
+      "kind": "journey",
+      "character": [
+        "jude",
+        "sue"
+      ],
+      "from": "melchester",
+      "to": "aldbrickham",
+      "chapter": 33,
+      "title": "Together, at last",
+      "narration": "The cousins go together to Aldbrickham and set up house - unmarried, both divorces pending, wanting only to be let alone. For a little while they are happy."
+    },
+    {
+      "kind": "scene",
+      "character": "jude",
+      "at": "aldbrickham",
+      "chapter": 36,
+      "title": "Little Father Time",
+      "narration": "A strange, aged child arrives at their door: Jude’s son by Arabella, sent from Australia. So joyless he seems born old, they call him Little Father Time. They take him in, and their own children follow."
+    },
+    {
+      "kind": "scene",
+      "character": "jude",
+      "at": "aldbrickham",
+      "chapter": 37,
+      "title": "They cannot marry",
+      "narration": "Twice they go to the registry office to marry, and twice turn back at the door, unwilling to cage their love in the thing that ruined them before. The town notes that they never do."
+    },
+    {
+      "kind": "journey",
+      "character": [
+        "jude",
+        "sue"
+      ],
+      "from": "aldbrickham",
+      "to": "stoke-barehills",
+      "chapter": 39,
+      "title": "A day at the show",
+      "narration": "One bright day they take the children to the Great Wessex Agricultural Show. Among the crowds, unseen, Arabella watches the tenderness between them - and marks it down for spoiling."
+    },
+    {
+      "kind": "journey",
+      "character": [
+        "jude",
+        "sue"
+      ],
+      "from": "stoke-barehills",
+      "to": "kennetbridge",
+      "chapter": 41,
+      "title": "Driven onto the road",
+      "narration": "When neighbours learn they are unmarried, the work dries up and the whispering starts. Driven from town to town, they fetch up at Kennetbridge, Sue selling the spiced Christminster cakes Jude bakes."
+    },
+    {
+      "kind": "scene",
+      "character": "jude",
+      "at": "kennetbridge",
+      "chapter": 42,
+      "title": "The dream in pastry",
+      "narration": "The cakes are shaped like the colleges - the windows, the pinnacles, the towers that shut him out. Ill and low, Jude resolves on the one thing his heart cannot leave: to go back to Christminster."
+    },
+    {
+      "kind": "journey",
+      "character": [
+        "jude",
+        "sue"
+      ],
+      "from": "kennetbridge",
+      "to": "christminster",
+      "chapter": 43,
+      "title": "Humiliation Day",
+      "narration": "On Remembrance Day, as the university parades its scarlet Doctors, the ragged family returns to Christminster. “Humiliation Day for me,” Jude says. No one will lodge a family so large."
+    },
+    {
+      "kind": "scene",
+      "character": "jude",
+      "at": "christminster",
+      "chapter": 44,
+      "title": "The room at Christminster",
+      "narration": "They crowd into one cramped room. The eldest boy overhears that the children are a burden too many. In the morning Jude and Sue find all three dead by his hand and his own, and a note left near them."
+    },
+    {
+      "kind": "scene",
+      "character": "sue",
+      "at": "christminster",
+      "chapter": 46,
+      "title": "Sue breaks",
+      "narration": "Sue reads the horror as Heaven’s judgement on her defiance, and the child she was carrying is lost with the others. Everything free in her collapses into penance; she comes to believe she is, in God’s eyes, still Phillotson’s wife."
+    },
+    {
+      "kind": "removal",
+      "character": "phillotson",
+      "from": "shaston",
+      "to": "marygreen",
+      "chapter": 48,
+      "title": "Phillotson reduced",
+      "narration": "Phillotson, ruined for having freed her, has sunk back to the small school at Marygreen where the whole story began."
+    },
+    {
+      "kind": "journey",
+      "character": "sue",
+      "from": "christminster",
+      "to": "marygreen",
+      "chapter": 49,
+      "title": "The sacrifice",
+      "narration": "In an agony of self-punishment Sue leaves Jude and returns to Phillotson, remarrying him at Marygreen - giving herself to the man she cannot love, as an atonement."
+    },
+    {
+      "kind": "scene",
+      "character": "arabella",
+      "at": "christminster",
+      "chapter": 50,
+      "title": "Re-trapped",
+      "narration": "Alone and sinking, Jude is found again by Arabella, now widowed. She gets him drunk and marries him a second time. The two who least loved him have him back."
+    },
+    {
+      "kind": "journey",
+      "character": "jude",
+      "from": "christminster",
+      "to": "marygreen",
+      "chapter": 51,
+      "title": "The last road",
+      "narration": "Dying, Jude drags himself out in cold rain to Marygreen for a last sight of Sue in her husband’s church. “We are acting by the letter,” he tells her, “and the letter killeth.” The journey finishes him."
+    },
+    {
+      "kind": "journey",
+      "character": "jude",
+      "from": "marygreen",
+      "to": "christminster",
+      "chapter": 52,
+      "title": "Back to die",
+      "narration": "He gets himself back to Christminster, soaked and failing - back to the city that never once let him in."
+    },
+    {
+      "kind": "scene",
+      "character": "jude",
+      "at": "christminster",
+      "chapter": 53,
+      "title": "Within sound of the bells",
+      "narration": "Deserted at the last, Jude dies in his lodging while outside the Remembrance crowds cheer and the college bells ring. He murmurs Job’s curse on the day of his birth, still outside the walls."
+    }
+  ]
+}
