@@ -6,6 +6,7 @@
 // when its card is opened, one at a time; 64MB of them at once would be a bomb.
 
 import { createMap } from './map.js';
+import { placeFigureHtml, fillPlaceFigure } from './ui/placefig.js';
 
 const map = createMap(document.getElementById('map'));
 window.atlasMap = map; // debug handle, mirrors window.plotlinesMap
@@ -101,34 +102,49 @@ fetch('data/atlas.json')
         if (!hit.length) closeCard();
       });
 
-      for (const id of ['atlas-clusters', 'atlas-pins']) {
-        map.on('mouseenter', id, () => { map.getCanvas().style.cursor = 'pointer'; });
-        map.on('mouseleave', id, () => { map.getCanvas().style.cursor = ''; });
-      }
+      map.on('mouseenter', 'atlas-clusters', () => { map.getCanvas().style.cursor = 'pointer'; });
+      map.on('mouseleave', 'atlas-clusters', () => { map.getCanvas().style.cursor = ''; });
+
+      // Hovering a pin names it and its book - just enough, like explore's
+      // hover, to decide whether the place is worth a click into the card.
+      let hover = null;
+      const dropHover = () => { hover?.remove(); hover = null; };
+      map.on('mouseenter', 'atlas-pins', (e) => {
+        map.getCanvas().style.cursor = 'pointer';
+        const p = atlas.pins[e.features[0].properties.pin];
+        const book = booksById[p.book] || {};
+        dropHover();
+        hover = new maplibregl.Popup({
+          closeButton: false, closeOnClick: false, offset: 12,
+          className: 'loc-card atlas-hover-card',
+        })
+          .setLngLat(p.coords)
+          .setHTML('<p class="atlas-hover-place"></p><p class="atlas-hover-book"></p>')
+          .addTo(map);
+        const el = hover.getElement();
+        el.querySelector('.atlas-hover-place').textContent = p.name;
+        el.querySelector('.atlas-hover-book').textContent = book.title || p.book;
+      });
+      map.on('mouseleave', 'atlas-pins', () => { map.getCanvas().style.cursor = ''; dropHover(); });
+      map.on('movestart', dropHover);
 
       map.fitBounds(HOME, { padding: 40, duration: 0 });
     };
 
     // ---- the pin card ----
+    // The same left-docked panel explore uses (see cards.js / placefig.js): the
+    // picture in true proportions with a click to enlarge, a spine-cloth edge in
+    // the book's colour, and a way through into the book itself.
     function openCard(pin) {
       const book = booksById[pin.book] || {};
       const badge = pin.certainty === 'conjectured' ? 'Best guess'
         : pin.certainty === 'identified' ? 'Identified place' : 'Real place';
-      const img = pin.image
-        ? `<figure class="atlas-card-fig">
-             <img class="atlas-card-img" alt="" loading="lazy" src="${pin.image.file}">
-             ${pin.image.indicative ? '<span class="atlas-card-indicative">Indicative</span>' : ''}
-           </figure>`
-        : '';
-      // Public-domain images need no permission, but naming the source is the
-      // fair thing — and it matches every book card.
-      const credit = pin.image
-        ? `${pin.image.caption ? `<p class="atlas-card-caption">${pin.image.caption}</p>` : ''}
-           ${pin.image.credit ? `<p class="atlas-card-credit">${pin.image.credit}</p>` : ''}`
-        : '';
+      cardEl.className = 'place-panel';
+      cardEl.style.setProperty('--cloth', pin.cloth || '#4d5661');
       cardEl.innerHTML = `
-        ${img}
-        <div class="atlas-card-body">
+        <button type="button" class="place-panel-close" aria-label="Close">&times;</button>
+        <div class="place-panel-content">
+          ${placeFigureHtml(pin.image)}
           <p class="atlas-card-place">${pin.name}</p>
           <p class="atlas-card-book">
             <span class="atlas-card-swatch" style="background:${pin.cloth}"></span>
@@ -136,11 +152,10 @@ fetch('data/atlas.json')
           </p>
           ${pin.story ? `<p class="atlas-card-story">${pin.story}</p>` : ''}
           <p class="atlas-card-badge">${badge}</p>
-          ${credit}
           <a class="atlas-card-open" href="index.html?novel=${pin.book}">Open in the book &rarr;</a>
-        </div>
-        <button type="button" class="atlas-card-close" aria-label="Close">&times;</button>`;
-      cardEl.querySelector('.atlas-card-close').addEventListener('click', closeCard);
+        </div>`;
+      fillPlaceFigure(cardEl, pin.image);
+      cardEl.querySelector('.place-panel-close').addEventListener('click', closeCard);
       cardEl.hidden = false;
     }
     function closeCard() { cardEl.hidden = true; cardEl.innerHTML = ''; }
