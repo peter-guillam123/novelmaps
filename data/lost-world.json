@@ -191,7 +191,7 @@
     { "kind": "scene", "character": "roxton", "at": "plateau", "chapter": 15, "day": 158, "title": "The way down, and the diamonds",
       "narration": "The escape comes from a grateful villager's charcoal map: a cave-tunnel that runs clean through the cliff. And Roxton, saying nothing, fills his pockets at a pit of blue clay — the plateau's parting gift, a handful of rough diamonds." },
     { "kind": "journey", "character": ["malone", "challenger", "summerlee", "roxton"], "from": "plateau", "to": "pinnacle", "chapter": 15, "title": "The cave through the cliff",
-      "narration": "They rope down through the tunnel to the foot of the cliffs, and walk out to the old base camp, where the faithful Zambo has never stopped keeping watch below." },
+      "narration": "They rope down through the tunnel to the foot of the cliffs, and walk out to the old base camp, where their devoted servant Zambo has never stopped keeping watch below." },
     { "kind": "removal", "character": ["malone", "challenger", "summerlee", "roxton"], "from": "pinnacle", "to": "river-village", "chapter": 16, "title": "The road home",
       "narration": "A relief party from the river villages reaches them at last with ropes and stakes, and the long way home begins — back over the savanna to the waiting water." },
     { "kind": "removal", "character": ["malone", "challenger", "summerlee", "roxton"], "from": "river-village", "to": "para", "chapter": 16, "title": "Down all the rivers",
