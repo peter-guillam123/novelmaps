@@ -1,0 +1,1672 @@
+{
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "year": 1925,
+  "gutenbergId": 64317,
+  "overture": "One summer on Long Island, a self-made man throws vast parties to win back the woman across the bay - reaching for a green light at the end of her dock, a few hundred yards of water that is the whole distance between what he is and what he dreams.",
+  "mapHome": {
+    "bounds": [
+      [
+        -74.06,
+        40.66
+      ],
+      [
+        -73.66,
+        40.9
+      ]
+    ]
+  },
+  "timeline": {
+    "epoch": null,
+    "calendar": false,
+    "span": "one summer, and the years behind it",
+    "duration": "one summer",
+    "unit": "year"
+  },
+  "sources": [
+    "Fitzgerald wrote it while renting at Great Neck; the geography is his own commute mapped onto invented names.",
+    "Consensus scholarship: West Egg = the Great Neck peninsula, East Egg = the Sands Point / Cow Neck peninsula, across Manhasset Bay.",
+    "The valley of ashes = the Corona ash dumps, Queens (now Flushing Meadows); Land’s End (Sands Point) the model for the Buchanans’ house.",
+    "Preservation Long Island; Litkicks “In Gatsby’s Tracks” and “Eckleburg’s Lair”; Lit Hub “Among the Ash Heaps and Millionaires”."
+  ],
+  "regions": [
+    {
+      "id": "west-egg",
+      "name": "West Egg"
+    },
+    {
+      "id": "east-egg",
+      "name": "East Egg"
+    },
+    {
+      "id": "the-ashes",
+      "name": "The valley of ashes"
+    },
+    {
+      "id": "the-city",
+      "name": "New York"
+    },
+    {
+      "id": "the-past",
+      "name": "The past, and elsewhere"
+    }
+  ],
+  "locations": [
+    {
+      "id": "gatsbys-mansion",
+      "region": "west-egg",
+      "name": "the Gold Coast shore of Great Neck, Long Island",
+      "novelName": "Gatsby’s mansion",
+      "coords": [
+        -73.74,
+        40.813
+      ],
+      "certainty": "conjectured",
+      "note": "Gatsby’s house has no single agreed original - a composite of the West Egg (Great Neck) mansions; placed on the bay-facing shore so it looks across the water at East Egg, as the book requires.",
+      "story": "The huge imitation-Norman mansion where Jay Gatsby throws his blazing summer parties for hundreds who don’t know him - all of it a lure, a lighthouse lit for one guest across the bay: Daisy.",
+      "imageBlank": "Gatsby’s mansion is a composite of the West Egg (Great Neck) millionaires’ houses with no single original; any specific mansion photo would falsely claim to be his."
+    },
+    {
+      "id": "nicks-cottage",
+      "region": "west-egg",
+      "name": "West Egg (Great Neck), Long Island",
+      "novelName": "Nick’s cottage",
+      "coords": [
+        -73.7415,
+        40.81
+      ],
+      "certainty": "conjectured",
+      "note": "Nick’s small rented “eyesore”, squeezed between two mansions next to Gatsby’s; fictional, placed adjacent to Gatsby’s per the novel.",
+      "story": "The narrator Nick Carraway’s cheap bungalow, wedged beside Gatsby’s palace. Here Gatsby and Daisy are brought together again after five years - a reunion Nick arranges, over tea, in the rain.",
+      "imageBlank": "Nick’s small rented bungalow is fictional and deliberately nondescript; there is nothing specific to photograph."
+    },
+    {
+      "id": "buchanans-house",
+      "region": "east-egg",
+      "name": "Land’s End, Sands Point, Long Island",
+      "novelName": "the Buchanans’ house",
+      "coords": [
+        -73.71,
+        40.849
+      ],
+      "certainty": "identified",
+      "note": "Tom and Daisy’s Georgian Colonial on East Egg; the most-cited model is the Swope estate “Land’s End” on Sands Point (demolished 2011), the old-money peninsula across the bay from West Egg.",
+      "story": "The Buchanans’ cool, moneyed house on the fashionable side of the bay - old wealth, careless and secure. Here Nick first dines with his cousin Daisy and her rich, brutal, unfaithful husband Tom.",
+      "imageBlank": "Land’s End (the Swope estate at Sands Point), the model for the house, has no verifiable public-domain historical photograph - the images that circulate are copyrighted shots taken shortly before the 2011 demolition."
+    },
+    {
+      "id": "green-light",
+      "region": "east-egg",
+      "name": "the end of Daisy’s dock, East Egg",
+      "novelName": "the green light",
+      "coords": [
+        -73.718,
+        40.842
+      ],
+      "certainty": "conjectured",
+      "note": "The single green light Gatsby watches across the water - real in the text but with no surveyed spot; placed on the Sands Point shore that faces Gatsby’s side of the bay.",
+      "story": "The green light at the end of Daisy’s dock, which Gatsby stretches his arms toward across the dark water - the whole of his hope reduced to one far, faint point, a few hundred yards and five years away.",
+      "imageBlank": "The green light is a symbol at the end of a fictional dock, not a place; no honest picture exists."
+    },
+    {
+      "id": "valley-of-ashes",
+      "region": "the-ashes",
+      "name": "the Corona ash dumps, Queens",
+      "novelName": "the valley of ashes",
+      "coords": [
+        -73.839,
+        40.75
+      ],
+      "certainty": "identified",
+      "note": "The grey industrial wasteland between the Eggs and Manhattan - the real Corona ash dumps by Flushing Creek (now Flushing Meadows). Over it stands the faded billboard of the oculist Doctor T. J. Eckleburg, his enormous spectacled eyes brooding on the road. Wilson’s garage, and Myrtle’s death, are placed here.",
+      "story": "The grey dumping-ground everyone must drive through between the money and the city, watched over by the blind billboard eyes of Doctor T. J. Eckleburg. Here George Wilson keeps his garage, his wife Myrtle is Tom’s mistress - and here, on the road, Myrtle is run down and killed.",
+      "imageBlank": "No clean public-domain photograph of the Corona/Flushing ash dumps came to hand; only illustrated-newspaper engravings, nothing verifiably public-domain and unambiguously the ash heaps."
+    },
+    {
+      "id": "the-plaza",
+      "region": "the-city",
+      "name": "the Plaza Hotel, Fifth Avenue",
+      "novelName": "the Plaza Hotel",
+      "coords": [
+        -73.9744,
+        40.7645
+      ],
+      "certainty": "real",
+      "note": "Named in the book; the hot afternoon suite where the story breaks open.",
+      "story": "A stifling suite where it all comes apart: Tom, cornered, exposes Gatsby as a bootlegger and a fraud, and makes Daisy choose. She cannot leave her husband for the dream, and Gatsby’s whole edifice cracks in the heat.",
+      "image": {
+        "file": "assets/images/gatsby-the-plaza.jpg",
+        "caption": "The Plaza Hotel and Grand Army Plaza at the corner of Central Park, New York, photographed c.1907.",
+        "credit": "New York Public Library (via Wikimedia Commons) · NYPL Digital Gallery b19806373 · public domain",
+        "indicative": false
+      }
+    },
+    {
+      "id": "myrtles-flat",
+      "region": "the-city",
+      "name": "158th Street, Washington Heights, Manhattan",
+      "novelName": "the flat on 158th Street",
+      "coords": [
+        -73.9448,
+        40.8355
+      ],
+      "certainty": "conjectured",
+      "note": "The apartment Tom keeps for Myrtle - “a long white cake of apartment-houses” on 158th Street; the exact address is invented.",
+      "story": "The little flat Tom keeps for his mistress Myrtle Wilson, where a drunken afternoon party swells and turns ugly - Tom, when Myrtle taunts him with Daisy’s name, breaking her nose with the flat of his hand.",
+      "imageBlank": "The flat on 158th Street is a fictional address; no honest specific period image."
+    },
+    {
+      "id": "wolfsheims",
+      "region": "the-city",
+      "name": "a West 42nd Street cellar, Manhattan",
+      "novelName": "Wolfsheim’s restaurant",
+      "coords": [
+        -73.987,
+        40.7555
+      ],
+      "certainty": "conjectured",
+      "note": "A “well-fanned Forty-second Street cellar”; fictional. Meyer Wolfsheim, the gambler said to have fixed the 1919 World Series, is Gatsby’s underworld connection - the source of the money behind the mansion.",
+      "story": "The basement lunch-room where Gatsby introduces Nick to Meyer Wolfsheim, the gambler who fixed the World Series - a glimpse of the criminal money that built the mansion and paid for the parties.",
+      "imageBlank": "Wolfsheim’s Forty-second Street cellar is fictional; no honest specific period image."
+    },
+    {
+      "id": "louisville",
+      "region": "the-past",
+      "name": "Louisville, Kentucky",
+      "novelName": "Louisville",
+      "coords": [
+        -85.7585,
+        38.2527
+      ],
+      "certainty": "real",
+      "note": "Named; Daisy’s home, where the young Lieutenant Gatsby met and lost her before shipping out, and where she married Tom.",
+      "story": "Where it began, five years before: a poor young officer at nearby Camp Taylor falls for the golden Daisy Fay, then is sent to the war. By the time he returns she has married rich Tom Buchanan - and Gatsby sets out to become worthy of her.",
+      "image": {
+        "file": "assets/images/gatsby-louisville.jpg",
+        "caption": "Fourth Avenue, Louisville, Kentucky - Daisy’s home town - photographed c.1906.",
+        "credit": "Detroit Publishing Co. · Library of Congress, Prints & Photographs Division (LC 2016806016) · public domain",
+        "indicative": false
+      }
+    },
+    {
+      "id": "nicks-midwest",
+      "region": "the-past",
+      "name": "a city in the Middle West (St Paul, Minnesota)",
+      "novelName": "the Middle West",
+      "coords": [
+        -93.09,
+        44.9537
+      ],
+      "certainty": "identified",
+      "note": "Nick’s home city is unnamed but modelled on Fitzgerald’s own St Paul; Nick comes east from it and, at the end, goes back.",
+      "story": "The solid, dull Middle West Nick comes east to escape - and, sickened by the careless glamour that leaves Gatsby dead and the Buchanans untouched, the place he finally retreats to, wanting the world “at a moral attention forever”.",
+      "image": {
+        "file": "assets/images/gatsby-nicks-midwest.jpg",
+        "caption": "St. Paul, Minnesota, seen across the Mississippi c.1902 - the Middle-Western city Fitzgerald drew Nick’s unnamed home from.",
+        "credit": "Detroit Publishing Co. · Library of Congress, Prints & Photographs Division (LC 2016802215) · public domain",
+        "indicative": true
+      }
+    },
+    {
+      "id": "north-dakota",
+      "region": "the-past",
+      "name": "North Dakota",
+      "novelName": "North Dakota",
+      "coords": [
+        -100.437,
+        47.65
+      ],
+      "certainty": "identified",
+      "note": "Named as the state; Gatsby’s origin as James Gatz, son of “shiftless and unsuccessful farm people”. No town is given, so a central-state point stands in.",
+      "story": "Where Jay Gatsby began as plain James Gatz, a poor farm boy who never accepted his parents’ lot - and who, somewhere on the road out, invented a grander self and set out to become him.",
+      "image": {
+        "file": "assets/images/gatsby-north-dakota.jpg",
+        "caption": "Broadway, Fargo, North Dakota, in 1909 - the state James Gatz came from, its largest town standing in for the whole.",
+        "credit": "Photographic postcard, W. O. Olsen, 1909 · Library of Congress, Prints & Photographs Division (LC 2024691666) · public domain",
+        "indicative": true
+      }
+    },
+    {
+      "id": "lake-superior",
+      "region": "the-past",
+      "name": "the south shore of Lake Superior",
+      "novelName": "Lake Superior",
+      "coords": [
+        -90.5,
+        46.9
+      ],
+      "certainty": "identified",
+      "note": "Recounted; the shallows where the drifting young Gatz rows out to warn the yachtsman Dan Cody of a coming storm, and is taken aboard - the moment he becomes “Jay Gatsby”.",
+      "story": "On the lake, the drifting teenager rows out to a millionaire’s yacht, warns him of a storm, and is taken up by the old copper-and-silver man Dan Cody. Five years cruising the continent make him, at last, into Gatsby.",
+      "image": {
+        "file": "assets/images/gatsby-lake-superior.jpg",
+        "caption": "The harbour and grain elevators at Duluth on Lake Superior, a lake steamer at the docks, c.1905 - the lake where Gatz met Dan Cody’s yacht, not the exact spot.",
+        "credit": "Detroit Publishing Co. · Library of Congress, Prints & Photographs Division (LC 2016801062) · public domain",
+        "indicative": true
+      }
+    }
+  ],
+  "characters": [
+    {
+      "id": "gatsby",
+      "name": "Jay Gatsby",
+      "colour": "madder",
+      "start": {
+        "location": "north-dakota",
+        "chapter": 1
+      }
+    },
+    {
+      "id": "nick",
+      "name": "Nick Carraway",
+      "colour": "slate",
+      "start": {
+        "location": "nicks-midwest",
+        "chapter": 5
+      }
+    },
+    {
+      "id": "daisy",
+      "name": "Daisy Buchanan",
+      "colour": "prussian",
+      "start": {
+        "location": "louisville",
+        "chapter": 3
+      }
+    },
+    {
+      "id": "tom",
+      "name": "Tom Buchanan",
+      "colour": "aubergine",
+      "start": {
+        "location": "buchanans-house",
+        "chapter": 5
+      }
+    },
+    {
+      "id": "myrtle",
+      "name": "Myrtle Wilson",
+      "colour": "sienna",
+      "start": {
+        "location": "valley-of-ashes",
+        "chapter": 6
+      }
+    },
+    {
+      "id": "wilson",
+      "name": "George Wilson",
+      "colour": "bottle",
+      "start": {
+        "location": "valley-of-ashes",
+        "chapter": 6
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "n": 1,
+      "day": 0,
+      "when": "James Gatz of North Dakota"
+    },
+    {
+      "n": 2,
+      "day": 150,
+      "when": "Lake Superior: the making of Gatsby"
+    },
+    {
+      "n": 3,
+      "day": 330,
+      "when": "an officer at Louisville"
+    },
+    {
+      "n": 4,
+      "day": 480,
+      "when": "east to West Egg"
+    },
+    {
+      "n": 5,
+      "day": 560,
+      "when": "Nick comes east; the green light"
+    },
+    {
+      "n": 6,
+      "day": 575,
+      "when": "the valley of ashes; Myrtle’s flat"
+    },
+    {
+      "n": 7,
+      "day": 590,
+      "when": "Gatsby’s party"
+    },
+    {
+      "n": 8,
+      "day": 602,
+      "when": "lunch in the city; the plan"
+    },
+    {
+      "n": 9,
+      "day": 612,
+      "when": "the reunion"
+    },
+    {
+      "n": 10,
+      "day": 626,
+      "when": "Tom at the party; the dream cracks"
+    },
+    {
+      "n": 11,
+      "day": 645,
+      "when": "the Plaza; the fatal drive"
+    },
+    {
+      "n": 12,
+      "day": 648,
+      "when": "Wilson’s walk; the shot"
+    },
+    {
+      "n": 13,
+      "day": 665,
+      "when": "the funeral; Nick goes home"
+    }
+  ],
+  "movements": [
+    {
+      "character": "gatsby",
+      "from": "north-dakota",
+      "to": "lake-superior",
+      "chapter": 2,
+      "mode": "foot",
+      "days": 30,
+      "note": "The drifting boy who would not stay James Gatz - clam-digger and salmon-fisher along the lake, waiting for the life he was sure he deserved.",
+      "routeCertainty": "reconstructed",
+      "routeSource": "no route given; the young Gatz drifted the Superior shore before Cody found him."
+    },
+    {
+      "character": "gatsby",
+      "from": "lake-superior",
+      "to": "louisville",
+      "chapter": 3,
+      "mode": "train",
+      "days": 25,
+      "note": "Out of Dan Cody’s five years cruising the continent and into the army - Lieutenant Gatsby, stationed at Camp Taylor by Louisville, where he meets Daisy Fay.",
+      "routeCertainty": "reconstructed",
+      "routeSource": "Gatsby’s army posting to Camp Taylor, Louisville, is named in ch VIII."
+    },
+    {
+      "character": "daisy",
+      "from": "louisville",
+      "to": "buchanans-house",
+      "chapter": 4,
+      "mode": "train",
+      "days": 30,
+      "note": "While Gatsby was overseas she married Tom Buchanan of Chicago, and drifted east into old money - a honeymoon in the South Seas, a house on the fashionable Egg, a small daughter, and boredom.",
+      "via": [
+        {
+          "at": [
+            -87.6298,
+            41.8781
+          ],
+          "name": "Chicago",
+          "note": "the moneyed Middle West the Buchanans drifted through"
+        }
+      ],
+      "startDay": 400,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch I/IV: Daisy’s marriage in Louisville, then Chicago and the drift east to East Egg."
+    },
+    {
+      "character": "gatsby",
+      "from": "louisville",
+      "to": "gatsbys-mansion",
+      "chapter": 4,
+      "mode": "train",
+      "days": 20,
+      "note": "After the war and a few months at Oxford, he came east - and bought the mansion on the wrong side of the bay for one reason only: so that Daisy would be just across the water.",
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch IV/VI: “Gatsby bought that house so that Daisy would be just across the bay.”"
+    },
+    {
+      "character": "nick",
+      "from": "nicks-midwest",
+      "to": "nicks-cottage",
+      "chapter": 5,
+      "mode": "train",
+      "days": 3,
+      "note": "Nick Carraway comes east in the spring of ’22 to learn the bond business, and rents a cheap bungalow on West Egg - next door, as it turns out, to a palace.",
+      "via": [
+        {
+          "at": [
+            -87.6298,
+            41.8781
+          ],
+          "name": "Chicago",
+          "note": "the moneyed Middle West the Buchanans drifted through"
+        }
+      ],
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch I: Nick comes east from the Middle West to West Egg."
+    },
+    {
+      "character": "nick",
+      "from": "nicks-cottage",
+      "to": "buchanans-house",
+      "chapter": 5,
+      "mode": "motor",
+      "days": 0.3,
+      "note": "Across the courtesy bay to dine with his cousin Daisy and her husband Tom - old money, a restless brutal afternoon, and the first mention of a woman in New York.",
+      "via": [],
+      "startDay": 563.2,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch I: Nick drives to the Buchanans’ for dinner."
+    },
+    {
+      "character": "nick",
+      "from": "buchanans-house",
+      "to": "nicks-cottage",
+      "chapter": 5,
+      "mode": "motor",
+      "days": 0.3,
+      "note": "Home across the bay - and, from his lawn, the first sight of Gatsby, alone in the dark, reaching toward a single green light on the far shore.",
+      "via": [],
+      "startDay": 563.6,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch I: Nick returns and sees Gatsby on his lawn."
+    },
+    {
+      "character": "nick",
+      "from": "nicks-cottage",
+      "to": "valley-of-ashes",
+      "chapter": 6,
+      "mode": "train",
+      "days": 0.3,
+      "note": "Tom hauls Nick off the train at the ash heaps to meet his mistress - a stop at George Wilson’s garage under the great blind eyes of Doctor Eckleburg.",
+      "via": [],
+      "routeCertainty": "illustrative",
+      "routeSource": "ch II: Tom takes Nick to Wilson’s garage in the valley of ashes."
+    },
+    {
+      "character": "nick",
+      "from": "valley-of-ashes",
+      "to": "myrtles-flat",
+      "chapter": 6,
+      "mode": "motor",
+      "days": 0.2,
+      "note": "On into the city to the flat Tom keeps for Myrtle, and a drunken little party that ends with Tom breaking her nose for saying Daisy’s name.",
+      "via": [
+        {
+          "at": [
+            -73.9545,
+            40.7565
+          ],
+          "name": "Queensboro Bridge",
+          "note": "the bridge into Manhattan, the city rising white in heaps and sugar lumps"
+        }
+      ],
+      "routeCertainty": "illustrative",
+      "routeSource": "ch II: from the valley to the 158th Street flat."
+    },
+    {
+      "character": "tom",
+      "from": "buchanans-house",
+      "to": "valley-of-ashes",
+      "chapter": 6,
+      "mode": "train",
+      "days": 0.3,
+      "note": "Tom stops the train at the ash heaps to show off his mistress, swaggering into Wilson’s garage as if he owned it - which, in every way that matters, he does.",
+      "via": [],
+      "routeCertainty": "illustrative",
+      "routeSource": "ch II: Tom takes Nick to Wilson’s garage."
+    },
+    {
+      "character": "tom",
+      "from": "valley-of-ashes",
+      "to": "myrtles-flat",
+      "chapter": 6,
+      "mode": "motor",
+      "days": 0.2,
+      "note": "Up to the flat for the shrill little party, where Myrtle plays at being a great lady until Tom, at the sound of Daisy’s name, breaks her nose without a change of expression.",
+      "via": [
+        {
+          "at": [
+            -73.9545,
+            40.7565
+          ],
+          "name": "Queensboro Bridge",
+          "note": "the bridge into Manhattan, the city rising white in heaps and sugar lumps"
+        }
+      ],
+      "routeCertainty": "illustrative",
+      "routeSource": "ch II: the 158th Street flat."
+    },
+    {
+      "character": "myrtle",
+      "from": "valley-of-ashes",
+      "to": "myrtles-flat",
+      "chapter": 6,
+      "mode": "train",
+      "days": 0.4,
+      "note": "Myrtle rides discreetly into the city in a separate carriage and blooms in the little flat - new dress, new dog, a party of her own - as far from the ash heaps as Tom’s money will carry her for an afternoon.",
+      "via": [
+        {
+          "at": [
+            -73.9545,
+            40.7565
+          ],
+          "name": "Queensboro Bridge",
+          "note": "the bridge into Manhattan, the city rising white in heaps and sugar lumps"
+        }
+      ],
+      "startDay": 575.2,
+      "routeCertainty": "illustrative",
+      "routeSource": "ch II: Myrtle takes a later train to the flat."
+    },
+    {
+      "character": "nick",
+      "from": "myrtles-flat",
+      "to": "nicks-cottage",
+      "chapter": 6,
+      "mode": "train",
+      "days": 0.3,
+      "note": "Nick escapes the flat near dawn and makes his own way home to West Egg.",
+      "via": [
+        {
+          "at": [
+            -73.9545,
+            40.7565
+          ],
+          "name": "Queensboro Bridge",
+          "note": "the bridge into Manhattan, the city rising white in heaps and sugar lumps"
+        }
+      ],
+      "startDay": 576.5,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch II: Nick leaves the party and goes home."
+    },
+    {
+      "character": "tom",
+      "from": "myrtles-flat",
+      "to": "buchanans-house",
+      "chapter": 6,
+      "mode": "train",
+      "days": 0.3,
+      "note": "Home to East Egg and Daisy, the double life folded neatly away again.",
+      "via": [
+        {
+          "at": [
+            -73.9545,
+            40.7565
+          ],
+          "name": "Queensboro Bridge",
+          "note": "the bridge into Manhattan, the city rising white in heaps and sugar lumps"
+        }
+      ],
+      "startDay": 576.8,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch II: Tom returns home."
+    },
+    {
+      "character": "myrtle",
+      "from": "myrtles-flat",
+      "to": "valley-of-ashes",
+      "chapter": 6,
+      "mode": "train",
+      "days": 0.4,
+      "note": "Back down to the garage and George and the grey road, the afternoon’s finery packed away.",
+      "via": [
+        {
+          "at": [
+            -73.9545,
+            40.7565
+          ],
+          "name": "Queensboro Bridge",
+          "note": "the bridge into Manhattan, the city rising white in heaps and sugar lumps"
+        }
+      ],
+      "startDay": 577,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch II: Myrtle returns to the valley."
+    },
+    {
+      "character": "nick",
+      "from": "nicks-cottage",
+      "to": "gatsbys-mansion",
+      "chapter": 7,
+      "mode": "foot",
+      "days": 0.02,
+      "note": "For once actually invited, Nick walks next door into the spectacle of a Gatsby party, and finally meets his host - who turns out to be a young man his own age with an odd formal smile.",
+      "routeCertainty": "documented",
+      "routeSource": "ch III: Nick attends a party and meets Gatsby."
+    },
+    {
+      "character": "nick",
+      "from": "gatsbys-mansion",
+      "to": "nicks-cottage",
+      "chapter": 7,
+      "mode": "foot",
+      "days": 0.02,
+      "note": "Home across the lawn in the small hours, the party still roaring behind him.",
+      "startDay": 590.5,
+      "routeCertainty": "documented",
+      "routeSource": "ch III: Nick leaves the party."
+    },
+    {
+      "character": "gatsby",
+      "from": "gatsbys-mansion",
+      "to": "wolfsheims",
+      "chapter": 8,
+      "mode": "motor",
+      "days": 1,
+      "note": "Gatsby drives Nick into the city in the great yellow car, and over lunch produces Meyer Wolfsheim - the gambler who fixed the World Series, and the money behind the mansion.",
+      "via": [
+        {
+          "at": [
+            -73.839,
+            40.75
+          ],
+          "name": "the valley of ashes",
+          "note": "the grey road through the ash heaps, under Eckleburg’s eyes"
+        },
+        {
+          "at": [
+            -73.9545,
+            40.7565
+          ],
+          "name": "Queensboro Bridge",
+          "note": "the bridge into Manhattan, the city rising white in heaps and sugar lumps"
+        }
+      ],
+      "routeCertainty": "illustrative",
+      "routeSource": "the motor road from West Egg through the valley of ashes and over the Queensboro Bridge."
+    },
+    {
+      "character": "gatsby",
+      "from": "wolfsheims",
+      "to": "gatsbys-mansion",
+      "chapter": 8,
+      "mode": "motor",
+      "days": 1,
+      "note": "Back to West Egg with the day’s errand done - and Jordan carrying his real request: that Nick invite Daisy to tea.",
+      "via": [
+        {
+          "at": [
+            -73.9545,
+            40.7565
+          ],
+          "name": "Queensboro Bridge",
+          "note": "the bridge into Manhattan, the city rising white in heaps and sugar lumps"
+        },
+        {
+          "at": [
+            -73.839,
+            40.75
+          ],
+          "name": "the valley of ashes",
+          "note": "the grey road through the ash heaps, under Eckleburg’s eyes"
+        }
+      ],
+      "routeCertainty": "illustrative",
+      "routeSource": "the return over the Queensboro Bridge and through the ash heaps."
+    },
+    {
+      "character": "nick",
+      "from": "nicks-cottage",
+      "to": "wolfsheims",
+      "chapter": 8,
+      "mode": "motor",
+      "days": 1,
+      "note": "Gatsby drives Nick to lunch in the city, produces Wolfsheim, and passes Tom Buchanan in the crowd - two worlds brushing shoulders on Forty-second Street.",
+      "via": [
+        {
+          "at": [
+            -73.839,
+            40.75
+          ],
+          "name": "the valley of ashes",
+          "note": "the grey road through the ash heaps, under Eckleburg’s eyes"
+        },
+        {
+          "at": [
+            -73.9545,
+            40.7565
+          ],
+          "name": "Queensboro Bridge",
+          "note": "the bridge into Manhattan, the city rising white in heaps and sugar lumps"
+        }
+      ],
+      "startDay": 602.2,
+      "routeCertainty": "illustrative",
+      "routeSource": "ch IV: Gatsby and Nick drive into the city for lunch."
+    },
+    {
+      "character": "nick",
+      "from": "wolfsheims",
+      "to": "nicks-cottage",
+      "chapter": 8,
+      "mode": "motor",
+      "days": 1,
+      "note": "Back to West Egg, carrying Gatsby’s whole strange hope: that Nick will ask Daisy to tea.",
+      "via": [
+        {
+          "at": [
+            -73.9545,
+            40.7565
+          ],
+          "name": "Queensboro Bridge",
+          "note": "the bridge into Manhattan, the city rising white in heaps and sugar lumps"
+        },
+        {
+          "at": [
+            -73.839,
+            40.75
+          ],
+          "name": "the valley of ashes",
+          "note": "the grey road through the ash heaps, under Eckleburg’s eyes"
+        }
+      ],
+      "startDay": 604,
+      "routeCertainty": "illustrative",
+      "routeSource": "ch IV: the return, and Jordan’s account of Gatsby’s request."
+    },
+    {
+      "character": "gatsby",
+      "from": "gatsbys-mansion",
+      "to": "nicks-cottage",
+      "chapter": 9,
+      "mode": "foot",
+      "days": 0.02,
+      "note": "The few hundred yards next door to Nick’s cottage - the hardest walk of his life, to stand in a room and wait for Daisy after five years.",
+      "startDay": 611,
+      "routeCertainty": "documented",
+      "routeSource": "Gatsby’s house adjoins Nick’s; he comes on foot for the reunion."
+    },
+    {
+      "character": "daisy",
+      "from": "buchanans-house",
+      "to": "nicks-cottage",
+      "chapter": 9,
+      "mode": "motor",
+      "days": 0.3,
+      "note": "Daisy drives across to Nick’s cottage for tea, not knowing Gatsby waits inside - and after the first stricken silence, five years fall away.",
+      "via": [],
+      "startDay": 612,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch V: Daisy comes to Nick’s for the arranged tea."
+    },
+    {
+      "character": [
+        "gatsby",
+        "daisy"
+      ],
+      "from": "nicks-cottage",
+      "to": "gatsbys-mansion",
+      "chapter": 9,
+      "mode": "foot",
+      "days": 0.02,
+      "note": "He walks Daisy back across the lawn to show her the mansion he built to win her - room after room, and the shirts he throws down in a bright disordered heap.",
+      "startDay": 613,
+      "routeCertainty": "documented",
+      "routeSource": "ch V: Gatsby takes Daisy next door to see the house."
+    },
+    {
+      "character": "daisy",
+      "from": "gatsbys-mansion",
+      "to": "buchanans-house",
+      "chapter": 9,
+      "mode": "motor",
+      "days": 0.3,
+      "note": "Home again to East Egg, carrying the afternoon back across the bay with her.",
+      "via": [],
+      "startDay": 614,
+      "routeCertainty": "reconstructed",
+      "routeSource": "Daisy returns to the Buchanans’ after the reunion."
+    },
+    {
+      "character": [
+        "tom",
+        "daisy"
+      ],
+      "from": "buchanans-house",
+      "to": "gatsbys-mansion",
+      "chapter": 10,
+      "mode": "motor",
+      "days": 0.4,
+      "note": "Tom brings Daisy to one of Gatsby’s parties and hates every minute of it - the loud new money, and the way his wife looks at their host.",
+      "via": [
+        {
+          "at": [
+            -73.839,
+            40.75
+          ],
+          "name": "the valley of ashes",
+          "note": "the grey road through the ash heaps, under Eckleburg’s eyes"
+        },
+        {
+          "at": [
+            -73.9545,
+            40.7565
+          ],
+          "name": "Queensboro Bridge",
+          "note": "the bridge into Manhattan, the city rising white in heaps and sugar lumps"
+        }
+      ],
+      "startDay": 626,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch VI: Tom and Daisy attend a Gatsby party."
+    },
+    {
+      "character": "tom",
+      "from": "gatsbys-mansion",
+      "to": "buchanans-house",
+      "chapter": 10,
+      "mode": "motor",
+      "days": 0.4,
+      "note": "Home across the bay, Tom now certain something is wrong and meaning to find out what.",
+      "via": [
+        {
+          "at": [
+            -73.9545,
+            40.7565
+          ],
+          "name": "Queensboro Bridge",
+          "note": "the bridge into Manhattan, the city rising white in heaps and sugar lumps"
+        },
+        {
+          "at": [
+            -73.839,
+            40.75
+          ],
+          "name": "the valley of ashes",
+          "note": "the grey road through the ash heaps, under Eckleburg’s eyes"
+        }
+      ],
+      "startDay": 626.5,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch VI: the Buchanans leave the party."
+    },
+    {
+      "character": "daisy",
+      "from": "gatsbys-mansion",
+      "to": "buchanans-house",
+      "chapter": 10,
+      "mode": "motor",
+      "days": 0.4,
+      "note": "Daisy rides home beside Tom, the evening having stirred something in her that will not settle.",
+      "via": [
+        {
+          "at": [
+            -73.9545,
+            40.7565
+          ],
+          "name": "Queensboro Bridge",
+          "note": "the bridge into Manhattan, the city rising white in heaps and sugar lumps"
+        },
+        {
+          "at": [
+            -73.839,
+            40.75
+          ],
+          "name": "the valley of ashes",
+          "note": "the grey road through the ash heaps, under Eckleburg’s eyes"
+        }
+      ],
+      "startDay": 626.6,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch VI: the Buchanans leave the party together."
+    },
+    {
+      "character": "gatsby",
+      "from": "gatsbys-mansion",
+      "to": "buchanans-house",
+      "chapter": 11,
+      "mode": "motor",
+      "days": 0.4,
+      "note": "Summoned to lunch at East Egg on the hottest day of the summer, Gatsby crosses the bay to sit at Tom’s own table - the calm before the Plaza.",
+      "via": [],
+      "startDay": 645,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch VII: the party gathers at the Buchanans’ before driving to town."
+    },
+    {
+      "character": "nick",
+      "from": "nicks-cottage",
+      "to": "buchanans-house",
+      "chapter": 11,
+      "mode": "motor",
+      "days": 0.3,
+      "note": "On the hottest day Nick drives to lunch at East Egg, where the air is thick with everything unsaid, and Gatsby and Tom are in the same room at last.",
+      "via": [],
+      "startDay": 645.1,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch VII: Nick goes to the Buchanans’ for the fatal lunch."
+    },
+    {
+      "character": "nick",
+      "from": "buchanans-house",
+      "to": "the-plaza",
+      "chapter": 11,
+      "mode": "motor",
+      "days": 0.4,
+      "note": "The whole party drives into the city and takes a suffocating suite at the Plaza, where Tom finally forces the quarrel into the open.",
+      "via": [
+        {
+          "at": [
+            -73.839,
+            40.75
+          ],
+          "name": "the valley of ashes",
+          "note": "the grey road through the ash heaps, under Eckleburg’s eyes"
+        },
+        {
+          "at": [
+            -73.9545,
+            40.7565
+          ],
+          "name": "Queensboro Bridge",
+          "note": "the bridge into Manhattan, the city rising white in heaps and sugar lumps"
+        }
+      ],
+      "startDay": 645.4,
+      "routeCertainty": "illustrative",
+      "routeSource": "ch VII: East Egg to the Plaza confrontation."
+    },
+    {
+      "character": "tom",
+      "from": "buchanans-house",
+      "to": "the-plaza",
+      "chapter": 11,
+      "mode": "motor",
+      "days": 0.4,
+      "note": "On the hot day Tom seizes the wheel of Gatsby’s yellow car and leads the drive to town, spoiling for the fight he means to win.",
+      "via": [
+        {
+          "at": [
+            -73.839,
+            40.75
+          ],
+          "name": "the valley of ashes",
+          "note": "the grey road through the ash heaps, under Eckleburg’s eyes"
+        },
+        {
+          "at": [
+            -73.9545,
+            40.7565
+          ],
+          "name": "Queensboro Bridge",
+          "note": "the bridge into Manhattan, the city rising white in heaps and sugar lumps"
+        }
+      ],
+      "startDay": 645.5,
+      "routeCertainty": "illustrative",
+      "routeSource": "ch VII: Tom drives the yellow car to the Plaza."
+    },
+    {
+      "character": [
+        "gatsby",
+        "daisy"
+      ],
+      "from": "buchanans-house",
+      "to": "the-plaza",
+      "chapter": 11,
+      "mode": "motor",
+      "days": 0.4,
+      "note": "The drive to the city on the broiling afternoon - Gatsby and Daisy riding together in Tom’s blue coupe while Tom, jealous, drives the yellow car ahead. They stop for petrol at Wilson’s garage, where Myrtle watches from the window.",
+      "via": [
+        {
+          "at": [
+            -73.839,
+            40.75
+          ],
+          "name": "the valley of ashes",
+          "note": "the grey road through the ash heaps, under Eckleburg’s eyes"
+        },
+        {
+          "at": [
+            -73.9545,
+            40.7565
+          ],
+          "name": "Queensboro Bridge",
+          "note": "the bridge into Manhattan, the city rising white in heaps and sugar lumps"
+        }
+      ],
+      "startDay": 645.6,
+      "routeCertainty": "illustrative",
+      "routeSource": "ch VII: East Egg to the Plaza, the gas stop at Wilson’s in the valley of ashes."
+    },
+    {
+      "character": [
+        "gatsby",
+        "daisy"
+      ],
+      "from": "the-plaza",
+      "to": "buchanans-house",
+      "chapter": 11,
+      "mode": "motor",
+      "days": 0.4,
+      "note": "The fatal drive back to East Egg. Daisy takes the wheel of Gatsby’s yellow car to steady her nerves - and in the dusk of the valley of ashes she strikes Myrtle Wilson, who has run out into the road, and does not stop. Gatsby will say he was driving.",
+      "via": [
+        {
+          "at": [
+            -73.9545,
+            40.7565
+          ],
+          "name": "Queensboro Bridge",
+          "note": "the bridge into Manhattan, the city rising white in heaps and sugar lumps"
+        },
+        {
+          "at": [
+            -73.839,
+            40.75
+          ],
+          "name": "the valley of ashes",
+          "note": "the grey road through the ash heaps, under Eckleburg’s eyes"
+        }
+      ],
+      "startDay": 646.4,
+      "routeCertainty": "illustrative",
+      "routeSource": "ch VII: the “death car” from the Plaza back to East Egg through the valley."
+    },
+    {
+      "character": "nick",
+      "from": "the-plaza",
+      "to": "nicks-cottage",
+      "chapter": 11,
+      "mode": "motor",
+      "days": 0.4,
+      "note": "Riding home in Tom’s coupe, they come on the crowd and the wreck in the valley of ashes: Myrtle dead in the road, the yellow car gone. Nick will not go into the Buchanans’ house again.",
+      "via": [
+        {
+          "at": [
+            -73.9545,
+            40.7565
+          ],
+          "name": "Queensboro Bridge",
+          "note": "the bridge into Manhattan, the city rising white in heaps and sugar lumps"
+        },
+        {
+          "at": [
+            -73.839,
+            40.75
+          ],
+          "name": "the valley of ashes",
+          "note": "the grey road through the ash heaps, under Eckleburg’s eyes"
+        }
+      ],
+      "startDay": 646.5,
+      "routeCertainty": "illustrative",
+      "routeSource": "ch VII: the drive back, the discovery of Myrtle’s body."
+    },
+    {
+      "character": "tom",
+      "from": "the-plaza",
+      "to": "buchanans-house",
+      "chapter": 11,
+      "mode": "motor",
+      "days": 0.4,
+      "note": "In his own coupe he comes on the wreck in the valley - Myrtle dead, and George half-mad - and drives home believing, and letting Wilson believe, that Gatsby was at the wheel.",
+      "via": [
+        {
+          "at": [
+            -73.9545,
+            40.7565
+          ],
+          "name": "Queensboro Bridge",
+          "note": "the bridge into Manhattan, the city rising white in heaps and sugar lumps"
+        },
+        {
+          "at": [
+            -73.839,
+            40.75
+          ],
+          "name": "the valley of ashes",
+          "note": "the grey road through the ash heaps, under Eckleburg’s eyes"
+        }
+      ],
+      "startDay": 646.6,
+      "routeCertainty": "illustrative",
+      "routeSource": "ch VII: Tom finds Myrtle’s body and drives home."
+    },
+    {
+      "character": "gatsby",
+      "from": "buchanans-house",
+      "to": "gatsbys-mansion",
+      "chapter": 12,
+      "mode": "motor",
+      "days": 0.3,
+      "note": "Gatsby keeps a useless vigil in the shrubbery outside the Buchanans’ half the night, guarding a woman already gone from him - then goes home to West Egg in the grey morning to wait by his pool for a telephone call that will never come.",
+      "via": [],
+      "startDay": 647.5,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch VIII: Gatsby watches the Buchanans’ house, then returns to West Egg and the pool."
+    },
+    {
+      "character": "wilson",
+      "from": "valley-of-ashes",
+      "to": "gatsbys-mansion",
+      "chapter": 12,
+      "mode": "foot",
+      "days": 1,
+      "note": "Mad with grief, George Wilson walks the length of the island on foot - Port Roosevelt, Gad’s Hill, asking the way - to the house of the man Tom has named, and shoots Gatsby dead in his pool before turning the gun on himself.",
+      "via": [
+        {
+          "at": [
+            -73.79,
+            40.79
+          ],
+          "name": "Port Roosevelt"
+        },
+        {
+          "at": [
+            -73.765,
+            40.8
+          ],
+          "name": "Gad’s Hill"
+        }
+      ],
+      "routeCertainty": "illustrative",
+      "routeSource": "ch VIII: Wilson’s cross-island walk by Port Roosevelt and Gad’s Hill to West Egg."
+    },
+    {
+      "character": "nick",
+      "from": "nicks-cottage",
+      "to": "gatsbys-mansion",
+      "chapter": 13,
+      "mode": "foot",
+      "days": 0.1,
+      "note": "A few days later Nick walks next door to bury his neighbour - and finds the great house all but empty of mourners.",
+      "startDay": 651,
+      "routeCertainty": "documented",
+      "routeSource": "Gatsby’s house adjoins Nick’s; he attends the funeral there."
+    },
+    {
+      "character": "nick",
+      "from": "gatsbys-mansion",
+      "to": "nicks-cottage",
+      "chapter": 13,
+      "mode": "foot",
+      "days": 0.1,
+      "note": "Home again to the shuttered bungalow, the summer and everyone in it gone.",
+      "startDay": 651.5,
+      "routeCertainty": "documented",
+      "routeSource": "Nick returns to his cottage after the funeral."
+    },
+    {
+      "character": "nick",
+      "from": "nicks-cottage",
+      "to": "the-plaza",
+      "chapter": 13,
+      "mode": "motor",
+      "days": 1,
+      "note": "Long after, on Fifth Avenue, Nick meets Tom once more - and Tom, unrepentant, admits he sent the grieving Wilson to Gatsby’s door. “They were careless people, Tom and Daisy.”",
+      "via": [
+        {
+          "at": [
+            -73.839,
+            40.75
+          ],
+          "name": "the valley of ashes",
+          "note": "the grey road through the ash heaps, under Eckleburg’s eyes"
+        },
+        {
+          "at": [
+            -73.9545,
+            40.7565
+          ],
+          "name": "Queensboro Bridge",
+          "note": "the bridge into Manhattan, the city rising white in heaps and sugar lumps"
+        }
+      ],
+      "startDay": 664,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch IX: Nick’s last meeting with Tom on Fifth Avenue."
+    },
+    {
+      "character": "tom",
+      "from": "buchanans-house",
+      "to": "the-plaza",
+      "chapter": 13,
+      "mode": "motor",
+      "days": 1,
+      "note": "And there he is, months later, on Fifth Avenue - untouched, unrepentant, and honestly convinced he was the one who was wronged.",
+      "via": [
+        {
+          "at": [
+            -73.839,
+            40.75
+          ],
+          "name": "the valley of ashes",
+          "note": "the grey road through the ash heaps, under Eckleburg’s eyes"
+        },
+        {
+          "at": [
+            -73.9545,
+            40.7565
+          ],
+          "name": "Queensboro Bridge",
+          "note": "the bridge into Manhattan, the city rising white in heaps and sugar lumps"
+        }
+      ],
+      "startDay": 664,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch IX: Tom on Fifth Avenue."
+    },
+    {
+      "character": "nick",
+      "from": "the-plaza",
+      "to": "nicks-cottage",
+      "chapter": 13,
+      "mode": "motor",
+      "days": 1,
+      "note": "Back to close up the empty house on West Egg.",
+      "via": [
+        {
+          "at": [
+            -73.9545,
+            40.7565
+          ],
+          "name": "Queensboro Bridge",
+          "note": "the bridge into Manhattan, the city rising white in heaps and sugar lumps"
+        },
+        {
+          "at": [
+            -73.839,
+            40.75
+          ],
+          "name": "the valley of ashes",
+          "note": "the grey road through the ash heaps, under Eckleburg’s eyes"
+        }
+      ],
+      "startDay": 664.5,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch IX: Nick returns to West Egg before leaving."
+    },
+    {
+      "character": "nick",
+      "from": "nicks-cottage",
+      "to": "nicks-midwest",
+      "chapter": 13,
+      "mode": "train",
+      "days": 3,
+      "note": "Sickened by it all, Nick goes home to the Middle West - the frame closing where it opened, on a man who has seen enough of the east.",
+      "via": [
+        {
+          "at": [
+            -87.6298,
+            41.8781
+          ],
+          "name": "Chicago",
+          "note": "the moneyed Middle West the Buchanans drifted through"
+        }
+      ],
+      "startDay": 665,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch IX: Nick returns to the Middle West."
+    }
+  ],
+  "story": [
+    {
+      "kind": "scene",
+      "chapter": 1,
+      "at": "north-dakota",
+      "character": "gatsby",
+      "title": "James Gatz",
+      "narration": "Before the summer, before the bay, before the parties - a poor farm boy in North Dakota named James Gatz, who never for a moment accepted his parents, and who invented Jay Gatsby out of pure wanting, then set out to become him."
+    },
+    {
+      "kind": "journey",
+      "chapter": 2,
+      "from": "north-dakota",
+      "to": "lake-superior",
+      "character": "gatsby",
+      "title": "the drifting years",
+      "narration": "He drifts down to Lake Superior - clam-digger, salmon-fisher - until the day he rows out to a yacht anchored in the shallows to warn its owner of a coming storm."
+    },
+    {
+      "kind": "scene",
+      "chapter": 2,
+      "at": "lake-superior",
+      "character": "gatsby",
+      "title": "Dan Cody’s yacht",
+      "day": 182,
+      "narration": "The owner is Dan Cody, an old copper-and-silver millionaire. He takes the boy aboard, and for five years, cruising three times round the continent, James Gatz finishes becoming Jay Gatsby."
+    },
+    {
+      "kind": "journey",
+      "chapter": 3,
+      "from": "lake-superior",
+      "to": "louisville",
+      "character": "gatsby",
+      "title": "an officer at Louisville",
+      "narration": "Cody dies and cheats him of the legacy; the war comes; and Lieutenant Gatsby, stationed at Camp Taylor, walks into a white house in Louisville and falls in love with a girl named Daisy Fay."
+    },
+    {
+      "kind": "scene",
+      "chapter": 3,
+      "at": "louisville",
+      "character": "gatsby",
+      "title": "Daisy Fay",
+      "day": 357,
+      "narration": "She is the first “nice” girl he has ever known - gleaming, desired, safe inside her money. He lets her believe he is a man of her own class, and means, somehow, to make it true. Then he is shipped overseas."
+    },
+    {
+      "kind": "handoff",
+      "chapter": 4,
+      "character": "gatsby",
+      "title": "the long road east",
+      "narration": "By the time he got back - the war, then a few months at Oxford the army arranged - Daisy had married rich Tom Buchanan. So Gatsby follows the money east, from Kentucky to the coast of Long Island."
+    },
+    {
+      "kind": "journey",
+      "chapter": 4,
+      "from": "louisville",
+      "to": "gatsbys-mansion",
+      "character": "gatsby",
+      "title": "east to West Egg",
+      "narration": "He buys a mansion on West Egg with his new and questionable fortune - and picks it for one reason: it stands directly across the bay from the house where Daisy now lives with her husband."
+    },
+    {
+      "kind": "handoff",
+      "chapter": 5,
+      "character": "nick",
+      "title": "enter Nick Carraway",
+      "narration": "Into this comes the narrator: Nick Carraway, Daisy’s second cousin, out from the Middle West to sell bonds - and, by pure chance, Gatsby’s next-door neighbour."
+    },
+    {
+      "kind": "journey",
+      "chapter": 5,
+      "from": "nicks-midwest",
+      "to": "nicks-cottage",
+      "character": "nick",
+      "title": "coming east",
+      "narration": "He rents a weather-beaten bungalow on West Egg for eighty dollars a month, squeezed between two mansions - one of them, though he does not yet know it, Gatsby’s."
+    },
+    {
+      "kind": "handoff",
+      "chapter": 5,
+      "day": 563,
+      "character": "nick",
+      "title": "the two Eggs",
+      "narration": "Two egg-shaped peninsulas jut into the Sound, a courtesy bay between them: West Egg, all new money and Gatsby’s vulgar palace; East Egg, where the old fortunes sit, and where the Buchanans live."
+    },
+    {
+      "kind": "journey",
+      "chapter": 5,
+      "from": "nicks-cottage",
+      "to": "buchanans-house",
+      "character": "nick",
+      "title": "dinner at East Egg",
+      "narration": "On his first evening he drives across the courtesy bay to dine with cousin Daisy and her husband Tom - a hulking, arrogant former football star who talks of “the white race being submerged” and keeps a woman in New York everyone but Daisy names aloud."
+    },
+    {
+      "kind": "scene",
+      "chapter": 5,
+      "at": "buchanans-house",
+      "character": "daisy",
+      "title": "the golden girl",
+      "day": 563.4,
+      "narration": "Daisy is all charm and low laughter and a voice, Gatsby will say, “full of money” - but under the glitter she is bored and unhappy, and half means it when she says she hopes her little girl grows up “a beautiful little fool”."
+    },
+    {
+      "kind": "journey",
+      "chapter": 5,
+      "from": "buchanans-house",
+      "to": "nicks-cottage",
+      "character": "nick",
+      "title": "the man on the lawn",
+      "narration": "Driving home, Nick sees his neighbour for the first time - a solitary figure on the lawn, arms stretched across the water toward that far green light, trembling. Then he is gone."
+    },
+    {
+      "kind": "scene",
+      "chapter": 5,
+      "at": "green-light",
+      "title": "the green light",
+      "day": 564,
+      "narration": "That is the light Gatsby reaches for: a single green lamp at the end of Daisy’s dock, across the dark water from his lawn - a few hundred yards, and five years, and the whole of what he wants.",
+      "quote": {
+        "text": "he stretched out his arms toward the dark water in a curious way, and, far as I was from him, I could have sworn he was trembling",
+        "source": "The Great Gatsby, ch I"
+      }
+    },
+    {
+      "kind": "journey",
+      "chapter": 6,
+      "from": "buchanans-house",
+      "to": "valley-of-ashes",
+      "character": "tom",
+      "title": "through the ashes",
+      "narration": "A few days later Tom, brooking no refusal, takes Nick to meet his mistress. The train stops halfway, in the valley of ashes - a grey wasteland of ash heaps and crumbling men, watched over by the huge faded eyes of an oculist’s billboard, Doctor T. J. Eckleburg.",
+      "quote": {
+        "text": "This is a valley of ashes—a fantastic farm where ashes grow like wheat into ridges and hills and grotesque gardens",
+        "source": "The Great Gatsby, ch II"
+      }
+    },
+    {
+      "kind": "scene",
+      "chapter": 6,
+      "at": "valley-of-ashes",
+      "character": "wilson",
+      "title": "the Wilsons’ garage",
+      "narration": "Here George Wilson keeps a failing garage - a pale, spiritless man who does not know his wife Myrtle is Tom’s. Myrtle does: she is vivid and hungry and treats the ash heaps as a prison to be escaped an afternoon at a time."
+    },
+    {
+      "kind": "journey",
+      "chapter": 6,
+      "from": "valley-of-ashes",
+      "to": "myrtles-flat",
+      "character": [
+        "tom",
+        "nick"
+      ],
+      "title": "the flat on 158th Street",
+      "narration": "Tom keeps a flat for her in the city. There a small, shrill, drunken party gathers - and when Myrtle chants Daisy’s name once too often, Tom breaks her nose with the flat of his hand, as casually as swatting a fly."
+    },
+    {
+      "kind": "journey",
+      "chapter": 7,
+      "from": "nicks-cottage",
+      "to": "gatsbys-mansion",
+      "character": "nick",
+      "title": "a Gatsby party",
+      "narration": "All summer the parties blaze next door - orchestras, floating rounds of cocktails, hundreds who come uninvited. At last Nick is asked, and there, among the rumours (a killer? a spy? a nephew of the Kaiser?), he finally meets his host.",
+      "quote": {
+        "text": "In his blue gardens men and girls came and went like moths among the whisperings and the champagne and the stars",
+        "source": "The Great Gatsby, ch III"
+      }
+    },
+    {
+      "kind": "scene",
+      "chapter": 7,
+      "at": "gatsbys-mansion",
+      "character": "gatsby",
+      "title": "the host",
+      "narration": "Gatsby is nothing like the rumours - a young man, watchful and oddly formal, with a smile that seems to understand you exactly as you would like to be understood, and who drinks nothing and watches his own party from the edges, waiting for a guest who never comes."
+    },
+    {
+      "kind": "journey",
+      "chapter": 8,
+      "from": "nicks-cottage",
+      "to": "wolfsheims",
+      "character": "nick",
+      "title": "lunch in the city",
+      "narration": "Gatsby drives Nick to town in the yellow car and, over lunch, produces Meyer Wolfsheim - a gambler who wears human molars for cufflinks and, Gatsby says coolly, fixed the World Series of 1919. A glimpse of where the money really comes from.",
+      "quote": {
+        "text": "He’s the man who fixed the World’s Series back in 1919.",
+        "source": "The Great Gatsby, ch IV"
+      }
+    },
+    {
+      "kind": "scene",
+      "chapter": 8,
+      "at": "nicks-cottage",
+      "character": "nick",
+      "title": "the whole point of it",
+      "day": 605.5,
+      "narration": "Then Jordan Baker - Daisy’s golfer friend, and Nick’s own summer companion - tells Nick the truth behind five years of parties: Gatsby bought the house, threw open his doors to a thousand strangers, did all of it for one reason - the small chance that Daisy might one night wander in. Now he wants only for Nick to invite her to tea.",
+      "quote": {
+        "text": "Gatsby bought that house so that Daisy would be just across the bay.",
+        "source": "The Great Gatsby, ch IV"
+      }
+    },
+    {
+      "kind": "journey",
+      "chapter": 9,
+      "from": "buchanans-house",
+      "to": "nicks-cottage",
+      "character": "daisy",
+      "title": "the reunion",
+      "narration": "It rains. Gatsby, sick with terror, fills Nick’s cottage with flowers and nearly flees. Then Daisy comes - and after one agony of a silence, the years dissolve and the two of them are luminous, ridiculous, alight."
+    },
+    {
+      "kind": "journey",
+      "chapter": 9,
+      "from": "nicks-cottage",
+      "to": "gatsbys-mansion",
+      "character": [
+        "gatsby",
+        "daisy"
+      ],
+      "title": "the beautiful shirts",
+      "narration": "He walks her across the lawn through the mansion he built as a signal to her, and when he tumbles his soft rich shirts down before her in a bright heap she bends her head into them and sobs - and the green light, now that she is here, is just a light on a dock again.",
+      "quote": {
+        "text": "His count of enchanted objects had diminished by one.",
+        "source": "The Great Gatsby, ch V"
+      }
+    },
+    {
+      "kind": "journey",
+      "chapter": 10,
+      "from": "buchanans-house",
+      "to": "gatsbys-mansion",
+      "character": [
+        "tom",
+        "daisy"
+      ],
+      "title": "Tom at the party",
+      "narration": "Gatsby wants the last five years erased - Daisy to tell Tom she never loved him. “Can’t repeat the past? Why of course you can!” Then Tom brings Daisy to a party, sneers at the new money, and watches; and after that night the parties stop, their whole purpose spent.",
+      "quote": {
+        "text": "“Can’t repeat the past?” he cried incredulously. “Why of course you can!”",
+        "source": "The Great Gatsby, ch VI"
+      }
+    },
+    {
+      "kind": "journey",
+      "chapter": 11,
+      "from": "buchanans-house",
+      "to": "the-plaza",
+      "character": [
+        "gatsby",
+        "daisy"
+      ],
+      "title": "the drive to town",
+      "narration": "On the hottest day of the year they gather at East Egg and drive to the city - Gatsby and Daisy in Tom’s coupe, Tom charging ahead in Gatsby’s yellow car, a petrol stop at Wilson’s garage where Myrtle, watching from a window, takes the woman in the car for Tom’s wife."
+    },
+    {
+      "kind": "scene",
+      "chapter": 11,
+      "at": "the-plaza",
+      "character": "tom",
+      "title": "the Plaza",
+      "narration": "In a stifling suite the quarrel finally breaks. Tom exposes Gatsby as a bootlegger and a fraud; Gatsby demands Daisy say she never loved Tom, and she cannot - she loved them both. The dream cracks in the heat, and Tom, contemptuous now, sends the lovers home together in the yellow car to prove how little is left to fear.",
+      "day": 646.1,
+      "quote": {
+        "text": "So we drove on toward death through the cooling twilight.",
+        "source": "The Great Gatsby, ch VII"
+      }
+    },
+    {
+      "kind": "journey",
+      "chapter": 11,
+      "from": "the-plaza",
+      "to": "buchanans-house",
+      "character": [
+        "gatsby",
+        "daisy"
+      ],
+      "title": "the death car",
+      "narration": "Daisy drives to calm herself. In the dusk of the valley of ashes Myrtle, who has broken free of the room George locked her in, runs out into the road toward the yellow car she thinks is Tom’s - and the car strikes her and does not stop. Gatsby resolves at once to take the blame.",
+      "quote": {
+        "text": "Was Daisy driving?” “Yes,” he said after a moment, “but of course I’ll say I was.",
+        "source": "The Great Gatsby, ch VII"
+      }
+    },
+    {
+      "kind": "scene",
+      "chapter": 11,
+      "at": "valley-of-ashes",
+      "character": "myrtle",
+      "title": "Myrtle in the road",
+      "narration": "Myrtle Wilson dies on the grey ground she spent her life trying to escape, outside her own garage, under the painted eyes of Eckleburg - and George, kneeling over her, begins to believe those eyes are the eyes of God.",
+      "day": 646.6
+    },
+    {
+      "kind": "meanwhile",
+      "chapter": 12,
+      "character": "wilson",
+      "title": "the long walk",
+      "narration": "Gatsby keeps a pointless vigil outside the Buchanans’ that night; Daisy, safe indoors, is already gone from him. Meanwhile, in the valley, Tom has let the maddened Wilson believe the yellow car - and its driver - were Gatsby’s."
+    },
+    {
+      "kind": "journey",
+      "chapter": 12,
+      "from": "valley-of-ashes",
+      "to": "gatsbys-mansion",
+      "character": "wilson",
+      "title": "Wilson’s walk",
+      "narration": "George Wilson walks the whole length of the island on foot, asking the way, and comes at last to the great empty mansion. Gatsby is floating on an air-mattress in his pool, still waiting for a telephone call that will not come."
+    },
+    {
+      "kind": "scene",
+      "chapter": 12,
+      "at": "gatsbys-mansion",
+      "character": "gatsby",
+      "title": "the shot",
+      "day": 649.1,
+      "narration": "Wilson shoots him dead in the water and then himself in the grass. The holocaust is complete: a man killed for a car he was not driving, a death he did not cause, a woman who has already chosen someone else."
+    },
+    {
+      "kind": "scene",
+      "chapter": 13,
+      "at": "gatsbys-mansion",
+      "character": "nick",
+      "title": "the empty funeral",
+      "day": 651.2,
+      "narration": "Of the hundreds who drank his champagne, almost no one comes to bury him. Daisy sends nothing, not a flower. Only Nick, Gatsby’s bewildered old father, a few servants and one owl-eyed party guest stand in the rain at the great empty house.",
+      "quote": {
+        "text": "The poor son-of-a-bitch,” he said.",
+        "source": "The Great Gatsby, ch IX"
+      }
+    },
+    {
+      "kind": "journey",
+      "chapter": 13,
+      "from": "nicks-cottage",
+      "to": "the-plaza",
+      "character": "nick",
+      "title": "careless people",
+      "narration": "Nick meets Tom once more, on Fifth Avenue. Tom feels wronged, and admits without shame that he pointed Wilson at Gatsby. The Buchanans have packed up and gone, leaving others to clean up the mess - as they always do.",
+      "quote": {
+        "text": "They were careless people, Tom and Daisy—they smashed up things and creatures and then retreated back into their money",
+        "source": "The Great Gatsby, ch IX"
+      }
+    },
+    {
+      "kind": "handoff",
+      "chapter": 13,
+      "character": "nick",
+      "title": "done with the east",
+      "narration": "The house is closed, the summer over. Nick has had enough of the careless east, and turns for home - the long way back across the country he came from."
+    },
+    {
+      "kind": "journey",
+      "chapter": 13,
+      "from": "nicks-cottage",
+      "to": "nicks-midwest",
+      "character": "nick",
+      "title": "borne back",
+      "narration": "Sickened, Nick goes home to the Middle West. On his last night he sprawls on Gatsby’s deserted beach and thinks of the green light, and of a dream that was always behind him - and of all of us, boats against the current, borne back ceaselessly into the past.",
+      "quote": {
+        "text": "So we beat on, boats against the current, borne back ceaselessly into the past.",
+        "source": "The Great Gatsby, ch IX"
+      }
+    }
+  ]
+}

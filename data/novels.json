@@ -394,5 +394,17 @@
       "cloth": "#2c2b30",
       "text": "#d9b8a8"
     }
+  },
+  {
+    "id": "great-gatsby",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "year": 1925,
+    "file": "data/great-gatsby.json",
+    "blurb": "A poor boy remakes himself into Jay Gatsby and buys a mansion on Long Island for one reason: it stands across the bay from the woman he lost. All summer he throws vast parties as a lure, reaching for a green light at the end of her dock. It is a few hundred yards of water, and the whole distance between what he is and what he dreams - and it kills him.",
+    "spine": {
+      "cloth": "#1e3a34",
+      "text": "#d4af5f"
+    }
   }
 ]

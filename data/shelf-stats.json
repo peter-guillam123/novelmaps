@@ -40,7 +40,7 @@
     "spanLabel": "25 years"
   },
   "bleak-house": {
-    "distanceKm": 1563,
+    "distanceKm": 1886,
     "spanDays": 900,
     "spanLabel": "2 years"
   },
@@ -65,7 +65,7 @@
     "spanLabel": "9 years"
   },
   "jude-the-obscure": {
-    "distanceKm": 50007,
+    "distanceKm": 50000,
     "spanDays": 6570,
     "spanLabel": "18 years"
   },
@@ -115,7 +115,7 @@
     "spanLabel": "10 years"
   },
   "frankenstein": {
-    "distanceKm": 25791,
+    "distanceKm": 26350,
     "spanDays": 1095,
     "spanLabel": "3 years"
   },
@@ -125,7 +125,7 @@
     "spanLabel": "a summer"
   },
   "dracula": {
-    "distanceKm": 26916,
+    "distanceKm": 26945,
     "spanDays": 210,
     "spanLabel": "7 months"
   },
@@ -163,5 +163,10 @@
     "distanceKm": 22,
     "spanDays": 1,
     "spanLabel": "one day"
+  },
+  "great-gatsby": {
+    "distanceKm": 8336,
+    "spanDays": 100,
+    "spanLabel": "one summer"
   }
 }

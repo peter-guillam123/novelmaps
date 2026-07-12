@@ -58,6 +58,7 @@ export const SPANS = {
   'eighty-days': [80, '80 days'],
   'war-of-the-worlds': [15, '2 weeks'],
   'mrs-dalloway': [1, 'one day'],
+  'great-gatsby': [100, 'one summer'],
 };
 
 const R = 6371; // km
