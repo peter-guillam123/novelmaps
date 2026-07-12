@@ -91,11 +91,21 @@ shared journey (the focus is the first named).
    retells the book without inventing specifics the text doesn't have.
    The honesty badges underneath (place certainty, route provenance)
    are unchanged by the telling.
-7. **Write for a stranger.** Assume the viewer has not read the book.
-   Name characters on first appearance, say why a journey matters, and
-   prefer the concrete ("sent to a boarding school kept by a bully") to
-   the allusive ("the Salem House episode"). Editorial register, no
-   spoiler-coyness — the map is a retelling, it may tell.
+7. **Write for a stranger, and introduce everyone.** Assume the viewer
+   has not read the book. The first time a beat — or a place card — names
+   anyone outside the tracked cast, give them a one-line gloss: who they
+   are, with a *light characterising touch*, not a bare label. "The
+   fly-eating madman Renfield, now the Count's thrall"; "Charlotte's
+   court-proud father, Sir William"; "the careworn wife Stiva betrays". A
+   type or a telling detail — not a string of adjectives. Watch three
+   traps in particular: a title a character inherits mid-book (Arthur
+   Holmwood → Lord Godalming — the reader met "Arthur", so "Godalming"
+   reads as a new man); someone known only by relation then suddenly
+   named ("her mother" → "Joan"); and periphrasis ("Simon's son" for
+   Stephen). Then say why a journey matters, and prefer the concrete
+   ("sent to a boarding school kept by a bully") to the allusive ("the
+   Salem House episode"). Editorial register, no spoiler-coyness — the map
+   is a retelling, it may tell.
 8. **20–45 words a beat.** Under 20 usually isn't earning its stop;
    over ~60 won't be read (the rushes tool warns). Vary the rhythm:
    scene, journey, journey, scene reads better than strict alternation.
@@ -153,6 +163,14 @@ A script is never shipped on the first draft:
      the timed movements: the two paths really share that point, and the
      stated gap matches the clock. A crossing the data doesn't bear out is a
      lie, however good the line — cut it or fix the timing.
+   - **first-mention context** — every named person a newcomer wouldn't
+     know is introduced, at first mention (in a beat *or* a place card),
+     with a one-line gloss: a role or relationship *and* a light
+     characterising touch, not a bare name ("the fly-eating madman
+     Renfield, now the Count's thrall"). Watch the three traps from rule 7:
+     a title inherited mid-book (Arthur → Lord Godalming), a character
+     known only by relation then suddenly named ("her mother" → "Joan"),
+     and periphrasis ("Simon's son" for Stephen).
 
    This catches the class of error rushes is blind to. It has found, in
    practice: Mr Peggotty *walking* across France drawn as a sea voyage round
