@@ -251,6 +251,7 @@
       "id": "gatsby",
       "name": "Jay Gatsby",
       "colour": "madder",
+      "role": "The self-made dreamer who throws vast parties to win back Daisy",
       "start": {
         "location": "north-dakota",
         "chapter": 1
@@ -260,6 +261,7 @@
       "id": "nick",
       "name": "Nick Carraway",
       "colour": "slate",
+      "role": "The narrator, come east from the Midwest; Gatsby’s neighbour and Daisy’s cousin",
       "start": {
         "location": "nicks-midwest",
         "chapter": 5
@@ -269,6 +271,7 @@
       "id": "daisy",
       "name": "Daisy Buchanan",
       "colour": "prussian",
+      "role": "The woman across the bay, and the green light Gatsby reaches for",
       "start": {
         "location": "louisville",
         "chapter": 3
@@ -278,6 +281,7 @@
       "id": "tom",
       "name": "Tom Buchanan",
       "colour": "aubergine",
+      "role": "Daisy’s rich, brutal husband; old East Egg money",
       "start": {
         "location": "buchanans-house",
         "chapter": 5
@@ -287,6 +291,7 @@
       "id": "myrtle",
       "name": "Myrtle Wilson",
       "colour": "sienna",
+      "role": "Tom’s mistress, from the grey valley of ashes",
       "start": {
         "location": "valley-of-ashes",
         "chapter": 6
@@ -296,6 +301,7 @@
       "id": "wilson",
       "name": "George Wilson",
       "colour": "bottle",
+      "role": "Myrtle’s broken husband, who keeps the garage in the ashes",
       "start": {
         "location": "valley-of-ashes",
         "chapter": 6

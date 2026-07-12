@@ -289,6 +289,7 @@
       "id": "raskolnikov",
       "name": "Rodion Raskolnikov",
       "colour": "madder",
+      "role": "The destitute ex-student who murders a pawnbroker to test his theory",
       "start": {
         "location": "raskolnikov-garret",
         "chapter": 1
@@ -298,6 +299,7 @@
       "id": "sonia",
       "name": "Sonia Marmeladov",
       "colour": "ochre",
+      "role": "Driven onto the streets to feed her family; the soul who redeems him",
       "start": {
         "location": "sonia-room",
         "chapter": 3
@@ -307,6 +309,7 @@
       "id": "svidrigailov",
       "name": "Arkady Svidrigaïlov",
       "colour": "aubergine",
+      "role": "Raskolnikov’s dark double, a remorseless sensualist",
       "start": {
         "location": "svidrigailov-hotel",
         "chapter": 10
@@ -316,6 +319,7 @@
       "id": "porfiry",
       "name": "Porfiry Petrovitch",
       "colour": "slate",
+      "role": "The examining magistrate quietly closing the ring",
       "start": {
         "location": "porfiry-lodging",
         "chapter": 9
@@ -325,6 +329,7 @@
       "id": "marmeladov",
       "name": "Marmeladov",
       "colour": "sienna",
+      "role": "The ruined drunkard whose death draws Raskolnikov into the family",
       "start": {
         "location": "marmeladov-lodging",
         "chapter": 3

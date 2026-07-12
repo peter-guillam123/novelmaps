@@ -258,6 +258,7 @@
       "id": "anne",
       "name": "Anne Elliot",
       "colour": "madder",
+      "role": "Persuaded to give up Wentworth eight years ago; the quiet centre",
       "start": {
         "location": "kellynch-hall",
         "chapter": 1
@@ -267,6 +268,7 @@
       "id": "wentworth",
       "name": "Frederick Wentworth",
       "colour": "bottle",
+      "role": "The naval captain returned from the war, newly rich",
       "start": {
         "location": "kellynch-hall",
         "chapter": 5
@@ -276,6 +278,7 @@
       "id": "crofts",
       "name": "The Crofts",
       "colour": "slate",
+      "role": "The navy couple who rent Kellynch; Mrs Croft is Wentworth’s sister",
       "start": {
         "location": "plymouth",
         "chapter": 3
@@ -285,6 +288,7 @@
       "id": "sir-walter",
       "name": "Sir Walter Elliot",
       "colour": "aubergine",
+      "role": "The vain, spendthrift baronet who lets his seat and retreats to Bath",
       "start": {
         "location": "kellynch-hall",
         "chapter": 2
@@ -294,6 +298,7 @@
       "id": "louisa",
       "name": "Louisa Musgrove",
       "colour": "sienna",
+      "role": "The headstrong Musgrove girl whose fall on the Cobb turns the book",
       "start": {
         "location": "uppercross",
         "chapter": 5
