@@ -41,6 +41,7 @@ function scheduler(novel) {
 
   for (const c of novel.characters) {
     const legs = schedule[c.id];
+    // schedule in chapter order, exactly as the timeline does (cursor accumulates)
     legs.sort((a, b) => a.chapter - b.chapter);
     let cursor = c.start ? chapterDay(c.start.chapter) : 0;
     for (const m of legs) {
@@ -50,6 +51,9 @@ function scheduler(novel) {
       m._e = start + dur;
       cursor = m._e;
     }
+    // ...but resolve position in DAY order, so a leg with an explicit earlier
+    // startDay than a lower-chapter one doesn't leave the resolver on a stale rest.
+    legs.sort((a, b) => a._s - b._s);
   }
 
   return {
@@ -71,12 +75,15 @@ function scheduler(novel) {
       return { resting: restLoc };
     },
     movementDay(b) {
-      // a journey/removal plays from its movement's start day; a scene holds at
-      // its chapter's day.
-      if (b.kind === 'scene' || !b.from) return chapterDay(b.chapter);
+      // A scene holds at its own `day` if it carries one (the renderer does the
+      // same, js/story.js), else its chapter's day. A journey/removal plays from
+      // its movement's start day.
+      if (b.kind === 'scene' || !b.from) {
+        return typeof b.day === 'number' ? b.day : chapterDay(b.chapter);
+      }
       const foc = [].concat(b.character)[0];
       const m = movements.find((x) => x.character === foc && x.from === b.from && x.to === b.to && x.chapter === b.chapter);
-      return m ? m._s : chapterDay(b.chapter);
+      return m ? m._s : (typeof b.day === 'number' ? b.day : chapterDay(b.chapter));
     },
   };
 }
