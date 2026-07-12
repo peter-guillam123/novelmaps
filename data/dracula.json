@@ -1513,6 +1513,51 @@
       "mode": "unknown"
     },
     {
+      "character": "dracula",
+      "from": "carfax",
+      "to": "piccadilly",
+      "chapter": 13,
+      "startDay": 141,
+      "days": 1,
+      "mode": "coach",
+      "via": [
+        {
+          "at": [
+            0.08,
+            51.54
+          ],
+          "name": "Barking",
+          "note": "In from Purfleet along the north bank through Barking and the East End, then across town to Piccadilly."
+        }
+      ],
+      "routeNote": "A carriage up from Purfleet through Barking and east London to Piccadilly - the Count abroad in the daylight, as Harker sees him outside the shop.",
+      "routeSource": "Ch. 13: Harker sees the Count, grown young and dark, in the Piccadilly crowd by day; the road up from Purfleet runs through Barking and the East End.",
+      "routeCertainty": "reconstructed",
+      "note": "A daylight foray into the West End - the sighting in Piccadilly. He returns east to Carfax the same evening."
+    },
+    {
+      "character": "dracula",
+      "from": "piccadilly",
+      "to": "carfax",
+      "chapter": 13,
+      "startDay": 144,
+      "days": 1,
+      "mode": "coach",
+      "via": [
+        {
+          "at": [
+            0.08,
+            51.54
+          ],
+          "name": "Barking",
+          "note": "Back east through Barking to Purfleet and the boxes at Carfax."
+        }
+      ],
+      "routeNote": "The carriage back east to Purfleet, the Count withdrawing to his grave-earth at Carfax.",
+      "routeSource": "Ch. 13: the sighting is a single daylight appearance; the Count's English refuge is Carfax at Purfleet.",
+      "routeCertainty": "reconstructed"
+    },
+    {
       "character": [
         "jonathan",
         "mina"
@@ -2887,6 +2932,15 @@
     },
     {
       "kind": "journey",
+      "character": "dracula",
+      "from": "carfax",
+      "to": "piccadilly",
+      "chapter": 13,
+      "title": "The Count comes up to town",
+      "narration": "That same day the Count himself had come up from Purfleet into the West End by carriage, bold in the daylight - grown young again, his white hair and moustache turned dark - to walk in the Piccadilly crowd and hunt with his eyes."
+    },
+    {
+      "kind": "journey",
       "character": [
         "jonathan",
         "mina"
@@ -2907,6 +2961,15 @@
       "to": "exeter",
       "chapter": 13,
       "narration": "Shaken, the Harkers had gone home to Exeter with their secret, and their proof - Jonathan's castle real, then, and here; and Mina, who had read his sealed journal, knowing it too. Now, summoned, they leave that quiet house for good."
+    },
+    {
+      "kind": "removal",
+      "character": "dracula",
+      "from": "piccadilly",
+      "to": "carfax",
+      "chapter": 13,
+      "title": "Back to his earth",
+      "narration": "His daylight prowl over, the Count drew back east out of town, down to Purfleet and the boxes of grave-earth at Carfax, to lie the day's end out and wait for the dark to come round again."
     },
     {
       "kind": "scene",
