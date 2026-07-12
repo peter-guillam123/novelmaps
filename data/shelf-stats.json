@@ -168,5 +168,10 @@
     "distanceKm": 8336,
     "spanDays": 100,
     "spanLabel": "one summer"
+  },
+  "crime-and-punishment": {
+    "distanceKm": 3135,
+    "spanDays": 14,
+    "spanLabel": "a fortnight"
   }
 }

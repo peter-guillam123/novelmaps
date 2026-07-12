@@ -406,5 +406,17 @@
       "cloth": "#1e3a34",
       "text": "#d4af5f"
     }
+  },
+  {
+    "id": "crime-and-punishment",
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "year": 1866,
+    "file": "data/crime-and-punishment.json",
+    "blurb": "A starving ex-student in St Petersburg talks himself into a theory - that an extraordinary man may step over any law - and murders a pawnbroker with an axe to prove he is one. The killing traps him: for the length of the book he cannot leave the few hundred yards of the Hay Market where he did it, circling the scene, the square, and the girl who will not let him lie - until confession sends him two thousand miles east.",
+    "spine": {
+      "cloth": "#3a2529",
+      "text": "#c2b9a6"
+    }
   }
 ]

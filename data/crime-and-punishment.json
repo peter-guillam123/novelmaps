@@ -1,0 +1,1324 @@
+{
+  "title": "Crime and Punishment",
+  "author": "Fyodor Dostoevsky",
+  "year": 1866,
+  "gutenbergId": 2554,
+  "overture": "A starving student in St Petersburg convinces himself that an extraordinary man may step over any law, and murders a pawnbroker to prove it - then spends the whole book unable to leave the few hundred yards of the Hay Market where he did it, until confession sends him two thousand miles east.",
+  "mapHome": {
+    "bounds": [
+      [
+        30.295,
+        59.921
+      ],
+      [
+        30.325,
+        59.93
+      ]
+    ]
+  },
+  "timeline": {
+    "epoch": null,
+    "calendar": false,
+    "span": "a fortnight, and the sentence",
+    "duration": "a fortnight",
+    "unit": "day"
+  },
+  "sources": [
+    "Dostoevsky masked the street names for the censor but used the real topography of his own Hay Market neighbourhood; his widow and later scholars filled in the addresses.",
+    "Garret: Stolyarny Lane 5 / Grazhdanskaya 19 (memorial relief); pawnbroker: Griboyedov Canal 104; Sonia: Griboyedov Canal 73 - the ~730 paces between garret and pawnbroker are a real short walk.",
+    "The epilogue’s unnamed “town on the Irtish” is the Omsk fortress, the prison of Dostoevsky’s own 1850-54 sentence (“The House of the Dead”).",
+    "Sources: the Dostoevsky-Petersburg walking-tour literature (adequatica; saint-petersburg.com), Mapping Petersburg (Bard College), the Dostoevsky Museum."
+  ],
+  "regions": [
+    {
+      "id": "the-haymarket",
+      "name": "The Hay Market"
+    },
+    {
+      "id": "the-bridges",
+      "name": "The bridges and the Neva"
+    },
+    {
+      "id": "the-edge",
+      "name": "The city’s edge"
+    },
+    {
+      "id": "siberia",
+      "name": "Siberia"
+    }
+  ],
+  "locations": [
+    {
+      "id": "raskolnikov-garret",
+      "region": "the-haymarket",
+      "name": "Stolyarny Lane 5 / Grazhdanskaya 19, St Petersburg",
+      "novelName": "Raskolnikov’s garret",
+      "coords": [
+        30.3132,
+        59.9266
+      ],
+      "certainty": "identified",
+      "note": "The corner house on the novel’s “S. Lane” by “K. Bridge”; a memorial relief on Grazhdanskaya 19 now reads “House of Raskolnikov”. The attic room is up 13 steps under the roof.",
+      "story": "The “coffin” of a garret where the poor ex-student Raskolnikov lies for days, starving and feverish, and hatches his theory that an extraordinary man may step over any law - even to murder. Everything in the book begins and ends within a few hundred yards of this door.",
+      "imageBlank": "No honest period view of the Stolyarny/Grazhdanskaya tenement came to hand; the district’s period images are the market square and the canal (used elsewhere), and a generic courtyard would be filler."
+    },
+    {
+      "id": "pawnbroker-flat",
+      "region": "the-haymarket",
+      "name": "Griboyedov Canal Embankment 104, St Petersburg",
+      "novelName": "the pawnbroker’s flat",
+      "coords": [
+        30.301,
+        59.9243
+      ],
+      "certainty": "identified",
+      "note": "The big house wrapping three streets on the Griboyedov (then Ekaterininsky) Canal; fourth storey. The scholar-consensus site of the murders, about 700m - Dostoevsky’s “exactly seven hundred and thirty” paces - from the garret.",
+      "story": "The flat of the old money-lender Alyona Ivanovna. Here Raskolnikov brings the axe down on her, and then, when her gentle sister Lizaveta walks in, on her too - the second, unplanned killing that damns him. The crime the whole book is the punishment for.",
+      "image": {
+        "file": "assets/images/cp-pawnbroker-flat.jpg",
+        "caption": "The Ekaterininsky (now Griboyedov) Canal and its embankment houses, photographed c.1905-1915 - the canal and its milieu, not the pawnbroker’s exact house (the church at left post-dates the novel).",
+        "credit": "Sergey Prokudin-Gorsky · Library of Congress via Wikimedia Commons · public domain",
+        "indicative": true
+      }
+    },
+    {
+      "id": "sonia-room",
+      "region": "the-haymarket",
+      "name": "Griboyedov Canal Embankment 73, St Petersburg",
+      "novelName": "Sonia’s room",
+      "coords": [
+        30.307,
+        59.9256
+      ],
+      "certainty": "identified",
+      "note": "The irregular room Sonia rents in the tailor Kapernaumov’s flat, on the canal a little down from the pawnbroker’s. Katerina Ivanovna dies here.",
+      "story": "Where Sonia Marmeladov - driven onto the streets to feed her stepmother’s children - reads Raskolnikov the raising of Lazarus, and where he first confesses the murder to her. She becomes the one soul he cannot lie to, and the one who will follow him to Siberia.",
+      "imageBlank": "A private rented room; nothing specific to photograph honestly."
+    },
+    {
+      "id": "sennaya",
+      "region": "the-haymarket",
+      "name": "Sennaya Ploshchad (the Hay Market), St Petersburg",
+      "novelName": "the Hay Market",
+      "coords": [
+        30.318,
+        59.927
+      ],
+      "certainty": "real",
+      "note": "The real market square at the heart of the slum district; named throughout the novel.",
+      "story": "The teeming square Raskolnikov is compulsively drawn back to, day after day, as if the crime were a magnet. Here, near the end, on Sonia’s counsel, he kneels down and kisses the filthy earth before the whole market - the first act of his confession.",
+      "image": {
+        "file": "assets/images/cp-sennaya.jpg",
+        "caption": "Sennaya Ploshchad (the Hay Market), St Petersburg, with its church, hay carts and market crowds; lithograph after Alexander Brullov, 1822 - the same square Raskolnikov haunts.",
+        "credit": "Alexander Brullov · Web Gallery of Art via Wikimedia Commons · public domain",
+        "indicative": false
+      }
+    },
+    {
+      "id": "police-office",
+      "region": "the-haymarket",
+      "name": "the district police bureau (Sadovaya 58, one of two candidates)",
+      "novelName": "the police bureau",
+      "coords": [
+        30.3155,
+        59.9248
+      ],
+      "certainty": "conjectured",
+      "note": "The novel puts it up “…sky Lane”, fourth floor. Two real buildings are proposed (the Kazan office on the canal, and Spasskaya at Sadovaya 58); no single agreed address, so this pin is honestly open.",
+      "story": "Where Raskolnikov is first summoned over a trivial debt - and nearly faints when the talk turns to the murder - and where, at the very last, he climbs the stairs to say the words aloud: that it was he who killed the old pawnbroker and her sister.",
+      "imageBlank": "The police bureau is one of two unidentified candidate buildings; no honest specific image."
+    },
+    {
+      "id": "porfiry-lodging",
+      "region": "the-haymarket",
+      "name": "Porfiry Petrovitch’s government flat, near the Hay Market",
+      "novelName": "Porfiry’s lodging",
+      "coords": [
+        30.312,
+        59.9252
+      ],
+      "certainty": "conjectured",
+      "note": "The examining magistrate’s official flat, where the two long duels of wits happen; not fixed to an address, placed within the Hay Market district.",
+      "story": "Where the examining magistrate Porfiry Petrovitch draws Raskolnikov into two long, smiling interrogations - circling his own published theory that an “extraordinary man” has the right to step over blood - never accusing, always knowing. The mind that hunts the murderer as the murderer hunts himself.",
+      "imageBlank": "Porfiry’s flat is unlocated; nothing specific to photograph."
+    },
+    {
+      "id": "marmeladov-tavern",
+      "region": "the-haymarket",
+      "name": "a cellar pot-house near the Hay Market",
+      "novelName": "the tavern",
+      "coords": [
+        30.315,
+        59.9268
+      ],
+      "certainty": "conjectured",
+      "note": "The nameless drinking-cellar near Sennaya where Raskolnikov meets Marmeladov; not fixed to a door.",
+      "story": "The reeking cellar where the ruined drunkard Marmeladov pours out his confession to Raskolnikov - his daughter Sonia driven onto the streets, his wife consumptive - and asks the question that haunts the book: do you understand what it means when you have nowhere left to turn?",
+      "imageBlank": "A nameless drinking-cellar; fictional, nothing specific to photograph."
+    },
+    {
+      "id": "marmeladov-lodging",
+      "region": "the-haymarket",
+      "name": "the Marmeladovs’ rooms (Kozel’s house), off the Hay Market",
+      "novelName": "the Marmeladovs’ rooms",
+      "coords": [
+        30.3145,
+        59.9282
+      ],
+      "certainty": "conjectured",
+      "note": "Katerina Ivanovna’s single rented room off a courtyard near the Hay Market; the house is unlocated. Marmeladov is carried here to die; the funeral dinner erupts here.",
+      "story": "The wretched room where Marmeladov, run down by a carriage in the street outside, is carried home to die in his family’s arms - and where, days later, the funeral dinner collapses into chaos as Luzhin frames Sonia for theft to spite Raskolnikov.",
+      "imageBlank": "The Marmeladovs’ room (Kozel’s house) is unlocated; nothing specific to photograph."
+    },
+    {
+      "id": "crystal-palace",
+      "region": "the-haymarket",
+      "name": "the “Crystal Palace” tavern, Voznesensky Prospekt 45",
+      "novelName": "the Crystal Palace tavern",
+      "coords": [
+        30.305,
+        59.9238
+      ],
+      "certainty": "identified",
+      "note": "A real tavern named in the guide literature at this address.",
+      "story": "The tavern where Raskolnikov, half-daring discovery, reads the newspaper report of the murder and taunts the young police clerk Zametov - and one of the drinking-places where, later, he crosses paths with the cold, watchful Svidrigaïlov, his own dark double.",
+      "imageBlank": "A named tavern with no surviving honest period image; nothing specific to show."
+    },
+    {
+      "id": "stolen-purse-stone",
+      "region": "the-haymarket",
+      "name": "a courtyard off Voznesensky Prospekt",
+      "novelName": "the stone in the yard",
+      "coords": [
+        30.3038,
+        59.9285
+      ],
+      "certainty": "conjectured",
+      "note": "The blank-walled court off “V. Prospect” where he hides the loot under a slab; no agreed building, placed on the route he walks after the murder.",
+      "story": "Reeling from the murders, Raskolnikov shoves the pawnbroker’s purse and trinkets under a stone in an empty yard and never spends a rouble of it - the plunder was never the point, and the theory is already eating him alive.",
+      "imageBlank": "An anonymous courtyard off Voznesensky Prospekt; no honest specific image."
+    },
+    {
+      "id": "svidrigailov-hotel",
+      "region": "the-haymarket",
+      "name": "Svidrigaïlov’s lodging by the canal",
+      "novelName": "Svidrigaïlov’s lodging",
+      "coords": [
+        30.309,
+        59.9255
+      ],
+      "certainty": "conjectured",
+      "note": "His rooms lie on the canal right beside Sonia’s (he takes them on purpose, to eavesdrop through the wall); the squalid hotel of his last night is the same quarter. No fixed address.",
+      "story": "Where Svidrigaïlov - Raskolnikov’s dark double, a sensualist trailing ruined lives, rumoured to have driven his own wife to her grave - lodges beside Sonia to listen through the wall, corners Dounia and is driven off at gunpoint, and spends his final sleepless night before walking out to die.",
+      "imageBlank": "A squalid canal-side hotel room; fictional, nothing specific to photograph."
+    },
+    {
+      "id": "voznesensky-bridge",
+      "region": "the-bridges",
+      "name": "Voznesensky Bridge over the Griboyedov Canal",
+      "novelName": "the canal bridge",
+      "coords": [
+        30.3053,
+        59.925
+      ],
+      "certainty": "real",
+      "note": "The canal crossing that recurs; the best candidate for the novel’s “…sky Bridge”, where the drowning happens.",
+      "story": "The canal bridge where Raskolnikov, staring into the black water, half-means to drown himself - until a desperate woman throws herself in before his eyes, and he turns away, unable even to die.",
+      "imageBlank": "No honest period image of the modest Voznesensky canal bridge came to hand; the only period Petersburg bridge photos are the grand Neva landmarks, which would misrepresent it."
+    },
+    {
+      "id": "nikolaevsky-bridge",
+      "region": "the-bridges",
+      "name": "Nikolaevsky Bridge over the Neva",
+      "novelName": "Nikolaevsky Bridge",
+      "coords": [
+        30.2915,
+        59.9327
+      ],
+      "certainty": "real",
+      "note": "Over the Neva (today’s Blagoveshchensky Bridge), just north of the Hay Market box - the camera travels here.",
+      "story": "On the great bridge over the Neva a carriage nearly rides him down and an old woman in a kerchief, taking him for a beggar, presses a coin into his hand “in Christ’s name”. He stares at the cold shining panorama of the capital that has no place for him, and flings the coin into the river.",
+      "image": {
+        "file": "assets/images/cp-nikolaevsky-bridge.jpg",
+        "caption": "The Nikolaevsky Bridge over the Neva (today’s Blagoveshchensky Bridge), with the chapel of St Nicholas and St Isaac’s beyond; photographed 1861-1865, the novel’s own decade.",
+        "credit": "A. F. Lorens · via Wikimedia Commons · public domain",
+        "indicative": false
+      }
+    },
+    {
+      "id": "svidrigailov-suicide",
+      "region": "the-edge",
+      "name": "the fire-watchtower, Syezzhinskaya ulitsa (Petrograd Side)",
+      "novelName": "the watchtower",
+      "coords": [
+        30.296,
+        59.9538
+      ],
+      "certainty": "identified",
+      "note": "The Petrogradsky-district fire station with its tall watchtower (kalancha), still standing, far north across the Neva - a deliberate camera flight out of the box.",
+      "story": "At grey dawn Svidrigaïlov walks to the fire-tower on the city’s edge, tells the bewildered sentry he is “going to America”, and shoots himself - the double who takes the other road out, the one Raskolnikov turns away from.",
+      "image": {
+        "file": "assets/images/cp-svidrigailov-suicide.jpg",
+        "caption": "A St Petersburg police-and-fire station house with its watchtower (kalancha); lithograph after André Durand, 1839 - an indicative view of the kind of fire-tower before which Svidrigaïlov shoots himself, not the Syezzhinskaya tower itself.",
+        "credit": "André Durand, 1839 lithograph · via Wikimedia Commons · public domain",
+        "indicative": true
+      }
+    },
+    {
+      "id": "omsk-prison",
+      "region": "siberia",
+      "name": "the convict fortress at Omsk, on the Irtish",
+      "novelName": "the prison on the Irtish",
+      "coords": [
+        73.369,
+        54.99
+      ],
+      "certainty": "identified",
+      "note": "The book names only “a town… on the banks of the Irtish”; the real place is the wooden ostrog inside the Omsk fortress, entered by the Tara Gate - the prison of Dostoevsky’s own 1850-54 sentence and “The House of the Dead”.",
+      "story": "Two thousand miles east, across the Urals and the whole width of Russia, Raskolnikov serves eight years’ penal servitude - and here, at last, with Sonia settled nearby and waiting, the ice in him begins to break, and a new life he has not yet earned or understood opens before him.",
+      "image": {
+        "file": "assets/images/cp-omsk-prison.jpg",
+        "caption": "The Tara Gate of the Omsk fortress - the surviving gate of the ostrog where Dostoevsky himself served katorga, the model for Raskolnikov’s Siberian prison; postcard photograph, 1916.",
+        "credit": "Suvorin & Co. postcard, Scherer, Nabholz & Co., Moscow, 1916 · via Wikimedia Commons · public domain",
+        "indicative": true
+      }
+    }
+  ],
+  "characters": [
+    {
+      "id": "raskolnikov",
+      "name": "Rodion Raskolnikov",
+      "colour": "madder",
+      "start": {
+        "location": "raskolnikov-garret",
+        "chapter": 1
+      }
+    },
+    {
+      "id": "sonia",
+      "name": "Sonia Marmeladov",
+      "colour": "ochre",
+      "start": {
+        "location": "sonia-room",
+        "chapter": 3
+      }
+    },
+    {
+      "id": "svidrigailov",
+      "name": "Arkady Svidrigaïlov",
+      "colour": "aubergine",
+      "start": {
+        "location": "svidrigailov-hotel",
+        "chapter": 10
+      }
+    },
+    {
+      "id": "porfiry",
+      "name": "Porfiry Petrovitch",
+      "colour": "slate",
+      "start": {
+        "location": "porfiry-lodging",
+        "chapter": 9
+      }
+    },
+    {
+      "id": "marmeladov",
+      "name": "Marmeladov",
+      "colour": "sienna",
+      "start": {
+        "location": "marmeladov-lodging",
+        "chapter": 3
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "n": 1,
+      "day": 0,
+      "when": "the theory, in the garret"
+    },
+    {
+      "n": 2,
+      "day": 1,
+      "when": "the rehearsal - seven hundred and thirty steps"
+    },
+    {
+      "n": 3,
+      "day": 1,
+      "when": "nowhere to turn: Marmeladov"
+    },
+    {
+      "n": 4,
+      "day": 3,
+      "when": "the sign in the Hay Market"
+    },
+    {
+      "n": 5,
+      "day": 4,
+      "when": "the murders"
+    },
+    {
+      "n": 6,
+      "day": 5,
+      "when": "the stone, and the bridge"
+    },
+    {
+      "n": 7,
+      "day": 7,
+      "when": "baiting the law"
+    },
+    {
+      "n": 8,
+      "day": 8,
+      "when": "Marmeladov’s death"
+    },
+    {
+      "n": 9,
+      "day": 10,
+      "when": "the first interview"
+    },
+    {
+      "n": 10,
+      "day": 12,
+      "when": "the raising of Lazarus"
+    },
+    {
+      "n": 11,
+      "day": 13,
+      "when": "the second interview"
+    },
+    {
+      "n": 12,
+      "day": 15,
+      "when": "the confession to Sonia"
+    },
+    {
+      "n": 13,
+      "day": 17,
+      "when": "Svidrigaïlov’s last night"
+    },
+    {
+      "n": 14,
+      "day": 19,
+      "when": "the earth, and the confession"
+    },
+    {
+      "n": 15,
+      "day": 550,
+      "when": "Siberia, and a new story"
+    }
+  ],
+  "movements": [
+    {
+      "character": "raskolnikov",
+      "from": "raskolnikov-garret",
+      "to": "pawnbroker-flat",
+      "chapter": 2,
+      "mode": "foot",
+      "days": 0.02,
+      "note": "The rehearsal. He walks from his gate to the pawnbroker’s - a distance he has counted to the step, exactly seven hundred and thirty - to test the old woman’s locks and his own nerve for the thing he can hardly admit he means to do.",
+      "routeCertainty": "documented",
+      "routeSource": "P1 ch1: “exactly seven hundred and thirty” steps from his gate to the pawnbroker’s."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "pawnbroker-flat",
+      "to": "marmeladov-tavern",
+      "chapter": 3,
+      "mode": "foot",
+      "days": 0.1,
+      "note": "Shaken by the rehearsal, he turns into a cellar pot-house near the Hay Market for a drink he can barely afford, and falls into talk with a ruined drunkard.",
+      "routeCertainty": "reconstructed",
+      "routeSource": "P1 ch2: after the visit he goes into a tavern and meets Marmeladov."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "marmeladov-tavern",
+      "to": "marmeladov-lodging",
+      "chapter": 3,
+      "mode": "foot",
+      "days": 0.1,
+      "note": "He half-carries the helpless Marmeladov home through the streets to the single room where the man’s consumptive wife and starving children wait.",
+      "routeCertainty": "reconstructed",
+      "routeSource": "P1 ch2: Raskolnikov helps Marmeladov home."
+    },
+    {
+      "character": "marmeladov",
+      "from": "marmeladov-lodging",
+      "to": "marmeladov-tavern",
+      "chapter": 3,
+      "mode": "foot",
+      "days": 0.1,
+      "note": "Marmeladov, a title-less clerk drunk away to nothing, has crept out again to the cellar tavern, spending the boots off his family’s feet - the night he pours his whole ruin out to a stranger.",
+      "routeCertainty": "reconstructed",
+      "routeSource": "P1 ch2: Marmeladov in the tavern."
+    },
+    {
+      "character": "marmeladov",
+      "from": "marmeladov-tavern",
+      "to": "marmeladov-lodging",
+      "chapter": 3,
+      "mode": "foot",
+      "days": 0.1,
+      "note": "Raskolnikov walks him home to the room where his wife will beat him and weep over him in the same breath.",
+      "startDay": 1.2,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P1 ch2: carried home."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "marmeladov-lodging",
+      "to": "raskolnikov-garret",
+      "chapter": 3,
+      "mode": "foot",
+      "days": 0.15,
+      "note": "Home again to the garret, having left almost his last coins on the Marmeladovs’ windowsill - a pity that will pull him back to this family again and again.",
+      "startDay": 1.5,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P1 ch2: he returns home."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "raskolnikov-garret",
+      "to": "sennaya",
+      "chapter": 4,
+      "mode": "foot",
+      "days": 0.1,
+      "note": "Days of fever and dread, then a chance walk through the Hay Market - where, at a tradesman’s stall, he overhears that the pawnbroker’s sister Lizaveta will be away at seven the next evening. The old woman will be alone. He takes it for a sign.",
+      "routeCertainty": "reconstructed",
+      "routeSource": "P1 ch5: in the Hay Market he overhears that Lizaveta will be out."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "sennaya",
+      "to": "raskolnikov-garret",
+      "chapter": 4,
+      "mode": "foot",
+      "days": 0.1,
+      "note": "Back to the garret in a kind of trance, everything decided for him, as if he were being led by the hand to a doom he has stopped resisting.",
+      "startDay": 3.3,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P1 ch5-6: he returns, the resolve set."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "raskolnikov-garret",
+      "to": "pawnbroker-flat",
+      "chapter": 5,
+      "mode": "foot",
+      "days": 0.02,
+      "note": "The same seven hundred and thirty steps, this time with an axe hidden under his coat. He murders Alyona Ivanovna with the blade’s blunt side - and then her gentle, defenceless sister Lizaveta, who walks in on the blood, is killed too. The second, unmeant killing is the one that will never let him go.",
+      "routeCertainty": "documented",
+      "routeSource": "P1 ch6-7: the murders of Alyona and Lizaveta."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "pawnbroker-flat",
+      "to": "raskolnikov-garret",
+      "chapter": 5,
+      "mode": "foot",
+      "days": 0.03,
+      "note": "He escapes down the stairs almost caught, and reels home to hide the axe and the few snatched trinkets, and to fall into a delirium that lasts for days.",
+      "startDay": 4.1,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P1 ch7 - P2 ch1: he gets home and collapses."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "raskolnikov-garret",
+      "to": "police-office",
+      "chapter": 6,
+      "mode": "foot",
+      "days": 0.1,
+      "note": "A summons to the police bureau over a trivial unpaid debt throws him into terror; and when the officers fall to talking of the murder, he faints dead away on their floor - the first crack in him.",
+      "routeCertainty": "reconstructed",
+      "routeSource": "P2 ch1: summoned over the IOU, he faints when the murder is discussed."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "police-office",
+      "to": "stolen-purse-stone",
+      "chapter": 6,
+      "mode": "foot",
+      "days": 0.1,
+      "note": "Half-mad with the certainty he is suspected, he snatches up the stolen things and hunts the streets for somewhere to be rid of them, at last shoving the purse under a great stone in an empty courtyard off Voznesensky Prospekt.",
+      "startDay": 5.2,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P2 ch2: he hides the loot under the stone."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "stolen-purse-stone",
+      "to": "nikolaevsky-bridge",
+      "chapter": 6,
+      "mode": "foot",
+      "days": 0.15,
+      "note": "Wandering out to the great bridge over the Neva, he is lashed by a coachman’s whip and a passing woman, taking him for a beggar, presses a coin into his hand. He looks at the cold, magnificent city that has no place for him, and flings the coin into the river.",
+      "startDay": 5.4,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P2 ch2: the Nikolaevsky Bridge, the lash, the alms, the coin in the Neva."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "nikolaevsky-bridge",
+      "to": "raskolnikov-garret",
+      "chapter": 6,
+      "mode": "foot",
+      "days": 0.2,
+      "note": "Back to the garret and days more of fever, nursed despite himself by his one loyal friend Razumihin.",
+      "startDay": 5.7,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P2 ch3: he returns and lies ill."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "raskolnikov-garret",
+      "to": "crystal-palace",
+      "chapter": 7,
+      "mode": "foot",
+      "days": 0.15,
+      "note": "Restless, reckless, he walks out to the Crystal Palace tavern, reads the newspaper reports of the murder over and over, and all but dares the young police clerk Zametov to accuse him.",
+      "routeCertainty": "reconstructed",
+      "routeSource": "P2 ch6: the Crystal Palace, the newspapers, the taunting of Zametov."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "crystal-palace",
+      "to": "voznesensky-bridge",
+      "chapter": 7,
+      "mode": "foot",
+      "days": 0.1,
+      "note": "On the canal bridge he stands looking down into the black water, half-meaning to end it - and a woman throws herself in before his eyes. He turns away; he cannot even do that.",
+      "startDay": 7.2,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P2 ch6: the bridge, the drowning woman."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "voznesensky-bridge",
+      "to": "pawnbroker-flat",
+      "chapter": 7,
+      "mode": "foot",
+      "days": 0.15,
+      "note": "Then, drawn by the thing he most dreads, he walks back to the murder flat itself, climbs to the door, and rings the bell to hear again the sound that has been ringing in his skull.",
+      "startDay": 7.4,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P2 ch6: he returns to the empty flat and rings the bell."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "pawnbroker-flat",
+      "to": "marmeladov-lodging",
+      "chapter": 8,
+      "mode": "foot",
+      "days": 0.2,
+      "note": "Leaving the flat he comes on a crowd in the street: Marmeladov, run down by a carriage, is being carried home to die. Raskolnikov helps, and gives the family the last of his own money for the funeral.",
+      "routeCertainty": "reconstructed",
+      "routeSource": "P2 ch7: he finds Marmeladov run over and helps carry him home to die."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "marmeladov-lodging",
+      "to": "raskolnikov-garret",
+      "chapter": 8,
+      "mode": "foot",
+      "days": 0.2,
+      "note": "He walks home lighter than he has felt in days, warmed by one plain act of pity - and finds his mother and sister, arrived from the provinces, waiting in his room.",
+      "startDay": 8.4,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P2 ch7: he goes home; Pulcheria and Dounia have arrived."
+    },
+    {
+      "character": "sonia",
+      "from": "sonia-room",
+      "to": "raskolnikov-garret",
+      "chapter": 3,
+      "mode": "foot",
+      "days": 0.2,
+      "note": "Sonia crosses the city to Raskolnikov’s garret to carry an invitation to her father’s funeral dinner - shy, disgraced, and unaccountably drawn to the strange young man who was kind to her family.",
+      "startDay": 8.6,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P3 ch4: Sonia brings the funeral invitation to Raskolnikov."
+    },
+    {
+      "character": "sonia",
+      "from": "raskolnikov-garret",
+      "to": "sonia-room",
+      "chapter": 3,
+      "mode": "foot",
+      "days": 0.2,
+      "note": "She hurries home along the canal, not knowing the man she has just met is her father’s benefactor and her own coming salvation - and damnation shared.",
+      "startDay": 8.9,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P3 ch4: she returns home."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "raskolnikov-garret",
+      "to": "porfiry-lodging",
+      "chapter": 9,
+      "mode": "foot",
+      "days": 0.15,
+      "note": "On the pretext of reclaiming his pledges he goes with Razumihin to the examining magistrate, Porfiry Petrovitch - who steers the talk, smiling, to Raskolnikov’s own published article on the “extraordinary man” who may step over blood.",
+      "routeCertainty": "reconstructed",
+      "routeSource": "P3 ch5: the first interview at Porfiry’s."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "porfiry-lodging",
+      "to": "raskolnikov-garret",
+      "chapter": 9,
+      "mode": "foot",
+      "days": 0.15,
+      "note": "He comes away certain Porfiry knows everything and can prove nothing - the duel joined, and no way now to stop it.",
+      "startDay": 10.3,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P3 ch5-6: he leaves the interview."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "raskolnikov-garret",
+      "to": "sonia-room",
+      "chapter": 10,
+      "mode": "foot",
+      "days": 0.2,
+      "note": "He goes at last to Sonia’s room on the canal, and there, the murderer and the harlot together over the one book, has her read him the raising of Lazarus from the dead.",
+      "routeCertainty": "reconstructed",
+      "routeSource": "P4 ch4: the first visit to Sonia; the reading of Lazarus."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "sonia-room",
+      "to": "raskolnikov-garret",
+      "chapter": 10,
+      "mode": "foot",
+      "days": 0.2,
+      "note": "Home again, having told her he will come back and tell her who killed Lizaveta - not knowing Svidrigaïlov has heard every word through the wall.",
+      "startDay": 12.3,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P4 ch4-5: he leaves; Svidrigaïlov has been listening."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "raskolnikov-garret",
+      "to": "porfiry-lodging",
+      "chapter": 11,
+      "mode": "foot",
+      "days": 0.15,
+      "note": "A second summons to Porfiry, who plays him like a hooked fish - until the whole trap springs loose when a house-painter, Nikolay, bursts in and falsely confesses to the murder.",
+      "routeCertainty": "reconstructed",
+      "routeSource": "P4 ch5: the second interview; Nikolay’s false confession."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "porfiry-lodging",
+      "to": "raskolnikov-garret",
+      "chapter": 11,
+      "mode": "foot",
+      "days": 0.15,
+      "note": "Reprieved for a moment, he walks home knowing the reprieve is only that - Porfiry is more certain than ever, and only waiting.",
+      "startDay": 13.3,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P4-5: he leaves, the pressure unrelieved."
+    },
+    {
+      "character": "svidrigailov",
+      "from": "svidrigailov-hotel",
+      "to": "crystal-palace",
+      "chapter": 11,
+      "mode": "foot",
+      "days": 0.15,
+      "note": "Svidrigaïlov, who has followed Raskolnikov’s sister Dounia to the city and taken the room next to Sonia’s to listen through the wall, drifts through the taverns and pleasure-gardens of the quarter - a man wholly, chillingly at ease with his own crimes.",
+      "startDay": 13.6,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P6 ch3: Svidrigaïlov haunts the taverns of the quarter; the bath-house-of-eternity image is his own, from P4 ch1."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "raskolnikov-garret",
+      "to": "sonia-room",
+      "chapter": 12,
+      "mode": "foot",
+      "days": 0.2,
+      "note": "He returns to Sonia and, unable to carry it alone another hour, confesses: it was he who killed the old pawnbroker and Lizaveta. He did it, he says, not for money but to dare - to know whether he was a man who could step over.",
+      "routeCertainty": "reconstructed",
+      "routeSource": "P5 ch4: the confession to Sonia."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "sonia-room",
+      "to": "raskolnikov-garret",
+      "chapter": 13,
+      "mode": "foot",
+      "days": 0.2,
+      "note": "He goes home through streets that have just seen Katerina Ivanovna die - the whole Marmeladov family destroyed - Sonia’s counsel ringing in him: go to the cross-roads, kiss the earth, and confess aloud.",
+      "startDay": 15.6,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P5 ch4-5: he leaves; Katerina dies at Sonia’s."
+    },
+    {
+      "character": "porfiry",
+      "from": "porfiry-lodging",
+      "to": "raskolnikov-garret",
+      "chapter": 12,
+      "mode": "foot",
+      "days": 0.15,
+      "note": "The magistrate reverses the game and comes to Raskolnikov’s own room - no longer circling, but plain: he knows, there is no one else it can be, and the best thing, the only thing, is to confess and take the lighter sentence it will earn.",
+      "startDay": 16,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P6 ch2: Porfiry visits Raskolnikov and urges him to confess."
+    },
+    {
+      "character": "porfiry",
+      "from": "raskolnikov-garret",
+      "to": "porfiry-lodging",
+      "chapter": 12,
+      "mode": "foot",
+      "days": 0.15,
+      "note": "He leaves the young man to make the choice himself - the one mercy the law can offer.",
+      "startDay": 16.3,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P6 ch2: Porfiry departs."
+    },
+    {
+      "character": "svidrigailov",
+      "from": "crystal-palace",
+      "to": "svidrigailov-hotel",
+      "chapter": 13,
+      "mode": "foot",
+      "days": 0.15,
+      "note": "His last throw is for Dounia: he lures her to his rooms and offers her brother’s freedom for herself. She fires a revolver at him, misses, and throws it down - and he sees that she will never love him, and lets her go.",
+      "startDay": 17,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P6 ch5: Svidrigaïlov corners Dounia; she fires and he releases her."
+    },
+    {
+      "character": "svidrigailov",
+      "from": "svidrigailov-hotel",
+      "to": "svidrigailov-suicide",
+      "chapter": 13,
+      "mode": "foot",
+      "days": 0.2,
+      "note": "He gives his money away - to Sonia, to his child-fiancée’s family - wanders the rainy city all night, and at grey dawn walks to the fire-tower on the far edge of town, tells the sentry he is off to America, and shoots himself.",
+      "startDay": 17.6,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P6 ch6: Svidrigaïlov’s last night and suicide at the watchtower."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "raskolnikov-garret",
+      "to": "sonia-room",
+      "chapter": 14,
+      "mode": "foot",
+      "days": 0.2,
+      "note": "His mind made up, he goes first to Sonia, who gives him her cypress cross to wear for the road he is about to take.",
+      "startDay": 19,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P6 ch8: Sonia gives him the cross."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "sonia-room",
+      "to": "sennaya",
+      "chapter": 14,
+      "mode": "foot",
+      "days": 0.1,
+      "note": "He walks to the middle of the Hay Market and, as she told him, kneels down and kisses the filthy earth with something like rapture, before the whole staring crowd.",
+      "startDay": 19.2,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P6 ch8: he kneels and kisses the earth in the Hay Market."
+    },
+    {
+      "character": "sonia",
+      "from": "sonia-room",
+      "to": "sennaya",
+      "chapter": 14,
+      "mode": "foot",
+      "days": 0.1,
+      "note": "When his hour comes she follows him at a distance to the Hay Market, and stands in the crowd, fifty paces off, watching him kneel and kiss the earth.",
+      "startDay": 19.2,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P6 ch8: Sonia follows him to the Hay Market."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "sennaya",
+      "to": "police-office",
+      "chapter": 14,
+      "mode": "foot",
+      "days": 0.1,
+      "note": "And then the last short walk of the orbit: up the stairs of the police bureau to say the words aloud - that it was he who killed the old pawnbroker and her sister Lizaveta with an axe.",
+      "startDay": 19.4,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P6 ch8: the confession at the bureau."
+    },
+    {
+      "character": "sonia",
+      "from": "sennaya",
+      "to": "police-office",
+      "chapter": 14,
+      "mode": "foot",
+      "days": 0.1,
+      "note": "And she follows him on to the police yard, standing fifty paces off among the strangers, so that when he says the words he need not say them alone.",
+      "startDay": 19.5,
+      "routeCertainty": "reconstructed",
+      "routeSource": "P6 ch8: Sonia follows him to the bureau (“fifty paces from him on the left, Sonia”)."
+    },
+    {
+      "character": "raskolnikov",
+      "from": "police-office",
+      "to": "omsk-prison",
+      "chapter": 15,
+      "mode": "foot",
+      "days": 60,
+      "note": "Tried and sentenced to eight years’ penal servitude, he is transported east by convict road - marched and carted in stages the whole width of Russia, over the Urals and on to the fortress prison on the Irtish. Seven hundred and thirty steps for the crime; two thousand miles for the sentence.",
+      "via": [
+        {
+          "at": [
+            37.6176,
+            55.7558
+          ],
+          "name": "Moscow"
+        },
+        {
+          "at": [
+            44.002,
+            56.3269
+          ],
+          "name": "Nizhny Novgorod",
+          "note": "the Volga forwarding point"
+        },
+        {
+          "at": [
+            49.1221,
+            55.7887
+          ],
+          "name": "Kazan"
+        },
+        {
+          "at": [
+            56.2294,
+            58.0092
+          ],
+          "name": "Perm"
+        },
+        {
+          "at": [
+            60.6122,
+            56.8389
+          ],
+          "name": "Ekaterinburg",
+          "note": "the Ural watershed - the Europe/Asia post"
+        },
+        {
+          "at": [
+            65.5343,
+            57.1522
+          ],
+          "name": "Tyumen",
+          "note": "the first Siberian town"
+        },
+        {
+          "at": [
+            68.25,
+            58.196
+          ],
+          "name": "Tobolsk",
+          "note": "the central convict forwarding-prison"
+        }
+      ],
+      "startDay": 550,
+      "routeCertainty": "documented",
+      "routeSource": "Epilogue: sentenced and sent to the fortress on the Irtish; the 1860s convict etape ran by the Great Siberian Road, pre-railway."
+    },
+    {
+      "character": "sonia",
+      "from": "police-office",
+      "to": "omsk-prison",
+      "chapter": 15,
+      "mode": "foot",
+      "days": 60,
+      "note": "And when he is sent east, she sells what little she has and follows the convict road after him, settling in the grey town by the prison to wait, to sew for her bread, and to be there at the gate - the one soul that came all that way for him.",
+      "via": [
+        {
+          "at": [
+            37.6176,
+            55.7558
+          ],
+          "name": "Moscow"
+        },
+        {
+          "at": [
+            44.002,
+            56.3269
+          ],
+          "name": "Nizhny Novgorod",
+          "note": "the Volga forwarding point"
+        },
+        {
+          "at": [
+            49.1221,
+            55.7887
+          ],
+          "name": "Kazan"
+        },
+        {
+          "at": [
+            56.2294,
+            58.0092
+          ],
+          "name": "Perm"
+        },
+        {
+          "at": [
+            60.6122,
+            56.8389
+          ],
+          "name": "Ekaterinburg",
+          "note": "the Ural watershed - the Europe/Asia post"
+        },
+        {
+          "at": [
+            65.5343,
+            57.1522
+          ],
+          "name": "Tyumen",
+          "note": "the first Siberian town"
+        },
+        {
+          "at": [
+            68.25,
+            58.196
+          ],
+          "name": "Tobolsk",
+          "note": "the central convict forwarding-prison"
+        }
+      ],
+      "startDay": 620,
+      "routeCertainty": "documented",
+      "routeSource": "Epilogue: Sonia follows Raskolnikov to Siberia and settles by the prison."
+    }
+  ],
+  "story": [
+    {
+      "kind": "scene",
+      "chapter": 1,
+      "at": "raskolnikov-garret",
+      "character": "raskolnikov",
+      "title": "the theory",
+      "narration": "In a coffin of a garret over the Hay Market, a starving ex-student named Raskolnikov has talked himself into a monstrous idea: that the truly extraordinary man - a Napoleon - has the right to step over any law, even to spill blood, if his idea is great enough. And he means to test whether he is such a man.",
+      "quote": {
+        "text": "men are _in general_ divided by a law of nature into two categories, inferior (ordinary), that is, so to say, material that serves only to reproduce its kind, and men who have the gift or the talent to utter _a new word_.",
+        "source": "Crime and Punishment, Part 3"
+      }
+    },
+    {
+      "kind": "journey",
+      "chapter": 2,
+      "from": "raskolnikov-garret",
+      "to": "pawnbroker-flat",
+      "character": "raskolnikov",
+      "title": "seven hundred and thirty steps",
+      "narration": "He has already chosen his victim: a mean old pawnbroker. On a “rehearsal” walk he counts the distance from his own gate to her door - exactly seven hundred and thirty steps - and studies her locks. The crime is two minutes from his bed.",
+      "quote": {
+        "text": "He had not far to go; he knew indeed how many steps it was from the gate of his lodging house: exactly seven hundred and thirty.",
+        "source": "Crime and Punishment, Part 1"
+      }
+    },
+    {
+      "kind": "journey",
+      "chapter": 3,
+      "from": "pawnbroker-flat",
+      "to": "marmeladov-tavern",
+      "character": "raskolnikov",
+      "title": "nowhere to turn",
+      "narration": "In a cellar tavern he meets the ruined drunkard Marmeladov, who tells him how his daughter Sonia has been driven onto the streets to feed the family - and asks the question that will echo through the whole book.",
+      "quote": {
+        "text": "Do you understand, sir, do you understand what it means when you have absolutely nowhere to turn?",
+        "source": "Crime and Punishment, Part 1"
+      }
+    },
+    {
+      "kind": "journey",
+      "chapter": 3,
+      "from": "marmeladov-tavern",
+      "to": "marmeladov-lodging",
+      "character": [
+        "raskolnikov",
+        "marmeladov"
+      ],
+      "title": "carried home",
+      "narration": "Raskolnikov half-carries the helpless man home to a single room crowded with his consumptive wife Katerina Ivanovna and her hungry children, and leaves them the last coins in his pocket."
+    },
+    {
+      "kind": "journey",
+      "chapter": 4,
+      "from": "raskolnikov-garret",
+      "to": "sennaya",
+      "character": "raskolnikov",
+      "title": "the sign",
+      "narration": "Days of fever and dread. Then, crossing the Hay Market, he overhears by pure chance that the pawnbroker’s gentle sister Lizaveta will be out the next evening at seven. The old woman will be alone. He takes it for fate, and stops fighting."
+    },
+    {
+      "kind": "journey",
+      "chapter": 5,
+      "from": "raskolnikov-garret",
+      "to": "pawnbroker-flat",
+      "character": "raskolnikov",
+      "title": "the murders",
+      "narration": "The same seven hundred and thirty steps, an axe hidden under his coat. He kills the old pawnbroker - and then Lizaveta, who walks in on the blood, defenceless, and is killed too. The second, unmeant murder is the one that will damn him past all his theory.",
+      "quote": {
+        "text": "a man commits two murders and forgets that the door is open!",
+        "source": "Crime and Punishment, Epilogue"
+      }
+    },
+    {
+      "kind": "journey",
+      "chapter": 6,
+      "from": "raskolnikov-garret",
+      "to": "police-office",
+      "character": "raskolnikov",
+      "title": "the first crack",
+      "narration": "Days of delirium. Summoned to the police bureau over a trivial debt, he is nearly safe - until the officers begin to talk of the murder, and he faints on their floor. The body knows what the mind will not say."
+    },
+    {
+      "kind": "journey",
+      "chapter": 6,
+      "from": "police-office",
+      "to": "stolen-purse-stone",
+      "character": "raskolnikov",
+      "title": "the stone",
+      "narration": "Certain now that he is watched, he carries the stolen purse and trinkets through the streets and buries them under a great stone in an empty yard - and never touches a rouble of it. The money was never the point.",
+      "quote": {
+        "text": "I... I wanted _to have the daring_... and I killed her. I only wanted to have the daring, Sonia! That was the whole cause of it!",
+        "source": "Crime and Punishment, Part 5"
+      }
+    },
+    {
+      "kind": "journey",
+      "chapter": 6,
+      "from": "stolen-purse-stone",
+      "to": "nikolaevsky-bridge",
+      "character": "raskolnikov",
+      "title": "the coin in the Neva",
+      "narration": "On the great bridge over the Neva a coachman lashes him from the road and a woman, taking him for a beggar, gives him a coin. He looks at the beautiful cold city that has no place for him, and throws the money into the river - cutting himself off, he feels, from everyone alive."
+    },
+    {
+      "kind": "journey",
+      "chapter": 7,
+      "from": "raskolnikov-garret",
+      "to": "crystal-palace",
+      "character": "raskolnikov",
+      "title": "baiting the law",
+      "narration": "Reckless with the strain, he sits in the Crystal Palace tavern reading the murder reports aloud and all but confessing to the young police clerk Zametov, daring the law to take him."
+    },
+    {
+      "kind": "journey",
+      "chapter": 7,
+      "from": "crystal-palace",
+      "to": "voznesensky-bridge",
+      "character": "raskolnikov",
+      "title": "the black water",
+      "narration": "On the canal bridge he stares down into the water, half-meaning to drown himself - and a ragged woman throws herself in before his eyes. He turns away. He cannot even do that."
+    },
+    {
+      "kind": "journey",
+      "chapter": 7,
+      "from": "voznesensky-bridge",
+      "to": "pawnbroker-flat",
+      "character": "raskolnikov",
+      "title": "back to the bell",
+      "narration": "Then the compulsion that rules him: he walks back to the murder flat, climbs the stairs, and pulls the bell just to hear again the sound that has been tolling in his head. The scene of the crime is the one place he cannot stay away from."
+    },
+    {
+      "kind": "journey",
+      "chapter": 8,
+      "from": "pawnbroker-flat",
+      "to": "marmeladov-lodging",
+      "character": "raskolnikov",
+      "title": "Marmeladov’s death",
+      "narration": "In the street a crowd: Marmeladov has been run down by a carriage. Raskolnikov helps carry him home to die in Katerina Ivanovna’s arms, and gives the family the last of his own money for the funeral - one plain act of pity in all the horror."
+    },
+    {
+      "kind": "scene",
+      "chapter": 8,
+      "at": "raskolnikov-garret",
+      "character": "raskolnikov",
+      "title": "mother and sister",
+      "narration": "He goes home to find his mother Pulcheria and his sister Dounia arrived from the provinces - Dounia about to sell herself in marriage to the cold, self-satisfied Luzhin to save the family, exactly as Sonia was sold to the streets. The parallel is not lost on him.",
+      "day": 8.7
+    },
+    {
+      "kind": "journey",
+      "chapter": 9,
+      "from": "raskolnikov-garret",
+      "to": "porfiry-lodging",
+      "character": "raskolnikov",
+      "title": "the first interview",
+      "narration": "He goes to the examining magistrate Porfiry Petrovitch, who has read Raskolnikov’s own article arguing that an extraordinary man may wade through blood - and turns the talk to it, smiling, never accusing, watching.",
+      "quote": {
+        "text": "But if such a one is forced for the sake of his idea to step over a corpse or wade through blood, he can, I maintain, find within himself, in his conscience, a sanction for wading through blood--that depends on the idea and its dimensions, note that.",
+        "source": "Crime and Punishment, Part 3"
+      }
+    },
+    {
+      "kind": "journey",
+      "chapter": 10,
+      "from": "raskolnikov-garret",
+      "to": "sonia-room",
+      "character": "raskolnikov",
+      "title": "the raising of Lazarus",
+      "narration": "He goes to Sonia’s room on the canal - the murderer and the girl the world calls a harlot, together over one book - and asks her to read him the raising of Lazarus from the dead. Behind the wall, unknown to them, Svidrigaïlov is listening.",
+      "quote": {
+        "text": "dimly lighting up in the poverty-stricken room the murderer and the harlot who had so strangely been reading together the eternal book.",
+        "source": "Crime and Punishment, Part 4"
+      }
+    },
+    {
+      "kind": "journey",
+      "chapter": 11,
+      "from": "raskolnikov-garret",
+      "to": "porfiry-lodging",
+      "character": "raskolnikov",
+      "title": "the second interview",
+      "narration": "A second duel with Porfiry, who tightens the screw almost to breaking - and then the trap flies open as a house-painter, Nikolay, bursts in and falsely confesses to the murder. A reprieve, and both men know it is only that."
+    },
+    {
+      "kind": "journey",
+      "chapter": 11,
+      "from": "svidrigailov-hotel",
+      "to": "crystal-palace",
+      "character": "svidrigailov",
+      "title": "the double",
+      "narration": "Raskolnikov’s dark double surfaces: Svidrigaïlov, who followed Dounia to the city and lodges beside Sonia to listen through the wall. He lived the licence Raskolnikov only theorised, ruins lives without remorse, and pictures eternity as a bath-house full of spiders."
+    },
+    {
+      "kind": "journey",
+      "chapter": 12,
+      "from": "raskolnikov-garret",
+      "to": "sonia-room",
+      "character": "raskolnikov",
+      "title": "the confession to Sonia",
+      "narration": "Unable to carry it another hour, he goes back to Sonia and confesses everything. She does not recoil; she weeps for him, and tells him the only way back: go to the cross-roads, kiss the earth he has defiled, and confess aloud to all the world.",
+      "quote": {
+        "text": "Go at once, this very minute, stand at the cross-roads, bow down, first kiss the earth which you have defiled and then bow down to all the world and say to all men aloud, 'I am a murderer!' Then God will send you life again.",
+        "source": "Crime and Punishment, Part 5"
+      }
+    },
+    {
+      "kind": "scene",
+      "chapter": 12,
+      "at": "sonia-room",
+      "character": "sonia",
+      "title": "Katerina Ivanovna dies",
+      "narration": "The Marmeladov ruin completes itself: turned into the street after Luzhin’s cruelty at the funeral dinner, the consumptive Katerina Ivanovna collapses and is carried, raving, to Sonia’s room, where she dies. The children are orphaned; Svidrigaïlov, of all people, pays to place them.",
+      "day": 15.3
+    },
+    {
+      "kind": "scene",
+      "chapter": 12,
+      "at": "raskolnikov-garret",
+      "character": "porfiry",
+      "title": "the hunter comes to the lair",
+      "narration": "Porfiry does the last thing Raskolnikov expects: he comes to the garret himself, and drops the game. He knows. There is no one else it can be. Confess, he says almost gently, and the sentence will be lighter - a man who gives himself up is not past saving.",
+      "day": 16.2
+    },
+    {
+      "kind": "journey",
+      "chapter": 13,
+      "from": "svidrigailov-hotel",
+      "to": "svidrigailov-suicide",
+      "character": "svidrigailov",
+      "title": "the road out",
+      "narration": "Svidrigaïlov makes his own last throw: he offers Dounia her brother’s safety for herself, and she fires a revolver at him and misses. He sees she will never be his, and lets her go. Then he gives all his money away, wanders the rainy night, and at dawn walks to the fire-tower at the city’s edge.",
+      "quote": {
+        "text": "I may be going to America, Sofya Semyonovna,",
+        "source": "Crime and Punishment, Part 6"
+      }
+    },
+    {
+      "kind": "scene",
+      "chapter": 13,
+      "at": "svidrigailov-suicide",
+      "character": "svidrigailov",
+      "title": "“going to America”",
+      "narration": "Before the great closed gates and the bewildered fireman, Svidrigaïlov puts the revolver to his temple and shoots himself. The double has taken the other road - the one Raskolnikov, with Sonia at his side, is about to turn away from.",
+      "day": 17.9
+    },
+    {
+      "kind": "journey",
+      "chapter": 14,
+      "from": "sonia-room",
+      "to": "sennaya",
+      "character": "raskolnikov",
+      "title": "kissing the earth",
+      "narration": "His mind made up, he takes Sonia’s cypress cross and walks to the middle of the Hay Market, and there, before the whole staring crowd, kneels down and kisses the filthy earth with something like rapture. The public act comes before the legal one.",
+      "quote": {
+        "text": "He knelt down in the middle of the square, bowed down to the earth, and kissed that filthy earth with bliss and rapture. He got up and bowed down a second time.",
+        "source": "Crime and Punishment, Part 6"
+      }
+    },
+    {
+      "kind": "journey",
+      "chapter": 14,
+      "from": "sennaya",
+      "to": "police-office",
+      "character": "raskolnikov",
+      "title": "the confession",
+      "narration": "And then the last short leg of the whole orbit - Sonia following fifty paces behind - up the stairs of the police bureau, where at last he says it plainly aloud.",
+      "quote": {
+        "text": "_It was I killed the old pawnbroker woman and her sister Lizaveta with an axe and robbed them._",
+        "source": "Crime and Punishment, Part 6"
+      }
+    },
+    {
+      "kind": "handoff",
+      "chapter": 15,
+      "character": "raskolnikov",
+      "title": "two thousand miles",
+      "narration": "Sentenced to eight years - a light sentence, for a confessed murderer who fought no charge - he is transported the whole width of Russia. The map, which has held to a few hundred yards for the length of a book, is finally let off the leash.",
+      "quote": {
+        "text": "condemned to penal servitude in the second class for a term of eight years only.",
+        "source": "Crime and Punishment, Epilogue"
+      }
+    },
+    {
+      "kind": "journey",
+      "chapter": 15,
+      "from": "police-office",
+      "to": "omsk-prison",
+      "character": "raskolnikov",
+      "title": "the convict road",
+      "narration": "By convict road - marched and carted in stages over the Urals and on across Siberia, pre-railway - he comes at last to the fortress prison on the Irtish. Seven hundred and thirty steps for the crime; two thousand miles for the sentence."
+    },
+    {
+      "kind": "journey",
+      "chapter": 15,
+      "from": "police-office",
+      "to": "omsk-prison",
+      "character": "sonia",
+      "title": "Sonia follows",
+      "narration": "And Sonia sells what little she has and follows him the whole way east, settling in the grey town by the prison to sew for her bread and wait at the gate - the one soul who came all that way for him."
+    },
+    {
+      "kind": "meanwhile",
+      "chapter": 15,
+      "character": "raskolnikov",
+      "title": "the second spring",
+      "narration": "A year and more of penal servitude: sullen, proud, still sure he was only unlucky, not wrong. Sonia is always there - at the gate, across the yard, patient. And then, one bright morning by the wide river, something in him gives way."
+    },
+    {
+      "kind": "scene",
+      "chapter": 15,
+      "at": "omsk-prison",
+      "character": "raskolnikov",
+      "title": "a new story",
+      "day": 700,
+      "narration": "On the high bank of the great river, in the second spring, the ice in him breaks at last. He weeps at Sonia’s feet; the future opens. His punishment is not the prison - it is the long, unearned work of becoming a man who can love. That is another story.",
+      "quote": {
+        "text": "But that is the beginning of a new story--the story of the gradual renewal of a man, the story of his gradual regeneration, of his passing from one world into another, of his initiation into a new unknown life.",
+        "source": "Crime and Punishment, Epilogue"
+      }
+    }
+  ]
+}
