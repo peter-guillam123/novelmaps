@@ -188,5 +188,10 @@
     "distanceKm": 21599,
     "spanDays": 4380,
     "spanLabel": "a dozen years"
+  },
+  "botchan": {
+    "distanceKm": 1587,
+    "spanDays": 400,
+    "spanLabel": "about a year"
   }
 }
