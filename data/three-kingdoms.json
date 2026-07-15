@@ -1,0 +1,1381 @@
+{
+  "title": "Romance of the Three Kingdoms",
+  "author": "Luo Guanzhong",
+  "year": 1522,
+  "gutenbergId": 77416,
+  "overture": "The four-hundred-year Han empire falls into anarchy, and three warlords carve its body into three kingdoms: Cao Cao's Wei in the north, Liu Bei's Shu in the west, Sun Quan's Wu in the south-east. Across a century of brotherhood, genius and betrayal - the fire at Red Cliffs, the fall of Guan Yu, the doomed campaigns of Zhuge Liang - the three contend for a united China, until all are swept away and the empire is one again.",
+  "mapHome": {
+    "bounds": [
+      [
+        109.5,
+        29.5
+      ],
+      [
+        116.5,
+        35.5
+      ]
+    ]
+  },
+  "timeline": {
+    "epoch": null,
+    "calendar": false,
+    "span": "a century of war (184-280 AD)",
+    "duration": "a century of war (184-280 AD)",
+    "unit": "year"
+  },
+  "sources": [
+    "Follows Luo Guanzhong's Romance of the Three Kingdoms (San Kuo Chih Yen-i, 14th century) in C. H. Brewitt-Taylor's public-domain 1925 translation. Volume 1 (chapters 1-60) is Project Gutenberg #77416; volume 2 (61-120) is from the same public-domain 1925 edition (translator died 1938), via the Internet Archive.",
+    "Names on the map are in the modern pinyin readers know (Cao Cao, Zhuge Liang, Red Cliffs); Brewitt-Taylor's 1925 romanisation (Ts'ao Ts'ao, K'ung-ming, the Red Cliff) is kept as the 'as the book names it' hover text, and all quotes are verbatim from the 1925 translation.",
+    "The novel dramatises the real history of 184-280 AD. Battle sites are placed from historical geography. The exact site of Red Cliffs is disputed: the Puqi / Chibi City battlefield on the Yangtze is the usual candidate, while readers of Su Shi's poetry know the separate 'literary' Red Cliff at Huangzhou - so it is pinned as a best guess.",
+    "There is no period map of ancient China to overlay, and PlotLines' historic layer covers Great Britain only, so this book sits on the plain modern base throughout. The pins mark where these 2nd-3rd-century events happened on the land as it is today."
+  ],
+  "regions": [
+    {
+      "id": "wei",
+      "name": "Wei (the north): Cao Cao"
+    },
+    {
+      "id": "shu",
+      "name": "Shu (the west): Liu Bei"
+    },
+    {
+      "id": "wu",
+      "name": "Wu (the south-east): Sun Quan"
+    }
+  ],
+  "locations": [
+    {
+      "id": "zhuozhou",
+      "region": "wei",
+      "name": "Zhuozhou (Zhuo county), Hebei",
+      "novelName": "the Cho district",
+      "coords": [
+        115.98,
+        39.49
+      ],
+      "certainty": "real",
+      "note": "Liu Bei's home town on the northern plain, near modern Beijing, where the story opens with a recruiting-notice against the Yellow Turban rebels.",
+      "story": "Under a great mulberry tree grew up Liu Bei, a poor seller of straw sandals who claimed descent from the Han emperors. Here, meeting the fugitive Guan Yu and the butcher Zhang Fei, he swears the Oath of the Peach Garden - the three vowing brotherhood to the death - and rides out to save a dying dynasty.",
+      "quote": "We ask not the same day of birth but we seek to die together.",
+      "quoteRef": "ch. 1",
+      "image": {
+        "file": "assets/images/3k-zhuozhou.jpg",
+        "caption": "The three brothers ride out against the Yellow Turban rebels; woodblock, 1906 Qing edition.",
+        "credit": "Woodblock illustration from the 1906 Qing edition of the novel · Wikimedia Commons · public domain",
+        "indicative": true
+      }
+    },
+    {
+      "id": "luoyang",
+      "region": "wei",
+      "name": "Luoyang, Henan",
+      "novelName": "the capital",
+      "coords": [
+        112.72,
+        34.73
+      ],
+      "certainty": "identified",
+      "note": "The Later Han capital (the pin marks the Han-Wei city ruins east of the modern city). Burned by the tyrant Dong Zhuo in 190; later the seat of Cao Cao's son when he takes the throne as Wei.",
+      "story": "The heart of the falling empire. The warlord Dong Zhuo seizes the boy-emperor, and when the lords of the realm rise against him, he burns the ancient capital to the ground and drags the court west to Chang'an. It becomes, in time, the capital of Cao Cao's kingdom of Wei - and it is here that Cao Cao himself dies.",
+      "image": {
+        "file": "assets/images/3k-luoyang.jpg",
+        "caption": "Dong Zhuo burns the capital of Luoyang; woodblock, 1906 Qing edition.",
+        "credit": "Woodblock illustration from the 1906 Qing edition of the novel · Wikimedia Commons · public domain",
+        "indicative": true
+      }
+    },
+    {
+      "id": "changan",
+      "region": "wei",
+      "name": "Chang'an (Xi'an), Shaanxi",
+      "novelName": "Ch'ang-an",
+      "coords": [
+        108.87,
+        34.3
+      ],
+      "certainty": "identified",
+      "note": "The old western capital on the Wei River (the pin marks the Han Chang'an ruins north-west of modern Xi'an), where Dong Zhuo drags the court after burning Luoyang.",
+      "story": "Dong Zhuo's fortress-capital, where the tyrant gorges and murders until he is undone by the oldest trap of all - a beautiful woman set between him and his adopted son, the peerless warrior Lü Bu. With Dong Zhuo dead, his soldiers sack the city and the Han court is left a plaything of brutes.",
+      "image": {
+        "file": "assets/images/3k-changan.jpg",
+        "caption": "Cao Cao offers a blade to the tyrant Dong Zhuo (his failed assassination attempt); woodblock, 1906 Qing edition.",
+        "credit": "Woodblock illustration from the 1906 Qing edition of the novel · Wikimedia Commons · public domain",
+        "indicative": true
+      }
+    },
+    {
+      "id": "hulao-pass",
+      "region": "wei",
+      "name": "Hulao Pass, near Xingyang, Henan",
+      "novelName": "Hu Lao Pass",
+      "coords": [
+        113.17,
+        34.9
+      ],
+      "certainty": "identified",
+      "note": "The defile guarding the approach to Luoyang, just south of the Yellow River, where the coalition of warlords met Dong Zhuo's army.",
+      "story": "When the call goes out and the lords of the east league together against Dong Zhuo, it is at Hulao Pass that his champion, the unbeatable Lü Bu, holds the gate - until the three sworn brothers, Liu Bei, Guan Yu and Zhang Fei, take him on together in the book's first great duel and drive him back.",
+      "imageBlank": "No distinct period image of the coalition battle at Hulao Pass; the beat is carried by the surrounding art."
+    },
+    {
+      "id": "xuchang",
+      "region": "wei",
+      "name": "Xuchang, Henan",
+      "novelName": "Hsuchang (Hsu-tu)",
+      "coords": [
+        113.85,
+        34.04
+      ],
+      "certainty": "real",
+      "note": "Cao Cao's capital from 196, where he installed the fugitive Han emperor and ruled in his name - holding the emperor 'to command the nobles'.",
+      "story": "Cao Cao's seat of power, and the making of his greatness: by taking the helpless emperor under his 'protection' he gains the one thing the other warlords lack - legitimacy. Here he sounds out Liu Bei over wine and names the only two great men of the age; and here, after his death, his son Cao Pi builds the Terrace of Abdication and makes the last Han emperor hand over the throne - the end of the Han, and the birth of Wei.",
+      "quote": "The only heroes in the world are you and I.",
+      "quoteRef": "ch. 21",
+      "image": {
+        "file": "assets/images/3k-luoyang-alt.jpg",
+        "caption": "Emperor Xian of Han, the last Han emperor - the puppet Cao Cao held at Xuchang 'to command the nobles'; woodblock, 1906 Qing edition.",
+        "credit": "Woodblock illustration from the 1906 Qing edition of the novel · Wikimedia Commons · public domain",
+        "indicative": true
+      }
+    },
+    {
+      "id": "guandu",
+      "region": "wei",
+      "name": "Guandu, near Zhongmu, Henan",
+      "novelName": "Kuan-tu",
+      "coords": [
+        114.02,
+        34.75
+      ],
+      "certainty": "identified",
+      "note": "On the old course of the Yellow River, site of the decisive battle of 200 AD between Cao Cao and the far greater army of Yuan Shao.",
+      "story": "The battle that won Cao Cao the north. Outnumbered many times over by Yuan Shao, he strikes at the enemy's grain stores at Wuchao and burns them in the night; Yuan Shao's host, starving, breaks and scatters. With this one stroke Cao Cao becomes master of all China north of the Yangtze.",
+      "imageBlank": "No distinct period image of the battle of Guandu; a battle site on the old Yellow River."
+    },
+    {
+      "id": "longzhong",
+      "region": "shu",
+      "name": "Longzhong, near Xiangyang, Hubei",
+      "novelName": "Lung-chung",
+      "coords": [
+        112,
+        32.01
+      ],
+      "certainty": "identified",
+      "note": "The hermitage west of Xiangyang, near the Han River, where the young recluse Zhuge Liang - 'the Sleeping Dragon' - lived among the hills.",
+      "story": "Homeless and beaten, Liu Bei hears of a hidden genius and goes humbly, three times, to a thatched cottage in the hills to beg his help. At the third visit the Sleeping Dragon receives him and unrolls a map: let Cao Cao hold the north and Sun Quan the south-east, he says, and take the west for yourself - and the realm will stand in three. It is the plan the whole book obeys.",
+      "image": {
+        "file": "assets/images/3k-zhugeliang.jpg",
+        "caption": "Zhuge Liang, the 'Sleeping Dragon', with his feather fan; hanging scroll by Zhang Feng, 17th century.",
+        "credit": "Zhang Feng, 17th century · Metropolitan Museum of Art · public domain",
+        "indicative": true
+      }
+    },
+    {
+      "id": "changban",
+      "region": "shu",
+      "name": "Changban, Dangyang, Hubei",
+      "novelName": "Chʻangpan Slope",
+      "coords": [
+        111.79,
+        30.82
+      ],
+      "certainty": "identified",
+      "note": "The Long Slope near Dangyang, where Cao Cao's cavalry ran down Liu Bei's fleeing column of soldiers and common people in 208.",
+      "story": "Liu Bei, refusing to abandon the people who follow him, is overtaken by Cao Cao's horsemen and his family lost in the rout. The knight Zhao Yun cuts back and forth through the whole enemy host to carry the infant heir to safety in his breastplate; and at the bridge behind them Zhang Fei, alone, roars so terribly that a general dies of fright and the army dares not cross.",
+      "image": {
+        "file": "assets/images/3k-changban.jpg",
+        "caption": "Zhao Yun, who carried the infant heir out of Cao Cao's army at Changban; woodblock portrait, Qing edition.",
+        "credit": "Woodblock illustration from the 1906 Qing edition of the novel · Wikimedia Commons · public domain",
+        "indicative": true
+      }
+    },
+    {
+      "id": "red-cliffs",
+      "region": "wu",
+      "name": "Red Cliffs (Chibi), Hubei",
+      "novelName": "the Red Cliff",
+      "coords": [
+        113.63,
+        29.86
+      ],
+      "certainty": "conjectured",
+      "note": "The battle of 208 AD on the Yangtze - and the most famous battle in Chinese history. Its exact site is disputed: the Puqi / Chibi City battlefield on the south bank is the usual candidate, but the 'Red Cliff' of Su Shi's poetry is a different place near Huangzhou, so the pin is a best guess.",
+      "story": "The hinge of the whole epic. Cao Cao brings a vast fleet down the Yangtze to swallow the south, and Liu Bei and Sun Quan, desperate, ally against him. Zhuge Liang calls up a south-east wind out of the dead of winter; the Wu commander Zhou Yu looses fire-ships into Cao Cao's fleet, chained together against seasickness; and the river burns. Cao Cao flees north with a fraction of his host, and China is split three ways for good.",
+      "image": {
+        "file": "assets/images/3k-redcliffs.jpg",
+        "caption": "A scholar's boat drifts beneath the Red Cliff - Qiu Ying's Ming handscroll of Su Shi's poem, the literary 'Red Cliff', not the 208 AD battle itself, of which no old painting exists.",
+        "credit": "Qiu Ying, 'The Red Cliff' (detail), Ming dynasty · Liaoning Provincial Museum · public domain",
+        "indicative": true
+      }
+    },
+    {
+      "id": "jingzhou",
+      "region": "wu",
+      "name": "Jingzhou (Jiangling), Hubei",
+      "novelName": "Chingchou",
+      "coords": [
+        112.19,
+        30.35
+      ],
+      "certainty": "real",
+      "note": "The walled city on the north bank of the Yangtze, seat of Jing Province - the rich middle-Yangtze land held by Guan Yu, and the fatal point of friction between allied Shu and Wu.",
+      "story": "The prize that poisons the alliance. Guan Yu holds Jingzhou for his brother, and marches north in triumph, flooding a whole enemy army by breaking the river dykes. But while he presses the siege, Sun Quan's general Lü Meng slips up the Yangtze in disguise and takes the city behind him - and Guan Yu, cut off from home, is doomed.",
+      "image": {
+        "file": "assets/images/3k-guanyu.jpg",
+        "caption": "Guan Yu captures the Wei general Pang De - the warrior-god at his height, before the fall; painting by Shang Xi, Ming dynasty, c.1430.",
+        "credit": "Shang Xi, Ming dynasty c.1430 · Palace Museum, Beijing · public domain",
+        "indicative": true
+      }
+    },
+    {
+      "id": "maicheng",
+      "region": "wu",
+      "name": "Maicheng, near Dangyang, Hubei",
+      "novelName": "Maicheng",
+      "coords": [
+        112.15,
+        30.7
+      ],
+      "certainty": "conjectured",
+      "note": "The small fort where Guan Yu, his army melted away and his retreat cut off, was trapped and captured by Wu in 220 (its exact wall-line is approximate).",
+      "story": "The end of the god of war. Betrayed and surrounded, Guan Yu breaks out of the little walls of Maicheng with a handful of men, is taken in ambush, and put to death by Sun Quan - the first of the three sworn brothers to die, and the blow that will drag the other two down after him.",
+      "imageBlank": "The small fort where Guan Yu fell; no distinct period image."
+    },
+    {
+      "id": "chengdu",
+      "region": "shu",
+      "name": "Chengdu, Sichuan",
+      "novelName": "Chʻêngtu",
+      "coords": [
+        104.07,
+        30.57
+      ],
+      "certainty": "real",
+      "note": "The rich, mountain-walled city of the Sichuan basin - the capital of Liu Bei's kingdom of Shu-Han.",
+      "story": "The west that the Sleeping Dragon promised. Liu Bei takes the fertile land behind its mountains and makes Chengdu his capital, and here at last, an old man, he declares himself Emperor of the Han in exile. From this walled garden Zhuge Liang will send army after army north against Wei, and never take it.",
+      "image": {
+        "file": "assets/images/3k-liubei.jpg",
+        "caption": "Liu Bei robed as Emperor Zhaolie of Han - the sandal-weaver who became a king at Chengdu; period imperial portrait.",
+        "credit": "Portrait of Liu Bei · Wikimedia Commons · public domain",
+        "indicative": true
+      }
+    },
+    {
+      "id": "jianye",
+      "region": "wu",
+      "name": "Jianye (Nanjing), Jiangsu",
+      "novelName": "Chienyeh",
+      "coords": [
+        118.79,
+        32.06
+      ],
+      "certainty": "real",
+      "note": "The southern city on the lower Yangtze (modern Nanjing) that became the capital of Wu - the kingdom Sun Quan inherited from his father and brother and held for half a century.",
+      "story": "The seat of the south. From the Yangtze delta the Sun family rule the richest, safest of the three realms; Sun Quan, last of the three founders to take the title, reigns here long after Cao Cao and Liu Bei are dust. Wu will be the last of the three kingdoms to fall, and its surrender at last makes the empire one again.",
+      "image": {
+        "file": "assets/images/3k-wubattle.jpg",
+        "caption": "Wei forces assault the lands of Eastern Wu - the south that outlasted the other two kingdoms; woodblock, 1906 Qing edition.",
+        "credit": "Woodblock illustration from the 1906 Qing edition of the novel · Wikimedia Commons · public domain",
+        "indicative": true
+      }
+    },
+    {
+      "id": "baidicheng",
+      "region": "shu",
+      "name": "Baidicheng (White Emperor City), Chongqing",
+      "novelName": "Pai-ti (White Emperor town)",
+      "coords": [
+        109.58,
+        31.05
+      ],
+      "certainty": "identified",
+      "note": "The fortress on the Yangtze at the mouth of the Qutang Gorge, where Liu Bei, broken by defeat, died in 223.",
+      "story": "Where Liu Bei comes to die. His great revenge campaign against Wu burned to nothing at Yiling, he retreats to White Emperor City and sickens. On his deathbed he entrusts his weak son, and the whole kingdom, to Zhuge Liang - telling him to take the throne himself if the boy proves worthless. Zhuge Liang weeps and swears to serve unto death.",
+      "image": {
+        "file": "assets/images/3k-baidicheng.jpg",
+        "caption": "The Yangtze gorges below the White Emperor City, where Liu Bei died; photograph from Isabella Bird, The Yangtze Valley and Beyond, 1899.",
+        "credit": "Isabella Bird, 1899 · public domain",
+        "indicative": true
+      }
+    },
+    {
+      "id": "yiling",
+      "region": "wu",
+      "name": "Yiling (Xiaoting), near Yichang, Hubei",
+      "novelName": "Iling",
+      "coords": [
+        111.43,
+        30.53
+      ],
+      "certainty": "identified",
+      "note": "On the Yangtze just below the gorges, where the Wu general Lu Xun destroyed Liu Bei's revenge army in 222 by fire.",
+      "story": "Liu Bei's ruin. Maddened by the death of Guan Yu, he leads a huge army east down the Yangtze against Wu, and strings his camps for miles along the wooded riverbank in the summer heat. The young Wu commander Lu Xun waits, then sets the whole line ablaze in a night. Liu Bei escapes with almost nothing, and never recovers.",
+      "image": {
+        "file": "assets/images/3k-battle.jpg",
+        "caption": "A battle of the three kingdoms' wars; woodblock, 1906 Qing edition - indicative of the burning of Liu Bei's camps at Yiling.",
+        "credit": "Woodblock illustration from the 1906 Qing edition of the novel · Wikimedia Commons · public domain",
+        "indicative": true
+      }
+    },
+    {
+      "id": "hanzhong",
+      "region": "shu",
+      "name": "Hanzhong, Shaanxi",
+      "novelName": "Hanchung",
+      "coords": [
+        107.03,
+        33.07
+      ],
+      "certainty": "real",
+      "note": "The basin on the upper Han River, north of the Qinling passes - Shu's forward base and springboard for the northern expeditions against Wei.",
+      "story": "The gateway north. From Hanzhong, beyond the terrible mountain roads, Zhuge Liang launches his campaigns to break out of the mountains and destroy Wei - hauling his supplies over the passes with the 'wooden oxen and gliding horses' he invents for the purpose. Again and again he sets out from here; again and again the mountains and the logistics defeat him.",
+      "image": {
+        "file": "assets/images/3k-hanzhong.jpg",
+        "caption": "Zhuge Liang's men build the 'wooden oxen and gliding horses' to haul supplies over the mountain passes; woodblock, 1906 Qing edition.",
+        "credit": "Woodblock illustration from the 1906 Qing edition of the novel · Wikimedia Commons · public domain",
+        "indicative": true
+      }
+    },
+    {
+      "id": "qishan",
+      "region": "shu",
+      "name": "Qishan, near Li county, Gansu",
+      "novelName": "Chʻishan",
+      "coords": [
+        105.02,
+        34.3
+      ],
+      "certainty": "conjectured",
+      "note": "The upland approach 'out of Qishan' by which Zhuge Liang debouched from the mountains toward the Wei valley (not to be confused with Qishan county in Shaanxi, near Wuzhang).",
+      "story": "The road of the northern expeditions. 'Out of Qishan' Zhuge Liang comes, year after year, to threaten the Wei heartland - and here, near the pass of Jieting, his one great chance is thrown away when his favourite officer disobeys orders and loses the position, forcing the master to bluff a whole army with an open, undefended city gate and a calmly played lute.",
+      "imageBlank": "The upland approach of the northern expeditions; no distinct period image of the site."
+    },
+    {
+      "id": "wuzhang",
+      "region": "shu",
+      "name": "Wuzhang Plains, near Baoji, Shaanxi",
+      "novelName": "the Wuchang Plain",
+      "coords": [
+        107.62,
+        34.2
+      ],
+      "certainty": "identified",
+      "note": "The loess tableland on the south bank of the Wei River where Zhuge Liang, on his last campaign, fell ill and died in 234, facing his patient rival Sima Yi.",
+      "story": "Where the Sleeping Dragon dies. Worn out by the endless war, Zhuge Liang sickens on the Wuzhang Plains within reach of the Wei River at last, and a great red star falls from the sky. Even dead he wins one more round - a carved image of him in his chariot so unnerves the enemy that Sima Yi flees, and the country laughs that 'a dead Zhuge scared off a living Sima'. With him dies Shu's last hope.",
+      "image": {
+        "file": "assets/images/3k-wuzhang.jpg",
+        "caption": "Sima Yi flees the dead Zhuge Liang - 'a dead Zhuge scared off a living Sima'; woodblock, 1906 Qing edition.",
+        "credit": "Woodblock illustration from the 1906 Qing edition of the novel · Wikimedia Commons · public domain",
+        "indicative": true
+      }
+    },
+    {
+      "id": "nanman",
+      "region": "shu",
+      "name": "the Nanman lands (Yunnan)",
+      "novelName": "the Man country",
+      "coords": [
+        102.71,
+        25.04
+      ],
+      "certainty": "conjectured",
+      "note": "The far southern frontier (a representative pin in modern Yunnan) where the tribal king Meng Huo rose in revolt against Shu, and Zhuge Liang campaigned to secure his rear before turning north.",
+      "story": "Before he can march on Wei, Zhuge Liang must quiet the south. In a famous campaign he captures the rebel king Meng Huo seven times and seven times releases him, until Meng Huo submits not to force but to fairness and will never rebel again - the strategist winning hearts where a lesser man would have won only ground.",
+      "imageBlank": "The far southern frontier of Meng Huo's revolt; no distinct period image."
+    }
+  ],
+  "characters": [
+    {
+      "id": "liu-bei",
+      "name": "Liu Bei",
+      "colour": "sienna",
+      "role": "The sandal-weaver of Han blood (the book's 'Liu Pei' / Yüan-tê), sworn brother to Guan Yu and Zhang Fei; homeless for decades, he founds the western kingdom of Shu",
+      "start": {
+        "location": "zhuozhou",
+        "chapter": 1
+      }
+    },
+    {
+      "id": "cao-cao",
+      "name": "Cao Cao",
+      "colour": "slate",
+      "role": "The brilliant, ruthless warlord (the book's 'Ts'ao Ts'ao') who seizes the Han emperor, wins the north at Guandu, and forges the kingdom of Wei",
+      "start": {
+        "location": "luoyang",
+        "chapter": 2
+      }
+    },
+    {
+      "id": "sun-quan",
+      "name": "Sun Quan",
+      "colour": "bottle",
+      "role": "The 'blue-eyed boy' (the book's 'Sun Ch'üan') who holds the rich south-east he inherited, allies with Liu Bei to burn Cao Cao at Red Cliffs, and founds the kingdom of Wu",
+      "start": {
+        "location": "jianye",
+        "chapter": 5
+      }
+    },
+    {
+      "id": "zhuge-liang",
+      "name": "Zhuge Liang",
+      "colour": "prussian",
+      "role": "The recluse strategist 'Sleeping Dragon' (the book's 'K'ung-ming'), won by Liu Bei's three visits; his genius wins Red Cliffs and his doomed northern campaigns end at Wuzhang",
+      "start": {
+        "location": "longzhong",
+        "chapter": 6
+      }
+    },
+    {
+      "id": "guan-yu",
+      "name": "Guan Yu",
+      "colour": "madder",
+      "role": "The red-faced, long-bearded warrior (the book's 'Kuan Yü'), sworn brother of Liu Bei and the soul of loyalty; his fall at Maicheng breaks the alliance and dooms Shu",
+      "start": {
+        "location": "zhuozhou",
+        "chapter": 1
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "n": 1,
+      "day": 0,
+      "when": "184 AD: the Peach Garden oath"
+    },
+    {
+      "n": 2,
+      "day": 60,
+      "when": "190: Dong Zhuo burns the capital"
+    },
+    {
+      "n": 3,
+      "day": 70,
+      "when": "the warlords league against the tyrant"
+    },
+    {
+      "n": 4,
+      "day": 120,
+      "when": "196: Cao Cao seizes the Emperor"
+    },
+    {
+      "n": 5,
+      "day": 160,
+      "when": "200: Guandu, and the north won"
+    },
+    {
+      "n": 6,
+      "day": 230,
+      "when": "207: the Three Visits"
+    },
+    {
+      "n": 7,
+      "day": 240,
+      "when": "208: the flight, and Changban"
+    },
+    {
+      "n": 8,
+      "day": 250,
+      "when": "208: the fire at Red Cliffs"
+    },
+    {
+      "n": 9,
+      "day": 300,
+      "when": "214: Liu Bei takes the west"
+    },
+    {
+      "n": 10,
+      "day": 350,
+      "when": "219: the fall of Guan Yu"
+    },
+    {
+      "n": 11,
+      "day": 370,
+      "when": "220-221: the three thrones"
+    },
+    {
+      "n": 12,
+      "day": 385,
+      "when": "222: the fire at Yiling"
+    },
+    {
+      "n": 13,
+      "day": 395,
+      "when": "223: the death of Liu Bei"
+    },
+    {
+      "n": 14,
+      "day": 420,
+      "when": "225: the southern campaign"
+    },
+    {
+      "n": 15,
+      "day": 460,
+      "when": "228: the northern expeditions"
+    },
+    {
+      "n": 16,
+      "day": 510,
+      "when": "234: the death of Zhuge Liang"
+    },
+    {
+      "n": 17,
+      "day": 960,
+      "when": "280: the empire made one"
+    }
+  ],
+  "movements": [
+    {
+      "character": [
+        "liu-bei",
+        "guan-yu"
+      ],
+      "from": "zhuozhou",
+      "to": "hulao-pass",
+      "chapter": 3,
+      "mode": "horse",
+      "days": 6,
+      "note": "The three sworn brothers ride south to join the great coalition of warlords marching on Dong Zhuo - and at Hulao Pass they meet his champion Lü Bu, the deadliest fighter of the age.",
+      "via": [
+        [
+          114.6,
+          37.2
+        ],
+        [
+          113.6,
+          35.6
+        ]
+      ],
+      "startDay": 70,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 1-5: the brothers join the alliance against Tung Cho (Dong Zhuo); campaign route reconstructed from the named places."
+    },
+    {
+      "character": "cao-cao",
+      "from": "luoyang",
+      "to": "xuchang",
+      "chapter": 4,
+      "mode": "horse",
+      "days": 8,
+      "note": "Cao Cao rises from the wreck of the Han. Seizing the fugitive boy-emperor, he carries him to his own city of Xuchang and rules in his name - the emperor a puppet, the realm's one source of legitimacy in Cao Cao's fist.",
+      "via": [
+        [
+          113.3,
+          34.4
+        ]
+      ],
+      "startDay": 120,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 14: Tsʻao Tsʻao moves the court to Hsuchang and holds the Emperor."
+    },
+    {
+      "character": "cao-cao",
+      "from": "xuchang",
+      "to": "guandu",
+      "chapter": 5,
+      "mode": "horse",
+      "days": 10,
+      "note": "North to the Yellow River to face Yuan Shao, the greatest lord of the age, whose army outnumbers his many times over. Cao Cao stakes everything on one campaign at Guandu.",
+      "via": [
+        [
+          113.95,
+          34.4
+        ]
+      ],
+      "startDay": 158,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 30: Tsʻao Tsʻao meets Yüan Shao at Kuan-tu."
+    },
+    {
+      "character": "liu-bei",
+      "from": "hulao-pass",
+      "to": "longzhong",
+      "chapter": 6,
+      "mode": "horse",
+      "days": 8,
+      "note": "For twenty homeless years Liu Bei drifts, serving one lord after another and losing every base - until he comes south to the Jing country, hears of a hidden genius in the hills, and goes to find him.",
+      "via": [
+        [
+          113.2,
+          33.6
+        ],
+        [
+          112.4,
+          32.6
+        ]
+      ],
+      "startDay": 225,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 6-37: Liu Bei's long wandering, compressed; he settles in Jing Province and seeks out Chuko Liang at Lung-chung."
+    },
+    {
+      "character": "liu-bei",
+      "from": "longzhong",
+      "to": "changban",
+      "chapter": 7,
+      "mode": "horse",
+      "days": 4,
+      "note": "Cao Cao sweeps south and Liu Bei must run - and refuses to abandon the common people who flee with him, though it slows his column to a crawl and the enemy cavalry is coming fast.",
+      "via": [
+        [
+          111.9,
+          31.3
+        ]
+      ],
+      "startDay": 236,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 41-42: Liu Pei leads the people over the river; the flight to Chʻangpan."
+    },
+    {
+      "character": "zhuge-liang",
+      "from": "longzhong",
+      "to": "red-cliffs",
+      "chapter": 8,
+      "mode": "horse",
+      "days": 4,
+      "note": "The Sleeping Dragon leaves his hills at last. Zhuge Liang goes down to the Wu court, argues the wavering southerners into the alliance, and on a windless winter night climbs an altar to call up the wind that will carry the fire.",
+      "via": [
+        [
+          112.4,
+          30.9
+        ]
+      ],
+      "startDay": 242,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 43-49: Chuko Liang goes to Wu, forges the alliance, and 'borrows' the south-east wind."
+    },
+    {
+      "character": "sun-quan",
+      "from": "jianye",
+      "to": "red-cliffs",
+      "chapter": 8,
+      "mode": "ship",
+      "days": 4,
+      "note": "The south chooses to fight. Sun Quan's fleet comes up the Yangtze under the young commander Zhou Yu to meet Cao Cao's ships on the water - the whole war to be decided on the river.",
+      "via": [
+        [
+          117.9,
+          31.3
+        ],
+        [
+          116,
+          29.7
+        ],
+        [
+          114.3,
+          30.6
+        ]
+      ],
+      "medium": "river",
+      "startDay": 246,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 44-49: Sun Chʻüan and Chou Yü take the field on the Yangtze; naval approach up the river."
+    },
+    {
+      "character": "liu-bei",
+      "from": "changban",
+      "to": "red-cliffs",
+      "chapter": 8,
+      "mode": "horse",
+      "days": 3,
+      "note": "Down to the Yangtze and the river-town of Xiakou, where, cornered against the water with Cao Cao's host at his back, Liu Bei throws in his lot with the south.",
+      "via": [
+        [
+          112.6,
+          30.6
+        ]
+      ],
+      "startDay": 250,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 42-43: Liu Pei retreats to Hanchingkʻou and allies with Wu."
+    },
+    {
+      "character": "cao-cao",
+      "from": "guandu",
+      "to": "red-cliffs",
+      "chapter": 8,
+      "mode": "horse",
+      "days": 4,
+      "note": "Master of the north, Cao Cao brings a vast army and fleet down toward the Yangtze to swallow the south in one stroke - certain that no power left in the land can stand against him.",
+      "via": [
+        [
+          113.9,
+          32.8
+        ],
+        [
+          113.7,
+          31
+        ]
+      ],
+      "startDay": 253,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 43-48: Tsʻao Tsʻao's southern advance toward the Yangtze before Red Cliff."
+    },
+    {
+      "character": "liu-bei",
+      "from": "red-cliffs",
+      "to": "jingzhou",
+      "chapter": 9,
+      "mode": "horse",
+      "days": 2,
+      "note": "In the confusion after the fire, Liu Bei's men snap up the rich Jing lands along the Yangtze - his first real foothold, and the seed of the western kingdom.",
+      "via": [],
+      "startDay": 262,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 51: after Red Cliff, Liu Pei secures the Jing (Chingchou) commanderies."
+    },
+    {
+      "character": "guan-yu",
+      "from": "hulao-pass",
+      "to": "jingzhou",
+      "chapter": 9,
+      "mode": "horse",
+      "days": 3,
+      "note": "Through all the wandering years - the years of the solitary thousand-mile ride to rejoin his brother - Guan Yu's loyalty never bends. After Red Cliffs, Liu Bei gives the rich Jing lands into his keeping, the frontier against both Wei and Wu.",
+      "via": [
+        [
+          113,
+          33
+        ],
+        [
+          112.5,
+          31.4
+        ]
+      ],
+      "startDay": 264,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 25-27, 51-53: Kuan Yü's fidelity and solitary journey, then his charge of Chingchou."
+    },
+    {
+      "character": "sun-quan",
+      "from": "red-cliffs",
+      "to": "jianye",
+      "chapter": 8,
+      "mode": "ship",
+      "days": 3,
+      "note": "Victory won and Cao Cao thrown back, Wu draws home down the Yangtze to its delta strongholds - the safest and richest of the three realms, and the one that will outlast the other two.",
+      "via": [
+        [
+          114.3,
+          30.6
+        ],
+        [
+          116,
+          29.7
+        ],
+        [
+          117.9,
+          31.3
+        ]
+      ],
+      "medium": "river",
+      "startDay": 267,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 50-51: Wu returns downriver after Red Cliff."
+    },
+    {
+      "character": "cao-cao",
+      "from": "red-cliffs",
+      "to": "luoyang",
+      "chapter": 8,
+      "mode": "horse",
+      "days": 4,
+      "note": "The fire on the river breaks him. Cao Cao flees north through mud and ambush with a broken remnant, his dream of a quick conquest drowned - and never comes so far south again.",
+      "via": [
+        [
+          113.5,
+          31.6
+        ],
+        [
+          113,
+          33.5
+        ]
+      ],
+      "startDay": 270,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 50: Tsʻao Tsʻao's flight north after Red Cliff (the Huarong road)."
+    },
+    {
+      "character": "liu-bei",
+      "from": "jingzhou",
+      "to": "chengdu",
+      "chapter": 9,
+      "mode": "horse",
+      "days": 25,
+      "note": "Then the great prize the Sleeping Dragon promised: up the Yangtze gorges and over the passes into the walled garden of Sichuan, which Liu Bei takes and makes his capital.",
+      "via": [
+        {
+          "at": [
+            109.58,
+            31.05
+          ],
+          "name": "the Qutang Gorge",
+          "note": "up the Yangtze into Shu"
+        },
+        [
+          106.5,
+          30.5
+        ]
+      ],
+      "startDay": 290,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 60-65: Liu Pei takes Ichou (Shu) and Chʻêngtu; route up the Yangtze and into the Sichuan basin."
+    },
+    {
+      "character": "zhuge-liang",
+      "from": "red-cliffs",
+      "to": "chengdu",
+      "chapter": 9,
+      "mode": "horse",
+      "days": 10,
+      "note": "With the realm split three ways as he foretold, Zhuge Liang follows his lord west to build the kingdom of Shu, and becomes its chancellor and its guiding mind.",
+      "via": [
+        [
+          109.58,
+          31.05
+        ],
+        [
+          106.5,
+          30.5
+        ]
+      ],
+      "startDay": 315,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 60-65: Chuko Liang helps take Shu and settles at Chʻêngtu."
+    },
+    {
+      "character": "guan-yu",
+      "from": "jingzhou",
+      "to": "maicheng",
+      "chapter": 10,
+      "mode": "horse",
+      "days": 6,
+      "note": "At the height of his triumph - a whole Wei army drowned by the flooded river - Guan Yu is betrayed. Wu slips up the Yangtze and takes Jingzhou behind him; cut off, his men melting away, he is driven into the little fort of Maicheng, breaks out, and is caught and killed. The first brother is gone.",
+      "via": [
+        [
+          112.15,
+          30.5
+        ]
+      ],
+      "startDay": 348,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 74-77: Kuan Yü floods the seven armies, loses Chingchou, and falls at Maicheng."
+    },
+    {
+      "character": "liu-bei",
+      "from": "chengdu",
+      "to": "yiling",
+      "chapter": 12,
+      "mode": "horse",
+      "days": 15,
+      "note": "Mad with grief for Guan Yu, Liu Bei ignores all counsel and leads a huge army east down the Yangtze against Wu, stringing his camps for miles along the wooded bank in the summer heat.",
+      "via": [
+        {
+          "at": [
+            109.58,
+            31.05
+          ],
+          "name": "Baidicheng",
+          "note": "down through the gorges"
+        },
+        [
+          110.5,
+          30.7
+        ]
+      ],
+      "startDay": 378,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 81-83: Liu Pei's revenge campaign east against Wu, down the Yangtze corridor."
+    },
+    {
+      "character": "zhuge-liang",
+      "from": "chengdu",
+      "to": "baidicheng",
+      "chapter": 13,
+      "mode": "horse",
+      "days": 5,
+      "note": "Summoned by a dying lord, the chancellor hurries east down the Yangtze gorges to White Emperor City.",
+      "via": [
+        [
+          106.5,
+          30.5
+        ],
+        [
+          108.5,
+          31
+        ]
+      ],
+      "startDay": 396,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 85: Chuko Liang is summoned to Pai-ti for Liu Pei's entrustment."
+    },
+    {
+      "character": "liu-bei",
+      "from": "yiling",
+      "to": "baidicheng",
+      "chapter": 13,
+      "mode": "horse",
+      "days": 6,
+      "note": "Lu Xun's fire leaves the campaign in ashes. Liu Bei flees back up the river to White Emperor City, sick with shame, and there lies down to die.",
+      "via": [
+        [
+          110.4,
+          30.9
+        ]
+      ],
+      "startDay": 402,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 84-85: after Iling, Liu Pei retreats to Pai-ti and dies."
+    },
+    {
+      "character": "zhuge-liang",
+      "from": "baidicheng",
+      "to": "chengdu",
+      "chapter": 13,
+      "mode": "horse",
+      "days": 6,
+      "note": "The entrustment received, Zhuge Liang carries the coffin and the heir back up the gorges to Chengdu, and takes the whole burden of Shu on himself.",
+      "via": [
+        [
+          108.5,
+          31
+        ],
+        [
+          106.5,
+          30.5
+        ]
+      ],
+      "startDay": 416,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 85: after the entrustment, Chuko Liang returns with the heir to Chʻêngtu."
+    },
+    {
+      "character": "zhuge-liang",
+      "from": "chengdu",
+      "to": "nanman",
+      "chapter": 14,
+      "mode": "horse",
+      "days": 25,
+      "note": "Before he can strike north, Zhuge Liang must secure his back. He marches deep into the southern jungles against the rebel king Meng Huo - and sets out to conquer him not by force but by winning his heart.",
+      "via": [
+        [
+          103.8,
+          28
+        ]
+      ],
+      "startDay": 426,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 87-90: Chuko Liang's southern campaign against Mêng Huo."
+    },
+    {
+      "character": "zhuge-liang",
+      "from": "nanman",
+      "to": "chengdu",
+      "chapter": 14,
+      "mode": "horse",
+      "days": 25,
+      "note": "Meng Huo subdued and the south made loyal, the chancellor returns to Chengdu to prepare the great work of his life: the campaign to destroy Wei and restore the Han.",
+      "via": [
+        [
+          103.8,
+          28
+        ]
+      ],
+      "startDay": 451,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 90-91: after the seventh release of Mêng Huo, Chuko Liang returns north."
+    },
+    {
+      "character": "zhuge-liang",
+      "from": "chengdu",
+      "to": "hanzhong",
+      "chapter": 15,
+      "mode": "horse",
+      "days": 15,
+      "note": "North over the mountains to Hanzhong, the forward base, and the famous memorial to his young lord vowing to spend himself utterly in the cause. From here the northern expeditions begin.",
+      "via": [
+        [
+          105.8,
+          32.4
+        ]
+      ],
+      "startDay": 476,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 91: Chuko Liang advances to Hanchung and presents the memorial before the first expedition."
+    },
+    {
+      "character": "zhuge-liang",
+      "from": "hanzhong",
+      "to": "qishan",
+      "chapter": 15,
+      "mode": "horse",
+      "days": 15,
+      "note": "'Out of Qishan' he comes, hauling supplies over the passes by machines of his own devising. His best chance is thrown away when a favourite officer loses the pass at Jieting - and the master must bluff a whole army with an open gate and a calmly played lute.",
+      "via": [
+        [
+          106,
+          33.8
+        ]
+      ],
+      "startDay": 491,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 92-95: the first northern expedition, out of Chʻishan; the loss of Chieh-tʻing and the empty-city ruse."
+    },
+    {
+      "character": "zhuge-liang",
+      "from": "qishan",
+      "to": "wuzhang",
+      "chapter": 16,
+      "mode": "horse",
+      "days": 25,
+      "note": "Campaign after campaign, always defeated by the mountains and by his patient rival Sima Yi, who will not fight. On the last, reaching the Wuzhang Plains within sight of the Wei River, the worn-out chancellor sickens and dies, and a great red star falls from heaven.",
+      "via": [
+        [
+          106.6,
+          34.2
+        ]
+      ],
+      "startDay": 510,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch. 96-104: the later northern expeditions and Chuko Liang's death on the Wuchang Plain."
+    }
+  ],
+  "story": [
+    {
+      "kind": "scene",
+      "chapter": 1,
+      "at": "zhuozhou",
+      "character": "liu-bei",
+      "title": "the Peach Garden oath",
+      "day": 0,
+      "narration": "The four-hundred-year Han empire is rotting into rebellion. In the northern county of Zhuo, three men meet over a recruiting-notice: Liu Bei, a poor kinsman of the emperors who sells straw sandals; the fugitive Guan Yu; and the roaring butcher Zhang Fei. In a peach garden they swear brotherhood to the death.",
+      "quote": {
+        "text": "Empires wax and wane; states cleave asunder and coalesce.",
+        "source": "Romance of the Three Kingdoms, ch. 1"
+      }
+    },
+    {
+      "kind": "scene",
+      "chapter": 2,
+      "at": "luoyang",
+      "character": "cao-cao",
+      "title": "the tyrant burns the capital",
+      "day": 60,
+      "narration": "Into the chaos rides the brute warlord Dong Zhuo, who seizes the boy-emperor and rules by terror. When the lords of the east rise against him, he burns the ancient capital of Luoyang to the ground and drags the court west. Among his enemies, one cold, brilliant man begins to rise: Cao Cao."
+    },
+    {
+      "kind": "journey",
+      "chapter": 3,
+      "from": "zhuozhou",
+      "to": "hulao-pass",
+      "character": [
+        "liu-bei",
+        "guan-yu"
+      ],
+      "title": "the coalition at Hulao Pass",
+      "narration": "The brothers ride to join the great coalition marching on the tyrant. At Hulao Pass his invincible champion Lü Bu holds the gate and cuts down all comers, until the three sworn brothers ride at him together in the book's first great duel and force him back."
+    },
+    {
+      "kind": "journey",
+      "chapter": 4,
+      "from": "luoyang",
+      "to": "xuchang",
+      "character": "cao-cao",
+      "title": "the Emperor in a fist",
+      "narration": "Cao Cao learns the great lesson of the age: whoever holds the emperor commands the realm. He takes the helpless boy under his 'protection' to his own city of Xuchang, and rules the Han in the Han's own name."
+    },
+    {
+      "kind": "scene",
+      "chapter": 4,
+      "at": "xuchang",
+      "character": "cao-cao",
+      "title": "the only two heroes",
+      "day": 128,
+      "narration": "Testing the quiet, homeless Liu Bei over wine, Cao Cao names the only two men in the empire worth fearing - himself, and his guest. Liu Bei, terrified to be seen so clearly, drops his chopsticks and covers it with a start at a thunderclap.",
+      "quote": {
+        "text": "The only heroes in the world are you and I.",
+        "source": "Romance of the Three Kingdoms, ch. 21"
+      }
+    },
+    {
+      "kind": "journey",
+      "chapter": 5,
+      "from": "xuchang",
+      "to": "guandu",
+      "character": "cao-cao",
+      "title": "Guandu",
+      "narration": "Against the vast army of Yuan Shao, greatest of the northern lords, Cao Cao stakes everything at Guandu - and in the night burns the enemy's grain stores at Wuchao. Yuan Shao's starving host shatters, and Cao Cao becomes master of all the north."
+    },
+    {
+      "kind": "journey",
+      "chapter": 6,
+      "from": "hulao-pass",
+      "to": "longzhong",
+      "character": "liu-bei",
+      "title": "the Three Visits",
+      "narration": "Homeless for twenty years, Liu Bei goes three times to a hill cottage to beg the recluse Zhuge Liang, who hands him the plan the whole book obeys: leave the north to Cao Cao, the south to Sun Quan, take the west."
+    },
+    {
+      "kind": "journey",
+      "chapter": 7,
+      "from": "longzhong",
+      "to": "changban",
+      "character": "liu-bei",
+      "title": "the flight over the river",
+      "narration": "Cao Cao sweeps south and Liu Bei runs - but will not abandon the common people who flee with him, though it slows him to a crawl. At Changban the enemy cavalry catches the column, and his family is lost in the rout."
+    },
+    {
+      "kind": "scene",
+      "chapter": 7,
+      "at": "changban",
+      "character": "liu-bei",
+      "title": "Changban Slope",
+      "day": 241,
+      "narration": "Two deeds pass into legend here. The knight Zhao Yun cuts back and forth through Cao Cao's whole army to carry the infant heir to safety in his armour; and behind him, alone on the bridge, Zhang Fei roars so terribly that a general drops dead of fright and an army dares not cross."
+    },
+    {
+      "kind": "journey",
+      "chapter": 8,
+      "from": "longzhong",
+      "to": "red-cliffs",
+      "character": "zhuge-liang",
+      "title": "the Sleeping Dragon comes down",
+      "narration": "The recluse leaves his hills at last. Zhuge Liang goes down to the Wu court, argues the wavering southerners into the alliance out of sheer nerve and wit, and takes his place at the heart of the coming battle."
+    },
+    {
+      "kind": "journey",
+      "chapter": 8,
+      "from": "jianye",
+      "to": "red-cliffs",
+      "character": "sun-quan",
+      "title": "the south will fight",
+      "narration": "The young lord of the south-east, Sun Quan, breaks his sword-table and chooses war. His fleet comes up the Yangtze under the brilliant, jealous commander Zhou Yu to meet Cao Cao on the water."
+    },
+    {
+      "kind": "journey",
+      "chapter": 8,
+      "from": "changban",
+      "to": "red-cliffs",
+      "character": "liu-bei",
+      "title": "the alliance",
+      "narration": "Cornered against the Yangtze with Cao Cao at his back, Liu Bei throws in his lot with the south. It is the fire at Red Cliffs, won beside Sun Quan, that at last gives the eternal loser a share of the world."
+    },
+    {
+      "kind": "journey",
+      "chapter": 8,
+      "from": "guandu",
+      "to": "red-cliffs",
+      "character": "cao-cao",
+      "title": "the host comes south",
+      "narration": "Master of the north, Cao Cao brings an enormous army and fleet down toward the Yangtze to swallow the south in a single season, certain nothing in the land can stand against him."
+    },
+    {
+      "kind": "scene",
+      "chapter": 8,
+      "at": "red-cliffs",
+      "character": "zhuge-liang",
+      "title": "the fire at Red Cliffs",
+      "day": 258,
+      "narration": "The hinge of the epic. Zhuge Liang, allied to Wu, calls up a south-east wind out of dead winter; Zhou Yu looses fire-ships into Cao Cao's fleet, chained together against seasickness; and the whole river burns. Cao Cao flees north with a remnant, and China is split three ways for good.",
+      "quote": {
+        "text": "In this great battle at the junction of the rivers, when fire seemed to spread wide over all the wide surface of the water",
+        "source": "Romance of the Three Kingdoms, ch. 50"
+      }
+    },
+    {
+      "kind": "journey",
+      "chapter": 9,
+      "from": "red-cliffs",
+      "to": "jingzhou",
+      "character": "liu-bei",
+      "title": "a foothold at last",
+      "narration": "In the chaos after the fire, Liu Bei's men seize the rich Jing lands along the Yangtze - his first real base in thirty years of war, and the seed of a kingdom."
+    },
+    {
+      "kind": "journey",
+      "chapter": 9,
+      "from": "hulao-pass",
+      "to": "jingzhou",
+      "character": "guan-yu",
+      "title": "the warden of Jing",
+      "narration": "Guan Yu's loyalty has never bent - not in the famous solitary ride of a thousand miles to rejoin his brother through five guarded passes. Now Liu Bei gives the Jing frontier into his keeping, the marchland between all three powers.",
+      "quote": {
+        "text": "We ask not the same day of birth but we seek to die together.",
+        "source": "Romance of the Three Kingdoms, ch. 1"
+      }
+    },
+    {
+      "kind": "journey",
+      "chapter": 8,
+      "from": "red-cliffs",
+      "to": "jianye",
+      "character": "sun-quan",
+      "title": "Wu holds the south",
+      "narration": "Cao Cao thrown back, Wu draws home down the Yangtze to its delta strongholds - the safest and richest of the three realms, and the one that will outlast the other two."
+    },
+    {
+      "kind": "journey",
+      "chapter": 8,
+      "from": "red-cliffs",
+      "to": "luoyang",
+      "character": "cao-cao",
+      "title": "the broken host",
+      "narration": "Cao Cao flees north through mud and ambush with a shattered army, his dream of a quick conquest drowned in the river. He will hold the north for the rest of his life, but never come so far south again."
+    },
+    {
+      "kind": "journey",
+      "chapter": 9,
+      "from": "jingzhou",
+      "to": "chengdu",
+      "character": "liu-bei",
+      "title": "the west taken",
+      "narration": "Then the prize the Sleeping Dragon promised: up through the Yangtze gorges and over the passes into the mountain-walled garden of Sichuan. Liu Bei takes it, makes Chengdu his capital, and at last, an old man, declares himself Emperor of a Han in exile - and the realm has three thrones."
+    },
+    {
+      "kind": "journey",
+      "chapter": 9,
+      "from": "red-cliffs",
+      "to": "chengdu",
+      "character": "zhuge-liang",
+      "title": "west to a kingdom",
+      "narration": "With the realm split three ways as he foretold, the Sleeping Dragon follows his lord west into Sichuan to build the kingdom of Shu, and becomes its chancellor and its guiding mind."
+    },
+    {
+      "kind": "scene",
+      "chapter": 10,
+      "at": "jingzhou",
+      "character": "guan-yu",
+      "title": "the flood, and the betrayal",
+      "day": 345,
+      "narration": "At his height Guan Yu marches north and drowns a whole Wei army by breaking the river dykes. But while he presses the siege, Sun Quan's general slips up the Yangtze in disguise and takes Jingzhou behind him. The great alliance that won Red Cliffs is broken, and Guan Yu is cut off from home."
+    },
+    {
+      "kind": "journey",
+      "chapter": 10,
+      "from": "jingzhou",
+      "to": "maicheng",
+      "character": "guan-yu",
+      "title": "the fall of Guan Yu",
+      "narration": "His army melted away, he is driven into the little fort of Maicheng, breaks out with a handful of men, is taken in ambush and put to death by Wu. The first of the three brothers is gone - and the oath of the peach garden begins to come due."
+    },
+    {
+      "kind": "scene",
+      "chapter": 11,
+      "at": "luoyang",
+      "character": "cao-cao",
+      "title": "the death of Cao Cao",
+      "day": 360,
+      "narration": "Cao Cao never wins the whole realm he reached for. He dies at Luoyang, the ablest and coldest man of the age, master of the north but never of the south. His son Cao Pi seizes the Han throne outright, and the north becomes at last, in name, the kingdom of Wei."
+    },
+    {
+      "kind": "journey",
+      "chapter": 12,
+      "from": "chengdu",
+      "to": "yiling",
+      "character": "liu-bei",
+      "title": "the fire at Yiling",
+      "narration": "Mad with grief, Liu Bei ignores all counsel and leads a huge army east against Wu to avenge his brother, stringing his camps for miles along the wooded Yangtze bank in the summer heat. The young Wu commander Lu Xun waits, then sets the whole line ablaze in a night."
+    },
+    {
+      "kind": "journey",
+      "chapter": 13,
+      "from": "chengdu",
+      "to": "baidicheng",
+      "character": "zhuge-liang",
+      "title": "summoned to the deathbed",
+      "narration": "Word comes that Liu Bei is dying at White Emperor City. Zhuge Liang hurries east down the gorges to his lord's bedside, to receive the charge that will rule the rest of his life."
+    },
+    {
+      "kind": "journey",
+      "chapter": 13,
+      "from": "yiling",
+      "to": "baidicheng",
+      "character": "liu-bei",
+      "title": "the death of Liu Bei",
+      "narration": "His army in ashes, Liu Bei flees to White Emperor City and lies down to die. He entrusts his weak son and his whole kingdom to Zhuge Liang, bidding him take the throne himself if the boy proves worthless. The chancellor weeps and vows to spend himself to the bone in the son's service.",
+      "quote": {
+        "text": "I could never do otherwise than wear myself to the bone in the service of your son, whom I will serve till death.",
+        "source": "Romance of the Three Kingdoms, ch. 85"
+      }
+    },
+    {
+      "kind": "journey",
+      "character": "zhuge-liang",
+      "title": "the burden passes",
+      "narration": "Zhuge Liang escorts the dead king's coffin and the boy-heir back to Chengdu, and takes up the whole weight of Shu: to march north and restore the Han, whatever it costs.",
+      "from": "baidicheng",
+      "to": "chengdu",
+      "chapter": 13
+    },
+    {
+      "kind": "journey",
+      "chapter": 14,
+      "from": "chengdu",
+      "to": "nanman",
+      "character": "zhuge-liang",
+      "title": "the southern campaign",
+      "narration": "To secure his rear before striking north, Zhuge Liang marches into the southern jungles against the rebel king Meng Huo - and captures him seven times and seven times sets him free, until Meng Huo submits not to force but to fairness, and never rebels again."
+    },
+    {
+      "kind": "journey",
+      "chapter": 14,
+      "from": "nanman",
+      "to": "chengdu",
+      "character": "zhuge-liang",
+      "title": "the great work begins",
+      "narration": "The south made loyal, the chancellor turns to the labour of his life: to break out of the mountains, destroy Wei, and restore the Han his lord died dreaming of."
+    },
+    {
+      "kind": "journey",
+      "chapter": 15,
+      "from": "chengdu",
+      "to": "hanzhong",
+      "character": "zhuge-liang",
+      "title": "the memorial",
+      "narration": "North to the forward base of Hanzhong, and the famous memorial to his young emperor, vowing to give his last strength to the cause. Beyond the passes lies Wei; between them, the cruellest mountain roads in the empire."
+    },
+    {
+      "kind": "journey",
+      "chapter": 15,
+      "from": "hanzhong",
+      "to": "qishan",
+      "character": "zhuge-liang",
+      "title": "out of Qishan",
+      "narration": "'Out of Qishan' he comes, hauling supplies over the passes by wooden oxen of his own invention. His one great chance is thrown away when a favourite officer disobeys and loses the pass at Jieting - and the master, an empty city at his back, sits on the wall and plays his lute until the enemy, suspecting a trap, withdraws."
+    },
+    {
+      "kind": "journey",
+      "chapter": 16,
+      "from": "qishan",
+      "to": "wuzhang",
+      "character": "zhuge-liang",
+      "title": "the falling star",
+      "narration": "Campaign after campaign, worn down by the mountains and by the patient Sima Yi, who simply will not fight. On the last, reaching the Wuzhang Plains within sight of the Wei River, the exhausted chancellor sickens and dies, and a great red star falls. With him dies the last hope of Shu.",
+      "quote": {
+        "text": "one night for aye his star Went down behind the rampart of the hills.",
+        "source": "Romance of the Three Kingdoms, ch. 120"
+      }
+    },
+    {
+      "kind": "handoff",
+      "character": "sun-quan",
+      "at": "jianye",
+      "title": "the last kingdom",
+      "day": 955,
+      "narration": "The great men are all gone now - Cao Cao, Liu Bei, Guan Yu, the Sleeping Dragon - and their heirs are lesser. One by one the realms fall: first Shu is swallowed, then the Sima clan takes the throne from Cao Cao's heirs and founds a new dynasty, Jin; and only the south still stands."
+    },
+    {
+      "kind": "scene",
+      "chapter": 17,
+      "at": "jianye",
+      "character": "sun-quan",
+      "title": "the empire made one",
+      "day": 960,
+      "narration": "First Shu is swallowed; then the Sima family takes the throne from Cao Cao's heirs and founds the kingdom of Jin; and last of all Wu, here at Jianye, surrenders. After a century of war the empire is one again - states cleave asunder, and coalesce.",
+      "quote": {
+        "text": "The kingdoms three have vanished as a dream,",
+        "source": "Romance of the Three Kingdoms, ch. 120"
+      }
+    }
+  ]
+}

@@ -466,5 +466,17 @@
       "cloth": "#2f3d4d",
       "text": "#d6c9ad"
     }
+  },
+  {
+    "id": "three-kingdoms",
+    "title": "Romance of the Three Kingdoms",
+    "author": "Luo Guanzhong",
+    "year": 1522,
+    "file": "data/three-kingdoms.json",
+    "blurb": "The great Chinese war epic, and the widest map on the shelf. As the four-hundred-year Han empire collapses, three warlords - Cao Cao in the north, Liu Bei in the west, Sun Quan in the south-east - carve it into three kingdoms and fight for a century to make it one again. Sworn brotherhood and cold betrayal, the fire at Red Cliffs, the fall of Guan Yu, the doomed genius of the strategist Zhuge Liang: told across the whole of China through five threads, and ending where it began, with the empire made one.",
+    "spine": {
+      "cloth": "#6e2420",
+      "text": "#dcc074"
+    }
   }
 ]
