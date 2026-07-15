@@ -21,7 +21,8 @@
     "calendar": false,
     "span": "a century of war (184-280 AD)",
     "duration": "a century of war (184-280 AD)",
-    "unit": "year"
+    "unit": "year",
+    "hideElapsed": true
   },
   "sources": [
     "Follows Luo Guanzhong's Romance of the Three Kingdoms (San Kuo Chih Yen-i, 14th century) in C. H. Brewitt-Taylor's public-domain 1925 translation. Volume 1 (chapters 1-60) is Project Gutenberg #77416; volume 2 (61-120) is from the same public-domain 1925 edition (translator died 1938), via the Internet Archive.",

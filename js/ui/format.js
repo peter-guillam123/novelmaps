@@ -131,11 +131,15 @@ export function storyTime(novel, t) {
     if (c.day <= day) cur = c;
     else break;
   }
+  // The elapsed line is only honest when the day-offsets are roughly real days.
+  // A book whose scale is a compressed ordinal (Three Kingdoms packs a century
+  // into ~960 play-days) sets timeline.hideElapsed and shows only the `when`
+  // label, which carries the true year.
   const years = day / 365;
   const rounded = Math.round(years);
   return {
     primary: cur.when || cur.dateInStory,
-    secondary: years >= 0.6 ? `about ${rounded} year${rounded === 1 ? '' : 's'} in` : null,
+    secondary: !tl.hideElapsed && years >= 0.6 ? `about ${rounded} year${rounded === 1 ? '' : 's'} in` : null,
   };
 }
 
