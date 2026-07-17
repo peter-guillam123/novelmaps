@@ -427,6 +427,12 @@
       "start": {
         "location": "jianye",
         "chapter": 5
+      },
+      "exit": {
+        "chapter": 17,
+        "day": 686,
+        "kind": "dies",
+        "note": "Sun Quan dies at Jianye in 252, the last of the great men to go and the only one of the five to die in his own bed, having outlived every rival he began with. Wu itself lasts another twenty-eight years without him, and his mark stays on the map at Jianye, which is where it finally surrenders."
       }
     },
     {
@@ -545,6 +551,11 @@
     },
     {
       "n": 17,
+      "day": 686,
+      "when": "252: the death of Sun Quan"
+    },
+    {
+      "n": 18,
       "day": 960,
       "when": "280: the empire made one"
     }
@@ -1382,16 +1393,25 @@
       }
     },
     {
+      "kind": "scene",
+      "character": "sun-quan",
+      "at": "jianye",
+      "chapter": 17,
+      "title": "the last of them",
+      "narration": "And at Jianye, in 252, Sun Quan dies - old, in his own bed, the only one of the five to manage it. He had outlived every rival he started with. Wu goes on without him for another twenty-eight years.",
+      "day": 686
+    },
+    {
       "kind": "handoff",
       "character": "sun-quan",
       "at": "jianye",
       "title": "the last kingdom",
       "day": 955,
-      "narration": "The great men are all gone now - Cao Cao, Liu Bei, Guan Yu, the Sleeping Dragon - and their heirs are lesser. One by one the realms fall: first Shu is swallowed, then the Sima clan takes the throne from Cao Cao's heirs and founds a new dynasty, Jin; and only the south still stands."
+      "narration": "The great men are all gone - Cao Cao, Liu Bei, Guan Yu, the Sleeping Dragon, Sun Quan - and their heirs are lesser. One by one the realms fall: Shu is swallowed, the Sima clan takes Wei's throne and founds Jin; only the south still stands."
     },
     {
       "kind": "scene",
-      "chapter": 17,
+      "chapter": 18,
       "at": "jianye",
       "character": "sun-quan",
       "title": "the empire made one",
