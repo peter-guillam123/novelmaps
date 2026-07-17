@@ -46,6 +46,10 @@
     {
       "id": "elsewhere",
       "name": "Reading, and the Kent coast"
+    },
+    {
+      "id": "yorkshire",
+      "name": "Yorkshire - the new Bleak House"
     }
   ],
   "mapHome": {
@@ -758,6 +762,22 @@
         "caption": "The promenade at Deal, Kent, photographed c.1890",
         "credit": "Detroit Publishing Co. photochrom · Library of Congress · public domain"
       }
+    },
+    {
+      "id": "bleak-house-yorkshire",
+      "region": "yorkshire",
+      "name": "The new Bleak House - somewhere in Yorkshire (fictional; Dickens names only the county)",
+      "novelName": "Bleak House (the new one)",
+      "coords": [
+        -0.88,
+        54.2
+      ],
+      "certainty": "conjectured",
+      "note": "Jarndyce's wedding gift to Esther and Allan Woodcourt, and the house she writes the last chapter from. Dickens never names the town. All the novel offers is Jarndyce's account of where Woodcourt's appointment lies - 'a certain place in Yorkshire ... a thriving place, pleasantly situated - streams and streets, town and country, mill and moor' (Ch. 60) - and, in Ch. 64, a water mill humming beside a cheerful town with a cricket field. No identification has been made, and none is offered here. Two things in the text bound the guess: the county, and the single day's stage-coach from London (Ch. 64), which the fast Great North Road coaches could manage as far as the York country but not to the far side of the West Riding moors. The pin is therefore set in the moor-edge market-town country north-east of York. It marks a kind of place, not an address, and the hollow ring is the honest reading of it.",
+      "story": "The house at the end of the book: a rustic cottage of doll's rooms, its garden and its rooms laid out in Esther's own tastes, with 'Bleak House' written over the porch. Here Jarndyce gives the house, and Esther, to Woodcourt - and here, seven years on, she is writing all of this at a summer window, watching the mill go round.",
+      "quote": "This is Bleak House. This day I give this house its little mistress; and before God, it is the brightest day in all my life!",
+      "quoteRef": "Ch. 64, Esther's Narrative",
+      "imageBlank": "Dickens names no town, only 'a certain place in Yorkshire'. A period view of any real Yorkshire town would quietly pin the house to a place the novel declines to name, which is the one claim this pin is built to avoid; better a logged blank."
     }
   ],
   "movements": [
@@ -1449,6 +1469,237 @@
       "routeSource": "Dickens, Chs. 56–57: 'I heard of her first at the archway toll, over at Highgate'; 'At Barnet fresh horses were ready for us'; 'We were soon in Saint Albans'; then the doubling-back - 'I'll follow the other.'",
       "routeCertainty": "novel",
       "note": "THE PURSUIT. Roused near two in the morning, Esther is driven by Bucket north out of London through the snow - Highgate, fresh horses at Barnet, on toward St Albans - until he reads the clothes-swap for the decoy it is, doubles back, and tears all the way south again to the iron gate."
+    },
+    {
+      "character": "esther-summerson",
+      "from": "burying-ground-nemo",
+      "to": "lincolns-inn-chancery",
+      "chapter": 60,
+      "mode": "coach",
+      "days": 0.05,
+      "startDay": 680.5,
+      "note": "A mile of London street, at dawn, in the snow. Dickens draws a curtain over the drive back from the gate: Ch. 60 simply finds her in town, ill, with Jarndyce quietly settling in London for six months for her sake and Ada's."
+    },
+    {
+      "character": "inspector-bucket",
+      "from": "burying-ground-nemo",
+      "to": "lincolns-inn-chancery",
+      "chapter": 62,
+      "mode": "coach",
+      "days": 0.05,
+      "note": "The novel does not show him leave the gate. Ch. 62 next has him in Jarndyce's rooms, genial as ever, with old Smallweed in tow and the later Jarndyce will he has bought off him - back on his own ground in the law district, which is where he began."
+    },
+    {
+      "character": "esther-summerson",
+      "from": "lincolns-inn-chancery",
+      "to": "bleak-house-yorkshire",
+      "chapter": 64,
+      "mode": "coach",
+      "days": 1,
+      "via": [
+        {
+          "at": [
+            -0.1997,
+            51.6503
+          ],
+          "name": "Barnet"
+        },
+        {
+          "at": [
+            -0.202,
+            51.902
+          ],
+          "name": "Stevenage"
+        },
+        {
+          "at": [
+            -0.483,
+            52.657
+          ],
+          "name": "Stamford"
+        },
+        {
+          "at": [
+            -0.643,
+            52.912
+          ],
+          "name": "Grantham"
+        },
+        {
+          "at": [
+            -0.809,
+            53.077
+          ],
+          "name": "Newark"
+        },
+        {
+          "at": [
+            -1.128,
+            53.523
+          ],
+          "name": "Doncaster"
+        },
+        {
+          "at": [
+            -1.279,
+            53.713
+          ],
+          "name": "Ferrybridge"
+        },
+        {
+          "at": [
+            -1.087,
+            53.96
+          ],
+          "name": "York"
+        }
+      ],
+      "routeNote": "North out of London on the Great North Road - Barnet, Stevenage, Stamford, Grantham, Newark, Doncaster - then off at Ferrybridge for York, and on into the moor country beyond.",
+      "routeSource": "Cary's New Itinerary / Paterson's Roads - the Great North Road and its York branch. Dickens gives the conveyance and the duration ('mentioned by what stage-coach my place was taken'; 'I travelled all day', Ch. 64) but not one town on the way, and not the town at the end: the trunk road is documented, the last stretch off the York road is inference.",
+      "routeCertainty": "documented",
+      "note": "A letter calls her out of town, her place already taken on the morning coach. She travels all day, wondering the whole way what she can be wanted for; it is night when she reaches her journey's end and finds Jarndyce waiting at the hotel."
+    },
+    {
+      "character": "esther-summerson",
+      "from": "bleak-house-yorkshire",
+      "to": "lincolns-inn-chancery",
+      "chapter": 64,
+      "mode": "coach",
+      "days": 1,
+      "startDay": 728,
+      "via": [
+        {
+          "at": [
+            -1.087,
+            53.96
+          ],
+          "name": "York"
+        },
+        {
+          "at": [
+            -1.279,
+            53.713
+          ],
+          "name": "Ferrybridge"
+        },
+        {
+          "at": [
+            -1.128,
+            53.523
+          ],
+          "name": "Doncaster"
+        },
+        {
+          "at": [
+            -0.809,
+            53.077
+          ],
+          "name": "Newark"
+        },
+        {
+          "at": [
+            -0.643,
+            52.912
+          ],
+          "name": "Grantham"
+        },
+        {
+          "at": [
+            -0.483,
+            52.657
+          ],
+          "name": "Stamford"
+        },
+        {
+          "at": [
+            -0.202,
+            51.902
+          ],
+          "name": "Stevenage"
+        },
+        {
+          "at": [
+            -0.1997,
+            51.6503
+          ],
+          "name": "Barnet"
+        }
+      ],
+      "routeNote": "The Great North Road back to London, the way she came.",
+      "routeSource": "Cary's New Itinerary / Paterson's Roads - the outward road reversed; 'We all three went home together next day' (Ch. 64) is all the text gives of it.",
+      "routeCertainty": "documented",
+      "note": "A morning to walk over the house and admire it, and then the three of them go back to town together - Esther, Jarndyce and Woodcourt - to the last days of the suit."
+    },
+    {
+      "character": "esther-summerson",
+      "from": "lincolns-inn-chancery",
+      "to": "bleak-house-yorkshire",
+      "chapter": 67,
+      "mode": "coach",
+      "days": 1,
+      "startDay": 752,
+      "via": [
+        {
+          "at": [
+            -0.1997,
+            51.6503
+          ],
+          "name": "Barnet"
+        },
+        {
+          "at": [
+            -0.202,
+            51.902
+          ],
+          "name": "Stevenage"
+        },
+        {
+          "at": [
+            -0.483,
+            52.657
+          ],
+          "name": "Stamford"
+        },
+        {
+          "at": [
+            -0.643,
+            52.912
+          ],
+          "name": "Grantham"
+        },
+        {
+          "at": [
+            -0.809,
+            53.077
+          ],
+          "name": "Newark"
+        },
+        {
+          "at": [
+            -1.128,
+            53.523
+          ],
+          "name": "Doncaster"
+        },
+        {
+          "at": [
+            -1.279,
+            53.713
+          ],
+          "name": "Ferrybridge"
+        },
+        {
+          "at": [
+            -1.087,
+            53.96
+          ],
+          "name": "York"
+        }
+      ],
+      "routeNote": "The Great North Road north again, this time for good.",
+      "routeSource": "Cary's New Itinerary / Paterson's Roads - the Great North Road and its York branch. Dickens gives the conveyance and the duration ('mentioned by what stage-coach my place was taken'; 'I travelled all day', Ch. 64) but not one town on the way, and not the town at the end: the trunk road is documented, the last stretch off the York road is inference.",
+      "routeCertainty": "documented",
+      "note": "The novel never shows this journey, only its result seven years on. Ch. 64 says the move waited on Richard and Ada; Ch. 67 opens with Esther seven years mistress of the house. The day is set in the gap the book leaves between the two, which is all that can honestly be said about when she went."
     }
   ],
   "story": [
@@ -1784,6 +2035,51 @@
       "narration": "At dawn they reach the pauper burying-ground where Nemo lies. A figure lies cold against the iron gate, in a brickmaker's rags. Esther lifts the head - and it is her mother, Lady Dedlock, dead on the step, come home at last to her lover's grave."
     },
     {
+      "kind": "removal",
+      "character": "esther-summerson",
+      "from": "burying-ground-nemo",
+      "to": "lincolns-inn-chancery",
+      "chapter": 60,
+      "title": "Carried back into town",
+      "narration": "They take her back from the gate through the snow, and she is ill for a while afterwards. Dickens skips the drive: the next chapter simply finds her in London, mending, with Jarndyce settling in town for six months for her sake and Ada's."
+    },
+    {
+      "kind": "removal",
+      "character": "inspector-bucket",
+      "from": "burying-ground-nemo",
+      "to": "lincolns-inn-chancery",
+      "chapter": 62,
+      "title": "Bucket brings the will",
+      "narration": "Bucket goes back to his own ground, and he is not finished. Weeks later he walks in on Jarndyce with the miser Smallweed in tow and a later Jarndyce will, dug out of the rubbish in Krook's shop - the paper that should end the case."
+    },
+    {
+      "kind": "journey",
+      "character": "esther-summerson",
+      "from": "lincolns-inn-chancery",
+      "to": "bleak-house-yorkshire",
+      "chapter": 64,
+      "title": "A letter, and a day on the road",
+      "narration": "A letter calls her out of town: her place is taken on the morning stage-coach, and she travels all day up the Great North Road, wondering the whole way what she can be wanted for. It is night when she reaches Yorkshire and finds Jarndyce waiting."
+    },
+    {
+      "kind": "scene",
+      "character": "esther-summerson",
+      "at": "bleak-house-yorkshire",
+      "chapter": 64,
+      "day": 727.5,
+      "title": "The name over the porch",
+      "narration": "In the morning he walks her round a cottage whose flower-beds and rooms are laid out in her own tastes, and takes her to the porch to read the name written over it: Bleak House. Then he gives the house, and her, to Allan Woodcourt."
+    },
+    {
+      "kind": "removal",
+      "character": "esther-summerson",
+      "from": "bleak-house-yorkshire",
+      "to": "lincolns-inn-chancery",
+      "chapter": 64,
+      "title": "Back to town together",
+      "narration": "The three of them go home to London together the next day, and Woodcourt goes straight off with the news to Richard and Ada. The term is very near now: the case that has eaten the whole book is finally coming on."
+    },
+    {
       "kind": "handoff",
       "character": "esther-summerson",
       "at": "lincolns-inn-chancery",
@@ -1792,11 +2088,21 @@
       "narration": "The great case ends as it must: Jarndyce and Jarndyce collapses, the whole disputed fortune eaten up in its own costs, and Richard - ruined, undeceived at last - dies with Ada's hand in his, their child unborn. The fog over Chancery lifts on nothing."
     },
     {
+      "kind": "removal",
+      "character": "esther-summerson",
+      "from": "lincolns-inn-chancery",
+      "to": "bleak-house-yorkshire",
+      "chapter": 67,
+      "title": "North for good",
+      "narration": "When Ada and her baby are strong enough, Esther goes north for good: married now, and mistress of the little house with the borrowed name over its porch. Jarndyce keeps the older Bleak House, and comes down to them as often as he is let."
+    },
+    {
       "kind": "scene",
-      "at": "bleak-house",
+      "character": "esther-summerson",
+      "at": "bleak-house-yorkshire",
       "chapter": 67,
       "title": "The close of Esther's narrative",
-      "narration": "For Esther, though, the story turns to light. Jarndyce, who had meant to marry her himself, gives her instead to the man she loves, the doctor Allan Woodcourt, and a new small Bleak House to keep. Scarred, cherished, no longer nobody's child, she ends in plain happiness."
+      "narration": "Full seven years on she is writing all this at her summer window in Yorkshire, watching the mill go round: married to Woodcourt, mother of two girls, Ada and her boy installed in the older Bleak House. Scarred, cherished, and no longer nobody's child."
     }
   ]
 }
