@@ -36,6 +36,15 @@ export function createLegend(container, novel, onSelect) {
   key.innerHTML = `
     <span class="key-item"><svg viewBox="0 0 30 10" width="30" height="10" aria-hidden="true"><path d="M0 5h17" stroke="currentColor" stroke-width="2"/><circle cx="24.5" cy="5" r="3.7" fill="currentColor"/></svg> a real place</span>
     <span class="key-item"><svg viewBox="0 0 30 10" width="30" height="10" aria-hidden="true"><path d="M0 5h17" stroke="currentColor" stroke-width="2" stroke-dasharray="4 3"/><circle cx="24.5" cy="5" r="3.4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg> a best guess</span>`;
+
+  // A book where someone dies leaves a hollowed disc behind (see markers.js),
+  // and an unexplained symbol is a puzzle, not a signal. Only shown where the
+  // book actually has one — most don't, and the key earns its room.
+  // "dies" here matches the wording the location tile uses.
+  if (novel.characters.some((c) => c.exit && c.exit.kind === 'dies')) {
+    key.insertAdjacentHTML('beforeend',
+      `<span class="key-item"><svg viewBox="0 0 30 10" width="30" height="10" aria-hidden="true"><circle cx="15" cy="5" r="3.6" fill="none" stroke="currentColor" stroke-width="2"/></svg> where someone dies</span>`);
+  }
   container.append(key);
 
   return {
