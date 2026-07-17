@@ -347,32 +347,60 @@
           "name": "Paddington"
         },
         [
-          -0.97,
-          51.46
+          -0.9719,
+          51.4589
+        ],
+        [
+          -1.7856,
+          51.5656
+        ],
+        [
+          -2.3569,
+          51.3778
         ],
         {
           "at": [
-            -3.1,
-            51.02
+            -2.5811,
+            51.4492
+          ],
+          "name": "Bristol",
+          "note": "In 1889 the Great Western still reached Devon the long way, round by Bristol; the direct cut-off did not open until 1906."
+        },
+        {
+          "at": [
+            -3.1022,
+            51.025
           ],
           "name": "Taunton"
         },
         {
           "at": [
-            -3.53,
-            50.72
+            -3.5433,
+            50.7292
           ],
           "name": "Exeter"
         },
         [
-          -3.87,
-          50.52
-        ]
+          -3.6089,
+          50.5297
+        ],
+        [
+          -3.6889,
+          50.4319
+        ],
+        {
+          "at": [
+            -4.1425,
+            50.3775
+          ],
+          "name": "Plymouth",
+          "note": "The moor-edge station is on the Launceston branch, not the main line, so the way in runs south to Plymouth first and then back up north."
+        }
       ],
       "note": "Holmes sends Watson to guard Sir Henry; they take the ten-thirty from Paddington west into Devon.",
       "routeCertainty": "documented",
-      "routeNote": "Doyle names 'the ten-thirty train from Paddington'; the Great Western main line west through Exeter to the edge of Dartmoor.",
-      "routeSource": "The Hound of the Baskervilles, ch. 6; the GWR West-Country main line."
+      "routeNote": "Doyle names 'the ten-thirty train from Paddington' and nothing else. The line is the Great Western's own, as it ran in 1889: out by Bristol on the 'Great Way Round', down the South Devon coast to Plymouth, then north up the Launceston branch to the moor-edge junction. Drawn as the exact reverse of the return in chapter 15, because it is the same road.",
+      "routeSource": "The Hound of the Baskervilles, ch. 6; the Great Western Railway main line as it ran in 1889 - Paddington, Reading, Swindon, Bath, Bristol, Taunton, Exeter, Newton Abbot, Plymouth, and the Launceston branch to Yelverton. The direct Berks and Hants route by Castle Cary did not open until 1906."
     },
     {
       "character": [
@@ -413,25 +441,62 @@
           "name": "Paddington"
         },
         [
-          -0.97,
-          51.46
+          -0.9719,
+          51.4589
+        ],
+        [
+          -1.7856,
+          51.5656
+        ],
+        [
+          -2.3569,
+          51.3778
         ],
         {
           "at": [
-            -3.53,
-            50.72
+            -2.5811,
+            51.4492
+          ],
+          "name": "Bristol"
+        },
+        {
+          "at": [
+            -3.1022,
+            51.025
+          ],
+          "name": "Taunton"
+        },
+        {
+          "at": [
+            -3.5433,
+            50.7292
           ],
           "name": "Exeter"
         },
         [
-          -3.72,
-          50.6
+          -3.6089,
+          50.5297
+        ],
+        [
+          -3.6889,
+          50.4319
+        ],
+        {
+          "at": [
+            -4.1425,
+            50.3775
+          ],
+          "name": "Plymouth"
+        },
+        [
+          -4.0908,
+          50.4917
         ]
       ],
       "note": "Holmes, far from staying in London, slips secretly down to Dartmoor and takes up hidden residence in a stone hut on the moor.",
       "routeCertainty": "documented",
-      "routeNote": "The same Great Western line west; Holmes's secret journey to the moor, revealed only later.",
-      "routeSource": "The Hound of the Baskervilles, chs. 6–11."
+      "routeNote": "The same Great Western road as Watson's, by Bristol and Plymouth, because in 1889 there was no other. Doyle never shows the journey at all; Holmes simply turns out to have been on the moor the whole time, so the last stretch, off the train at the moor-edge junction and up onto the high moor on foot, is drawn as one line rather than guessed at in stages.",
+      "routeSource": "The Hound of the Baskervilles, chs. 6–11; the Great Western Railway main line as it ran in 1889, by Bristol, Taunton, Exeter and Plymouth (the 'Great Way Round'; the direct Berks and Hants route by Castle Cary did not open until 1906)."
     },
     {
       "character": "watson",
@@ -527,6 +592,235 @@
       "note": "In the morning they trace the murderer's flight to the edge of the great Grimpen Mire.",
       "routeCertainty": "illustrative",
       "routeSource": "The Hound of the Baskervilles, ch. 14."
+    },
+    {
+      "character": [
+        "holmes",
+        "henry"
+      ],
+      "from": "merripit-house",
+      "to": "baskerville-hall",
+      "chapter": 14,
+      "mode": "foot",
+      "days": 0.15,
+      "startDay": 18.95,
+      "via": [
+        [
+          -3.935,
+          50.529
+        ]
+      ],
+      "note": "With the hound dead and Stapleton gone into the fog, Holmes walks the shaken baronet back across the moor to the Hall. Before morning Sir Henry lies delirious in a high fever, under Dr Mortimer's care.",
+      "routeCertainty": "illustrative",
+      "routeNote": "Doyle names the return to the Hall but not the way; the short moor path Sir Henry walked out on, run backwards.",
+      "routeSource": "The Hound of the Baskervilles, ch. 14."
+    },
+    {
+      "character": "watson",
+      "from": "great-grimpen-mire",
+      "to": "baskerville-hall",
+      "chapter": 14,
+      "mode": "foot",
+      "days": 0.3,
+      "startDay": 19.7,
+      "via": [
+        [
+          -3.932,
+          50.5225
+        ]
+      ],
+      "note": "The bog has kept its man and there is nothing more to find. Watson turns back across the moor to the Hall, where Sir Henry lies burning in fever.",
+      "routeCertainty": "illustrative",
+      "routeNote": "The text leaves Watson at the mire's edge and does not walk him home; the Hall is where he is lodged and where Sir Henry lies ill.",
+      "routeSource": "The Hound of the Baskervilles, ch. 14."
+    },
+    {
+      "character": [
+        "watson",
+        "holmes"
+      ],
+      "from": "baskerville-hall",
+      "to": "devon-wayside-station",
+      "chapter": 15,
+      "mode": "coach",
+      "days": 0.4,
+      "startDay": 20.2,
+      "via": [
+        [
+          -3.99,
+          50.52
+        ]
+      ],
+      "note": "The case is closed. Holmes and Watson drive down off the moor to the little station they came in at, and wait for the up train.",
+      "routeCertainty": "documented",
+      "routeNote": "The wagonette road of chapter 6 run backwards, down off the high moor to the moor-edge station.",
+      "routeSource": "The Hound of the Baskervilles, ch. 15; the Princetown to Yelverton moor road."
+    },
+    {
+      "character": [
+        "watson",
+        "holmes"
+      ],
+      "from": "devon-wayside-station",
+      "to": "221b-baker-street",
+      "chapter": 15,
+      "mode": "train",
+      "days": 1,
+      "startDay": 20.6,
+      "via": [
+        {
+          "at": [
+            -4.1425,
+            50.3775
+          ],
+          "name": "Plymouth",
+          "note": "Down the Launceston branch from the junction to meet the Great Western main line."
+        },
+        [
+          -3.6889,
+          50.4319
+        ],
+        [
+          -3.6089,
+          50.5297
+        ],
+        {
+          "at": [
+            -3.5433,
+            50.7292
+          ],
+          "name": "Exeter"
+        },
+        {
+          "at": [
+            -3.1022,
+            51.025
+          ],
+          "name": "Taunton"
+        },
+        {
+          "at": [
+            -2.5811,
+            51.4492
+          ],
+          "name": "Bristol",
+          "note": "In 1889 the Great Western still reached London from Devon the long way, round by Bristol; the direct cut-off did not open until 1906."
+        },
+        [
+          -2.3569,
+          51.3778
+        ],
+        [
+          -1.7856,
+          51.5656
+        ],
+        [
+          -0.9719,
+          51.4589
+        ],
+        {
+          "at": [
+            -0.1755,
+            51.5154
+          ],
+          "name": "Paddington"
+        }
+      ],
+      "note": "Holmes and Watson take the Great Western home the long way round: south to Plymouth, then east through Exeter, Taunton and Bristol to Paddington.",
+      "routeCertainty": "documented",
+      "routeNote": "Doyle never follows them home; he says only that they are back in Baker Street and that Holmes is already at work on new cases. The line is the Great Western's own: down from the junction to Plymouth, round the foot of the moor, then the main line east. Until the Castle Cary cut-off opened in 1906 the road to Paddington was still the 'Great Way Round' by Bristol, Bath and Swindon.",
+      "routeSource": "The Hound of the Baskervilles, ch. 15; the Great Western Railway main line as it ran in 1889 - Plymouth, Exeter, Taunton, Bristol, Bath, Swindon, Reading, Paddington (the 'Great Way Round'; the direct Berks and Hants route by Castle Cary did not open until 1906)."
+    },
+    {
+      "character": "henry",
+      "from": "baskerville-hall",
+      "to": "devon-wayside-station",
+      "chapter": 15,
+      "mode": "coach",
+      "days": 0.4,
+      "startDay": 22.6,
+      "via": [
+        [
+          -3.99,
+          50.52
+        ]
+      ],
+      "note": "Weeks later, the fever burned out at last, Sir Henry comes down off the moor with Dr Mortimer - bound for London, and a long voyage to mend his nerves.",
+      "routeCertainty": "documented",
+      "routeNote": "The same moor road down from the Hall. Doyle gives the destination and not the day: Sir Henry lies delirious after the hound, and only reaches London near the end of November.",
+      "routeSource": "The Hound of the Baskervilles, ch. 15; the Princetown to Yelverton moor road."
+    },
+    {
+      "character": "henry",
+      "from": "devon-wayside-station",
+      "to": "221b-baker-street",
+      "chapter": 15,
+      "mode": "train",
+      "days": 1,
+      "startDay": 23.0,
+      "via": [
+        {
+          "at": [
+            -4.1425,
+            50.3775
+          ],
+          "name": "Plymouth",
+          "note": "Down the Launceston branch from the junction to meet the Great Western main line."
+        },
+        [
+          -3.6889,
+          50.4319
+        ],
+        [
+          -3.6089,
+          50.5297
+        ],
+        {
+          "at": [
+            -3.5433,
+            50.7292
+          ],
+          "name": "Exeter"
+        },
+        {
+          "at": [
+            -3.1022,
+            51.025
+          ],
+          "name": "Taunton"
+        },
+        {
+          "at": [
+            -2.5811,
+            51.4492
+          ],
+          "name": "Bristol",
+          "note": "In 1889 the Great Western still reached London from Devon the long way, round by Bristol; the direct cut-off did not open until 1906."
+        },
+        [
+          -2.3569,
+          51.3778
+        ],
+        [
+          -1.7856,
+          51.5656
+        ],
+        [
+          -0.9719,
+          51.4589
+        ],
+        {
+          "at": [
+            -0.1755,
+            51.5154
+          ],
+          "name": "Paddington"
+        }
+      ],
+      "note": "The same Great Western road east. In London the two of them call at Baker Street that very afternoon, before the ship - and the case is talked out for the last time.",
+      "routeCertainty": "documented",
+      "routeNote": "The Great Western main line of 1889 again, round by Bristol. Doyle puts Sir Henry and Dr Mortimer in London on their way to the voyage, and has them call at Baker Street that afternoon.",
+      "routeSource": "The Hound of the Baskervilles, ch. 15 ('Sir Henry and Dr. Mortimer were, however, in London, on their way to that long voyage'); the Great Western Railway main line as it ran in 1889, by Plymouth, Exeter, Taunton, Bristol and Swindon."
     }
   ],
   "story": [
@@ -674,6 +968,17 @@
     },
     {
       "kind": "journey",
+      "character": [
+        "holmes",
+        "henry"
+      ],
+      "from": "merripit-house",
+      "to": "baskerville-hall",
+      "chapter": 14,
+      "narration": "Holmes walks the shaken baronet back across the moor to the Hall. The night has done its work: before morning Sir Henry lies delirious in a high fever, with Dr Mortimer at his side."
+    },
+    {
+      "kind": "journey",
       "character": "watson",
       "from": "merripit-house",
       "to": "great-grimpen-mire",
@@ -688,6 +993,69 @@
       "title": "The mire keeps its secret",
       "narration": "But the fog has hidden the guiding wands, and the bog he knew so well takes him at last. 'It's a bad place, the great Grimpen Mire.' Somewhere out in it the murderer lies; and the curse of the Baskervilles is ended.",
       "day": 19.5
+    },
+    {
+      "kind": "journey",
+      "character": "watson",
+      "from": "great-grimpen-mire",
+      "to": "baskerville-hall",
+      "chapter": 14,
+      "narration": "The bog keeps its man, and there is nothing more to find. Watson turns back across the moor to the Hall, where Sir Henry lies burning in fever."
+    },
+    {
+      "kind": "journey",
+      "character": [
+        "watson",
+        "holmes"
+      ],
+      "from": "baskerville-hall",
+      "to": "devon-wayside-station",
+      "chapter": 15,
+      "narration": "The case is closed. Holmes and Watson drive down off the moor to the little station they came in at, and wait for the up train."
+    },
+    {
+      "kind": "journey",
+      "character": [
+        "watson",
+        "holmes"
+      ],
+      "from": "devon-wayside-station",
+      "to": "221b-baker-street",
+      "chapter": 15,
+      "narration": "The Great Western carries them home the long way round: south to Plymouth, then east by Exeter, Taunton and Bristol. Until the cut-off opened in 1906 there was no shorter road to Paddington."
+    },
+    {
+      "kind": "handoff",
+      "character": "henry",
+      "at": "baskerville-hall",
+      "chapter": 15,
+      "narration": "Sir Henry keeps to the Hall, mending slowly. Holmes, meanwhile, is already deep in two other cases.",
+      "day": 22.5
+    },
+    {
+      "kind": "journey",
+      "character": "henry",
+      "from": "baskerville-hall",
+      "to": "devon-wayside-station",
+      "chapter": 15,
+      "narration": "At last he is fit to travel. He comes down off the moor with Dr Mortimer, bound for London and a long sea voyage to mend his nerves."
+    },
+    {
+      "kind": "journey",
+      "character": "henry",
+      "from": "devon-wayside-station",
+      "to": "221b-baker-street",
+      "chapter": 15,
+      "narration": "The same line east, round by Bristol. The last of the Baskervilles leaves the moor behind him for good."
+    },
+    {
+      "kind": "scene",
+      "character": "watson",
+      "at": "221b-baker-street",
+      "chapter": 15,
+      "title": "A retrospection",
+      "narration": "A raw and foggy night, and the two of them are back at the fire in Baker Street. Sir Henry and Dr Mortimer called that afternoon, bound for the voyage that will mend him. Holmes tells the whole thing through, from the beginning.",
+      "day": 24
     }
   ]
 }
