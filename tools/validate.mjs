@@ -27,6 +27,39 @@ global.fetch = async (p) => {
 };
 
 const { loadNovel, loadNovelIndex } = await import('../js/data.js');
+const { createTimeline } = await import('../js/timeline.js');
+const { buildPaths } = await import('../js/routes.js');
+
+// Nothing may be dated past the end of the clock.
+//
+// tEnd is built from the data (js/timeline.js) and setT hard-clamps to it, so
+// anything later is silently squashed onto the last instant and never really
+// happens. It cost us badly on 2026-07-17: thirteen character exits fired
+// never, and Romance of the Three Kingdoms had been ending on the wrong year
+// since it shipped, its closing beat ("280: the empire made one") playing with
+// the clock still reading "234: the death of Zhuge Liang". Both passed every
+// gate we had, because valid data is not working data.
+//
+// timeline.js now folds exits and beats into tEnd, so this check passes by
+// construction and will keep passing - which is the point. It is a regression
+// guard: the next dated field somebody adds will not be in that calculation,
+// and this is what will say so.
+function checkNothingPastTheClock(novel, file) {
+  const timeline = createTimeline(novel, buildPaths(novel));
+  const limit = timeline.tEnd - 0.0001; // where setT clamps
+  const late = [];
+  for (const c of novel.characters) {
+    if (c.exit && c.exit.day > limit) late.push(`"${c.id}" exits on day ${c.exit.day}`);
+  }
+  for (const [i, b] of (novel.story || []).entries()) {
+    if (typeof b.day === 'number' && b.day > limit) {
+      late.push(`story beat ${i + 1} ("${b.title || b.kind}") is dated day ${b.day}`);
+    }
+  }
+  if (late.length) {
+    throw new Error(`${file}: the clock ends on day ${timeline.tEnd.toFixed(2)}, so these never happen — they are clamped onto the last instant and play as one frame under the wrong chapter:\n    ${late.join('\n    ')}\n  Fold whatever is late into the tEnd calculation in js/timeline.js.`);
+  }
+}
 
 const arg = process.argv[2];
 const books = arg
@@ -36,7 +69,8 @@ const books = arg
 let fails = 0;
 for (const b of books) {
   try {
-    await loadNovel(b.file);
+    const novel = await loadNovel(b.file);
+    checkNothingPastTheClock(novel, b.file);
     console.log(`  OK   ${b.id}`);
   } catch (e) {
     fails++;
