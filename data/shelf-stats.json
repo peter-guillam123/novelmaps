@@ -40,12 +40,12 @@
     "spanLabel": "25 years"
   },
   "bleak-house": {
-    "distanceKm": 1886,
+    "distanceKm": 2526,
     "spanDays": 900,
     "spanLabel": "2 years"
   },
   "hound-of-the-baskervilles": {
-    "distanceKm": 645,
+    "distanceKm": 1183,
     "spanDays": 14,
     "spanLabel": "2 weeks"
   },
@@ -90,7 +90,7 @@
     "spanLabel": "one day"
   },
   "kim": {
-    "distanceKm": 4312,
+    "distanceKm": 4849,
     "spanDays": 900,
     "spanLabel": "3 years"
   },
@@ -135,7 +135,7 @@
     "spanLabel": "20 years"
   },
   "war-and-peace": {
-    "distanceKm": 10275,
+    "distanceKm": 10864,
     "spanDays": 5475,
     "spanLabel": "15 years"
   },
@@ -175,7 +175,7 @@
     "spanLabel": "a fortnight"
   },
   "persuasion": {
-    "distanceKm": 404,
+    "distanceKm": 426,
     "spanDays": 2920,
     "spanLabel": "eight years"
   },
