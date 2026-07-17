@@ -580,6 +580,19 @@
       "routeSource": "ch14: Anne travels with Lady Russell to Bath, “to Camden Place.”"
     },
     {
+      "character": "louisa",
+      "from": "lyme-seafront",
+      "to": "uppercross",
+      "chapter": 10,
+      "mode": "coach",
+      "days": 1,
+      "note": "Christmas and January pass with Louisa still at Lyme, mending at the Harvilles’. Then the Musgroves’ carriage is sent down to fetch her, and she comes home to Uppercross engaged to Captain Benwick - settled between them before she left - which is what quietly sets Wentworth free.",
+      "via": [],
+      "startDay": 3004,
+      "routeCertainty": "reconstructed",
+      "routeSource": "ch18: Mary’s letter - “The carriage is gone to-day, to bring Louisa and the Harvilles to-morrow” - and its postscript: “She and the Harvilles came on Tuesday very safely.” The same seventeen miles as the outward excursion; Austen names no road."
+    },
+    {
       "character": "wentworth",
       "from": "lyme-seafront",
       "to": "milsom-street",

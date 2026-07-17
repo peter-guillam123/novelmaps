@@ -1828,6 +1828,37 @@
       "note": "Too incensed to let it rest, she drives straight on to her nephew in town - to have him forbid the thing himself. By repeating every word of Elizabeth's defiance, she hands him instead the one thing he lacked: hope"
     },
     {
+      "character": "lady-catherine",
+      "from": "darcy-london",
+      "to": "hunsford",
+      "chapter": 57,
+      "mode": "coach",
+      "startDay": 372.5,
+      "days": 0.5,
+      "via": [
+        {
+          "at": [
+            -0.016,
+            51.406
+          ],
+          "name": "Bromley",
+          "note": "the change of horses on the Kent road - her own appointed inn, the Bell"
+        },
+        {
+          "at": [
+            0.03,
+            51.36
+          ],
+          "name": "Keston",
+          "note": "up onto the Kent heath, bearing for Westerham and Rosings"
+        }
+      ],
+      "routeNote": "Out of the fashionable quarter and down the Kent road through Bromley, then off by Keston for Westerham and Rosings - the road she came up by, driven back the other way.",
+      "routeSource": "Paterson's Roads / Cary's New Itinerary - the London–Bromley–Westerham road into west Kent. Austen names Bromley as the change of horses (ch. 37). She does not narrate the drive home; that Lady Catherine is back at Rosings is established by ch. 60, when the Collinses bolt from Hunsford to escape her fury at Darcy's letter.",
+      "routeCertainty": "documented",
+      "note": "Beaten at both houses, she goes home to Kent - and gets the worst of it by post. Darcy writes to announce the engagement 'directly'; her reply is 'language so very abusive' that all intercourse stops, and Charlotte flees the parsonage until the storm blows over"
+    },
+    {
       "character": "darcy",
       "from": "darcy-london",
       "to": "netherfield",
@@ -2344,6 +2375,15 @@
       "chapter": 57,
       "title": "She carries it to Darcy",
       "narration": "Too angry to let it lie, she wheels the carriage round and drives straight to her nephew in town, meaning to have him forbid the match himself. She recounts every word of Elizabeth's defiance - and, without meaning to, tells Darcy the one thing he needed to hear: that Elizabeth would not disavow him."
+    },
+    {
+      "kind": "journey",
+      "character": "lady-catherine",
+      "from": "darcy-london",
+      "to": "hunsford",
+      "chapter": 57,
+      "title": "Home to Kent, beaten",
+      "narration": "Beaten at both houses, she drives back down her own Kent road to Rosings. It is the last of her interference and the making of the match. The storm she carries home will send the Collinses bolting from the parsonage; and when at last she condescends to call at Pemberley, Elizabeth will be its mistress."
     },
     {
       "kind": "journey",
