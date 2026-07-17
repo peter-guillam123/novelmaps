@@ -42,15 +42,28 @@ export function createTimeline(novel, paths) {
       tEnd = Math.max(tEnd, e.dayEnd);
     }
   }
-  // The clock runs to the last journey — but it must also outlast every exit.
-  // A death is often the last thing that happens to someone and lands well
-  // after they stopped travelling: Richard Carstone dies on day 740 in a book
-  // whose final journey lands on 659, and Jude dies four days after his. Left
-  // as it was, tEnd fell short of those moments, they never arrived, and the
-  // disc we were retiring sat there for the whole run anyway — the exact bug
-  // this is here to fix, silently surviving its own cure.
+  // The clock runs to the last journey — but a book is more than its journeys,
+  // and anything dated past tEnd is silently clamped to it (see setT), which
+  // means it never really happens.
+  //
+  // Exits: a death is often the last thing that happens to someone and lands
+  // well after they stopped travelling. Richard Carstone dies on day 740 in a
+  // book whose final journey lands on 659; Jude four days after his. Without
+  // this the moment never arrived and the disc we were retiring sat parked for
+  // the whole run — the exact bug `exit` exists to fix, surviving its own cure.
+  //
+  // Beats: a script can run on after the last movement too, and when it does,
+  // the clock reads the wrong chapter under it. Romance of the Three Kingdoms
+  // ended on "280: the empire made one" while the clock still said "234: the
+  // death of Zhuge Liang", because the last journey lands on day 542 and the
+  // final beat is dated 960. Two beats past the end are worse than one: they
+  // both clamp to the same instant and collapse into a single frame, which is
+  // how Madame Bovary's arsenic and Charles's death became one moment.
   for (const c of novel.characters) {
     if (c.exit) tEnd = Math.max(tEnd, c.exit.day);
+  }
+  for (const b of novel.story || []) {
+    if (b.day != null) tEnd = Math.max(tEnd, b.day);
   }
   tEnd += 2; // a breath at the end
 
