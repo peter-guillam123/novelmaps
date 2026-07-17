@@ -97,8 +97,19 @@ function validateExit(file, novel, c, maxChapter) {
   if (typeof x.day !== 'number') {
     fail(file, `"${c.id}" exit needs a "day" — the chapter alone is too coarse to say when someone leaves the story`, x);
   }
+  // A chapter's span runs from its own day to the next day the book reaches —
+  // which is NOT simply the next chapter's. Chapter days do not always climb:
+  // Monte Cristo appends two flashback chapters (days 2550/2560) after a
+  // chapter set on day 8690, Frankenstein and Ulysses both double back, and
+  // War of the Worlds gives two chapters the same day. Reading the span off
+  // the next chapter in sequence therefore made the last real chapter of
+  // Monte Cristo impossible to host an exit (opens 8690, closes 2550: no day
+  // can satisfy it) while making its final flashback accept anything. Take the
+  // next LARGER day anywhere in the book instead; for a strictly increasing
+  // book this is the same rule, and for the others it is the honest one.
   const opens = novel.chapters[x.chapter - 1].day;
-  const closes = x.chapter < maxChapter ? novel.chapters[x.chapter].day : Infinity;
+  const later = novel.chapters.map((ch) => ch.day).filter((d) => d > opens);
+  const closes = later.length ? Math.min(...later) : Infinity;
   if (x.day < opens || x.day > closes) {
     fail(file, `"${c.id}" exits on day ${x.day}, which is outside chapter ${x.chapter} (days ${opens}–${closes === Infinity ? 'the end' : closes})`, x);
   }
