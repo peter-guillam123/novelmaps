@@ -126,6 +126,15 @@ still know where this person is on the last page?* Three answers —
 Only (1) needs no exit, and (1) is rarer than it looks. A character who simply
 stops moving is not the same as a character who is still *there*.
 
+**The mirror-image bug, which an exit must NOT be used to hide.** A disc can
+also be parked in the wrong place because the book knows exactly where someone
+is and *we never drew the way back*. Sir Henry Baskerville stood at his enemy's
+front door for half his novel; Esther Summerson spent ten chapters in a pauper's
+graveyard while the book had her married in Yorkshire. Answer (3) is tempting
+there and it is a lie: the book has not lost sight of them, so `leaves` asserts
+something false. Those want **the missing journey drawn** (§1 and §3), not an
+exit. `node tools/presence-check.mjs` marks the likeliest cases `[STRANDED]`.
+
 ### Locations
 
 ```jsonc

@@ -173,6 +173,17 @@ A script is never shipped on the first draft:
      [data/<slug>.json]` lists candidates — every beat that names a character
      whose marker is elsewhere — but it can't tell a real assertion from a mere
      mention, so judge each; most candidates are innocent.
+     **Read the ones marked `[STRANDED]` first.** Those name a character who has
+     already made their last move, so the map will hold them on that spot to the
+     last page — and the innocent explanations ("he's only mentioned", "he moves
+     on later") mostly don't apply. That mark is there because the flat list
+     didn't get read: the tool had already named Esther Summerson standing in a
+     pauper's graveyard for the last ten chapters of Bleak House, and it sat
+     unnoticed among two hundred harmless mentions until a reader caught the
+     same class of bug in Ulysses. A stranded candidate usually wants **the
+     missing journey drawn** (see ADDING-A-NOVEL §1 and §3), *not* an `exit`:
+     an exit claims the book lost sight of them, and a book that names them
+     somewhere else plainly has not.
    - **shared-vs-solo** — a movement's `character` array matches who the
      narration says travels together; a companion the narration names isn't
      dropped, and a solo flight isn't drawn as a shared line.

@@ -56,8 +56,24 @@ function scheduler(novel) {
     legs.sort((a, b) => a._s - b._s);
   }
 
+  // The day each character's last leg lands. Past this they never move again,
+  // so wherever they are is where the map will hold them to the last page.
+  //
+  // A character the book never moves AT ALL is not stranded, they are a
+  // fixture: Molly Bloom stays in that bed by design, and every mention of her
+  // elsewhere in Dublin is an innocent one. Infinity keeps them out of it.
+  const settles = {};
+  for (const c of novel.characters) {
+    const legs = schedule[c.id] || [];
+    settles[c.id] = legs.length ? legs[legs.length - 1]._e : Infinity;
+  }
+
   return {
     chapterDay,
+    // Has this character made their last move before `day`? A candidate flagged
+    // after it is the sharp kind: not "named while elsewhere for a moment" but
+    // "the book has walked on and the disc never will".
+    settled: (cid, day) => day > settles[cid],
     // returns { resting: locId } or { moving: {from,to} } or null (not yet born)
     where(cid, day) {
       const c = byId[cid];
@@ -108,7 +124,7 @@ function checkBook(file) {
   const novel = JSON.parse(readFileSync(join(root, file), 'utf8'));
   if (!Array.isArray(novel.story) || !novel.story.length) return { file, flags: [] };
   const sch = scheduler(novel);
-  const tokensByChar = novel.characters.map((c) => ({ id: c.id, name: c.name, toks: nameTokens(c) }));
+  const tokensByChar = novel.characters.map((c) => ({ id: c.id, name: c.name, toks: nameTokens(c), exit: c.exit }));
   const flags = [];
 
   novel.story.forEach((b, i) => {
@@ -118,16 +134,22 @@ function checkBook(file) {
     const focus = new Set([].concat(b.character || []));
     const day = sch.movementDay(b);
     const text = b.narration || '';
-    for (const { id, name, toks } of tokensByChar) {
+    for (const { id, name, toks, exit } of tokensByChar) {
       if (focus.has(id)) continue; // the focus is rushes' job
       const named = toks.some((t) => new RegExp(`\\b${t}\\b`).test(text));
       if (!named) continue;
+      // Gone from the story by now (js/data.js `exit`): the map makes no claim
+      // about where they are, so "named but elsewhere" means nothing. Henry
+      // Clerval is strangled in chapter 22; the map is not asserting he is in
+      // Ireland when chapter 26 mentions his name.
+      if (exit && day >= exit.day) continue;
       const w = sch.where(id, day);
       if (!w) continue; // not yet in the story
       const at = w.resting === place || (w.moving && (w.moving.from === place || w.moving.to === place));
       if (!at) {
         const wLabel = w.resting ? `resting at ${w.resting}` : `moving ${w.moving.from}->${w.moving.to}`;
-        flags.push({ beat: i + 1, title: b.title || b.kind, place, day, who: name, where: wLabel });
+        const stranded = Boolean(w.resting) && sch.settled(id, day);
+        flags.push({ beat: i + 1, title: b.title || b.kind, place, day, who: name, where: wLabel, stranded });
       }
     }
   });
@@ -139,12 +161,29 @@ const files = arg ? [arg.startsWith('data/') ? arg : `data/${arg}`]
   : readdirSync(join(root, 'data')).filter((f) => f.endsWith('.json') && !['novels.json', 'atlas.json', 'shelf-stats.json'].includes(f)).map((f) => `data/${f}`);
 
 let total = 0;
+let stranded = 0;
 for (const f of files) {
   const { file, flags } = checkBook(f);
   if (flags.length) {
     console.log(`\n${file}  — ${flags.length} candidate(s):`);
-    for (const fl of flags) console.log(`  beat ${fl.beat} "${fl.title}" (at ${fl.place}, day ${fl.day}): names ${fl.who}, but ${fl.who} is ${fl.where}`);
+    // The stranded ones first: they are the likeliest to be real, and in a list
+    // of two hundred innocent mentions the real ones were getting lost. This is
+    // how Sir Henry Baskerville came to stand at his enemy's door for a whole
+    // book and Esther Summerson to spend ten chapters in a pauper's graveyard -
+    // the tool had already named Esther, and nobody got that far down the list.
+    for (const fl of [...flags].sort((a, b) => Number(b.stranded) - Number(a.stranded))) {
+      const mark = fl.stranded ? ' [STRANDED: never moves again]' : '';
+      console.log(`  beat ${fl.beat} "${fl.title}" (at ${fl.place}, day ${fl.day}): names ${fl.who}, but ${fl.who} is ${fl.where}${mark}`);
+    }
     total += flags.length;
+    stranded += flags.filter((fl) => fl.stranded).length;
   }
 }
-console.log(total ? `\n${total} candidate(s) across ${files.length} book(s) - judge each: does the line assert the named character is present?` : `\nno presence candidates across ${files.length} book(s).`);
+if (!total) {
+  console.log(`\nno presence candidates across ${files.length} book(s).`);
+} else {
+  console.log(`\n${total} candidate(s) across ${files.length} book(s) - judge each: does the line assert the named character is present?`);
+  if (stranded) {
+    console.log(`\n${stranded} marked STRANDED: the named character has made their last move, so the map will hold them on that spot to the last page. Most candidates here are innocent mentions; a stranded one often isn't, so read those first. The usual fix is the missing journey (docs/ADDING-A-NOVEL.md), NOT an exit - an exit claims the book lost sight of them, and a book that names them somewhere else plainly has not.`);
+  }
+}
