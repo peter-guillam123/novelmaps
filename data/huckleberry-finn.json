@@ -570,15 +570,12 @@
       "routeSource": "Down the real Mississippi, traced from Natural Earth's river centreline; Twain narrates the drift south, naming St Louis, the Ohio's mouth at Cairo, and the Arkansas bank."
     },
     {
-      "character": [
-        "huck",
-        "jim"
-      ],
+      "character": "huck",
       "from": "cairo",
       "to": "grangerford-place",
       "chapter": 16,
       "mode": "raft",
-      "days": 4,
+      "days": 0.5,
       "startDay": 21.4,
       "via": [
         [
@@ -647,9 +644,88 @@
         ]
       ],
       "medium": "river",
-      "note": "In the fog they miss Cairo, and are carried on below it; a steamboat smashes the raft in the dark and the two are parted.",
+      "note": "In the fog they miss Cairo; below it a steamboat smashes the raft in the dark and the two go overboard on opposite sides. Huck swims ashore to the Grangerford landing.",
       "routeCertainty": "novel",
       "routeNote": "Below Cairo, deeper into slave country - the wrong way for Jim.",
+      "routeSource": "Down the real Mississippi, traced from Natural Earth's river centreline; Twain narrates the drift south, naming St Louis, the Ohio's mouth at Cairo, and the Arkansas bank."
+    },
+    {
+      "character": "jim",
+      "from": "cairo",
+      "to": "grangerford-place",
+      "chapter": 16,
+      "mode": "raft",
+      "days": 1.5,
+      "startDay": 21.4,
+      "via": [
+        [
+          -89.119,
+          36.9619
+        ],
+        [
+          -89.1256,
+          36.8769
+        ],
+        [
+          -89.1535,
+          36.8394
+        ],
+        [
+          -89.133,
+          36.7608
+        ],
+        [
+          -89.2264,
+          36.5804
+        ],
+        [
+          -89.2847,
+          36.5775
+        ],
+        [
+          -89.3702,
+          36.6329
+        ],
+        [
+          -89.4272,
+          36.4933
+        ],
+        [
+          -89.4791,
+          36.4523
+        ],
+        [
+          -89.5052,
+          36.4581
+        ],
+        [
+          -89.5028,
+          36.5543
+        ],
+        [
+          -89.5697,
+          36.5563
+        ],
+        [
+          -89.5309,
+          36.3834
+        ],
+        [
+          -89.5599,
+          36.3516
+        ],
+        [
+          -89.6285,
+          36.3414
+        ],
+        [
+          -89.6114,
+          36.3026
+        ]
+      ],
+      "medium": "river",
+      "note": "Jim comes up on the far side, saves the battered raft, and floats it down to a creek near the Grangerford place to hide and wait for Huck.",
+      "routeCertainty": "novel",
       "routeSource": "Down the real Mississippi, traced from Natural Earth's river centreline; Twain narrates the drift south, naming St Louis, the Ohio's mouth at Cairo, and the Arkansas bank."
     },
     {
@@ -969,14 +1045,23 @@
     },
     {
       "kind": "journey",
-      "character": [
-        "huck",
-        "jim"
-      ],
+      "character": "huck",
       "from": "cairo",
       "to": "grangerford-place",
       "chapter": 16,
-      "narration": "Below Cairo a steamboat smashes straight through the raft in the dark, and the two are torn apart. Huck swims ashore to the fine house of the Grangerfords."
+      "narration": "Below Cairo a steamboat smashes straight through the raft in the dark, and the two go overboard on opposite sides. Huck swims ashore alone, to the fine house of the Grangerfords."
+    },
+    {
+      "kind": "meanwhile",
+      "narration": "Jim came up on the far side. He saves the battered raft and hides it in a creek close by - lying low aboard, waiting for the boy he half fears is drowned."
+    },
+    {
+      "kind": "journey",
+      "character": "jim",
+      "from": "cairo",
+      "to": "grangerford-place",
+      "chapter": 16,
+      "narration": "The raft slips on down to its hiding place below the Grangerford landing, out of the current and out of sight, while Huck is taken in up at the house."
     },
     {
       "kind": "scene",
