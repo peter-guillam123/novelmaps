@@ -43,7 +43,7 @@ const ARRIVAL_DWELL_SECONDS = 2.5; // after crossing, rest on the place reached
 const NODE_ZOOM = 11.5;          // a town on the historic survey
 const SMALL_MOVE_DEG = 0.18;     // below this, no pull-back is needed
 
-export function createStoryPlayer(novel, timeline, paths, { map, director, engine, card, emphasize, onProgress, onDistance }) {
+export function createStoryPlayer(novel, timeline, paths, { map, director, engine, card, emphasize, onProgress, onDistance, sound }) {
   const chapterDay = (n) => novel.chapters[Math.min(Math.max(n, 1), novel.chapters.length) - 1].day ?? 0;
 
   const readTime = (text) => {
@@ -312,6 +312,9 @@ export function createStoryPlayer(novel, timeline, paths, { map, director, engin
       mode: beat.leg ? beat.leg.movement.mode : null,
     });
     emphasize(beat.focus || null);
+    // The bed belongs to the telling, not to the map: a paused reader stepping
+    // through beats gets silence, the same as they get no camera moves.
+    if (sound) { if (playing) sound.forBeat(beat); else sound.silence(); }
 
     planCamera(beat, instant);
     runCamQueue(0); // fire the opening move(s) at once
@@ -370,6 +373,7 @@ export function createStoryPlayer(novel, timeline, paths, { map, director, engin
     playing = false;
     timeline.setPlaying(false);
     cancel();
+    sound?.silence();
     card.done(totalMiles, totalSpan);
     reportProgress();
   }
@@ -387,6 +391,7 @@ export function createStoryPlayer(novel, timeline, paths, { map, director, engin
     playing = false;
     timeline.setPlaying(false);
     cancel();
+    sound?.silence();
   }
   function step(dir) {
     if (!beats.length) return;
@@ -412,6 +417,7 @@ export function createStoryPlayer(novel, timeline, paths, { map, director, engin
     idx = -1;
     selfT = null;
     camQueue = [];
+    sound?.silence();
     card.hide();
     emphasize(null);
     reportProgress();

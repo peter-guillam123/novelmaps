@@ -6,6 +6,7 @@ import {
   setRouteEmphasis, setRouteMode, updateTrails, resetTrailMemory,
 } from './routes.js';
 import { createStoryPlayer } from './story.js';
+import { createSound } from './sound.js';
 import { createStoryCard } from './ui/storycard.js';
 import {
   addCharacterMarkers, updateCharacterMarkers, setCharacterMarkersVisible,
@@ -50,7 +51,9 @@ ready
     }
     document.title = `${meta.title} · PlotLines`;
     const overlay = addNlsOverlay(map, novel);
-    createSettings(map, { overlay });
+    // Silent until the reader asks: nothing is fetched or decoded before then.
+    const sound = createSound();
+    createSettings(map, { overlay, sound });
 
     const paths = buildPaths(novel);
     addRouteLayers(map, novel, paths);
@@ -106,6 +109,7 @@ ready
         emphasize: (id) => setRouteEmphasis(map, id),
         onProgress: (frac) => scrubber && scrubber.setStoryProgress(frac),
         onDistance: (miles) => scrubber && scrubber.setDistance(miles),
+        sound,
       });
     }
     // Everything that starts/stops playback talks to the transport: the

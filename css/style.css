@@ -1398,6 +1398,25 @@ body.is-overture #storycard { display: none !important; }
   text-transform: uppercase;
   color: var(--ink-soft);
 }
+/* Whole row is the hit target, so it clears 40px on touch without looking
+   like a button on the desktop pane. */
+.settings-check {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 40px;
+  font-size: 13.5px;
+  line-height: 1.35;
+  cursor: pointer;
+}
+.settings-check input {
+  accent-color: var(--accent);
+  width: 17px;
+  height: 17px;
+  flex: none;
+  margin: 0;
+  cursor: pointer;
+}
 
 .settings-links {
   display: flex;
