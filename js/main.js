@@ -1,4 +1,5 @@
 import { createMap } from './map.js';
+import { BLANK_STYLE_URL } from './constants.js';
 import { addNlsOverlay } from './overlay.js';
 import { loadNovelIndex, loadNovel } from './data.js';
 import {
@@ -26,7 +27,33 @@ import { createOverture } from './ui/overture.js';
 import { createLocationTile } from './ui/locationtile.js';
 import { createSettings } from './ui/settings.js';
 
-const map = createMap('map');
+// A page that cannot say it is broken is worse than one that fails loudly, so
+// every path out of startup ends either in a working book or in a visible
+// message. See bootFailure() at the foot of this file.
+function bootFailure(kind) {
+  const el = document.createElement('div');
+  el.className = 'boot-error';
+  el.innerHTML = kind === 'webgl'
+    ? `<p><strong>This browser can't draw the map.</strong>
+       PlotLines needs WebGL, which looks to be switched off or unavailable here.
+       Turning on hardware acceleration in your browser's settings usually cures it.</p>`
+    : `<p><strong>The map didn't load properly.</strong>
+       A hard refresh usually cures it &mdash;
+       <span class="boot-error-keys">Cmd/Ctrl + Shift + R</span>.</p>`;
+  document.body.append(el);
+}
+
+// MapLibre throws outright when it can't get a WebGL context — a blocklisted
+// GPU, hardware acceleration switched off. Nothing downstream can work, so say
+// what's wrong rather than leaving the panels empty.
+let map;
+try {
+  map = createMap('map');
+} catch (err) {
+  console.error(err);
+  bootFailure('webgl');
+  throw err;
+}
 window.plotlinesMap = map; // exposed immediately so a stuck startup can be inspected
 
 // ?novel=<id> opens a book; no parameter means the library, where you
@@ -34,8 +61,40 @@ window.plotlinesMap = map; // exposed immediately so a stuck startup can be insp
 // cross-novel teardown to get wrong.
 const requestedNovel = new URLSearchParams(location.search).get('novel');
 
+// How long to wait for the base map before giving up on it, and for the local
+// fallback after that. Generous: a slow connection should still get the real
+// thing rather than be dropped to plain parchment for being a second late.
+const BASE_MAP_MS = 8000;
+const FALLBACK_MS = 5000;
+
+// The base map is the one part of a book that isn't ours: its tiles come from
+// a third-party host. Everything else — routes, places, the whole script — is
+// local and renders perfectly without it. But the boot used to wait on
+// `map.on('load')` with no timeout and no reject path, so a reader who
+// couldn't reach that host (an ad blocker, a VPN, a corporate DNS) got styled,
+// empty panels for ever, and the catch below could never fire because nothing
+// ever rejected. Now the wait is bounded: miss it, and we fall back to the
+// plain local style so the book still plays.
+let baseFellBack = false;
+
+const mapEvent = (evt, ms) => new Promise((resolve, reject) => {
+  const ok = () => { clearTimeout(timer); map.off(evt, ok); resolve(); };
+  const timer = setTimeout(() => { map.off(evt, ok); reject(new Error(`${evt} timed out`)); }, ms);
+  map.on(evt, ok);
+});
+
+const mapReady = (map.loaded() ? Promise.resolve() : mapEvent('load', BASE_MAP_MS))
+  .catch(() => {
+    // `load` only ever fires once, so the re-styled map is awaited on
+    // 'style.load'. If even the local style fails, this rejects and the
+    // reader gets the boot message instead of silence.
+    baseFellBack = true;
+    map.setStyle(BLANK_STYLE_URL);
+    return mapEvent('style.load', FALLBACK_MS);
+  });
+
 const ready = Promise.all([
-  new Promise((resolve) => map.on('load', resolve)),
+  mapReady,
   loadNovelIndex(),
 ]).then(([, index]) => {
   const meta = index.find((n) => n.id === requestedNovel);
@@ -393,15 +452,23 @@ ready
       return timeline.state.t;
     };
     window.plotlines = { map, novel, timeline, engine, director, story, selectCharacter, renderAt };
+
+    // If we came up on the fallback style, say so once. A plain background is
+    // a visibly lesser thing, and a reader should know it is circumstance
+    // rather than the design — and that nothing else is missing.
+    if (baseFellBack) {
+      const note = document.createElement('div');
+      note.className = 'base-note';
+      note.setAttribute('role', 'status');
+      note.innerHTML = `<p>The period base map couldn&rsquo;t be reached, so the map is plain.
+        The routes, the places and the story are all working normally.</p>
+        <button type="button" class="base-note-close" aria-label="Dismiss">&times;</button>`;
+      note.querySelector('.base-note-close').addEventListener('click', () => note.remove());
+      document.body.append(note);
+    }
   })
   .catch((err) => {
     console.error(err);
     // Whatever went wrong, never leave a silent page of empty panels.
-    const el = document.createElement('div');
-    el.className = 'boot-error';
-    el.innerHTML = `
-      <p><strong>The map didn't load properly.</strong>
-      A hard refresh usually cures it —
-      <span class="boot-error-keys">Cmd/Ctrl + Shift + R</span>.</p>`;
-    document.body.append(el);
+    bootFailure();
   });

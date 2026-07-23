@@ -2,7 +2,7 @@
 // The NLS historic overlay, route and marker layers are added by their
 // own modules once the map and data are ready.
 
-import { STYLE_URL } from './constants.js';
+import { STYLE_URL, BLANK_STYLE_URL } from './constants.js';
 
 // Base-layer attribution comes from the style's own sources (OpenFreeMap /
 // OSM / OpenMapTiles); the NLS overlay adds its own when enabled.
@@ -17,7 +17,7 @@ export function createMap(container) {
   // sandboxed preview with no outbound network. The shipped default is
   // unchanged; only this explicit URL parameter opts in.
   const base = new URLSearchParams(location.search).get('base');
-  const style = base === 'blank' ? 'styles/blank.json' : STYLE_URL;
+  const style = base === 'blank' ? BLANK_STYLE_URL : STYLE_URL;
   const map = new maplibregl.Map({
     container,
     style,

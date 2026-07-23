@@ -30,6 +30,12 @@ export const CHARACTER_COLOURS = {
 
 export const STYLE_URL = 'styles/victorian.json';
 
+// The plain local parchment style: no external tile source, so it loads
+// wherever the page itself loaded. It is both the ?base=blank opt-out and the
+// automatic fallback when the base map's tile host can't be reached — see the
+// boot sequence in main.js.
+export const BLANK_STYLE_URL = 'styles/blank.json';
+
 // The historic overlay is served straight from the National Library of
 // Scotland's own public tile server — keyless, CORS-open, no quota. A
 // {z}/{x}/{y} template; a novel may override it via its overlay field
