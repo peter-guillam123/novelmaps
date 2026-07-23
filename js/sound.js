@@ -27,8 +27,12 @@ const GAIN = {
   whale: 0.30,
 };
 
-// Modes with a baked bed. Everything else plays nothing, deliberately.
-const HAVE = new Set(['foot', 'tripod']);
+// Modes with a baked bed. Everything else plays nothing, deliberately — and
+// `unknown` must never get one: a leg we couldn't identify shouldn't be given
+// a confident noise. See assets/sound/SOURCES.md.
+const HAVE = new Set([
+  'foot', 'coach', 'train', 'ship', 'horse', 'raft', 'flight', 'whale', 'tripod',
+]);
 
 const FADE = 0.6;      // seconds, in and out — never start or stop abruptly
 const MAX_CACHE = 6;   // decoded buffers held; ~2MB each, so this is bounded

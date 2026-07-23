@@ -21,7 +21,23 @@ node tools/sfx-loop.mjs <mode> <bbcId> <startSec> <lenSec> [--xf 0.75]
 | mode | BBC id | archive description | cut | loop |
 |---|---|---|---|---|
 | `foot` | [07037049](https://sound-effects-media.bbcrewind.co.uk/mp3/07037049.mp3) | Footsteps on Country Road, man walking, with start & stop | 18s +12s | 11.25s |
+| `coach` | [07039338](https://sound-effects-media.bbcrewind.co.uk/mp3/07039338.mp3) | Horse-drawn Coach pulled by four horses, start into continuous run | 40s +12s | 11.25s |
+| `train` | [07041063](https://sound-effects-media.bbcrewind.co.uk/mp3/07041063.mp3) | Italian Steam Train, interior, constant run | 20s +14s | 13.25s |
+| `ship` | [07034052](https://sound-effects-media.bbcrewind.co.uk/mp3/07034052.mp3) | Sailing Ship: Gaff-rigged Ketch, interior, mast creaking, in day cabin | 40s +16s | 15.25s |
+| `horse` | [07039298](https://sound-effects-media.bbcrewind.co.uk/mp3/07039298.mp3) | Horse walking on road | 10s +12s | 11.25s |
+| `raft` | [07031093](https://sound-effects-media.bbcrewind.co.uk/mp3/07031093.mp3) | Water: River lapping | 30s +16s | 15.25s |
+| `flight` | [NHU05003039](https://sound-effects-media.bbcrewind.co.uk/mp3/NHU05003039.mp3) | Calls from barnacle geese flying overhead | 20s +14s | 13.25s |
+| `whale` | [NHU05003057](https://sound-effects-media.bbcrewind.co.uk/mp3/NHU05003057.mp3) | Sperm whales producing steady echolocation clicks (hydrophone) | 40s +16s | 15.25s |
 | `tripod` | [07058013](https://sound-effects-media.bbcrewind.co.uk/mp3/07058013.mp3) | Pile driver | 30s +12s | 11.25s |
+
+Deliberately **silent**: `unknown` (a leg we could not identify should not be
+given a confident noise), and for now `motor`, `tram`, `jaunting`, `rickshaw`,
+`elephant`, `sledge`, `dogsled`, `omnibus` — all of which appear in only one or
+two books. Silence is a legitimate answer, not a gap.
+
+Water and rigging get longer loops (15s) than hooves and wheels (11s): irregular
+material cycles audibly if the loop is short, whereas rhythmic material only
+loops cleanly near a whole number of strides.
 
 `tripod` is a deliberate stand-in rather than a recording of the thing: Wells's
 fighting-machines are frightening because they are *industrial*, so they are
